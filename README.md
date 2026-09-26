@@ -1,6 +1,6 @@
 # 영화봇 · 배우별 영화 체크리스트
 
-장편 출연작 시청 체크 (모바일 우선 · localStorage 저장)
+장편 출연작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
 **배우 15명** · 총 **572편**
 
@@ -24,7 +24,17 @@
 
 ## 사용
 - `index.html` 을 브라우저에서 열거나 Vercel 배포 URL로 접속
-- 체크 상태는 `localStorage` 키 `movie-checklist-v1` 에 저장
+- 체크 상태는 **동기화 코드**별로 서버(Upstash Redis)에 저장되어 폰·PC 등 여러 기기에서 이어집니다
+  - 첫 방문 시 16자리 랜덤 코드 자동 생성 → 화면의 `복사` 버튼으로 복사
+  - 다른 기기에서 `다른 기기 연결` → 코드 입력 → 같은 기록 공유 (그 기기의 기존 체크도 합쳐짐)
+  - 오프라인일 땐 `localStorage`(`movie-checklist-items-v2`, 구버전 `movie-checklist-v1`)에 임시 저장 후 온라인 시 자동 업로드
+  - 병합 규칙: 영화별 마지막 변경 우선(체크·해제 모두 전파), 기존 localStorage 체크는 첫 동기화 때 서버로 합쳐짐
+
+## API
+- `GET /api/sync?code=CODE` → `{ exists, items, updatedAt }`
+- `POST /api/sync` `{ code, items }` → 서버에서 병합 후 `{ items, updatedAt }`
+- Redis 키: `movie-checklist:sync:<CODE>`
+- 환경 변수: `KV_REST_API_URL`, `KV_REST_API_TOKEN` (Vercel Marketplace Upstash 연결 시 자동 설정)
 
 ## 규칙
 - 장편 출연(극장·주요 스트리밍)
