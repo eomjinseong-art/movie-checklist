@@ -1,1 +1,6 @@
-{"version":2,"name":"movie-checklist"}
+{
+  "version": 2,
+  "name": "movie-checklist",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
