@@ -2,7 +2,7 @@
 
 장편 출연작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 15명** · 총 **572편**
+**배우 15명** · 총 **586편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -10,7 +10,7 @@
 | 맷 데이먼 | Matt Damon | 48 |
 | 다니엘 크레이그 | Daniel Craig | 34 |
 | 톰 크루즈 | Tom Cruise | 45 |
-| 러셀 크로우 | Russell Crowe | 44 |
+| 러셀 크로우 | Russell Crowe | 58 |
 | 레오나르도 디카프리오 | Leonardo DiCaprio | 28 |
 | 매튜 맥커너히 | Matthew McConaughey | 41 |
 | 톰 하디 | Tom Hardy | 28 |
@@ -46,6 +46,8 @@
 - Gerard Butler: Butterfly on a Wheel — 한국명 '샤터드'로도 표기
 - Tom Hardy: Thick as Thieves — 한국 개봉명 불확실 (시크 애즈 띠브즈)
 - Russell Crowe: Prisoners of the Sun — 일명 Blood Oath
+- Russell Crowe: The Weight — 한국 개봉명 미확인 (더 웨이트)
+- Russell Crowe: Gladiator II — 아카이브 영상만 사용되어 출연작에서 제외 (신규 촬영 없음)
 - Matt Damon: Glory Daze 등 초기 소작 일부 제외
 - Keanu Reeves: Generation Um... / Exposed 등 일부 저예산작 제외 또는 제한 포함
 - Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실
