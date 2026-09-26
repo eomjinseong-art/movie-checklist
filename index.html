@@ -314,6 +314,69 @@ footer {
   text-align: center;
   line-height: 1.7;
 }
+/* Sync panel */
+.sync-panel {
+  background: var(--bg-elevated);
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+.sync-panel.first { border-color: var(--gold-border); box-shadow: var(--shadow); }
+.sync-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.65rem; }
+.sync-label { color: var(--text-muted); }
+.sync-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  background: #111;
+  border: 1px solid var(--gold-border);
+  border-radius: 8px;
+  padding: 0.3rem 0.55rem;
+  -webkit-user-select: all;
+  user-select: all;
+}
+.sync-status {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+.sync-status::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #555;
+}
+.sync-status.saved::before { background: #6fbf73; }
+.sync-status.saving::before { background: var(--gold); }
+.sync-status.offline::before { background: var(--danger); }
+.sync-help { color: var(--text-dim); font-size: 0.75rem; margin-top: 0.5rem; line-height: 1.6; }
+.sync-link { display: none; margin-top: 0.65rem; gap: 0.5rem; flex-wrap: wrap; }
+.sync-link.show { display: flex; }
+.sync-link input {
+  flex: 1 1 200px;
+  min-width: 0;
+  background: var(--bg-card);
+  border: 1px solid #333;
+  color: var(--text);
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  outline: none;
+}
+.sync-link input:focus { border-color: var(--gold-border); }
+.sync-msg { font-size: 0.75rem; margin-top: 0.4rem; color: var(--text-muted); min-height: 1em; }
+.sync-msg.err { color: var(--danger); }
+.btn.small { padding: 0.4rem 0.7rem; font-size: 0.78rem; }
 /* Mobile drawer */
 .menu-toggle {
   display: none;
@@ -377,6 +440,21 @@ footer {
       </div>
       <div class="bar"><div class="bar-fill" id="bar-fill"></div></div>
     </div>
+    <section class="sync-panel" id="sync-panel" aria-label="기기 간 동기화">
+      <div class="sync-row">
+        <span class="sync-label">동기화 코드</span>
+        <code class="sync-code" id="sync-code">—</code>
+        <button type="button" class="btn small" id="sync-copy">복사</button>
+        <button type="button" class="btn small" id="sync-link-toggle">다른 기기 연결</button>
+        <span class="sync-status" id="sync-status" role="status" aria-live="polite">—</span>
+      </div>
+      <p class="sync-help" id="sync-help">체크 기록은 이 코드로 서버에 저장됩니다. 다른 기기(폰·PC)에서 <b>다른 기기 연결</b>을 누르고 이 코드를 입력하면 같은 기록이 이어집니다. 코드는 비밀번호처럼 다른 사람과 공유하지 마세요.</p>
+      <div class="sync-link" id="sync-link">
+        <input type="text" id="sync-input" placeholder="기존 동기화 코드 입력 (예: ABCD-EFGH-JKMN-PQRS)" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin" enterkeyhint="go" />
+        <button type="button" class="btn" id="sync-connect">연결</button>
+      </div>
+      <p class="sync-msg" id="sync-msg"></p>
+    </section>
     <div class="controls" id="controls">
       <div class="search">
         <input type="search" id="search" placeholder="제목 검색 (한글/영문)…" autocomplete="off" enterkeyhint="search" />
@@ -392,7 +470,7 @@ footer {
     <p class="empty" id="empty">검색·필터 결과가 없습니다.</p>
     <footer>
       장편 출연작 기준 · 제작만·TV·미개봉·사소한 카메오 제외<br />
-      출처: Wikipedia filmography · 진행 상태는 이 기기 localStorage에 저장됩니다<br />
+      출처: Wikipedia filmography · 진행 상태는 동기화 코드로 서버에 저장되어 여러 기기에서 이어집니다 (오프라인일 땐 이 기기에 임시 저장)<br />
       <span id="footer-uncertain"></span>
     </footer>
   </main>
@@ -408,7 +486,7 @@ footer {
 
   let current = "all"; // "all" or actor id
   let filter = "all";
-  let state = loadState();
+  let state = {}; // filled from synced items below
 
   const navEl = document.getElementById("actor-nav");
   const contentEl = document.getElementById("content");
@@ -426,18 +504,86 @@ footer {
   const clearBtn = document.getElementById("clear-btn");
   const sidebarTotal = document.getElementById("sidebar-total");
 
-  function loadState() {
+  // ---- Storage: server sync (per sync code) + localStorage offline cache ----
+  // items: { "<actorId>:<movieId>": { v: 0|1, t: ms } } — last-write-wins per movie.
+  const ITEMS_KEY = "movie-checklist-items-v2";
+  const CODE_KEY = "movie-checklist-sync-code";
+  const DIRTY_KEY = "movie-checklist-sync-dirty";
+  const OFFSET_KEY = "movie-checklist-clock-offset";
+  const API_URL = "/api/sync";
+  const CODE_ALPHABET = "ABCDEFGHJKMNPQRSTUVWXYZ23456789"; // no 0/O/1/I/L
+  const CODE_LEN = 16;
+
+  let items = loadItems();
+  let syncCode = null;
+  let clockOffset = Number(localStorage.getItem(OFFSET_KEY)) || 0;
+  let saveTimer = null;
+  let inflight = null;
+  let syncStatus = "saving";
+  state = loadState();
+
+  function readJSON(key) {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return {};
+      const raw = localStorage.getItem(key);
+      if (!raw) return null;
       const obj = JSON.parse(raw);
-      return obj && typeof obj === "object" ? obj : {};
+      return obj && typeof obj === "object" ? obj : null;
     } catch (e) {
-      return {};
+      return null;
     }
   }
+  function loadItems() {
+    const v2 = readJSON(ITEMS_KEY);
+    if (v2) return v2;
+    // Migrate legacy v1 state ({actorId: [movieId, ...]}) — t=1 so any real server edit wins,
+    // but checks are merged (never dropped) into the server state on first sync.
+    const legacy = readJSON(STORAGE_KEY) || {};
+    const out = {};
+    Object.keys(legacy).forEach((aid) => {
+      if (!Array.isArray(legacy[aid])) return;
+      legacy[aid].forEach((mid) => { out[aid + ":" + mid] = { v: 1, t: 1 }; });
+    });
+    if (Object.keys(out).length) localStorage.setItem(DIRTY_KEY, "1");
+    return out;
+  }
+  function stateFromItems(its) {
+    const st = {};
+    Object.keys(its).forEach((k) => {
+      if (!its[k] || !its[k].v) return;
+      const i = k.indexOf(":");
+      const aid = k.slice(0, i), mid = k.slice(i + 1);
+      (st[aid] = st[aid] || []).push(mid);
+    });
+    return st;
+  }
+  function loadState() {
+    return stateFromItems(items);
+  }
+  function persistLocal() {
+    try {
+      localStorage.setItem(ITEMS_KEY, JSON.stringify(items));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); // keep v1 cache in sync
+    } catch (e) {}
+  }
+  function now() {
+    return Date.now() + clockOffset;
+  }
   function saveState() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    // Rebuild item timestamps from the current `state` (records changes vs. items).
+    const t = now();
+    const want = {};
+    Object.keys(state).forEach((aid) => {
+      (Array.isArray(state[aid]) ? state[aid] : []).forEach((mid) => { want[aid + ":" + mid] = 1; });
+    });
+    Object.keys(items).forEach((k) => {
+      if (items[k].v && !want[k]) items[k] = { v: 0, t };
+    });
+    Object.keys(want).forEach((k) => {
+      if (!items[k] || !items[k].v) items[k] = { v: 1, t };
+    });
+    persistLocal();
+    localStorage.setItem(DIRTY_KEY, "1");
+    scheduleSave();
   }
   function watchedSet(actorId) {
     const arr = state[actorId];
@@ -680,7 +826,189 @@ footer {
       "불확실 표기 예: " + unc.join(" · ");
   }
 
+  // ---- Sync ----
+  const syncCodeEl = document.getElementById("sync-code");
+  const syncStatusEl = document.getElementById("sync-status");
+  const syncPanel = document.getElementById("sync-panel");
+  const syncLinkEl = document.getElementById("sync-link");
+  const syncInput = document.getElementById("sync-input");
+  const syncMsg = document.getElementById("sync-msg");
+
+  function normalizeCode(raw) {
+    return String(raw || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+  }
+  function formatCode(code) {
+    return code.replace(/(.{4})(?=.)/g, "$1-");
+  }
+  function generateCode() {
+    const bytes = new Uint8Array(CODE_LEN);
+    (window.crypto || window.msCrypto).getRandomValues(bytes);
+    let c = "";
+    for (let i = 0; i < CODE_LEN; i++) c += CODE_ALPHABET[bytes[i] % CODE_ALPHABET.length];
+    return c;
+  }
+  function setStatus(st) {
+    syncStatus = st;
+    const label = { saved: "저장됨", saving: "저장 중…", offline: "오프라인 · 이 기기에 임시 저장" }[st] || "";
+    syncStatusEl.textContent = label;
+    syncStatusEl.className = "sync-status " + st;
+  }
+  function showMsg(text, isErr) {
+    syncMsg.textContent = text || "";
+    syncMsg.classList.toggle("err", !!isErr);
+  }
+  function scheduleSave(delay) {
+    setStatus("saving");
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => { sync(); }, delay == null ? 700 : delay);
+  }
+  function applyServerItems(serverItems) {
+    let changed = false;
+    Object.keys(serverItems || {}).forEach((k) => {
+      const inc = serverItems[k], cur = items[k];
+      if (!inc || typeof inc.t !== "number") return;
+      if (!cur || inc.t > cur.t || (inc.t === cur.t && inc.v > cur.v)) {
+        if (!cur || cur.v !== inc.v || cur.t !== inc.t) changed = true;
+        items[k] = { v: inc.v ? 1 : 0, t: inc.t };
+      }
+    });
+    return changed;
+  }
+  // Push local items (server merges, last-write-wins per movie) and pull the merged result.
+  async function sync() {
+    if (!syncCode) return;
+    if (inflight) { scheduleSave(400); return; }
+    const code = syncCode;
+    const sentDirtyAt = localStorage.getItem(DIRTY_KEY);
+    const sentAt = Date.now();
+    inflight = fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ code, items }),
+      cache: "no-store",
+    })
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then((data) => {
+        if (code !== syncCode) return; // switched codes meanwhile
+        if (typeof data.now === "number") {
+          const rtt = Date.now() - sentAt;
+          clockOffset = data.now - (sentAt + rtt / 2);
+          if (Math.abs(clockOffset) < 5000) clockOffset = 0; // ignore small skew
+          localStorage.setItem(OFFSET_KEY, String(Math.round(clockOffset)));
+        }
+        const changed = applyServerItems(data.items);
+        // Clear dirty flag only if nothing changed locally while the request was in flight.
+        if (localStorage.getItem(DIRTY_KEY) === sentDirtyAt) localStorage.removeItem(DIRTY_KEY);
+        if (changed) {
+          state = stateFromItems(items);
+          render();
+        }
+        persistLocal();
+        if (localStorage.getItem(DIRTY_KEY)) scheduleSave(300);
+        else setStatus("saved");
+      })
+      .catch(() => {
+        if (code === syncCode) setStatus("offline");
+      })
+      .finally(() => { inflight = null; });
+    return inflight;
+  }
+  function flushBeacon() {
+    if (!syncCode || !localStorage.getItem(DIRTY_KEY) || !navigator.sendBeacon) return;
+    try {
+      navigator.sendBeacon(API_URL, new Blob([JSON.stringify({ code: syncCode, items })], { type: "application/json" }));
+    } catch (e) {}
+  }
+
+  function initSync() {
+    let code = normalizeCode(localStorage.getItem(CODE_KEY));
+    const first = code.length < 12;
+    if (first) {
+      code = generateCode();
+      localStorage.setItem(CODE_KEY, code);
+      localStorage.setItem(DIRTY_KEY, "1");
+      syncPanel.classList.add("first");
+      showMsg("새 동기화 코드가 만들어졌어요. 다른 기기에서 이어보려면 이 코드를 복사해 두세요.");
+    }
+    syncCode = code;
+    syncCodeEl.textContent = formatCode(code);
+    setStatus("saving");
+    sync();
+  }
+
+  document.getElementById("sync-copy").addEventListener("click", () => {
+    const text = formatCode(syncCode || "");
+    const done = () => showMsg("코드를 복사했어요: " + text);
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+    } else fallbackCopy(text, done);
+  });
+  function fallbackCopy(text, done) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) { showMsg("복사에 실패했어요. 코드를 길게 눌러 직접 복사해 주세요.", true); }
+    ta.remove();
+  }
+  document.getElementById("sync-link-toggle").addEventListener("click", () => {
+    syncLinkEl.classList.toggle("show");
+    if (syncLinkEl.classList.contains("show")) syncInput.focus();
+  });
+  async function connectCode() {
+    const code = normalizeCode(syncInput.value);
+    if (code.length < 12 || code.length > 64) {
+      showMsg("코드 형식이 올바르지 않아요. 다른 기기에 표시된 코드를 그대로 입력해 주세요.", true);
+      return;
+    }
+    if (code === syncCode) { showMsg("이미 이 코드로 연결되어 있어요."); return; }
+    showMsg("연결 중…");
+    try {
+      const r = await fetch(API_URL + "?code=" + encodeURIComponent(code), { cache: "no-store" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const data = await r.json();
+      if (!data.exists && !confirm("이 코드로 저장된 기록이 아직 없어요. 그래도 이 코드로 연결할까요?")) {
+        showMsg("");
+        return;
+      }
+      // Switch codes; this device's checks are merged into the connected code (nothing is lost).
+      syncCode = code;
+      localStorage.setItem(CODE_KEY, code);
+      localStorage.setItem(DIRTY_KEY, "1");
+      syncCodeEl.textContent = formatCode(code);
+      syncPanel.classList.remove("first");
+      applyServerItems(data.items);
+      state = stateFromItems(items);
+      persistLocal();
+      render();
+      syncInput.value = "";
+      syncLinkEl.classList.remove("show");
+      showMsg("연결됐어요. 이 기기의 체크 기록도 함께 합쳐 저장합니다.");
+      scheduleSave(0);
+    } catch (e) {
+      showMsg("서버에 연결하지 못했어요. 인터넷 연결을 확인한 뒤 다시 시도해 주세요.", true);
+    }
+  }
+  document.getElementById("sync-connect").addEventListener("click", connectCode);
+  syncInput.addEventListener("keydown", (e) => { if (e.key === "Enter") connectCode(); });
+
+  window.addEventListener("online", () => scheduleSave(0));
+  window.addEventListener("offline", () => setStatus("offline"));
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") scheduleSave(0); // pull changes from other devices
+    else flushBeacon();
+  });
+  window.addEventListener("pagehide", flushBeacon);
+  setInterval(() => {
+    if (document.visibilityState !== "visible") return;
+    if (syncStatus === "offline" || localStorage.getItem(DIRTY_KEY)) sync();
+  }, 20000);
+
   render();
+  initSync();
 })();
 </script>
 </body>
