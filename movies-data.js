@@ -1508,6 +1508,38 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": ""
         },
         {
+          "id": "hammers-anvil",
+          "year": 1993,
+          "en": "Hammers Over the Anvil",
+          "ko": "해머스 오버 디 앤빌",
+          "genre": "드라마",
+          "note": ""
+        },
+        {
+          "id": "silver-brumby",
+          "year": 1993,
+          "en": "The Silver Brumby",
+          "ko": "실버 브럼비",
+          "genre": "가족/어드벤처",
+          "note": ""
+        },
+        {
+          "id": "for-the-moment",
+          "year": 1993,
+          "en": "For the Moment",
+          "ko": "포 더 모먼트",
+          "genre": "전쟁/로맨스",
+          "note": ""
+        },
+        {
+          "id": "love-in-limbo",
+          "year": 1993,
+          "en": "Love in Limbo",
+          "ko": "러브 인 림보",
+          "genre": "코미디",
+          "note": ""
+        },
+        {
           "id": "sum-of-us",
           "year": 1994,
           "en": "The Sum of Us",
@@ -1540,6 +1572,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": ""
         },
         {
+          "id": "rough-magic",
+          "year": 1995,
+          "en": "Rough Magic",
+          "ko": "러프 매직",
+          "genre": "어드벤처/코미디",
+          "note": ""
+        },
+        {
           "id": "la-confidential",
           "year": 1997,
           "en": "L.A. Confidential",
@@ -1553,6 +1593,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Heaven's Burning",
           "ko": "헤븐스 버닝",
           "genre": "액션/드라마",
+          "note": ""
+        },
+        {
+          "id": "breaking-up",
+          "year": 1997,
+          "en": "Breaking Up",
+          "ko": "브레이킹 업",
+          "genre": "로맨스/코미디",
           "note": ""
         },
         {
@@ -1644,6 +1692,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": ""
         },
         {
+          "id": "tenderness",
+          "year": 2009,
+          "en": "Tenderness",
+          "ko": "텐더니스",
+          "genre": "범죄/스릴러",
+          "note": ""
+        },
+        {
           "id": "state-of-play",
           "year": 2009,
           "en": "State of Play",
@@ -1665,6 +1721,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Next Three Days",
           "ko": "넥스트 쓰리 데이즈",
           "genre": "스릴러",
+          "note": ""
+        },
+        {
+          "id": "iron-fists",
+          "year": 2012,
+          "en": "The Man with the Iron Fists",
+          "ko": "철권을 가진 사나이",
+          "genre": "액션/무협",
           "note": ""
         },
         {
@@ -1748,6 +1812,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": ""
         },
         {
+          "id": "kelly-gang",
+          "year": 2019,
+          "en": "True History of the Kelly Gang",
+          "ko": "켈리 갱",
+          "genre": "범죄/드라마",
+          "note": ""
+        },
+        {
           "id": "unhinged",
           "year": 2020,
           "en": "Unhinged",
@@ -1762,6 +1834,22 @@ window.MOVIE_CHECKLIST_DATA = {
           "ko": "토르: 러브 앤 썬더",
           "genre": "슈퍼히어로",
           "note": ""
+        },
+        {
+          "id": "prizefighter",
+          "year": 2022,
+          "en": "Prizefighter: The Life of Jem Belcher",
+          "ko": "더 챔피언",
+          "genre": "전기/스포츠",
+          "note": ""
+        },
+        {
+          "id": "greatest-beer-run",
+          "year": 2022,
+          "en": "The Greatest Beer Run Ever",
+          "ko": "지상 최대 맥주 배달 작전",
+          "genre": "전쟁/코미디",
+          "note": "Apple TV+"
         },
         {
           "id": "poker-face",
@@ -1817,6 +1905,30 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nuremberg",
           "ko": "뉘른베르크",
           "genre": "역사/드라마",
+          "note": ""
+        },
+        {
+          "id": "the-weight",
+          "year": 2026,
+          "en": "The Weight",
+          "ko": "더 웨이트",
+          "genre": "드라마/스릴러",
+          "note": ""
+        },
+        {
+          "id": "beast-rc",
+          "year": 2026,
+          "en": "Beast",
+          "ko": "비스트",
+          "genre": "스포츠/액션",
+          "note": "각본 참여"
+        },
+        {
+          "id": "the-get-out",
+          "year": 2026,
+          "en": "The Get Out",
+          "ko": "겟 아웃: 와일드 시티",
+          "genre": "액션/코미디",
           "note": ""
         }
       ]
@@ -4689,6 +4801,8 @@ window.MOVIE_CHECKLIST_DATA = {
     "Gerard Butler: Butterfly on a Wheel — 한국명 '샤터드'로도 표기",
     "Tom Hardy: Thick as Thieves — 한국 개봉명 불확실 (시크 애즈 띠브즈)",
     "Russell Crowe: Prisoners of the Sun — 일명 Blood Oath",
+    "Russell Crowe: The Weight — 한국 개봉명 미확인 (더 웨이트)",
+    "Russell Crowe: Gladiator II — 아카이브 영상만 사용되어 출연작에서 제외",
     "Matt Damon: Glory Daze 등 초기 소작 일부 제외",
     "Keanu Reeves: Generation Um... / Exposed 등 일부 저예산작 제외 또는 제한 포함",
     "Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실"
