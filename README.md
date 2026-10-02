@@ -2,7 +2,7 @@
 
 장편 출연작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 15명** · 총 **586편**
+**배우 16명** · 총 **627편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -21,6 +21,7 @@
 | 마고 로비 | Margot Robbie | 22 |
 | 키아누 리브스 | Keanu Reeves | 56 |
 | 휴 잭맨 | Hugh Jackman | 33 |
+| 드웨인 존슨 | Dwayne Johnson | 41 |
 
 ## 사용
 - `index.html` 을 브라우저에서 열거나 Vercel 배포 URL로 접속
@@ -51,3 +52,4 @@
 - Matt Damon: Glory Daze 등 초기 소작 일부 제외
 - Keanu Reeves: Generation Um... / Exposed 등 일부 저예산작 제외 또는 제한 포함
 - Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실
+- Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외
