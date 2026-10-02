@@ -4794,6 +4794,341 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": ""
         }
       ]
+    },
+    {
+      "id": "dwayne",
+      "nameKo": "드웨인 존슨",
+      "nameEn": "Dwayne Johnson",
+      "movies": [
+        {
+          "id": "mummy-returns",
+          "year": 2001,
+          "en": "The Mummy Returns",
+          "ko": "미이라 2",
+          "genre": "액션/어드벤처",
+          "note": "장편 데뷔"
+        },
+        {
+          "id": "scorpion-king",
+          "year": 2002,
+          "en": "The Scorpion King",
+          "ko": "스코피언 킹",
+          "genre": "액션/판타지",
+          "note": "첫 주연"
+        },
+        {
+          "id": "the-rundown",
+          "year": 2003,
+          "en": "The Rundown",
+          "ko": "웰컴 투 더 정글",
+          "genre": "액션/코미디",
+          "note": ""
+        },
+        {
+          "id": "walking-tall",
+          "year": 2004,
+          "en": "Walking Tall",
+          "ko": "워킹 톨",
+          "genre": "액션",
+          "note": ""
+        },
+        {
+          "id": "be-cool",
+          "year": 2005,
+          "en": "Be Cool",
+          "ko": "쿨!",
+          "genre": "범죄/코미디",
+          "note": ""
+        },
+        {
+          "id": "doom",
+          "year": 2005,
+          "en": "Doom",
+          "ko": "둠",
+          "genre": "SF/액션",
+          "note": ""
+        },
+        {
+          "id": "southland-tales",
+          "year": 2006,
+          "en": "Southland Tales",
+          "ko": "사우스랜드 테일",
+          "genre": "SF/코미디",
+          "note": ""
+        },
+        {
+          "id": "gridiron-gang",
+          "year": 2006,
+          "en": "Gridiron Gang",
+          "ko": "그리다이언 갱",
+          "genre": "스포츠/드라마",
+          "note": ""
+        },
+        {
+          "id": "game-plan",
+          "year": 2007,
+          "en": "The Game Plan",
+          "ko": "게임 플랜",
+          "genre": "코미디",
+          "note": ""
+        },
+        {
+          "id": "get-smart",
+          "year": 2008,
+          "en": "Get Smart",
+          "ko": "겟 스마트",
+          "genre": "액션/코미디",
+          "note": ""
+        },
+        {
+          "id": "race-to-witch-mountain",
+          "year": 2009,
+          "en": "Race to Witch Mountain",
+          "ko": "윗치 마운틴",
+          "genre": "SF/어드벤처",
+          "note": ""
+        },
+        {
+          "id": "planet-51",
+          "year": 2009,
+          "en": "Planet 51",
+          "ko": "플래닛 51",
+          "genre": "애니메이션",
+          "note": "목소리"
+        },
+        {
+          "id": "tooth-fairy",
+          "year": 2010,
+          "en": "Tooth Fairy",
+          "ko": "미스터 이빨요정",
+          "genre": "코미디",
+          "note": ""
+        },
+        {
+          "id": "the-other-guys",
+          "year": 2010,
+          "en": "The Other Guys",
+          "ko": "스탠바이 캅",
+          "genre": "액션/코미디",
+          "note": "조연"
+        },
+        {
+          "id": "faster",
+          "year": 2010,
+          "en": "Faster",
+          "ko": "복수자",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "fast-five",
+          "year": 2011,
+          "en": "Fast Five",
+          "ko": "분노의 질주: 언리미티드",
+          "genre": "액션",
+          "note": "루크 홉스 첫 등장"
+        },
+        {
+          "id": "journey-2",
+          "year": 2012,
+          "en": "Journey 2: The Mysterious Island",
+          "ko": "잃어버린 세계를 찾아서 2: 신비의 섬",
+          "genre": "어드벤처",
+          "note": ""
+        },
+        {
+          "id": "snitch",
+          "year": 2013,
+          "en": "Snitch",
+          "ko": "스니치",
+          "genre": "범죄/스릴러",
+          "note": ""
+        },
+        {
+          "id": "gi-joe-retaliation",
+          "year": 2013,
+          "en": "G.I. Joe: Retaliation",
+          "ko": "지.아이.조 2",
+          "genre": "SF/액션",
+          "note": ""
+        },
+        {
+          "id": "pain-and-gain",
+          "year": 2013,
+          "en": "Pain & Gain",
+          "ko": "페인 앤 게인",
+          "genre": "범죄/코미디",
+          "note": ""
+        },
+        {
+          "id": "fast-and-furious-6",
+          "year": 2013,
+          "en": "Fast & Furious 6",
+          "ko": "분노의 질주: 더 맥시멈",
+          "genre": "액션",
+          "note": ""
+        },
+        {
+          "id": "hercules",
+          "year": 2014,
+          "en": "Hercules",
+          "ko": "허큘리스",
+          "genre": "액션/판타지",
+          "note": ""
+        },
+        {
+          "id": "furious-7",
+          "year": 2015,
+          "en": "Furious 7",
+          "ko": "분노의 질주: 더 세븐",
+          "genre": "액션",
+          "note": ""
+        },
+        {
+          "id": "san-andreas",
+          "year": 2015,
+          "en": "San Andreas",
+          "ko": "샌 안드레아스",
+          "genre": "재난/액션",
+          "note": ""
+        },
+        {
+          "id": "central-intelligence",
+          "year": 2016,
+          "en": "Central Intelligence",
+          "ko": "센트럴 인텔리전스",
+          "genre": "액션/코미디",
+          "note": ""
+        },
+        {
+          "id": "moana",
+          "year": 2016,
+          "en": "Moana",
+          "ko": "모아나",
+          "genre": "애니메이션",
+          "note": "목소리 · 마우이"
+        },
+        {
+          "id": "fate-of-the-furious",
+          "year": 2017,
+          "en": "The Fate of the Furious",
+          "ko": "분노의 질주: 더 익스트림",
+          "genre": "액션",
+          "note": ""
+        },
+        {
+          "id": "baywatch",
+          "year": 2017,
+          "en": "Baywatch",
+          "ko": "베이워치: SOS 해상 구조대",
+          "genre": "액션/코미디",
+          "note": ""
+        },
+        {
+          "id": "jumanji-welcome",
+          "year": 2017,
+          "en": "Jumanji: Welcome to the Jungle",
+          "ko": "쥬만지: 새로운 세계",
+          "genre": "어드벤처/코미디",
+          "note": ""
+        },
+        {
+          "id": "rampage",
+          "year": 2018,
+          "en": "Rampage",
+          "ko": "램페이지",
+          "genre": "SF/액션",
+          "note": ""
+        },
+        {
+          "id": "skyscraper",
+          "year": 2018,
+          "en": "Skyscraper",
+          "ko": "스카이스크래퍼",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "hobbs-and-shaw",
+          "year": 2019,
+          "en": "Fast & Furious Presents: Hobbs & Shaw",
+          "ko": "분노의 질주: 홉스&쇼",
+          "genre": "액션",
+          "note": "스핀오프"
+        },
+        {
+          "id": "jumanji-next-level",
+          "year": 2019,
+          "en": "Jumanji: The Next Level",
+          "ko": "쥬만지: 넥스트 레벨",
+          "genre": "어드벤처/코미디",
+          "note": ""
+        },
+        {
+          "id": "jungle-cruise",
+          "year": 2021,
+          "en": "Jungle Cruise",
+          "ko": "정글 크루즈",
+          "genre": "어드벤처",
+          "note": ""
+        },
+        {
+          "id": "red-notice",
+          "year": 2021,
+          "en": "Red Notice",
+          "ko": "레드 노티스",
+          "genre": "액션/코미디",
+          "note": "Netflix"
+        },
+        {
+          "id": "dc-super-pets",
+          "year": 2022,
+          "en": "DC League of Super-Pets",
+          "ko": "DC 리그 오브 슈퍼-펫",
+          "genre": "애니메이션",
+          "note": "목소리 · 크립토"
+        },
+        {
+          "id": "black-adam",
+          "year": 2022,
+          "en": "Black Adam",
+          "ko": "블랙 아담",
+          "genre": "슈퍼히어로",
+          "note": ""
+        },
+        {
+          "id": "red-one",
+          "year": 2024,
+          "en": "Red One",
+          "ko": "레드 원",
+          "genre": "액션/코미디",
+          "note": ""
+        },
+        {
+          "id": "moana-2",
+          "year": 2024,
+          "en": "Moana 2",
+          "ko": "모아나 2",
+          "genre": "애니메이션",
+          "note": "목소리 · 마우이"
+        },
+        {
+          "id": "smashing-machine",
+          "year": 2025,
+          "en": "The Smashing Machine",
+          "ko": "더 스매싱 머신",
+          "genre": "전기/스포츠",
+          "note": "골든글로브 남우주연 후보"
+        },
+        {
+          "id": "moana-live-action",
+          "year": 2026,
+          "en": "Moana",
+          "ko": "모아나",
+          "genre": "뮤지컬/어드벤처",
+          "note": "실사판 · 마우이"
+        }
+      ]
     }
   ],
   "uncertainTitles": [
@@ -4805,6 +5140,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Russell Crowe: Gladiator II — 아카이브 영상만 사용되어 출연작에서 제외",
     "Matt Damon: Glory Daze 등 초기 소작 일부 제외",
     "Keanu Reeves: Generation Um... / Exposed 등 일부 저예산작 제외 또는 제한 포함",
-    "Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실"
+    "Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실",
+    "Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외"
   ]
 };
