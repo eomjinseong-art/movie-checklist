@@ -4806,7 +4806,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mummy Returns",
           "ko": "미이라 2",
           "genre": "액션/어드벤처",
-          "note": "장편 데뷔"
+          "note": "장편 데뷔 · 스콜피언 킹"
         },
         {
           "id": "scorpion-king",
@@ -4814,7 +4814,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Scorpion King",
           "ko": "스코피언 킹",
           "genre": "액션/판타지",
-          "note": "첫 주연"
+          "note": "첫 주연 · 마타이어스"
         },
         {
           "id": "the-rundown",
@@ -4822,7 +4822,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Rundown",
           "ko": "웰컴 투 더 정글",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "회수 전문가 벡"
         },
         {
           "id": "walking-tall",
@@ -4830,7 +4830,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Walking Tall",
           "ko": "워킹 톨",
           "genre": "액션",
-          "note": ""
+          "note": "크리스 본"
         },
         {
           "id": "be-cool",
@@ -4838,7 +4838,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Be Cool",
           "ko": "쿨!",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "보디가드 엘리엇"
         },
         {
           "id": "doom",
@@ -4846,7 +4846,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Doom",
           "ko": "둠",
           "genre": "SF/액션",
-          "note": ""
+          "note": "사지(Sarge)"
         },
         {
           "id": "southland-tales",
@@ -4854,7 +4854,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Southland Tales",
           "ko": "사우스랜드 테일",
           "genre": "SF/코미디",
-          "note": ""
+          "note": "박서 산타로스"
         },
         {
           "id": "gridiron-gang",
@@ -4862,7 +4862,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gridiron Gang",
           "ko": "그리다이언 갱",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "실화 바탕 · 숀 포터"
         },
         {
           "id": "game-plan",
@@ -4870,7 +4870,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Game Plan",
           "ko": "게임 플랜",
           "genre": "코미디",
-          "note": ""
+          "note": "쿼터백 조 킹먼"
         },
         {
           "id": "get-smart",
@@ -4878,7 +4878,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Get Smart",
           "ko": "겟 스마트",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "에이전트 23"
         },
         {
           "id": "race-to-witch-mountain",
@@ -4886,7 +4886,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Race to Witch Mountain",
           "ko": "윗치 마운틴",
           "genre": "SF/어드벤처",
-          "note": ""
+          "note": "택시 기사 잭 브루노"
         },
         {
           "id": "planet-51",
@@ -4894,7 +4894,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Planet 51",
           "ko": "플래닛 51",
           "genre": "애니메이션",
-          "note": "목소리"
+          "note": "목소리 출연 · 척 베이커 선장"
         },
         {
           "id": "tooth-fairy",
@@ -4902,7 +4902,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tooth Fairy",
           "ko": "미스터 이빨요정",
           "genre": "코미디",
-          "note": ""
+          "note": "데릭 톰프슨"
         },
         {
           "id": "the-other-guys",
@@ -4910,7 +4910,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Other Guys",
           "ko": "스탠바이 캅",
           "genre": "액션/코미디",
-          "note": "조연"
+          "note": "조연 · 하이스미스 형사"
         },
         {
           "id": "faster",
@@ -4918,7 +4918,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Faster",
           "ko": "복수자",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "드라이버"
         },
         {
           "id": "fast-five",
@@ -4934,7 +4934,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Journey 2: The Mysterious Island",
           "ko": "잃어버린 세계를 찾아서 2: 신비의 섬",
           "genre": "어드벤처",
-          "note": ""
+          "note": "행크"
         },
         {
           "id": "snitch",
@@ -4942,7 +4942,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Snitch",
           "ko": "스니치",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "존 매튜스"
         },
         {
           "id": "gi-joe-retaliation",
@@ -4950,7 +4950,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "G.I. Joe: Retaliation",
           "ko": "지.아이.조 2",
           "genre": "SF/액션",
-          "note": ""
+          "note": "로드블록"
         },
         {
           "id": "pain-and-gain",
@@ -4958,7 +4958,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Pain & Gain",
           "ko": "페인 앤 게인",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "실화 바탕 · 폴 도일"
         },
         {
           "id": "fast-and-furious-6",
@@ -4966,7 +4966,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fast & Furious 6",
           "ko": "분노의 질주: 더 맥시멈",
           "genre": "액션",
-          "note": ""
+          "note": "루크 홉스"
         },
         {
           "id": "hercules",
@@ -4974,7 +4974,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hercules",
           "ko": "허큘리스",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "허큘리스 역"
         },
         {
           "id": "furious-7",
@@ -4982,7 +4982,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Furious 7",
           "ko": "분노의 질주: 더 세븐",
           "genre": "액션",
-          "note": ""
+          "note": "루크 홉스"
         },
         {
           "id": "san-andreas",
@@ -4990,7 +4990,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "San Andreas",
           "ko": "샌 안드레아스",
           "genre": "재난/액션",
-          "note": ""
+          "note": "구조헬기 조종사 레이"
         },
         {
           "id": "central-intelligence",
@@ -4998,7 +4998,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Central Intelligence",
           "ko": "센트럴 인텔리전스",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "밥 스톤 · 케빈 하트 공연"
         },
         {
           "id": "moana",
@@ -5006,7 +5006,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Moana",
           "ko": "모아나",
           "genre": "애니메이션",
-          "note": "목소리 · 마우이"
+          "note": "목소리 출연 · 마우이"
         },
         {
           "id": "fate-of-the-furious",
@@ -5014,7 +5014,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Fate of the Furious",
           "ko": "분노의 질주: 더 익스트림",
           "genre": "액션",
-          "note": ""
+          "note": "루크 홉스"
         },
         {
           "id": "baywatch",
@@ -5022,7 +5022,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Baywatch",
           "ko": "베이워치: SOS 해상 구조대",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "미치 뷰캐넌"
         },
         {
           "id": "jumanji-welcome",
@@ -5030,7 +5030,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jumanji: Welcome to the Jungle",
           "ko": "쥬만지: 새로운 세계",
           "genre": "어드벤처/코미디",
-          "note": ""
+          "note": "브레이브스톤 박사"
         },
         {
           "id": "rampage",
@@ -5038,7 +5038,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rampage",
           "ko": "램페이지",
           "genre": "SF/액션",
-          "note": ""
+          "note": "영장류학자 데이비스 오코예"
         },
         {
           "id": "skyscraper",
@@ -5046,7 +5046,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Skyscraper",
           "ko": "스카이스크래퍼",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "윌 소여"
         },
         {
           "id": "hobbs-and-shaw",
@@ -5054,7 +5054,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fast & Furious Presents: Hobbs & Shaw",
           "ko": "분노의 질주: 홉스&쇼",
           "genre": "액션",
-          "note": "스핀오프"
+          "note": "스핀오프 · 루크 홉스"
         },
         {
           "id": "jumanji-next-level",
@@ -5062,7 +5062,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jumanji: The Next Level",
           "ko": "쥬만지: 넥스트 레벨",
           "genre": "어드벤처/코미디",
-          "note": ""
+          "note": "브레이브스톤 박사"
         },
         {
           "id": "jungle-cruise",
@@ -5070,7 +5070,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jungle Cruise",
           "ko": "정글 크루즈",
           "genre": "어드벤처",
-          "note": ""
+          "note": "프랭크 선장"
         },
         {
           "id": "red-notice",
@@ -5078,7 +5078,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Red Notice",
           "ko": "레드 노티스",
           "genre": "액션/코미디",
-          "note": "Netflix"
+          "note": "Netflix · FBI 요원 하틀리"
         },
         {
           "id": "dc-super-pets",
@@ -5086,7 +5086,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "DC League of Super-Pets",
           "ko": "DC 리그 오브 슈퍼-펫",
           "genre": "애니메이션",
-          "note": "목소리 · 크립토"
+          "note": "목소리 출연 · 크립토"
         },
         {
           "id": "black-adam",
@@ -5094,7 +5094,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Black Adam",
           "ko": "블랙 아담",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "블랙 아담 역"
         },
         {
           "id": "red-one",
@@ -5102,7 +5102,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Red One",
           "ko": "레드 원",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "칼럼 드리프트"
         },
         {
           "id": "moana-2",
@@ -5110,7 +5110,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Moana 2",
           "ko": "모아나 2",
           "genre": "애니메이션",
-          "note": "목소리 · 마우이"
+          "note": "목소리 출연 · 마우이"
         },
         {
           "id": "smashing-machine",
@@ -5118,7 +5118,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Smashing Machine",
           "ko": "더 스매싱 머신",
           "genre": "전기/스포츠",
-          "note": "골든글로브 남우주연 후보"
+          "note": "마크 커 · 골든글로브 남우주연 후보"
         },
         {
           "id": "moana-live-action",
@@ -5127,6 +5127,733 @@ window.MOVIE_CHECKLIST_DATA = {
           "ko": "모아나",
           "genre": "뮤지컬/어드벤처",
           "note": "실사판 · 마우이"
+        }
+      ]
+    },
+    {
+      "id": "liam",
+      "nameKo": "리암 니슨",
+      "nameEn": "Liam Neeson",
+      "movies": [
+        {
+          "id": "excalibur",
+          "year": 1981,
+          "en": "Excalibur",
+          "ko": "엑스칼리버",
+          "genre": "판타지/어드벤처",
+          "note": "가웨인 역"
+        },
+        {
+          "id": "krull",
+          "year": 1983,
+          "en": "Krull",
+          "ko": "혹성의 위기",
+          "genre": "판타지/SF",
+          "note": "케건 역"
+        },
+        {
+          "id": "the-bounty",
+          "year": 1984,
+          "en": "The Bounty",
+          "ko": "바운티 호의 반란",
+          "genre": "역사/드라마",
+          "note": "찰스 처칠 역"
+        },
+        {
+          "id": "lamb",
+          "year": 1985,
+          "en": "Lamb",
+          "ko": "램",
+          "genre": "드라마",
+          "note": "주연 · 마이클 램 수사"
+        },
+        {
+          "id": "the-innocent",
+          "year": 1985,
+          "en": "The Innocent",
+          "ko": "이노센트",
+          "genre": "드라마",
+          "note": ""
+        },
+        {
+          "id": "the-mission",
+          "year": 1986,
+          "en": "The Mission",
+          "ko": "미션",
+          "genre": "역사/드라마",
+          "note": "필딩 신부"
+        },
+        {
+          "id": "duet-for-one",
+          "year": 1986,
+          "en": "Duet for One",
+          "ko": "듀엣 포 원",
+          "genre": "드라마",
+          "note": ""
+        },
+        {
+          "id": "suspect",
+          "year": 1987,
+          "en": "Suspect",
+          "ko": "의혹의 밤",
+          "genre": "법정/스릴러",
+          "note": "청각장애 노숙인 용의자"
+        },
+        {
+          "id": "prayer-for-the-dying",
+          "year": 1987,
+          "en": "A Prayer for the Dying",
+          "ko": "죽는 자를 위한 기도",
+          "genre": "범죄/스릴러",
+          "note": ""
+        },
+        {
+          "id": "satisfaction",
+          "year": 1988,
+          "en": "Satisfaction",
+          "ko": "새티스팩션",
+          "genre": "드라마/음악",
+          "note": ""
+        },
+        {
+          "id": "high-spirits",
+          "year": 1988,
+          "en": "High Spirits",
+          "ko": "유령 호텔",
+          "genre": "판타지/코미디",
+          "note": ""
+        },
+        {
+          "id": "the-dead-pool",
+          "year": 1988,
+          "en": "The Dead Pool",
+          "ko": "더티 해리 5: 추적자",
+          "genre": "범죄/액션",
+          "note": "더티 해리 5편 · 피터 스완"
+        },
+        {
+          "id": "the-good-mother",
+          "year": 1988,
+          "en": "The Good Mother",
+          "ko": "모정",
+          "genre": "드라마",
+          "note": ""
+        },
+        {
+          "id": "next-of-kin",
+          "year": 1989,
+          "en": "Next of Kin",
+          "ko": "불타는 복수",
+          "genre": "액션/범죄",
+          "note": ""
+        },
+        {
+          "id": "darkman",
+          "year": 1990,
+          "en": "Darkman",
+          "ko": "다크맨",
+          "genre": "슈퍼히어로",
+          "note": "샘 레이미 연출 · 다크맨"
+        },
+        {
+          "id": "the-big-man",
+          "year": 1990,
+          "en": "The Big Man",
+          "ko": "위대한 챔피언",
+          "genre": "드라마/스포츠",
+          "note": ""
+        },
+        {
+          "id": "under-suspicion",
+          "year": 1991,
+          "en": "Under Suspicion",
+          "ko": "써스피션",
+          "genre": "스릴러",
+          "note": ""
+        },
+        {
+          "id": "shining-through",
+          "year": 1992,
+          "en": "Shining Through",
+          "ko": "사랑의 용기",
+          "genre": "전쟁/드라마",
+          "note": ""
+        },
+        {
+          "id": "husbands-and-wives",
+          "year": 1992,
+          "en": "Husbands and Wives",
+          "ko": "우디 알렌의 부부일기",
+          "genre": "드라마/코미디",
+          "note": "우디 앨런 연출"
+        },
+        {
+          "id": "leap-of-faith",
+          "year": 1992,
+          "en": "Leap of Faith",
+          "ko": "기적 만들기",
+          "genre": "드라마/코미디",
+          "note": "보안관 윌"
+        },
+        {
+          "id": "ethan-frome",
+          "year": 1993,
+          "en": "Ethan Frome",
+          "ko": "에단 프롬",
+          "genre": "로맨스/드라마",
+          "note": "타이틀롤"
+        },
+        {
+          "id": "ruby-cairo",
+          "year": 1993,
+          "en": "Ruby Cairo",
+          "ko": "베일 속의 카이로",
+          "genre": "스릴러",
+          "note": ""
+        },
+        {
+          "id": "schindlers-list",
+          "year": 1993,
+          "en": "Schindler's List",
+          "ko": "쉰들러 리스트",
+          "genre": "전기/드라마",
+          "note": "오스카 쉰들러 · 오스카 남우주연 후보"
+        },
+        {
+          "id": "nell",
+          "year": 1994,
+          "en": "Nell",
+          "ko": "넬",
+          "genre": "드라마",
+          "note": "제리 러벨 박사"
+        },
+        {
+          "id": "rob-roy",
+          "year": 1995,
+          "en": "Rob Roy",
+          "ko": "롭 로이",
+          "genre": "역사/드라마",
+          "note": "타이틀롤"
+        },
+        {
+          "id": "before-and-after",
+          "year": 1996,
+          "en": "Before and After",
+          "ko": "비포 앤 애프터",
+          "genre": "드라마",
+          "note": "메릴 스트립 공연"
+        },
+        {
+          "id": "michael-collins",
+          "year": 1996,
+          "en": "Michael Collins",
+          "ko": "마이클 콜린스",
+          "genre": "전기/드라마",
+          "note": "베니스 남우주연상 수상"
+        },
+        {
+          "id": "les-miserables",
+          "year": 1998,
+          "en": "Les Misérables",
+          "ko": "레 미제라블",
+          "genre": "드라마",
+          "note": "장 발장 역"
+        },
+        {
+          "id": "phantom-menace",
+          "year": 1999,
+          "en": "Star Wars: Episode I – The Phantom Menace",
+          "ko": "스타워즈 에피소드 1: 보이지 않는 위험",
+          "genre": "SF/판타지",
+          "note": "콰이곤 진"
+        },
+        {
+          "id": "the-haunting",
+          "year": 1999,
+          "en": "The Haunting",
+          "ko": "더 헌팅",
+          "genre": "공포",
+          "note": "매로우 박사"
+        },
+        {
+          "id": "gun-shy",
+          "year": 2000,
+          "en": "Gun Shy",
+          "ko": "건 샤이",
+          "genre": "범죄/코미디",
+          "note": "DEA 요원 찰리"
+        },
+        {
+          "id": "k-19",
+          "year": 2002,
+          "en": "K-19: The Widowmaker",
+          "ko": "K-19",
+          "genre": "전쟁/스릴러",
+          "note": "해리슨 포드 공연"
+        },
+        {
+          "id": "gangs-of-new-york",
+          "year": 2002,
+          "en": "Gangs of New York",
+          "ko": "갱스 오브 뉴욕",
+          "genre": "범죄/드라마",
+          "note": "프리스트 발론"
+        },
+        {
+          "id": "love-actually",
+          "year": 2003,
+          "en": "Love Actually",
+          "ko": "러브 액츄얼리",
+          "genre": "로맨스/코미디",
+          "note": "다니엘 역"
+        },
+        {
+          "id": "kinsey",
+          "year": 2004,
+          "en": "Kinsey",
+          "ko": "킨제이 보고서",
+          "genre": "전기/드라마",
+          "note": "앨프리드 킨제이 · 골든글로브 남우주연 후보"
+        },
+        {
+          "id": "kingdom-of-heaven",
+          "year": 2005,
+          "en": "Kingdom of Heaven",
+          "ko": "킹덤 오브 헤븐",
+          "genre": "역사/액션",
+          "note": "이벨린의 고프리"
+        },
+        {
+          "id": "batman-begins",
+          "year": 2005,
+          "en": "Batman Begins",
+          "ko": "배트맨 비긴즈",
+          "genre": "슈퍼히어로",
+          "note": "라스 알 굴"
+        },
+        {
+          "id": "breakfast-on-pluto",
+          "year": 2005,
+          "en": "Breakfast on Pluto",
+          "ko": "플루토에서 아침을",
+          "genre": "드라마/코미디",
+          "note": "리암 신부"
+        },
+        {
+          "id": "narnia-1",
+          "year": 2005,
+          "en": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+          "ko": "나니아 연대기: 사자, 마녀 그리고 옷장",
+          "genre": "판타지",
+          "note": "목소리 출연 · 아슬란"
+        },
+        {
+          "id": "seraphim-falls",
+          "year": 2007,
+          "en": "Seraphim Falls",
+          "ko": "세라핌 폴스",
+          "genre": "서부/액션",
+          "note": "피어스 브로스넌 공연"
+        },
+        {
+          "id": "narnia-2",
+          "year": 2008,
+          "en": "The Chronicles of Narnia: Prince Caspian",
+          "ko": "나니아 연대기: 캐스피언 왕자",
+          "genre": "판타지",
+          "note": "목소리 출연 · 아슬란"
+        },
+        {
+          "id": "the-other-man",
+          "year": 2008,
+          "en": "The Other Man",
+          "ko": "디 아더 맨",
+          "genre": "드라마/스릴러",
+          "note": ""
+        },
+        {
+          "id": "taken",
+          "year": 2008,
+          "en": "Taken",
+          "ko": "테이큰",
+          "genre": "액션/스릴러",
+          "note": "브라이언 밀스 첫 등장"
+        },
+        {
+          "id": "five-minutes-of-heaven",
+          "year": 2009,
+          "en": "Five Minutes of Heaven",
+          "ko": "천국에서의 5분간",
+          "genre": "드라마",
+          "note": ""
+        },
+        {
+          "id": "after-life",
+          "year": 2009,
+          "en": "After.Life",
+          "ko": "애프터 라이프",
+          "genre": "스릴러",
+          "note": "장의사 엘리엇"
+        },
+        {
+          "id": "chloe",
+          "year": 2009,
+          "en": "Chloe",
+          "ko": "클로이",
+          "genre": "스릴러",
+          "note": ""
+        },
+        {
+          "id": "clash-of-the-titans",
+          "year": 2010,
+          "en": "Clash of the Titans",
+          "ko": "타이탄",
+          "genre": "판타지/액션",
+          "note": "제우스"
+        },
+        {
+          "id": "the-a-team",
+          "year": 2010,
+          "en": "The A-Team",
+          "ko": "A-특공대",
+          "genre": "액션",
+          "note": "한니발 스미스"
+        },
+        {
+          "id": "narnia-3",
+          "year": 2010,
+          "en": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
+          "ko": "나니아 연대기: 새벽 출정호의 항해",
+          "genre": "판타지",
+          "note": "목소리 출연 · 아슬란"
+        },
+        {
+          "id": "next-three-days",
+          "year": 2010,
+          "en": "The Next Three Days",
+          "ko": "쓰리 데이즈",
+          "genre": "스릴러",
+          "note": "조연"
+        },
+        {
+          "id": "unknown",
+          "year": 2011,
+          "en": "Unknown",
+          "ko": "언노운",
+          "genre": "액션/스릴러",
+          "note": "마틴 해리스 박사"
+        },
+        {
+          "id": "the-grey",
+          "year": 2012,
+          "en": "The Grey",
+          "ko": "더 그레이",
+          "genre": "액션/생존",
+          "note": ""
+        },
+        {
+          "id": "wrath-of-the-titans",
+          "year": 2012,
+          "en": "Wrath of the Titans",
+          "ko": "타이탄의 분노",
+          "genre": "판타지/액션",
+          "note": "제우스"
+        },
+        {
+          "id": "battleship",
+          "year": 2012,
+          "en": "Battleship",
+          "ko": "배틀쉽",
+          "genre": "SF/액션",
+          "note": "셰인 제독"
+        },
+        {
+          "id": "taken-2",
+          "year": 2012,
+          "en": "Taken 2",
+          "ko": "테이큰 2",
+          "genre": "액션/스릴러",
+          "note": "브라이언 밀스"
+        },
+        {
+          "id": "third-person",
+          "year": 2013,
+          "en": "Third Person",
+          "ko": "써드 퍼슨",
+          "genre": "로맨스/드라마",
+          "note": "폴 해기스 연출"
+        },
+        {
+          "id": "khumba",
+          "year": 2013,
+          "en": "Khumba",
+          "ko": "쿰바: 반쪽무늬 얼룩말의 대모험",
+          "genre": "애니메이션",
+          "note": "목소리 출연"
+        },
+        {
+          "id": "the-nut-job",
+          "year": 2014,
+          "en": "The Nut Job",
+          "ko": "넛잡: 땅콩 도둑들",
+          "genre": "애니메이션",
+          "note": "목소리 출연 · 라쿤"
+        },
+        {
+          "id": "the-lego-movie",
+          "year": 2014,
+          "en": "The Lego Movie",
+          "ko": "레고 무비",
+          "genre": "애니메이션",
+          "note": "목소리 출연 · 배드 캅"
+        },
+        {
+          "id": "the-prophet",
+          "year": 2014,
+          "en": "Kahlil Gibran's The Prophet",
+          "ko": "칼릴 지브란의 예언자",
+          "genre": "애니메이션",
+          "note": "목소리 출연 · 무스타파"
+        },
+        {
+          "id": "non-stop",
+          "year": 2014,
+          "en": "Non-Stop",
+          "ko": "논스톱",
+          "genre": "액션/스릴러",
+          "note": "항공 보안관 빌 막스"
+        },
+        {
+          "id": "million-ways",
+          "year": 2014,
+          "en": "A Million Ways to Die in the West",
+          "ko": "밀리언 웨이즈",
+          "genre": "서부/코미디",
+          "note": "무법자 클린치"
+        },
+        {
+          "id": "walk-among-the-tombstones",
+          "year": 2014,
+          "en": "A Walk Among the Tombstones",
+          "ko": "툼스톤",
+          "genre": "범죄/스릴러",
+          "note": "탐정 매튜 스커더"
+        },
+        {
+          "id": "taken-3",
+          "year": 2014,
+          "en": "Taken 3",
+          "ko": "테이큰 3",
+          "genre": "액션/스릴러",
+          "note": "브라이언 밀스"
+        },
+        {
+          "id": "run-all-night",
+          "year": 2015,
+          "en": "Run All Night",
+          "ko": "런 올 나이트",
+          "genre": "액션/범죄",
+          "note": ""
+        },
+        {
+          "id": "operation-chromite",
+          "year": 2016,
+          "en": "Operation Chromite",
+          "ko": "인천상륙작전",
+          "genre": "전쟁/액션",
+          "note": "한국 영화 · 맥아더 장군"
+        },
+        {
+          "id": "a-monster-calls",
+          "year": 2016,
+          "en": "A Monster Calls",
+          "ko": "몬스터 콜",
+          "genre": "판타지/드라마",
+          "note": "목소리·모션캡처 · 몬스터"
+        },
+        {
+          "id": "silence",
+          "year": 2016,
+          "en": "Silence",
+          "ko": "사일런스",
+          "genre": "역사/드라마",
+          "note": "마틴 스코세이지 연출 · 페헤이라 신부"
+        },
+        {
+          "id": "mark-felt",
+          "year": 2017,
+          "en": "Mark Felt: The Man Who Brought Down the White House",
+          "ko": "백악관을 무너뜨린 사나이",
+          "genre": "전기/스릴러",
+          "note": "마크 펠트 · 워터게이트 '딥 스로트'"
+        },
+        {
+          "id": "the-commuter",
+          "year": 2018,
+          "en": "The Commuter",
+          "ko": "커뮤터",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "buster-scruggs",
+          "year": 2018,
+          "en": "The Ballad of Buster Scruggs",
+          "ko": "카우보이의 노래",
+          "genre": "서부/옴니버스",
+          "note": "Netflix · 옴니버스"
+        },
+        {
+          "id": "widows",
+          "year": 2018,
+          "en": "Widows",
+          "ko": "위도우즈",
+          "genre": "범죄/스릴러",
+          "note": "해리 롤링스"
+        },
+        {
+          "id": "cold-pursuit",
+          "year": 2019,
+          "en": "Cold Pursuit",
+          "ko": "콜드 체이싱",
+          "genre": "액션/스릴러",
+          "note": "제설차 기사 넬스"
+        },
+        {
+          "id": "mib-international",
+          "year": 2019,
+          "en": "Men in Black: International",
+          "ko": "맨 인 블랙: 인터내셔널",
+          "genre": "SF/액션",
+          "note": "하이 T"
+        },
+        {
+          "id": "ordinary-love",
+          "year": 2019,
+          "en": "Ordinary Love",
+          "ko": "오디너리 러브",
+          "genre": "드라마",
+          "note": ""
+        },
+        {
+          "id": "made-in-italy",
+          "year": 2020,
+          "en": "Made in Italy",
+          "ko": "메이드 인 이태리",
+          "genre": "코미디/드라마",
+          "note": "아들 마이클 리처드슨과 공연"
+        },
+        {
+          "id": "honest-thief",
+          "year": 2020,
+          "en": "Honest Thief",
+          "ko": "어니스트 씨프",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "the-marksman",
+          "year": 2021,
+          "en": "The Marksman",
+          "ko": "마크맨",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "the-ice-road",
+          "year": 2021,
+          "en": "The Ice Road",
+          "ko": "아이스 로드",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "blacklight",
+          "year": 2022,
+          "en": "Blacklight",
+          "ko": "블랙라이트",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "memory",
+          "year": 2022,
+          "en": "Memory",
+          "ko": "메모리",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "marlowe",
+          "year": 2022,
+          "en": "Marlowe",
+          "ko": "탐정 말로",
+          "genre": "범죄/누아르",
+          "note": "필립 말로 · 100번째 영화"
+        },
+        {
+          "id": "retribution",
+          "year": 2023,
+          "en": "Retribution",
+          "ko": "레트리뷰션",
+          "genre": "액션/스릴러",
+          "note": ""
+        },
+        {
+          "id": "saints-and-sinners",
+          "year": 2023,
+          "en": "In the Land of Saints and Sinners",
+          "ko": "원맨",
+          "genre": "범죄/스릴러",
+          "note": "원제 In the Land of Saints and Sinners"
+        },
+        {
+          "id": "wildcat",
+          "year": 2023,
+          "en": "Wildcat",
+          "ko": "와일드캣",
+          "genre": "전기/드라마",
+          "note": "조연 · 에단 호크 연출"
+        },
+        {
+          "id": "absolution",
+          "year": 2024,
+          "en": "Absolution",
+          "ko": "앱솔루션",
+          "genre": "범죄/스릴러",
+          "note": ""
+        },
+        {
+          "id": "ice-road-vengeance",
+          "year": 2025,
+          "en": "Ice Road: Vengeance",
+          "ko": "아이스 로드: 벤전스",
+          "genre": "액션/스릴러",
+          "note": "아이스 로드 속편"
+        },
+        {
+          "id": "the-naked-gun",
+          "year": 2025,
+          "en": "The Naked Gun",
+          "ko": "총알 탄 사나이",
+          "genre": "코미디",
+          "note": "프랭크 드레빈 주니어"
+        },
+        {
+          "id": "cold-storage",
+          "year": 2026,
+          "en": "Cold Storage",
+          "ko": "콜드 스토리지",
+          "genre": "SF/공포",
+          "note": ""
+        },
+        {
+          "id": "the-fix",
+          "year": 2026,
+          "en": "The Fix",
+          "ko": "더 픽스",
+          "genre": "액션/스릴러",
+          "note": "가제 Hotel Tehran"
         }
       ]
     }
@@ -5141,6 +5868,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Matt Damon: Glory Daze 등 초기 소작 일부 제외",
     "Keanu Reeves: Generation Um... / Exposed 등 일부 저예산작 제외 또는 제한 포함",
     "Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실",
-    "Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외"
+    "Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외",
+    "Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오(클론의 습격·다크 나이트 라이즈·테드 2 등), 내레이션, 미개봉작(The Mongoose 2026.10.30, 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실"
   ]
 };
