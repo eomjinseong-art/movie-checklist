@@ -2,7 +2,7 @@
 
 장편 출연작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 17명** · 총 **717편**
+**배우 18명** · 총 **732편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -23,6 +23,7 @@
 | 휴 잭맨 | Hugh Jackman | 33 |
 | 드웨인 존슨 | Dwayne Johnson | 41 |
 | 리암 니슨 | Liam Neeson | 90 |
+| 채드윅 보즈먼 | Chadwick Boseman | 15 |
 
 ## 사용
 - `index.html` 을 브라우저에서 열거나 Vercel 배포 URL로 접속
@@ -55,3 +56,4 @@
 - Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실
 - Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외
 - Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오, 내레이션, 미개봉작(The Mongoose 2026.10.30 · 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실
+- Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)

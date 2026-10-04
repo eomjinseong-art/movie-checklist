@@ -5856,6 +5856,133 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": "가제 Hotel Tehran"
         }
       ]
+    },
+    {
+      "id": "chadwick",
+      "nameKo": "채드윅 보즈먼",
+      "nameEn": "Chadwick Boseman",
+      "movies": [
+        {
+          "id": "the-express",
+          "year": 2008,
+          "en": "The Express",
+          "ko": "익스프레스",
+          "genre": "전기/스포츠",
+          "note": "장편 데뷔 · 플로이드 리틀"
+        },
+        {
+          "id": "the-kill-hole",
+          "year": 2012,
+          "en": "The Kill Hole",
+          "ko": "킬 홀",
+          "genre": "스릴러",
+          "note": "주연 · 새뮤얼 드레이크"
+        },
+        {
+          "id": "42",
+          "year": 2013,
+          "en": "42",
+          "ko": "42",
+          "genre": "전기/스포츠",
+          "note": "재키 로빈슨"
+        },
+        {
+          "id": "draft-day",
+          "year": 2014,
+          "en": "Draft Day",
+          "ko": "드래프트 데이",
+          "genre": "스포츠/드라마",
+          "note": "드래프트 유망주 본테이 맥"
+        },
+        {
+          "id": "get-on-up",
+          "year": 2014,
+          "en": "Get On Up",
+          "ko": "겟 온 업",
+          "genre": "전기/음악",
+          "note": "제임스 브라운"
+        },
+        {
+          "id": "gods-of-egypt",
+          "year": 2016,
+          "en": "Gods of Egypt",
+          "ko": "갓 오브 이집트",
+          "genre": "판타지/액션",
+          "note": "지혜의 신 토트"
+        },
+        {
+          "id": "civil-war",
+          "year": 2016,
+          "en": "Captain America: Civil War",
+          "ko": "캡틴 아메리카: 시빌 워",
+          "genre": "슈퍼히어로",
+          "note": "블랙 팬서 첫 등장"
+        },
+        {
+          "id": "message-from-the-king",
+          "year": 2016,
+          "en": "Message from the King",
+          "ko": "메시지 프롬 더 킹",
+          "genre": "범죄/스릴러",
+          "note": "Netflix · 제이콥 킹"
+        },
+        {
+          "id": "marshall",
+          "year": 2017,
+          "en": "Marshall",
+          "ko": "마셜",
+          "genre": "전기/법정",
+          "note": "서굿 마셜"
+        },
+        {
+          "id": "black-panther",
+          "year": 2018,
+          "en": "Black Panther",
+          "ko": "블랙 팬서",
+          "genre": "슈퍼히어로",
+          "note": "트찰라 · 단독 주연작"
+        },
+        {
+          "id": "infinity-war",
+          "year": 2018,
+          "en": "Avengers: Infinity War",
+          "ko": "어벤져스: 인피니티 워",
+          "genre": "슈퍼히어로",
+          "note": "블랙 팬서"
+        },
+        {
+          "id": "endgame",
+          "year": 2019,
+          "en": "Avengers: Endgame",
+          "ko": "어벤져스: 엔드게임",
+          "genre": "슈퍼히어로",
+          "note": "블랙 팬서"
+        },
+        {
+          "id": "21-bridges",
+          "year": 2019,
+          "en": "21 Bridges",
+          "ko": "21 브릿지: 테러 셧다운",
+          "genre": "액션/범죄",
+          "note": "안드레 데이비스 형사 · 제작 겸"
+        },
+        {
+          "id": "da-5-bloods",
+          "year": 2020,
+          "en": "Da 5 Bloods",
+          "ko": "Da 5 블러드",
+          "genre": "전쟁/드라마",
+          "note": "Netflix · 스파이크 리 연출"
+        },
+        {
+          "id": "ma-rainey",
+          "year": 2020,
+          "en": "Ma Rainey's Black Bottom",
+          "ko": "마 레이니, 그녀가 블루스",
+          "genre": "드라마/음악",
+          "note": "유작 · Netflix · 골든글로브 남우주연상"
+        }
+      ]
     }
   ],
   "uncertainTitles": [
@@ -5869,6 +5996,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Keanu Reeves: Generation Um... / Exposed 등 일부 저예산작 제외 또는 제한 포함",
     "Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실",
     "Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외",
-    "Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오(클론의 습격·다크 나이트 라이즈·테드 2 등), 내레이션, 미개봉작(The Mongoose 2026.10.30, 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실"
+    "Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오(클론의 습격·다크 나이트 라이즈·테드 2 등), 내레이션, 미개봉작(The Mongoose 2026.10.30, 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실",
+    "Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)"
   ]
 };
