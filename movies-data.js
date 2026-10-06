@@ -5983,6 +5983,701 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": "유작 · Netflix · 골든글로브 남우주연상"
         }
       ]
+    },
+    {
+      "id": "freeman",
+      "nameKo": "모건 프리먼",
+      "nameEn": "Morgan Freeman",
+      "movies": [
+        {
+          "id": "brubaker",
+          "year": 1980,
+          "en": "Brubaker",
+          "ko": "도전",
+          "genre": "드라마",
+          "note": "로버트 레드포드 주연 교도소 개혁 실화극 · 수감자 월터 역, 초기 조연"
+        },
+        {
+          "id": "eyewitness",
+          "year": 1981,
+          "en": "Eyewitness",
+          "ko": "살인 특종",
+          "genre": "스릴러",
+          "note": "윌리엄 허트·시고니 위버 · 블랙 경위 역 · 피터 예이츠 연출"
+        },
+        {
+          "id": "teachers",
+          "year": 1984,
+          "en": "Teachers",
+          "ko": "끝없는 사랑",
+          "genre": "코미디/드라마",
+          "note": "닉 놀테 주연 고교 풍자극 · 앨런 루이스 역"
+        },
+        {
+          "id": "harry-and-son",
+          "year": 1984,
+          "en": "Harry & Son",
+          "ko": "해리와 아들",
+          "genre": "드라마",
+          "note": "폴 뉴먼 감독·주연 · 시에마노프스키 역 · 한국 제목 불확실"
+        },
+        {
+          "id": "marie",
+          "year": 1985,
+          "en": "Marie",
+          "ko": "마리",
+          "genre": "전기/드라마",
+          "note": "시시 스페이식 주연 · 테네시 주 사면 비리 폭로 실화 · 찰스 트로버 역"
+        },
+        {
+          "id": "that-was-then",
+          "year": 1985,
+          "en": "That Was Then... This Is Now",
+          "ko": "댓 워즈 덴... 디스 이즈 나우",
+          "genre": "드라마",
+          "note": "에밀리오 에스테베즈 각본·주연, S.E. 힌턴 원작 · 찰리 역 · 한국 개봉명 미확인"
+        },
+        {
+          "id": "street-smart",
+          "year": 1987,
+          "en": "Street Smart",
+          "ko": "스트리트 스마트",
+          "genre": "범죄/드라마",
+          "note": "크리스토퍼 리브 · 위험한 포주 패스트 블랙 역 · 오스카 남우조연 첫 후보, 출세작"
+        },
+        {
+          "id": "clean-and-sober",
+          "year": 1988,
+          "en": "Clean and Sober",
+          "ko": "재생자",
+          "genre": "드라마",
+          "note": "마이클 키튼 · 중독 재활 상담사 크레이그 역"
+        },
+        {
+          "id": "glory",
+          "year": 1989,
+          "en": "Glory",
+          "ko": "영광의 깃발",
+          "genre": "전쟁/드라마",
+          "note": "덴젤 워싱턴·매튜 브로데릭 · 흑인 연대의 존 롤린스 상사 역"
+        },
+        {
+          "id": "driving-miss-daisy",
+          "year": 1989,
+          "en": "Driving Miss Daisy",
+          "ko": "드라이빙 미스 데이지",
+          "genre": "드라마",
+          "note": "제시카 탠디 · 운전기사 호크 역 · 오스카 작품상, 남우주연 후보·골든글로브 수상"
+        },
+        {
+          "id": "lean-on-me",
+          "year": 1989,
+          "en": "Lean on Me",
+          "ko": "고독한 스승",
+          "genre": "전기/드라마",
+          "note": "무너진 고교를 바로 세운 실존 교장 조 클라크 역"
+        },
+        {
+          "id": "johnny-handsome",
+          "year": 1989,
+          "en": "Johnny Handsome",
+          "ko": "쟈니 핸섬",
+          "genre": "범죄/스릴러",
+          "note": "미키 루크 · 집요한 드론스 경위 역 · 월터 힐 연출"
+        },
+        {
+          "id": "bonfire-of-the-vanities",
+          "year": 1990,
+          "en": "The Bonfire of the Vanities",
+          "ko": "허영의 불꽃",
+          "genre": "코미디/드라마",
+          "note": "톰 행크스·브루스 윌리스 · 화이트 판사 역 · 브라이언 드 팔마 연출"
+        },
+        {
+          "id": "robin-hood-prince-of-thieves",
+          "year": 1991,
+          "en": "Robin Hood: Prince of Thieves",
+          "ko": "로빈 후드: 도둑들의 왕자",
+          "genre": "액션/어드벤처",
+          "note": "케빈 코스트너·앨런 릭먼 · 무어인 전사 아짐 역"
+        },
+        {
+          "id": "unforgiven",
+          "year": 1992,
+          "en": "Unforgiven",
+          "ko": "용서받지 못한 자",
+          "genre": "서부",
+          "note": "클린트 이스트우드·진 해크먼 · 옛 동료 네드 로건 역 · 오스카 작품상"
+        },
+        {
+          "id": "power-of-one",
+          "year": 1992,
+          "en": "The Power of One",
+          "ko": "파워 오브 원",
+          "genre": "드라마",
+          "note": "스티븐 도프·다니엘 크레이그 · 남아공 감옥의 권투 스승 기엘 피트 역"
+        },
+        {
+          "id": "shawshank-redemption",
+          "year": 1994,
+          "en": "The Shawshank Redemption",
+          "ko": "쇼생크 탈출",
+          "genre": "드라마",
+          "note": "장기수 레드 역·내레이션 · 오스카 남우주연 후보 · 대표작"
+        },
+        {
+          "id": "outbreak",
+          "year": 1995,
+          "en": "Outbreak",
+          "ko": "아웃브레이크",
+          "genre": "스릴러/재난",
+          "note": "더스틴 호프먼·르네 루소 · 빌리 포드 장군 역"
+        },
+        {
+          "id": "seven",
+          "year": 1995,
+          "en": "Seven",
+          "ko": "세븐",
+          "genre": "범죄/스릴러",
+          "note": "브래드 피트 · 은퇴를 앞둔 형사 서머싯 역 · 데이비드 핀처 연출"
+        },
+        {
+          "id": "chain-reaction",
+          "year": 1996,
+          "en": "Chain Reaction",
+          "ko": "체인 리액션",
+          "genre": "액션/스릴러",
+          "note": "키아누 리브스 · 재단 책임자 폴 섀넌 역"
+        },
+        {
+          "id": "moll-flanders",
+          "year": 1996,
+          "en": "Moll Flanders",
+          "ko": "몰 플랜더스",
+          "genre": "시대극/드라마",
+          "note": "스토커드 채닝 · 히블 역"
+        },
+        {
+          "id": "amistad",
+          "year": 1997,
+          "en": "Amistad",
+          "ko": "아미스타드",
+          "genre": "역사/드라마",
+          "note": "스티븐 스필버그 연출 · 노예제 폐지론자 조드슨 역 · 앤서니 홉킨스·매튜 맥커너히"
+        },
+        {
+          "id": "kiss-the-girls",
+          "year": 1997,
+          "en": "Kiss the Girls",
+          "ko": "키스 더 걸",
+          "genre": "범죄/스릴러",
+          "note": "애슐리 저드 · 프로파일러 알렉스 크로스 첫 등장"
+        },
+        {
+          "id": "deep-impact",
+          "year": 1998,
+          "en": "Deep Impact",
+          "ko": "딥 임팩트",
+          "genre": "SF/재난",
+          "note": "혜성 충돌 앞의 미국 대통령 벡 역"
+        },
+        {
+          "id": "hard-rain",
+          "year": 1998,
+          "en": "Hard Rain",
+          "ko": "하드 레인",
+          "genre": "액션/스릴러",
+          "note": "크리스찬 슬레이터 · 홍수 속 현금 수송차를 노리는 강도 짐 역"
+        },
+        {
+          "id": "nurse-betty",
+          "year": 2000,
+          "en": "Nurse Betty",
+          "ko": "너스 베티",
+          "genre": "코미디/범죄",
+          "note": "르네 젤위거·크리스 록 · 노련한 킬러 찰리 역"
+        },
+        {
+          "id": "under-suspicion",
+          "year": 2000,
+          "en": "Under Suspicion",
+          "ko": "언더 서스피션",
+          "genre": "범죄/스릴러",
+          "note": "진 해크먼과의 심문 대결 · 베네젯 경감 역 · 제작총지휘 겸"
+        },
+        {
+          "id": "along-came-a-spider",
+          "year": 2001,
+          "en": "Along Came a Spider",
+          "ko": "스파이더 게임",
+          "genre": "범죄/스릴러",
+          "note": "알렉스 크로스 두 번째 이야기 · 모니카 포터"
+        },
+        {
+          "id": "sum-of-all-fears",
+          "year": 2002,
+          "en": "The Sum of All Fears",
+          "ko": "썸 오브 올 피어스",
+          "genre": "스릴러",
+          "note": "벤 애플렉 · CIA 국장 캐벗 역 · 잭 라이언 시리즈"
+        },
+        {
+          "id": "high-crimes",
+          "year": 2002,
+          "en": "High Crimes",
+          "ko": "하이 크라임",
+          "genre": "법정/스릴러",
+          "note": "애슐리 저드와 재회 · 전직 군법무관 찰리 그라임스 역"
+        },
+        {
+          "id": "bruce-almighty",
+          "year": 2003,
+          "en": "Bruce Almighty",
+          "ko": "브루스 올마이티",
+          "genre": "코미디/판타지",
+          "note": "짐 캐리 · 능력을 빌려주는 신 역"
+        },
+        {
+          "id": "dreamcatcher",
+          "year": 2003,
+          "en": "Dreamcatcher",
+          "ko": "드림캐쳐",
+          "genre": "SF/공포",
+          "note": "스티븐 킹 원작 · 커티스 대령 역"
+        },
+        {
+          "id": "levity",
+          "year": 2003,
+          "en": "Levity",
+          "ko": "레버티",
+          "genre": "드라마",
+          "note": "빌리 밥 손튼·홀리 헌터 · 마일스 목사 역 · 제작총지휘 겸 · 한국 개봉명 불확실"
+        },
+        {
+          "id": "big-bounce",
+          "year": 2004,
+          "en": "The Big Bounce",
+          "ko": "빅 바운스",
+          "genre": "범죄/코미디",
+          "note": "오언 윌슨 · 판사 월터 크루스 역 · 엘모어 레너드 원작"
+        },
+        {
+          "id": "million-dollar-baby",
+          "year": 2004,
+          "en": "Million Dollar Baby",
+          "ko": "밀리언 달러 베이비",
+          "genre": "드라마/스포츠",
+          "note": "클린트 이스트우드·힐러리 스왱크 · 스크랩 역·내레이션 · 오스카 남우조연상 수상"
+        },
+        {
+          "id": "unfinished-life",
+          "year": 2005,
+          "en": "An Unfinished Life",
+          "ko": "언피니쉬드 라이프",
+          "genre": "드라마",
+          "note": "로버트 레드포드·제니퍼 로페즈 · 곰에게 다친 친구 미치 역"
+        },
+        {
+          "id": "batman-begins",
+          "year": 2005,
+          "en": "Batman Begins",
+          "ko": "배트맨 비긴즈",
+          "genre": "슈퍼히어로",
+          "note": "크리스찬 베일 · 루시어스 폭스 첫 등장 · 크리스토퍼 놀란 연출"
+        },
+        {
+          "id": "unleashed",
+          "year": 2005,
+          "en": "Unleashed",
+          "ko": "더 독",
+          "genre": "액션/드라마",
+          "note": "이연걸 · 맹인 피아노 조율사 샘 역 · 원제 Danny the Dog"
+        },
+        {
+          "id": "edison",
+          "year": 2005,
+          "en": "Edison",
+          "ko": "에디슨 시티",
+          "genre": "범죄/스릴러",
+          "note": "저스틴 팀버레이크·케빈 스페이시 · 신문 편집장 애시퍼드 역"
+        },
+        {
+          "id": "the-contract",
+          "year": 2006,
+          "en": "The Contract",
+          "ko": "더 콘트랙트",
+          "genre": "액션/스릴러",
+          "note": "존 쿠삭 · 호송 중 탈주하는 청부살인자 카든 역"
+        },
+        {
+          "id": "lucky-number-slevin",
+          "year": 2006,
+          "en": "Lucky Number Slevin",
+          "ko": "럭키 넘버 슬레븐",
+          "genre": "범죄/스릴러",
+          "note": "조시 하트넷·벤 킹슬리 · 갱단 두목 보스 역"
+        },
+        {
+          "id": "10-items-or-less",
+          "year": 2006,
+          "en": "10 Items or Less",
+          "ko": "텐 아이템 오어 레스",
+          "genre": "코미디/드라마",
+          "note": "파즈 베가 · 본인 역 주연 · 제작총지휘 겸"
+        },
+        {
+          "id": "evan-almighty",
+          "year": 2007,
+          "en": "Evan Almighty",
+          "ko": "에반 올마이티",
+          "genre": "코미디/판타지",
+          "note": "스티브 카렐 · 신 역 재연"
+        },
+        {
+          "id": "feast-of-love",
+          "year": 2007,
+          "en": "Feast of Love",
+          "ko": "피스트 오브 러브",
+          "genre": "로맨스/드라마",
+          "note": "그렉 키니어 · 교수 해리 역·내레이션"
+        },
+        {
+          "id": "gone-baby-gone",
+          "year": 2007,
+          "en": "Gone Baby Gone",
+          "ko": "가라, 아이야, 가라",
+          "genre": "범죄/미스터리",
+          "note": "벤 애플렉 감독 데뷔작 · 케이시 애플렉 · 잭 도일 경감 역 · 국내 DVD 제목(곤 베이비 곤으로도 표기)"
+        },
+        {
+          "id": "bucket-list",
+          "year": 2007,
+          "en": "The Bucket List",
+          "ko": "버킷 리스트: 죽기 전에 꼭 하고 싶은 것들",
+          "genre": "드라마/코미디",
+          "note": "잭 니콜슨 · 정비공 카터 역 · 롭 라이너 연출"
+        },
+        {
+          "id": "wanted",
+          "year": 2008,
+          "en": "Wanted",
+          "ko": "원티드",
+          "genre": "액션",
+          "note": "제임스 맥어보이·안젤리나 졸리 · 암살자 조직 수장 슬론 역"
+        },
+        {
+          "id": "dark-knight",
+          "year": 2008,
+          "en": "The Dark Knight",
+          "ko": "다크 나이트",
+          "genre": "슈퍼히어로",
+          "note": "크리스찬 베일·히스 레저 · 루시어스 폭스 역"
+        },
+        {
+          "id": "thick-as-thieves",
+          "year": 2009,
+          "en": "Thick as Thieves",
+          "ko": "코드",
+          "genre": "범죄/하이스트",
+          "note": "안토니오 반데라스·톰 하디 · 전설의 도둑 키스 리플리 역 · 일명 The Code · 국내 2012 개봉"
+        },
+        {
+          "id": "maiden-heist",
+          "year": 2009,
+          "en": "The Maiden Heist",
+          "ko": "박물관을 털어라",
+          "genre": "코미디/범죄",
+          "note": "크리스토퍼 월켄·윌리엄 H. 메이시 · 미술관 경비원 찰스 역"
+        },
+        {
+          "id": "invictus",
+          "year": 2009,
+          "en": "Invictus",
+          "ko": "인빅터스",
+          "genre": "스포츠/드라마",
+          "note": "맷 데이먼 · 넬슨 만델라 역 · 오스카 남우주연 후보 · 클린트 이스트우드 연출 · 국내 개봉명 우리가 꿈꾸는 기적: 인빅터스"
+        },
+        {
+          "id": "red",
+          "year": 2010,
+          "en": "RED",
+          "ko": "레드",
+          "genre": "액션/코미디",
+          "note": "브루스 윌리스·헬렌 미렌 · 은퇴한 전직 요원 조 역"
+        },
+        {
+          "id": "dolphin-tale",
+          "year": 2011,
+          "en": "Dolphin Tale",
+          "ko": "돌핀 테일",
+          "genre": "가족/드라마",
+          "note": "꼬리 잃은 돌고래 윈터 실화 · 의수 전문의 맥카시 박사 역"
+        },
+        {
+          "id": "magic-of-belle-isle",
+          "year": 2012,
+          "en": "The Magic of Belle Isle",
+          "ko": "더 매직 오브 벨 아일",
+          "genre": "드라마",
+          "note": "롭 라이너 연출 · 은둔 작가 몬티 역"
+        },
+        {
+          "id": "dark-knight-rises",
+          "year": 2012,
+          "en": "The Dark Knight Rises",
+          "ko": "다크 나이트 라이즈",
+          "genre": "슈퍼히어로",
+          "note": "톰 하디·앤 해서웨이 · 루시어스 폭스 역 · 놀란 3부작 완결"
+        },
+        {
+          "id": "olympus-has-fallen",
+          "year": 2013,
+          "en": "Olympus Has Fallen",
+          "ko": "백악관 최후의 날",
+          "genre": "액션",
+          "note": "제라드 버틀러 · 하원의장 트럼불 역 · 폴른 시리즈 1편"
+        },
+        {
+          "id": "oblivion",
+          "year": 2013,
+          "en": "Oblivion",
+          "ko": "오블리비언",
+          "genre": "SF/액션",
+          "note": "톰 크루즈 · 저항군 지도자 비치 역"
+        },
+        {
+          "id": "now-you-see-me",
+          "year": 2013,
+          "en": "Now You See Me",
+          "ko": "나우 유 씨 미: 마술사기단",
+          "genre": "범죄/스릴러",
+          "note": "제시 아이젠버그·마크 러팔로 · 마술 폭로 전문가 태디어스 역"
+        },
+        {
+          "id": "last-vegas",
+          "year": 2013,
+          "en": "Last Vegas",
+          "ko": "라스트 베가스",
+          "genre": "코미디",
+          "note": "로버트 드 니로·마이클 더글러스·케빈 클라인 · 아치 역"
+        },
+        {
+          "id": "lego-movie",
+          "year": 2014,
+          "en": "The Lego Movie",
+          "ko": "레고 무비",
+          "genre": "애니메이션",
+          "note": "목소리 출연 · 예언자 비트루비우스 역"
+        },
+        {
+          "id": "transcendence",
+          "year": 2014,
+          "en": "Transcendence",
+          "ko": "트랜센던스",
+          "genre": "SF/스릴러",
+          "note": "조니 뎁·레베카 홀 · 과학자 조셉 태거 역"
+        },
+        {
+          "id": "lucy",
+          "year": 2014,
+          "en": "Lucy",
+          "ko": "루시",
+          "genre": "SF/액션",
+          "note": "스칼렛 요한슨 · 뇌과학자 노먼 교수 역 · 뤽 베송 연출"
+        },
+        {
+          "id": "dolphin-tale-2",
+          "year": 2014,
+          "en": "Dolphin Tale 2",
+          "ko": "돌핀 테일 2",
+          "genre": "가족/드라마",
+          "note": "맥카시 박사 역 재연"
+        },
+        {
+          "id": "5-flights-up",
+          "year": 2014,
+          "en": "5 Flights Up",
+          "ko": "브루클린의 멋진 주말",
+          "genre": "코미디/드라마",
+          "note": "다이앤 키튼 · 40년 산 아파트를 내놓은 노부부 · 제작 겸 · 국내 2015 공개"
+        },
+        {
+          "id": "last-knights",
+          "year": 2015,
+          "en": "Last Knights",
+          "ko": "제7기사단",
+          "genre": "액션/드라마",
+          "note": "클라이브 오웬 · 영주 바르톡 역 · 기리야 가즈아키 연출"
+        },
+        {
+          "id": "ted-2",
+          "year": 2015,
+          "en": "Ted 2",
+          "ko": "19곰 테드 2",
+          "genre": "코미디",
+          "note": "마크 월버그 · 인권 변호사 패트릭 미건 역(조연)"
+        },
+        {
+          "id": "momentum",
+          "year": 2015,
+          "en": "Momentum",
+          "ko": "모멘텀",
+          "genre": "액션/스릴러",
+          "note": "올가 쿠릴렌코 · 배후의 상원의원 역(소역)"
+        },
+        {
+          "id": "london-has-fallen",
+          "year": 2016,
+          "en": "London Has Fallen",
+          "ko": "런던 해즈 폴른",
+          "genre": "액션",
+          "note": "제라드 버틀러 · 부통령 트럼불 역"
+        },
+        {
+          "id": "now-you-see-me-2",
+          "year": 2016,
+          "en": "Now You See Me 2",
+          "ko": "나우 유 씨 미 2",
+          "genre": "범죄/스릴러",
+          "note": "대니얼 래드클리프 합류 · 태디어스 역"
+        },
+        {
+          "id": "ben-hur",
+          "year": 2016,
+          "en": "Ben-Hur",
+          "ko": "벤허",
+          "genre": "역사/액션",
+          "note": "잭 휴스턴 · 셰이크 일데림 역"
+        },
+        {
+          "id": "going-in-style",
+          "year": 2017,
+          "en": "Going in Style",
+          "ko": "고잉 인 스타일",
+          "genre": "범죄/코미디",
+          "note": "마이클 케인·앨런 아킨 · 연금을 잃은 노인 3인조의 은행털이"
+        },
+        {
+          "id": "just-getting-started",
+          "year": 2017,
+          "en": "Just Getting Started",
+          "ko": "저스트 겟팅 스타티드",
+          "genre": "코미디",
+          "note": "토미 리 존스 · 리조트 매니저 듀크 역"
+        },
+        {
+          "id": "nutcracker-four-realms",
+          "year": 2018,
+          "en": "The Nutcracker and the Four Realms",
+          "ko": "호두까기 인형과 4개의 왕국",
+          "genre": "판타지",
+          "note": "매켄지 포이·키이라 나이틀리 · 드로셀마이어 역"
+        },
+        {
+          "id": "poison-rose",
+          "year": 2019,
+          "en": "The Poison Rose",
+          "ko": "포이즌 로즈",
+          "genre": "범죄/느와르",
+          "note": "존 트라볼타·브렌던 프레이저 · 닥 역"
+        },
+        {
+          "id": "angel-has-fallen",
+          "year": 2019,
+          "en": "Angel Has Fallen",
+          "ko": "엔젤 해즈 폴른",
+          "genre": "액션",
+          "note": "제라드 버틀러 · 대통령 트럼불 역"
+        },
+        {
+          "id": "comeback-trail",
+          "year": 2020,
+          "en": "The Comeback Trail",
+          "ko": "컴백 트레일",
+          "genre": "코미디",
+          "note": "로버트 드 니로·토미 리 존스 · 갱스터 레지 역 · 국내 2021 개봉"
+        },
+        {
+          "id": "vanquish",
+          "year": 2021,
+          "en": "Vanquish",
+          "ko": "뱅퀴시",
+          "genre": "액션/스릴러",
+          "note": "루비 로즈 · 전직 경찰 데이먼 역"
+        },
+        {
+          "id": "hitmans-wifes-bodyguard",
+          "year": 2021,
+          "en": "Hitman's Wife's Bodyguard",
+          "ko": "킬러의 보디가드 2",
+          "genre": "액션/코미디",
+          "note": "라이언 레이놀즈·새뮤얼 L. 잭슨·셀마 헤이엑 · 마이클 브라이스 시니어 역"
+        },
+        {
+          "id": "paradise-highway",
+          "year": 2022,
+          "en": "Paradise Highway",
+          "ko": "파라다이스 하이웨이",
+          "genre": "범죄/스릴러",
+          "note": "쥘리에트 비노슈·프랭크 그릴로 · FBI 분석관 게릭 역"
+        },
+        {
+          "id": "minute-you-wake-up-dead",
+          "year": 2022,
+          "en": "The Minute You Wake Up Dead",
+          "ko": "더 미닛 유 웨이크 업 데드",
+          "genre": "범죄/스릴러",
+          "note": "콜 하우저 · 보안관 파울러 역 · 한국 개봉명 미확인"
+        },
+        {
+          "id": "ritual-killer",
+          "year": 2023,
+          "en": "The Ritual Killer",
+          "ko": "무티: 주술살인",
+          "genre": "범죄/스릴러",
+          "note": "콜 하우저 · 인류학 교수 매클스 역 · 국내 2024.1 개봉"
+        },
+        {
+          "id": "a-good-person",
+          "year": 2023,
+          "en": "A Good Person",
+          "ko": "어 굿 퍼슨",
+          "genre": "드라마",
+          "note": "플로렌스 퓨 · 아들을 잃은 전직 경찰 대니얼 역 · 잭 브래프 연출"
+        },
+        {
+          "id": "57-seconds",
+          "year": 2023,
+          "en": "57 Seconds",
+          "ko": "타임코드 57",
+          "genre": "SF/스릴러",
+          "note": "조시 허처슨 · 테크 거물 앤튼 버렐 역"
+        },
+        {
+          "id": "my-dead-friend-zoe",
+          "year": 2024,
+          "en": "My Dead Friend Zoe",
+          "ko": "내 죽은 친구 조이",
+          "genre": "코미디/드라마",
+          "note": "소네콰 마틴-그린·에드 해리스 · 재향군인 상담사 콜 박사 역 · 한국 제목 불확실"
+        },
+        {
+          "id": "gunner",
+          "year": 2024,
+          "en": "Gunner",
+          "ko": "거너",
+          "genre": "액션",
+          "note": "루크 헴스워스 · 켄드릭 라이커 역 · 국내 2025.4 개봉"
+        },
+        {
+          "id": "now-you-see-me-3",
+          "year": 2025,
+          "en": "Now You See Me: Now You Don't",
+          "ko": "나우 유 씨 미 3",
+          "genre": "범죄/스릴러",
+          "note": "제시 아이젠버그·우디 해럴슨 · 태디어스 역 · 최신작"
+        }
+      ]
     }
   ],
   "directors": [
@@ -6247,6 +6942,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외",
     "Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오(클론의 습격·다크 나이트 라이즈·테드 2 등), 내레이션, 미개봉작(The Mongoose 2026.10.30, 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실",
     "Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)",
+    "Morgan Freeman: 1964~68 무크레딧 단역(The Pawnbroker 등)·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV 시리즈·TV 영화, 다큐·내레이션(March of the Penguins, War of the Worlds 등), 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만 맡은 작품, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son(해리와 아들)/That Was Then... This Is Now/Levity(레버티)/The Minute You Wake Up Dead/My Dead Friend Zoe(내 죽은 친구 조이) 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준",
     "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년"
   ]
 };
