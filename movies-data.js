@@ -825,7 +825,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "id": "power-of-one",
           "year": 1992,
           "en": "The Power of One",
-          "ko": "하나의 힘",
+          "ko": "파워 오브 원",
           "genre": "드라마",
           "note": "장편 데뷔"
         },
@@ -2564,7 +2564,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "id": "thick-as-thieves",
           "year": 2009,
           "en": "Thick as Thieves",
-          "ko": "시크 애즈 띠브즈",
+          "ko": "코드",
           "genre": "범죄",
           "note": ""
         },
@@ -2923,7 +2923,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "id": "olympus-fallen",
           "year": 2013,
           "en": "Olympus Has Fallen",
-          "ko": "화이트하우스 다운",
+          "ko": "백악관 최후의 날",
           "genre": "액션",
           "note": ""
         },
@@ -6932,7 +6932,6 @@ window.MOVIE_CHECKLIST_DATA = {
   "uncertainTitles": [
     "Léa Seydoux: The Beautiful Person / Belle Épine — 한국 개봉명 불확실",
     "Gerard Butler: Butterfly on a Wheel — 한국명 '샤터드'로도 표기",
-    "Tom Hardy: Thick as Thieves — 한국 개봉명 불확실 (시크 애즈 띠브즈)",
     "Russell Crowe: Prisoners of the Sun — 일명 Blood Oath",
     "Russell Crowe: The Weight — 한국 개봉명 미확인 (더 웨이트)",
     "Russell Crowe: Gladiator II — 아카이브 영상만 사용되어 출연작에서 제외",
