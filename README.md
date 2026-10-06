@@ -2,7 +2,7 @@
 
 배우별 장편 출연작 · 감독별 장편 연출작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 18명** (732편) · **감독 1명** (30편) · 총 **762편**
+**배우 19명** (818편) · **감독 1명** (30편) · 총 **848편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -24,6 +24,7 @@
 | 드웨인 존슨 | Dwayne Johnson | 41 |
 | 리암 니슨 | Liam Neeson | 90 |
 | 채드윅 보즈먼 | Chadwick Boseman | 15 |
+| 모건 프리먼 | Morgan Freeman | 86 |
 
 | 감독 | EN | 편수 |
 |---|---|---:|
@@ -64,4 +65,5 @@
 - Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외
 - Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오, 내레이션, 미개봉작(The Mongoose 2026.10.30 · 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실
 - Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)
+- Morgan Freeman: 1964~68 무크레딧 단역·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV, 다큐·내레이션, 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son/That Was Then... This Is Now/Levity/The Minute You Wake Up Dead/My Dead Friend Zoe 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준
 - Ridley Scott (감독): 단편(Boy and Bicycle 등)·옴니버스 보이지 않는 아이들의 단편·제작만·TV·미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년
