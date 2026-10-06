@@ -6,18 +6,18 @@
 <meta name="theme-color" content="#0a0a0a" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<title>영화봇 · 배우별 영화 체크리스트</title>
-<meta name="description" content="배우 18명의 장편 출연작 732편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
+<title>영화봇 · 배우·감독별 영화 체크리스트</title>
+<meta name="description" content="배우 18명의 장편 출연작과 감독 1명의 장편 연출작, 총 762편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
 <link rel="canonical" href="https://movie-checklist-sigma.vercel.app/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:site_name" content="영화봇" />
-<meta property="og:title" content="영화봇 · 배우별 영화 체크리스트" />
-<meta property="og:description" content="배우 18명의 장편 출연작 732편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
+<meta property="og:title" content="영화봇 · 배우·감독별 영화 체크리스트" />
+<meta property="og:description" content="배우 18명의 장편 출연작과 감독 1명의 장편 연출작, 총 762편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
 <meta property="og:url" content="https://movie-checklist-sigma.vercel.app/" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="영화봇 · 배우별 영화 체크리스트" />
-<meta name="twitter:description" content="배우 18명의 장편 출연작 732편을 체크하는 한국어 영화 체크리스트." />
+<meta name="twitter:title" content="영화봇 · 배우·감독별 영화 체크리스트" />
+<meta name="twitter:description" content="배우 18명·감독 1명의 장편 762편을 체크하는 한국어 영화 체크리스트." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -25,7 +25,7 @@
 </head>
 <body>
 <div class="app">
-  <aside class="sidebar" id="sidebar" aria-label="배우 목록">
+  <aside class="sidebar" id="sidebar" aria-label="배우·감독 목록">
     <div class="sidebar-head">
       <p class="eyebrow">영화봇</p>
       <h1>영화 체크리스트</h1>
@@ -36,12 +36,12 @@
   <div class="backdrop" id="backdrop"></div>
   <main class="main">
     <nav class="view-tabs" aria-label="목록 전환">
-      <a class="view-tab active" href="/" aria-current="page">배우별</a>
+      <a class="view-tab active" href="/" aria-current="page">배우·감독별</a>
       <a class="view-tab" href="/true-stories">실화 영화</a>
     </nav>
     <header class="page-head">
       <h2 id="page-title">전체</h2>
-      <p class="subtitle" id="page-sub">배우별 장편 출연작 시청 체크</p>
+      <p class="subtitle" id="page-sub">배우별 장편 출연작 · 감독별 장편 연출작 시청 체크</p>
     </header>
     <div class="progress-panel">
       <div class="progress-top">
@@ -87,14 +87,14 @@
       <p class="cpb-note">이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
     </aside>
     <footer>
-      장편 출연작 기준 · 제작만·TV·미개봉·사소한 카메오 제외<br />
+      배우는 장편 출연작, 감독은 장편 연출작 기준 · 제작만·TV·미개봉·단편·사소한 카메오 제외<br />
       출처: Wikipedia filmography · 진행 상태는 동기화 코드로 서버에 저장되어 여러 기기에서 이어집니다 (오프라인일 땐 이 기기에 임시 저장)<br />
       <a href="/true-stories">실화 영화 체크리스트</a> · 외국 실화·실화 바탕 작품<br />
       <span id="footer-uncertain"></span>
     </footer>
   </main>
 </div>
-<button type="button" class="menu-toggle" id="menu-toggle" aria-label="배우 목록 열기">배우 선택</button>
+<button type="button" class="menu-toggle" id="menu-toggle" aria-label="배우·감독 목록 열기">배우·감독 선택</button>
 
 <script src="./movies-data.js"></script>
 <script>
@@ -102,8 +102,13 @@
   const DATA = window.MOVIE_CHECKLIST_DATA;
   const STORAGE_KEY = DATA.storageKey || "movie-checklist-v1";
   const actors = DATA.actors;
+  // Directors use the same shape as actors ({id, nameKo, nameEn, movies}) and the same
+  // "<listId>:<movieId>" check keys, so they share progress, sync and saved checks.
+  const directors = DATA.directors || [];
+  const lists = actors.concat(directors); // every checklist (actors first, then directors)
+  const isDirector = (p) => directors.indexOf(p) !== -1;
 
-  let current = "all"; // "all" or actor id
+  let current = "all"; // "all" or actor/director id
   let filter = "all";
   let state = {}; // filled from synced items below
 
@@ -218,7 +223,7 @@
 
   function overallStats() {
     let total = 0, watched = 0;
-    actors.forEach((a) => {
+    lists.forEach((a) => {
       total += a.movies.length;
       const w = watchedSet(a.id);
       a.movies.forEach((m) => { if (w.has(m.id)) watched++; });
@@ -245,7 +250,8 @@
     navEl.innerHTML = "";
     const overall = overallStats();
     sidebarTotal.textContent =
-      "전체 " + overall.watched + " / " + overall.total + " · " + actors.length + "명 배우";
+      "전체 " + overall.watched + " / " + overall.total + " · 배우 " + actors.length + "명" +
+      (directors.length ? " · 감독 " + directors.length + "명" : "");
 
     const allBtn = document.createElement("button");
     allBtn.type = "button";
@@ -260,7 +266,14 @@
     allBtn.addEventListener("click", () => { current = "all"; closeDrawer(); render(); });
     navEl.appendChild(allBtn);
 
-    actors.forEach((a) => {
+    const addSection = (label, group) => {
+      if (!group.length || !directors.length) return; // headings only once there is more than one kind
+      const h = document.createElement("p");
+      h.className = "nav-section";
+      h.textContent = label;
+      navEl.appendChild(h);
+    };
+    const addBtn = (a) => {
       const s = actorStats(a);
       const pct = s.total ? Math.round((s.watched / s.total) * 100) : 0;
       const btn = document.createElement("button");
@@ -273,7 +286,11 @@
         '<div class="mini-bar"><i style="width:' + pct + '%"></i></div>';
       btn.addEventListener("click", () => { current = a.id; closeDrawer(); render(); });
       navEl.appendChild(btn);
-    });
+    };
+    addSection("배우", actors);
+    actors.forEach(addBtn);
+    addSection("감독", directors);
+    directors.forEach(addBtn);
   }
 
   function updateProgress(watched, total) {
@@ -292,37 +309,49 @@
 
   function renderOverview() {
     pageTitle.textContent = "전체 현황";
-    pageSub.textContent = "배우를 선택해 시청 체크를 이어가세요";
+    pageSub.textContent = directors.length ? "배우·감독을 선택해 시청 체크를 이어가세요" : "배우를 선택해 시청 체크를 이어가세요";
     const ov = overallStats();
     updateProgress(ov.watched, ov.total);
     clearBtn.textContent = "전체 체크 해제";
     contentEl.innerHTML = "";
-    const grid = document.createElement("div");
-    grid.className = "overview-grid";
-    actors.forEach((a) => {
-      const s = actorStats(a);
-      const pct = s.total ? Math.round((s.watched / s.total) * 100) : 0;
-      const card = document.createElement("div");
-      card.className = "ov-card";
-      card.innerHTML =
-        '<div class="n">' + a.nameKo + "</div>" +
-        '<div class="e">' + a.nameEn + "</div>" +
-        '<div class="s">' + s.watched + " / " + s.total + " · " + pct + "%</div>" +
-        '<div class="mini-bar" style="margin-top:.5rem"><i style="width:' + pct + '%"></i></div>';
-      card.addEventListener("click", () => { current = a.id; render(); });
-      grid.appendChild(card);
-    });
-    contentEl.appendChild(grid);
+    const addGrid = (label, group) => {
+      if (!group.length) return;
+      if (directors.length) {
+        const h = document.createElement("h3");
+        h.className = "ov-section";
+        h.textContent = label + " " + group.length + "명";
+        contentEl.appendChild(h);
+      }
+      const grid = document.createElement("div");
+      grid.className = "overview-grid";
+      group.forEach((a) => {
+        const s = actorStats(a);
+        const pct = s.total ? Math.round((s.watched / s.total) * 100) : 0;
+        const card = document.createElement("div");
+        card.className = "ov-card";
+        card.innerHTML =
+          '<div class="n">' + a.nameKo + "</div>" +
+          '<div class="e">' + a.nameEn + (isDirector(a) ? " · 감독" : "") + "</div>" +
+          '<div class="s">' + s.watched + " / " + s.total + " · " + pct + "%</div>" +
+          '<div class="mini-bar" style="margin-top:.5rem"><i style="width:' + pct + '%"></i></div>';
+        card.addEventListener("click", () => { current = a.id; render(); });
+        grid.appendChild(card);
+      });
+      contentEl.appendChild(grid);
+    };
+    addGrid("배우", actors);
+    addGrid("감독", directors);
     emptyEl.classList.remove("show");
   }
 
   function renderActorList(actor) {
     pageTitle.textContent = actor.nameKo;
-    pageSub.textContent = actor.nameEn + " · Feature Film Acting Credits";
+    const dir = isDirector(actor);
+    pageSub.textContent = actor.nameEn + (dir ? " · Feature Film Directing Credits" : " · Feature Film Acting Credits");
     const w = watchedSet(actor.id);
     const s = actorStats(actor);
     updateProgress(s.watched, s.total);
-    clearBtn.textContent = "이 배우 체크 해제";
+    clearBtn.textContent = dir ? "이 감독 체크 해제" : "이 배우 체크 해제";
 
     const q = searchEl.value.trim().toLowerCase();
     contentEl.innerHTML = "";
@@ -401,7 +430,7 @@
       renderOverview();
     } else {
       document.getElementById("controls").style.display = "flex";
-      const actor = actors.find((a) => a.id === current);
+      const actor = lists.find((a) => a.id === current);
       if (actor) renderActorList(actor);
     }
   }
@@ -420,14 +449,14 @@
     if (current === "all") {
       const ov = overallStats();
       if (!ov.watched) return;
-      if (!confirm("모든 배우의 시청 체크를 해제할까요?")) return;
-      actors.forEach((a) => { delete state[a.id]; });
+      if (!confirm(directors.length ? "모든 배우·감독의 시청 체크를 해제할까요?" : "모든 배우의 시청 체크를 해제할까요?")) return;
+      lists.forEach((a) => { delete state[a.id]; });
       saveState();
     } else {
       const w = watchedSet(current);
       if (!w.size) return;
-      const actor = actors.find((a) => a.id === current);
-      if (!confirm((actor ? actor.nameKo : "이 배우") + "의 시청 체크를 모두 해제할까요?")) return;
+      const actor = lists.find((a) => a.id === current);
+      if (!confirm((actor ? actor.nameKo : "이 목록") + "의 시청 체크를 모두 해제할까요?")) return;
       setWatched(current, new Set());
     }
     render();

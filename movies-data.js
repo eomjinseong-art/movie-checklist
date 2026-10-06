@@ -5985,6 +5985,255 @@ window.MOVIE_CHECKLIST_DATA = {
       ]
     }
   ],
+  "directors": [
+    {
+      "id": "ridley",
+      "nameKo": "리들리 스콧",
+      "nameEn": "Ridley Scott",
+      "movies": [
+        {
+          "id": "duellists",
+          "year": 1977,
+          "en": "The Duellists",
+          "ko": "결투자들",
+          "genre": "역사/드라마",
+          "note": "키스 캐러딘·하비 케이틀 · 장편 데뷔작 · 나폴레옹 시대 두 장교의 15년 결투 · 칸 영화제 데뷔작상"
+        },
+        {
+          "id": "alien",
+          "year": 1979,
+          "en": "Alien",
+          "ko": "에이리언",
+          "genre": "SF/호러",
+          "note": "시고니 위버 · 리플리의 탄생, SF 호러의 교과서 · 오스카 시각효과상"
+        },
+        {
+          "id": "blade-runner",
+          "year": 1982,
+          "en": "Blade Runner",
+          "ko": "블레이드 러너",
+          "genre": "SF/누아르",
+          "note": "해리슨 포드·룻거 하우어 · 사이버펑크 미학의 원형 · 감독이 직접 다듬은 파이널 컷 추천"
+        },
+        {
+          "id": "legend",
+          "year": 1985,
+          "en": "Legend",
+          "ko": "레전드",
+          "genre": "판타지",
+          "note": "톰 크루즈·미아 사라·팀 커리 · 팀 커리의 어둠의 군주와 동화 같은 미장센"
+        },
+        {
+          "id": "someone-to-watch-over-me",
+          "year": 1987,
+          "en": "Someone to Watch Over Me",
+          "ko": "위험한 연인",
+          "genre": "스릴러/로맨스",
+          "note": "톰 베린저·미미 로저스·로레인 브라코 · 살인 목격자를 지키는 형사의 위험한 사랑, 80년대 뉴욕 네오누아르"
+        },
+        {
+          "id": "black-rain",
+          "year": 1989,
+          "en": "Black Rain",
+          "ko": "블랙 레인",
+          "genre": "액션/범죄",
+          "note": "마이클 더글러스·앤디 가르시아·다카쿠라 켄 · 네온 빛 오사카 누아르 · 마쓰다 유사쿠의 유작"
+        },
+        {
+          "id": "thelma-louise",
+          "year": 1991,
+          "en": "Thelma & Louise",
+          "ko": "델마와 루이스",
+          "genre": "로드무비/드라마",
+          "note": "수잔 서랜든·지나 데이비스 · 여성 로드무비의 대표작, 브래드 피트 출세작 · 오스카 각본상"
+        },
+        {
+          "id": "1492",
+          "year": 1992,
+          "en": "1492: Conquest of Paradise",
+          "ko": "1492 콜럼버스",
+          "genre": "역사/드라마",
+          "note": "제라르 드파르디유·시고니 위버 · 신대륙 도착 500주년 기념 대작 · 반젤리스 음악"
+        },
+        {
+          "id": "white-squall",
+          "year": 1996,
+          "en": "White Squall",
+          "ko": "화이트 스콜",
+          "genre": "드라마/어드벤처",
+          "note": "제프 브리지스 · 1961년 범선 훈련선 알바트로스호 침몰 실화 · 소년들의 성장 항해극"
+        },
+        {
+          "id": "gi-jane",
+          "year": 1997,
+          "en": "G.I. Jane",
+          "ko": "지.아이. 제인",
+          "genre": "액션/드라마",
+          "note": "데미 무어·비고 모텐슨 · 해군 특수부대 지옥 훈련에 도전한 여성 장교, 삭발 투혼"
+        },
+        {
+          "id": "gladiator",
+          "year": 2000,
+          "en": "Gladiator",
+          "ko": "글래디에이터",
+          "genre": "역사/액션",
+          "note": "러셀 크로우·호아킨 피닉스 · 검투사 서사극의 정점 · 오스카 작품상 포함 5관왕"
+        },
+        {
+          "id": "hannibal",
+          "year": 2001,
+          "en": "Hannibal",
+          "ko": "한니발",
+          "genre": "스릴러",
+          "note": "앤서니 홉킨스·줄리안 무어 · 양들의 침묵 10년 후, 피렌체에 숨은 렉터 박사"
+        },
+        {
+          "id": "black-hawk-down",
+          "year": 2001,
+          "en": "Black Hawk Down",
+          "ko": "블랙 호크 다운",
+          "genre": "전쟁",
+          "note": "조시 하트넷·이완 맥그리거·에릭 바나 · 1993년 모가디슈 전투 실화, 압도적 시가전 · 오스카 편집·음향상"
+        },
+        {
+          "id": "matchstick-men",
+          "year": 2003,
+          "en": "Matchstick Men",
+          "ko": "매치스틱 맨",
+          "genre": "범죄/코미디",
+          "note": "니콜라스 케이지·샘 록웰·앨리슨 로먼 · 강박증 사기꾼과 딸의 반전 사기극"
+        },
+        {
+          "id": "kingdom-of-heaven",
+          "year": 2005,
+          "en": "Kingdom of Heaven",
+          "ko": "킹덤 오브 헤븐",
+          "genre": "역사/액션",
+          "note": "올랜도 블룸·에바 그린·리암 니슨 · 1187년 예루살렘 공방전 · 감독판 강력 추천"
+        },
+        {
+          "id": "good-year",
+          "year": 2006,
+          "en": "A Good Year",
+          "ko": "어느 멋진 순간",
+          "genre": "로맨스/코미디",
+          "note": "러셀 크로우·마리옹 꼬띠아르 · 런던 펀드매니저의 프로방스 포도밭 힐링 로맨스"
+        },
+        {
+          "id": "american-gangster",
+          "year": 2007,
+          "en": "American Gangster",
+          "ko": "아메리칸 갱스터",
+          "genre": "범죄/드라마",
+          "note": "덴젤 워싱턴·러셀 크로우 · 실존 마약왕 프랭크 루카스와 그를 쫓는 형사의 실화"
+        },
+        {
+          "id": "body-of-lies",
+          "year": 2008,
+          "en": "Body of Lies",
+          "ko": "바디 오브 라이즈",
+          "genre": "스파이/스릴러",
+          "note": "레오나르도 디카프리오·러셀 크로우 · 현장 요원과 본부 상관이 엇갈리는 중동 대테러 첩보전"
+        },
+        {
+          "id": "robin-hood",
+          "year": 2010,
+          "en": "Robin Hood",
+          "ko": "로빈 후드",
+          "genre": "액션/어드벤처",
+          "note": "러셀 크로우·케이트 블란쳇 · 전설이 되기 전 궁수 로빈 롱스트라이드의 기원담"
+        },
+        {
+          "id": "prometheus",
+          "year": 2012,
+          "en": "Prometheus",
+          "ko": "프로메테우스",
+          "genre": "SF",
+          "note": "누미 라파스·마이클 패스벤더·샤를리즈 테론 · 에이리언 프리퀄, 인류의 기원을 찾는 탐사"
+        },
+        {
+          "id": "counselor",
+          "year": 2013,
+          "en": "The Counselor",
+          "ko": "카운슬러",
+          "genre": "범죄/스릴러",
+          "note": "마이클 패스벤더·페넬로페 크루즈·카메론 디아즈·하비에르 바르뎀·브래드 피트 · 코맥 매카시의 첫 오리지널 각본"
+        },
+        {
+          "id": "exodus",
+          "year": 2014,
+          "en": "Exodus: Gods and Kings",
+          "ko": "엑소더스: 신들과 왕들",
+          "genre": "역사/드라마",
+          "note": "크리스찬 베일·조엘 에저튼 · 모세와 람세스의 대립, 열 가지 재앙과 홍해 스펙터클"
+        },
+        {
+          "id": "the-martian",
+          "year": 2015,
+          "en": "The Martian",
+          "ko": "마션",
+          "genre": "SF",
+          "note": "맷 데이먼·제시카 차스테인 · 화성에 홀로 남은 식물학자의 유쾌한 생존기 · 골든글로브 작품상(뮤지컬·코미디)"
+        },
+        {
+          "id": "alien-covenant",
+          "year": 2017,
+          "en": "Alien: Covenant",
+          "ko": "에이리언: 커버넌트",
+          "genre": "SF/호러",
+          "note": "마이클 패스벤더·캐서린 워터스턴 · 프로메테우스 속편, 안드로이드 데이빗의 창조"
+        },
+        {
+          "id": "all-the-money",
+          "year": 2017,
+          "en": "All the Money in the World",
+          "ko": "올 더 머니",
+          "genre": "범죄/드라마",
+          "note": "미셸 윌리엄스·크리스토퍼 플러머·마크 월버그 · 1973년 게티 손자 납치 실화 · 플러머 긴급 재촬영 투입, 오스카 남우조연 후보"
+        },
+        {
+          "id": "last-duel",
+          "year": 2021,
+          "en": "The Last Duel",
+          "ko": "라스트 듀얼: 최후의 결투",
+          "genre": "역사/드라마",
+          "note": "맷 데이먼·애덤 드라이버·조디 코머·벤 애플렉 · 14세기 프랑스 마지막 결투재판 실화를 세 시점으로"
+        },
+        {
+          "id": "house-of-gucci",
+          "year": 2021,
+          "en": "House of Gucci",
+          "ko": "하우스 오브 구찌",
+          "genre": "범죄/드라마",
+          "note": "레이디 가가·애덤 드라이버·알 파치노·자레드 레토 · 구찌 가문의 몰락과 마우리치오 구찌 피살 실화"
+        },
+        {
+          "id": "napoleon",
+          "year": 2023,
+          "en": "Napoleon",
+          "ko": "나폴레옹",
+          "genre": "역사/전쟁",
+          "note": "호아킨 피닉스·바네사 커비 · 나폴레옹과 조제핀, 아우스터리츠 전투 장면이 압권"
+        },
+        {
+          "id": "gladiator-2",
+          "year": 2024,
+          "en": "Gladiator II",
+          "ko": "글래디에이터 Ⅱ",
+          "genre": "역사/액션",
+          "note": "폴 메스칼·페드로 파스칼·덴젤 워싱턴 · 24년 만의 속편, 콜로세움에 선 루키우스"
+        },
+        {
+          "id": "dog-stars",
+          "year": 2026,
+          "en": "The Dog Stars",
+          "ko": "도그 스타: 마지막 희망",
+          "genre": "SF/드라마",
+          "note": "제이콥 엘로디·조슈 브롤린·마가렛 퀄리 · 대재앙 이후 반려견과 사는 파일럿의 생존 로드무비 · 최신작(국내 2026.8.26 개봉)"
+        }
+      ]
+    }
+  ],
   "uncertainTitles": [
     "Léa Seydoux: The Beautiful Person / Belle Épine — 한국 개봉명 불확실",
     "Gerard Butler: Butterfly on a Wheel — 한국명 '샤터드'로도 표기",
@@ -5997,6 +6246,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Hugh Jackman: Erskineville Kings — 한국 개봉명 불확실",
     "Dwayne Johnson: Fast X 등 카메오·목소리 카메오, 다큐, 단편, DTV(Empire State), 미개봉작(Jumanji: Open World) 제외",
     "Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오(클론의 습격·다크 나이트 라이즈·테드 2 등), 내레이션, 미개봉작(The Mongoose 2026.10.30, 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실",
-    "Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)"
+    "Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)",
+    "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년"
   ]
 };
