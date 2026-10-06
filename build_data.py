@@ -113,7 +113,7 @@ m("instigators",2024,"The Instigators","인스티게이터스","액션/코미디
 ]
 
 daniel = [
-m("power-of-one",1992,"The Power of One","하나의 힘","드라마","장편 데뷔"),
+m("power-of-one",1992,"The Power of One","파워 오브 원","드라마","장편 데뷔"),
 m("kid-king-arthur",1995,"A Kid in King Arthur's Court","아더왕의 궁전","판타지/가족"),
 m("elizabeth",1998,"Elizabeth","엘리자베스","역사/드라마"),
 m("love-is-devil",1998,"Love Is the Devil","러브 이즈 더 데빌","전기/드라마"),
@@ -342,7 +342,7 @@ m("marie-antoinette",2006,"Marie Antoinette","마리 앙투아네트","역사/�
 m("stuart-a-life",2007,"Stuart: A Life Backwards","스튜어트: 어 라이프 백워즈","드라마","TV영화이나 영국 극장 공개"),
 m("rocknrolla",2008,"RocknRolla","락앤롤라","범죄/코미디"),
 m("bronson",2008,"Bronson","브론슨","전기/범죄"),
-m("thick-as-thieves",2009,"Thick as Thieves","시크 애즈 띠브즈","범죄"),
+m("thick-as-thieves",2009,"Thick as Thieves","코드","범죄"),
 m("inception-th",2010,"Inception","인셉션","SF/액션"),
 m("warrior",2011,"Warrior","워리어","스포츠/드라마"),
 m("tinker-tailor",2011,"Tinker Tailor Soldier Spy","팅커 테일러 솔저 스파이","스파이/스릴러"),
@@ -390,7 +390,7 @@ m("machine-gun-preacher",2011,"Machine Gun Preacher","머신건 프리처","액�
 m("corsican",2011,"Coriolanus","코리올라누스","드라마"),
 m("playing-field",2011,"Playing for Keeps","플레잉 포 킵스","로맨스/코미디"),
 m("chasing-mavericks",2012,"Chasing Mavericks","체이싱 매버릭스","스포츠/드라마"),
-m("olympus-fallen",2013,"Olympus Has Fallen","화이트하우스 다운","액션"),
+m("olympus-fallen",2013,"Olympus Has Fallen","백악관 최후의 날","액션"),
 m("gods-egypt",2016,"Gods of Egypt","갓 오브 이집트","판타지/액션"),
 m("london-fallen",2016,"London Has Fallen","런던 해즈 폴른","액션"),
 m("geostorm",2017,"Geostorm","지오스톰","SF/재난"),
@@ -572,7 +572,6 @@ tom_hardy[:] = [x for x in tom_hardy if x["id"] != "stuart-a-life"]
 uncertain = [
   "Léa Seydoux: The Beautiful Person / Belle Épine — 한국 개봉명 불확실",
   "Gerard Butler: Butterfly on a Wheel — 한국명 '샤터드'로도 표기",
-  "Tom Hardy: Thick as Thieves — 한국 개봉명 불확실 (시크 애즈 띠브즈)",
   "Russell Crowe: Prisoners of the Sun — 일명 Blood Oath",
   "Russell Crowe: The Weight — 한국 개봉명 미확인 (더 웨이트)",
   "Russell Crowe: Gladiator II — 아카이브 영상만 사용되어 출연작에서 제외",
