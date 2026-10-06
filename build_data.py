@@ -222,7 +222,7 @@ m("proof-of-life",2000,"Proof of Life","프루프 오브 라이프","액션/스�
 m("beautiful-mind",2001,"A Beautiful Mind","뷰티풀 마인드","전기/드라마","오스카 남우주연 후보"),
 m("master-commander",2003,"Master and Commander: The Far Side of the World","마스터 앤드 커맨더: 위대한 정복자","전쟁/어드벤처"),
 m("cinderella-man",2005,"Cinderella Man","신데렐라 맨","스포츠/드라마"),
-m("good-year",2006,"A Good Year","어 굿 이어","로맨스/코미디"),
+m("good-year",2006,"A Good Year","어느 멋진 순간","로맨스/코미디"),
 m("310-yuma",2007,"3:10 to Yuma","3:10 투 유마","서부"),
 m("american-gangster-rc",2007,"American Gangster","아메리칸 갱스터","범죄/드라마"),
 m("body-of-lies",2008,"Body of Lies","바디 오브 라이즈","스파이/스릴러"),
