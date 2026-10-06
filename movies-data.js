@@ -1663,7 +1663,7 @@ window.MOVIE_CHECKLIST_DATA = {
           "id": "good-year",
           "year": 2006,
           "en": "A Good Year",
-          "ko": "어 굿 이어",
+          "ko": "어느 멋진 순간",
           "genre": "로맨스/코미디",
           "note": ""
         },
