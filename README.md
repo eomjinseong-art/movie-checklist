@@ -55,7 +55,6 @@
 ## 불확실 제목
 - Léa Seydoux: The Beautiful Person / Belle Épine — 한국 개봉명 불확실
 - Gerard Butler: Butterfly on a Wheel — 한국명 '샤터드'로도 표기
-- Tom Hardy: Thick as Thieves — 한국 개봉명 불확실 (시크 애즈 띠브즈)
 - Russell Crowe: Prisoners of the Sun — 일명 Blood Oath
 - Russell Crowe: The Weight — 한국 개봉명 미확인 (더 웨이트)
 - Russell Crowe: Gladiator II — 아카이브 영상만 사용되어 출연작에서 제외 (신규 촬영 없음)
