@@ -277,6 +277,46 @@ header.page-head .subtitle {
   color: var(--text-dim);
 }
 .year { color: var(--gold-dim); font-weight: 600; font-variant-numeric: tabular-nums; }
+.era, .kind {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.45;
+  border-radius: 999px;
+  padding: 0 0.45rem;
+  border: 1px solid var(--gold-border);
+  color: var(--gold);
+}
+.kind { color: var(--text-muted); border-color: #444; font-weight: 600; }
+.period { color: var(--text-dim); }
+.netflix-badge {
+  display: inline-block;
+  background: #e50914;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 3px;
+  padding: 0.05rem 0.38rem;
+  line-height: 1.45;
+}
+.film-source {
+  margin-left: auto;
+  color: var(--gold-dim);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+.film-source:hover { color: var(--gold); text-decoration: underline; }
+.list-source {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  color: var(--gold-dim);
+  text-decoration: none;
+}
+.list-source:hover { color: var(--gold); text-decoration: underline; }
+.list-source[hidden] { display: none; }
 .genre::before, .note::before {
   content: "·";
   margin-right: 0.65rem;
