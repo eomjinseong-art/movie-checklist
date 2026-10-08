@@ -213,19 +213,16 @@ def render():
       </div>
       <div class="bar"><div class="bar-fill" id="bar-fill"></div></div>
     </div>
-    <section class="sync-panel" id="sync-panel" aria-label="기기 간 동기화">
-      <div class="sync-row">
-        <span class="sync-label">동기화 코드</span>
-        <code class="sync-code" id="sync-code">—</code>
-        <button type="button" class="btn small" id="sync-copy">복사</button>
-        <button type="button" class="btn small" id="sync-link-toggle">다른 기기 연결</button>
-        <span class="sync-status" id="sync-status" role="status" aria-live="polite">—</span>
+    <section class="sync-panel" id="sync-panel" aria-label="체크 저장">
+      <form class="sync-login" id="sync-login" autocomplete="on">
+        <input type="password" id="sync-pass" name="password" placeholder="비밀번호" autocomplete="current-password" enterkeyhint="go" maxlength="200" aria-label="비밀번호" />
+        <button type="submit" class="btn small" id="sync-login-btn">비번으로 저장</button>
+      </form>
+      <div class="sync-row" id="sync-on" hidden>
+        <span class="sync-status saving" id="sync-status" role="status" aria-live="polite">저장 중 · 모든 기기 공유</span>
+        <button type="button" class="sync-logout" id="sync-logout">로그아웃</button>
       </div>
-      <p class="sync-help">시청 체크는 배우별 목록과 같은 동기화 코드로 저장됩니다. 이미 배우 목록에 있는 작품은 그 체크와 함께 움직입니다.</p>
-      <div class="sync-link" id="sync-link">
-        <input type="text" id="sync-input" placeholder="기존 동기화 코드 입력" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="latin" enterkeyhint="go" />
-        <button type="button" class="btn" id="sync-connect">연결</button>
-      </div>
+      <p class="sync-help" id="sync-help">비밀번호를 기기마다 한 번만 입력하면 체크가 서버의 목록 하나에 저장돼요. 배우별 목록과 같은 기록이라, 이미 배우 목록에 있는 작품은 그 체크와 함께 움직여요.</p>
       <p class="sync-msg" id="sync-msg"></p>
     </section>
     <div class="controls">
@@ -257,6 +254,7 @@ def render():
   </main>
 </div>
 <button type="button" class="menu-toggle" id="menu-toggle" aria-label="교훈 태그 열기">주제 선택</button>
+<script src="/sync-client.js"></script>
 <script src="/true-stories.js"></script>
 </body>
 </html>

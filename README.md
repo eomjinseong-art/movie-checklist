@@ -35,17 +35,23 @@
 
 ## 사용
 - `index.html` 을 브라우저에서 열거나 Vercel 배포 URL로 접속
-- 체크 상태는 **동기화 코드**별로 서버(Upstash Redis)에 저장되어 폰·PC 등 여러 기기에서 이어집니다
-  - 첫 방문 시 16자리 랜덤 코드 자동 생성 → 화면의 `복사` 버튼으로 복사
-  - 다른 기기에서 `다른 기기 연결` → 코드 입력 → 같은 기록 공유 (그 기기의 기존 체크도 합쳐짐)
-  - 오프라인일 땐 `localStorage`(`movie-checklist-items-v2`, 구버전 `movie-checklist-v1`)에 임시 저장 후 온라인 시 자동 업로드
-  - 병합 규칙: 영화별 마지막 변경 우선(체크·해제 모두 전파), 기존 localStorage 체크는 첫 동기화 때 서버로 합쳐짐
+- 목록 보기는 로그인 없이 누구나 가능 · 체크는 기본적으로 이 기기 `localStorage`에 저장
+- **비번으로 저장**: 기기마다 비밀번호를 한 번 입력하면(약 400일 유지되는 httpOnly 쿠키) 체크가 서버(Upstash Redis)의 **목록 하나**에 저장되고 모든 기기가 같은 목록을 봄
+  - 기기 첫 로그인 때 그 기기의 체크(`movie-checklist-items-v2`의 v:1 + 구버전 `movie-checklist-v1`)와 예전 동기화 코드(`movie-checklist-sync-code`)의 체크를 **합집합으로만** 서버에 합침(아무것도 지우지 않음) → `movie-checklist-imported-v1` = `1`, 원래 로컬 값은 `movie-checklist-pre-shared-backup-v1`에 보관
+  - 이후 병합 규칙: 영화별 마지막 변경 우선(체크·해제 모두 전파)
+- 로직: `sync-client.js` (두 페이지 공용), 서버: `api/login.js` · `api/logout.js` · `api/shared.js` · `api/_lib/store.js`
 
 ## API
-- `GET /api/sync?code=CODE` → `{ exists, items, updatedAt }`
-- `POST /api/sync` `{ code, items }` → 서버에서 병합 후 `{ items, updatedAt }`
-- Redis 키: `movie-checklist:sync:<CODE>`
-- 환경 변수: `KV_REST_API_URL`, `KV_REST_API_TOKEN` (Vercel Marketplace Upstash 연결 시 자동 설정)
+- `POST /api/login {password}` → 맞으면 `mc_session` 쿠키(HttpOnly·Secure·SameSite=Lax·400일), 틀리면 401 · IP당 15분에 10회 실패 시 429
+- `POST /api/logout` → 쿠키 삭제
+- `GET /api/shared` (로그인 필요, 아니면 401) → `{ items, updatedAt, checked, now }`
+- `POST /api/shared {items}` → 마지막 변경 우선 병합 · `{mode:"import", items, legacyCode}` → 합집합만(첫 로그인)
+- Redis 키
+  - `movie-checklist:shared:v1` — 공유 목록 `{ items: {"<목록id>:<영화id>": {v:0|1, t:ms}}, updatedAt }`
+  - `movie-checklist:shared:v1:history` — 매 쓰기 전 이전 값(최근 50개, LPUSH/LTRIM)
+  - `movie-checklist:sync:<CODE>` — 예전 동기화 코드별 기록(백업으로 그대로 보존, 읽기만 함). 예전 페이지용 `GET/POST /api/sync`도 그대로 동작
+  - `movie-checklist:loginfail:<ip>` — 로그인 실패 횟수(15분 만료)
+- 환경 변수: `KV_REST_API_URL`, `KV_REST_API_TOKEN` (Upstash), `MOVIE_CHECKLIST_PASSWORD_HASH` (Sensitive, `scrypt$N$r$p$salt$hash`), `MOVIE_CHECKLIST_SESSION_SECRET` (Sensitive, 바꾸면 모든 기기 로그아웃)
 
 ## 규칙
 - 배우: 장편 출연(극장·주요 스트리밍) · 감독: 장편 연출작

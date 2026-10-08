@@ -336,18 +336,6 @@ footer {
 .sync-panel.first { border-color: var(--gold-border); box-shadow: var(--shadow); }
 .sync-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.65rem; }
 .sync-label { color: var(--text-muted); }
-.sync-code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  color: var(--gold);
-  background: #111;
-  border: 1px solid var(--gold-border);
-  border-radius: 8px;
-  padding: 0.3rem 0.55rem;
-  -webkit-user-select: all;
-  user-select: all;
-}
 .sync-status {
   margin-left: auto;
   font-size: 0.75rem;
@@ -367,23 +355,36 @@ footer {
 .sync-status.saving::before { background: var(--gold); }
 .sync-status.offline::before { background: var(--danger); }
 .sync-help { color: var(--text-dim); font-size: 0.75rem; margin-top: 0.5rem; line-height: 1.6; }
-.sync-link { display: none; margin-top: 0.65rem; gap: 0.5rem; flex-wrap: wrap; }
-.sync-link.show { display: flex; }
-.sync-link input {
-  flex: 1 1 200px;
+.sync-panel [hidden] { display: none !important; }
+.sync-panel.on { padding: 0.6rem 1rem; }
+.sync-panel.on .sync-status { margin-left: 0; }
+.sync-login { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.65rem; }
+.sync-login input {
+  flex: 1 1 140px;
   min-width: 0;
+  max-width: 260px;
   background: var(--bg-card);
   border: 1px solid #333;
   color: var(--text);
-  padding: 0.6rem 0.8rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 10px;
   font: inherit;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+  font-size: 1rem; /* 16px+ avoids iOS zoom on focus */
   outline: none;
 }
-.sync-link input:focus { border-color: var(--gold-border); }
+.sync-login input:focus { border-color: var(--gold-border); }
+.sync-logout {
+  margin-left: auto;
+  background: none;
+  border: 0;
+  padding: 0.2rem 0;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sync-logout:hover { color: var(--text-muted); }
 .sync-msg { font-size: 0.75rem; margin-top: 0.4rem; color: var(--text-muted); min-height: 1em; }
 .sync-msg.err { color: var(--danger); }
 .btn.small { padding: 0.4rem 0.7rem; font-size: 0.78rem; }
