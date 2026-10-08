@@ -2,7 +2,7 @@
 
 배우별 장편 출연작 · 감독별 장편 연출작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 19명** (818편) · **감독 1명** (30편) · 총 **848편**
+**배우 19명** (818편) · **감독 2명** (50편) · 총 **868편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -29,6 +29,7 @@
 | 감독 | EN | 편수 |
 |---|---|---:|
 | 리들리 스콧 | Ridley Scott | 30 |
+| 올리버 스톤 | Oliver Stone | 20 |
 
 - 감독 목록은 `movies-data.js`의 `directors` 배열(배우와 같은 `{id, nameKo, nameEn, movies}` 구조)에 있고, 사이드바·전체 현황에 '감독' 섹션으로 표시됩니다
 - 체크 키는 배우와 같은 `<목록id>:<영화id>` 형식(예: `ridley:alien`)이라 진행률·동기화·저장된 체크와 그대로 호환됩니다
@@ -72,3 +73,4 @@
 - Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)
 - Morgan Freeman: 1964~68 무크레딧 단역·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV, 다큐·내레이션, 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son/That Was Then... This Is Now/Levity/The Minute You Wake Up Dead/My Dead Friend Zoe 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준
 - Ridley Scott (감독): 단편(Boy and Bicycle 등)·옴니버스 보이지 않는 아이들의 단편·제작만·TV·미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년
+- Oliver Stone (감독): 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준

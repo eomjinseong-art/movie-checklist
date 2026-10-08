@@ -6927,6 +6927,173 @@ window.MOVIE_CHECKLIST_DATA = {
           "note": "제이콥 엘로디·조슈 브롤린·마가렛 퀄리 · 대재앙 이후 반려견과 사는 파일럿의 생존 로드무비 · 최신작(국내 2026.8.26 개봉)"
         }
       ]
+    },
+    {
+      "id": "stone",
+      "nameKo": "올리버 스톤",
+      "nameEn": "Oliver Stone",
+      "movies": [
+        {
+          "id": "seizure",
+          "year": 1974,
+          "en": "Seizure",
+          "ko": "강탈",
+          "genre": "공포",
+          "note": "조나단 프라이드·마르틴 베스윅 · 장편 데뷔작, 저예산 캐나다 호러 · 일명 지옥의 여왕(Queen of Evil) · 한국 개봉명 불확실"
+        },
+        {
+          "id": "the-hand",
+          "year": 1981,
+          "en": "The Hand",
+          "ko": "핸드",
+          "genre": "공포",
+          "note": "마이클 케인 · 잘린 손이 살인을 저지르는 심리 호러 · 제임스 호너 음악 · 일명 손"
+        },
+        {
+          "id": "salvador",
+          "year": 1986,
+          "en": "Salvador",
+          "ko": "살바도르",
+          "genre": "전쟁/드라마",
+          "note": "제임스 우즈·제임스 벨루시 · 1980년 엘살바도르 내전의 종군기자 · 우즈 오스카 남우주연 후보"
+        },
+        {
+          "id": "platoon",
+          "year": 1986,
+          "en": "Platoon",
+          "ko": "플래툰",
+          "genre": "전쟁",
+          "note": "찰리 신·톰 베린저·윌렘 데포 · 감독의 베트남 참전 경험을 그린 출세작 · 오스카 작품상·감독상 포함 4관왕"
+        },
+        {
+          "id": "wall-street",
+          "year": 1987,
+          "en": "Wall Street",
+          "ko": "월 스트리트",
+          "genre": "범죄/드라마",
+          "note": "마이클 더글러스·찰리 신 · 탐욕의 증권가와 고든 게코 · 더글러스 오스카 남우주연상"
+        },
+        {
+          "id": "talk-radio",
+          "year": 1988,
+          "en": "Talk Radio",
+          "ko": "토크 라디오",
+          "genre": "드라마",
+          "note": "에릭 보고시언 · 증오를 받는 라디오 진행자의 하룻밤 · 동명 희곡 각색, 베를린 황금곰 후보"
+        },
+        {
+          "id": "born-on-the-fourth",
+          "year": 1989,
+          "en": "Born on the Fourth of July",
+          "ko": "7월 4일생",
+          "genre": "전기/드라마",
+          "note": "톰 크루즈 · 참전 용사가 반전 운동가로 선 론 코빅 실화 · 오스카 감독상, 베트남 3부작의 두 번째"
+        },
+        {
+          "id": "the-doors",
+          "year": 1991,
+          "en": "The Doors",
+          "ko": "도어즈",
+          "genre": "전기/음악",
+          "note": "발 킬머·멕 라이언 · 짐 모리슨과 도어즈의 흥망 · 킬머가 직접 노래"
+        },
+        {
+          "id": "jfk",
+          "year": 1991,
+          "en": "JFK",
+          "ko": "JFK",
+          "genre": "정치 스릴러",
+          "note": "케빈 코스트너·토미 리 존스 · 케네디 암살과 짐 개리슨의 음모론 · 오스카 편집·촬영상, 감독·작품 후보"
+        },
+        {
+          "id": "heaven-and-earth",
+          "year": 1993,
+          "en": "Heaven & Earth",
+          "ko": "하늘과 땅",
+          "genre": "전쟁/드라마",
+          "note": "히엡 티 레·토미 리 존스 · 베트남 여성 레이 리의 실화 · 베트남 3부작의 마지막"
+        },
+        {
+          "id": "natural-born-killers",
+          "year": 1994,
+          "en": "Natural Born Killers",
+          "ko": "올리버 스톤의 킬러",
+          "genre": "범죄/드라마",
+          "note": "우디 해럴슨·줄리엣 루이스 · 미디어가 키운 연쇄살인 커플 · 타란티노 원안, 베네치아 심사위원대상"
+        },
+        {
+          "id": "nixon",
+          "year": 1995,
+          "en": "Nixon",
+          "ko": "닉슨",
+          "genre": "전기/드라마",
+          "note": "앤서니 홉킨스·조앤 앨런 · 리처드 닉슨의 권력과 몰락 · 오스카 남우주연·여우조연·각본·음악 후보"
+        },
+        {
+          "id": "u-turn",
+          "year": 1997,
+          "en": "U Turn",
+          "ko": "유턴",
+          "genre": "범죄/스릴러",
+          "note": "숀 펜·제니퍼 로페즈·닉 놀테 · 사막 마을에 갇힌 건달의 네오누아르 · 엔니오 모리코네 음악"
+        },
+        {
+          "id": "any-given-sunday",
+          "year": 1999,
+          "en": "Any Given Sunday",
+          "ko": "애니 기븐 선데이",
+          "genre": "스포츠/드라마",
+          "note": "알 파치노·카메론 디아즈·제이미 폭스 · 프로 미식축구 구단의 하루, 감독과 쿼터백의 충돌"
+        },
+        {
+          "id": "alexander",
+          "year": 2004,
+          "en": "Alexander",
+          "ko": "알렉산더",
+          "genre": "역사/전쟁",
+          "note": "콜린 파렐·안젤리나 졸리·발 킬머 · 알렉산드로스 대왕의 원정과 몰락 · 반젤리스 음악"
+        },
+        {
+          "id": "world-trade-center",
+          "year": 2006,
+          "en": "World Trade Center",
+          "ko": "월드 트레이드 센터",
+          "genre": "드라마",
+          "note": "니콜라스 케이지·마이클 페냐 · 9·11 붕괴 잔해에 묻힌 항만청 경찰 두 명의 생존 실화"
+        },
+        {
+          "id": "w",
+          "year": 2008,
+          "en": "W.",
+          "ko": "더 프레지던트",
+          "genre": "전기/드라마",
+          "note": "조슈 브롤린 · 조지 W. 부시의 집권과 이라크 전쟁 · 스탠리 와이저 각본 · 국내 2021 개봉, 일명 더블유"
+        },
+        {
+          "id": "money-never-sleeps",
+          "year": 2010,
+          "en": "Wall Street: Money Never Sleeps",
+          "ko": "월 스트리트: 머니 네버 슬립스",
+          "genre": "범죄/드라마",
+          "note": "마이클 더글러스·샤이아 라보프·캐리 멀리건 · 2008년 금융위기, 게코의 귀환"
+        },
+        {
+          "id": "savages",
+          "year": 2012,
+          "en": "Savages",
+          "ko": "파괴자들",
+          "genre": "액션/범죄",
+          "note": "테일러 키치·에런 테일러존슨·블레이크 라이블리·셀마 헤이엑 · 대마 사업과 멕시코 카르텔의 납치극 · 돈 윈즐로 원작"
+        },
+        {
+          "id": "snowden",
+          "year": 2016,
+          "en": "Snowden",
+          "ko": "스노든",
+          "genre": "전기/스릴러",
+          "note": "조셉 고든 레빗·샤일린 우들리 · NSA 내부고발자 에드워드 스노든 실화 · 개봉한 마지막 장편 극영화"
+        }
+      ]
     }
   ],
   "uncertainTitles": [
@@ -6942,6 +7109,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Liam Neeson: Pilgrim's Progress·Christiana(70년대 종교 소품), 포뇨 영어 더빙, 카메오(클론의 습격·다크 나이트 라이즈·테드 2 등), 내레이션, 미개봉작(The Mongoose 2026.10.30, 4 Kids Walk Into a Bank) 제외 · Lamb/The Innocent/Wildcat 한국 개봉명 불확실",
     "Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)",
     "Morgan Freeman: 1964~68 무크레딧 단역(The Pawnbroker 등)·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV 시리즈·TV 영화, 다큐·내레이션(March of the Penguins, War of the Worlds 등), 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만 맡은 작품, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son(해리와 아들)/That Was Then... This Is Now/Levity(레버티)/The Minute You Wake Up Dead/My Dead Friend Zoe(내 죽은 친구 조이) 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준",
-    "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년"
+    "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년",
+    "Oliver Stone: 감독 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준"
   ]
 };
