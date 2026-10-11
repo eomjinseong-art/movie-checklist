@@ -7,17 +7,17 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <title>영화봇 · 배우·감독별 영화 체크리스트</title>
-<meta name="description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 총 930편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
+<meta name="description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 나라별 웃음과 감동 영화 177편, 총 1107편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
 <link rel="canonical" href="https://movie-checklist-sigma.vercel.app/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:site_name" content="영화봇" />
 <meta property="og:title" content="영화봇 · 배우·감독별 영화 체크리스트" />
-<meta property="og:description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 총 930편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
+<meta property="og:description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 나라별 웃음과 감동 영화 177편, 총 1107편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
 <meta property="og:url" content="https://movie-checklist-sigma.vercel.app/" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="영화봇 · 배우·감독별 영화 체크리스트" />
-<meta name="twitter:description" content="배우 19명·감독 2명·역사 영화 62편, 총 930편을 체크하는 한국어 영화 체크리스트." />
+<meta name="twitter:description" content="배우 19명·감독 2명·역사 영화 62편·웃음과 감동 177편, 총 1107편을 체크하는 한국어 영화 체크리스트." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -39,6 +39,7 @@
       <a class="view-tab active" href="/" data-view="people" aria-current="page">배우·감독별</a>
       <a class="view-tab" href="/true-stories">실화 영화</a>
       <a class="view-tab" href="/?list=history" data-view="history">역사 영화</a>
+      <a class="view-tab" href="/?list=laughs" data-view="laughs">웃음과 감동</a>
     </nav>
     <header class="page-head">
       <h2 id="page-title">전체</h2>
@@ -91,6 +92,7 @@
       출처: Wikipedia filmography · 진행 상태는 동기화 코드로 서버에 저장되어 여러 기기에서 이어집니다 (오프라인일 땐 이 기기에 임시 저장)<br />
       <a href="/true-stories">실화 영화 체크리스트</a> · 외국 실화·실화 바탕 작품<br />
       <a href="/?list=history">역사 영화 체크리스트</a> · 고대·중세 62편, 이야기가 놓인 시대 순<br />
+      <a href="/?list=laughs">나라별 웃음과 감동</a> · 유럽 코미디·따뜻한 유머 영화 177편, 나라별 보기<br />
       <span id="footer-uncertain"></span>
     </footer>
   </main>
@@ -121,6 +123,8 @@
   const requested = new URLSearchParams(location.search).get("list");
   if (requested && lists.some((a) => a.id === requested)) current = requested;
   let filter = "all";
+  let groupFilter = "all"; // country filter for theme lists with groupBy
+  const TAB_LISTS = ["history", "laughs"]; // lists with their own view tab / ?list= URL
   let state = {}; // filled from synced items below
 
   const navEl = document.getElementById("actor-nav");
@@ -259,7 +263,7 @@
   function matchesSearch(m, q) {
     if (!q) return true;
     const eras = Array.isArray(m.eras) ? m.eras.join(" ") : "";
-    const hay = (m.ko + " " + m.en + " " + m.year + " " + (m.genre || "") + " " + (m.note || "") + " " + eras + " " + (m.period || "") + " " + (m.type || "") + (m.netflix ? " 넷플릭스 netflix" : "")).toLowerCase();
+    const hay = (m.ko + " " + m.en + " " + m.year + " " + (m.genre || "") + " " + (m.note || "") + " " + eras + " " + (m.period || "") + " " + (m.type || "") + (m.netflix ? " 넷플릭스 netflix" : "") + " " + (m.plot || "") + " " + (m.ratio || "") + (m.kids ? " 가족 아이" : "")).toLowerCase();
     return hay.includes(q);
   }
 
@@ -339,6 +343,11 @@
       if (ae !== be) return ae - be;
       return (a.ord || 0) - (b.ord || 0);
     }
+    if (actor.groupBy && Array.isArray(actor.groups)) {
+      const ag = actor.groups.indexOf(a[actor.groupBy]);
+      const bg = actor.groups.indexOf(b[actor.groupBy]);
+      if (ag !== bg) return ag - bg;
+    }
     return a.year - b.year || a.ko.localeCompare(b.ko, "ko");
   }
 
@@ -347,7 +356,7 @@
     const dir = isDirector(actor);
     const theme = isTheme(actor);
     if (theme) {
-      pageSub.textContent = actor.nameEn + " · 고대·중세, 이야기가 놓인 시대 순";
+      pageSub.textContent = actor.nameEn + " · " + (actor.subtitle || "고대·중세, 이야기가 놓인 시대 순");
     } else {
       pageSub.textContent = actor.nameEn + (dir ? " · Feature Film Directing Credits" : " · Feature Film Acting Credits");
     }
@@ -359,6 +368,22 @@
 
     const q = searchEl.value.trim().toLowerCase();
     contentEl.innerHTML = "";
+    const grouped = actor.groupBy && Array.isArray(actor.groups);
+    if (grouped) {
+      if (groupFilter !== "all" && actor.groups.indexOf(groupFilter) === -1) groupFilter = "all";
+      const bar = document.createElement("div");
+      bar.className = "group-filter";
+      ["all"].concat(actor.groups).forEach((g) => {
+        const n = g === "all" ? actor.movies.length : actor.movies.filter((m) => m[actor.groupBy] === g).length;
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "filter-btn group-btn" + (groupFilter === g ? " active" : "");
+        b.textContent = (g === "all" ? "전체" : g) + " " + n;
+        b.addEventListener("click", () => { groupFilter = g; render(); });
+        bar.appendChild(b);
+      });
+      contentEl.appendChild(bar);
+    }
     const ul = document.createElement("ul");
     ul.className = "list";
     ul.setAttribute("aria-label", actor.nameKo + " 영화 목록");
@@ -370,6 +395,7 @@
       if (filter === "watched" && !isWatched) return;
       if (filter === "unwatched" && isWatched) return;
       if (!matchesSearch(m, q)) return;
+      if (grouped && groupFilter !== "all" && m[actor.groupBy] !== groupFilter) return;
       visible++;
 
       const li = document.createElement("li");
@@ -426,6 +452,18 @@
         n.textContent = m.note;
         meta.appendChild(n);
       }
+      if (m.ratio) {
+        const ra = document.createElement("span");
+        ra.className = "note";
+        ra.textContent = m.ratio;
+        meta.appendChild(ra);
+      }
+      if (m.kids) {
+        const kd = document.createElement("span");
+        kd.className = "kind";
+        kd.textContent = "아이와 함께";
+        meta.appendChild(kd);
+      }
       if (m.netflix) {
         const badge = document.createElement("span");
         badge.className = "netflix-badge";
@@ -444,6 +482,12 @@
         meta.appendChild(link);
       }
       info.append(titles, meta);
+      if (m.plot) {
+        const pl = document.createElement("div");
+        pl.className = "plot";
+        pl.textContent = m.plot;
+        info.appendChild(pl);
+      }
       li.append(cb, info);
 
       const toggle = () => {
@@ -468,7 +512,8 @@
 
   function syncViewTabs() {
     document.querySelectorAll(".view-tab[data-view]").forEach((tab) => {
-      const on = tab.dataset.view === "history" ? current === "history" : current !== "history";
+      const v = tab.dataset.view;
+      const on = TAB_LISTS.indexOf(v) !== -1 ? current === v : TAB_LISTS.indexOf(current) === -1;
       tab.classList.toggle("active", on);
       if (on) tab.setAttribute("aria-current", "page");
       else tab.removeAttribute("aria-current");
@@ -477,10 +522,10 @@
   function rememberList() {
     const url = new URL(location.href);
     const listed = url.searchParams.get("list");
-    if (current === "history") {
-      if (listed === "history") return;
-      url.searchParams.set("list", "history");
-    } else if (listed === "history") {
+    if (TAB_LISTS.indexOf(current) !== -1) {
+      if (listed === current) return;
+      url.searchParams.set("list", current);
+    } else if (TAB_LISTS.indexOf(listed) !== -1) {
       url.searchParams.delete("list");
     } else {
       return;

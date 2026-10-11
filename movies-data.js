@@ -8181,6 +8181,2906 @@ window.MOVIE_CHECKLIST_DATA = {
           "netflix": true
         }
       ]
+    },
+    {
+      "id": "laughs",
+      "nameKo": "나라별 웃음과 감동",
+      "nameEn": "European Comedies & Warm Humor",
+      "subtitle": "유럽 코미디·따뜻한 유머 영화 · 나라별",
+      "groupBy": "country",
+      "groups": [
+        "이탈리아",
+        "프랑스",
+        "영국",
+        "스페인",
+        "독일",
+        "아일랜드",
+        "북유럽"
+      ],
+      "movies": [
+        {
+          "id": "la-vita-e-bella-1997",
+          "year": 1997,
+          "en": "La vita è bella",
+          "ko": "인생은 아름다워",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "수용소에 끌려간 아버지가 어린 아들을 위해 모든 것을 놀이라고 속인다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 1
+        },
+        {
+          "id": "nuovo-cinema-paradiso-1988",
+          "year": 1988,
+          "en": "Nuovo Cinema Paradiso",
+          "ko": "시네마 천국",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "시칠리아 마을 극장의 영사기사와 꼬마 토토의 평생에 걸친 우정",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 2
+        },
+        {
+          "id": "il-postino-1994",
+          "year": 1994,
+          "en": "Il postino",
+          "ko": "일 포스티노",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "섬마을 우편배달부가 망명 시인 네루다에게 시와 사랑을 배운다",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 3
+        },
+        {
+          "id": "mediterraneo-1991",
+          "year": 1991,
+          "en": "Mediterraneo",
+          "ko": "지중해",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "그리스 외딴섬에 고립된 이탈리아 병사들이 전쟁을 잊고 섬 생활에 빠진다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 4
+        },
+        {
+          "id": "pane-e-tulipani-2000",
+          "year": 2000,
+          "en": "Pane e tulipani",
+          "ko": "빵과 튤립",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "휴게소에 남겨진 주부가 즉흥적으로 베네치아에 머물며 새 삶을 찾는다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 5
+        },
+        {
+          "id": "caro-diario-1993",
+          "year": 1993,
+          "en": "Caro diario",
+          "ko": "나의 즐거운 일기",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "난니 모레티가 스쿠터·섬·병원을 오가며 들려주는 세 편의 일기",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 6
+        },
+        {
+          "id": "divorzio-all-italiana-1961",
+          "year": 1961,
+          "en": "Divorzio all'italiana",
+          "ko": "이탈리아식 이혼",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "이혼이 불가능한 시칠리아에서 귀족이 아내를 떼어낼 기막힌 계획을 짠다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 7
+        },
+        {
+          "id": "matrimonio-all-italiana-1964",
+          "year": 1964,
+          "en": "Matrimonio all'italiana",
+          "ko": "이탈리아식 결혼",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "오랜 연인에게 결혼을 받아내려는 여인의 끈질기고 유쾌한 작전",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 8
+        },
+        {
+          "id": "ieri-oggi-domani-1963",
+          "year": 1963,
+          "en": "Ieri, oggi, domani",
+          "ko": "어제 오늘 그리고 내일",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "소피아 로렌과 마스트로이안니가 세 도시에서 펼치는 세 편의 사랑 소동",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 9
+        },
+        {
+          "id": "amarcord-1973",
+          "year": 1973,
+          "en": "Amarcord",
+          "ko": "아마코드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "1930년대 바닷가 소도시 사람들의 한 해를 추억처럼 그린 펠리니의 회상",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 10
+        },
+        {
+          "id": "la-leggenda-del-pianista-sull-oceano-1998",
+          "year": 1998,
+          "en": "La leggenda del pianista sull'oceano",
+          "ko": "피아니스트의 전설",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "평생 배에서 내려본 적 없는 천재 피아니스트의 이야기",
+          "ratio": "웃음 3:감동 7",
+          "kids": true,
+          "ord": 11
+        },
+        {
+          "id": "la-tigre-e-la-neve-2005",
+          "year": 2005,
+          "en": "La tigre e la neve",
+          "ko": "호랑이와 눈",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "전쟁 중인 바그다드로 사랑하는 여인을 살리러 달려간 시인",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 12
+        },
+        {
+          "id": "pinocchio-2019",
+          "year": 2019,
+          "en": "Pinocchio",
+          "ko": "피노키오",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "제페토가 깎은 나무 인형 피노키오의 모험을 실사로 옮긴 동화",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 13
+        },
+        {
+          "id": "habemus-papam-2011",
+          "year": 2011,
+          "en": "Habemus Papam",
+          "ko": "하베무스 파팜",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "교황에 뽑힌 추기경이 공포에 질려 로마 거리로 도망친다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 14
+        },
+        {
+          "id": "il-sorpasso-1962",
+          "year": 1962,
+          "en": "Il sorpasso",
+          "ko": "Il sorpasso",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "소심한 법대생과 허풍쟁이 남자의 즉흥 드라이브 여행",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 15
+        },
+        {
+          "id": "i-soliti-ignoti-1958",
+          "year": 1958,
+          "en": "I soliti ignoti",
+          "ko": "I soliti ignoti",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "어설픈 좀도둑들이 전당포 금고를 털려다 벌어지는 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 16
+        },
+        {
+          "id": "perfetti-sconosciuti-2016",
+          "year": 2016,
+          "en": "Perfetti sconosciuti",
+          "ko": "Perfetti sconosciuti",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "저녁 식사 자리에서 휴대폰을 공개하기로 한 친구들의 비밀이 드러난다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 17
+        },
+        {
+          "id": "benvenuti-al-sud-2010",
+          "year": 2010,
+          "en": "Benvenuti al Sud",
+          "ko": "Benvenuti al Sud",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "남부로 좌천된 북부 우체국장이 편견을 깨고 마을에 정든다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 18
+        },
+        {
+          "id": "mine-vaganti-2010",
+          "year": 2010,
+          "en": "Mine vaganti",
+          "ko": "Mine vaganti",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "커밍아웃하려던 아들이 형에게 선수를 빼앗기며 가족이 뒤집힌다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 19
+        },
+        {
+          "id": "johnny-stecchino-1991",
+          "year": 1991,
+          "en": "Johnny Stecchino",
+          "ko": "Johnny Stecchino",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "순진한 버스 기사가 마피아 보스와 똑같이 생긴 탓에 소동에 휘말린다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 20
+        },
+        {
+          "id": "pranzo-di-ferragosto-2008",
+          "year": 2008,
+          "en": "Pranzo di ferragosto",
+          "ko": "Pranzo di ferragosto",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "엄마와 사는 중년 남자가 휴가철 할머니들을 떠맡아 점심을 차린다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 21
+        },
+        {
+          "id": "quo-vado-2016",
+          "year": 2016,
+          "en": "Quo vado?",
+          "ko": "Quo vado?",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "평생직장을 지키려는 공무원이 북극까지 전출당하며 버틴다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 22
+        },
+        {
+          "id": "smetto-quando-voglio-2014",
+          "year": 2014,
+          "en": "Smetto quando voglio",
+          "ko": "Smetto quando voglio",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "해고된 연구원들이 합법 신종 약물로 한몫 잡으려 뭉친다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 23
+        },
+        {
+          "id": "pane-amore-e-fantasia-1953",
+          "year": 1953,
+          "en": "Pane, amore e fantasia",
+          "ko": "Pane, amore e fantasia",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "산골 마을에 부임한 경찰서장과 말괄량이 처녀의 사랑 소동",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 24
+        },
+        {
+          "id": "l-armata-brancaleone-1966",
+          "year": 1966,
+          "en": "L'armata Brancaleone",
+          "ko": "L'armata Brancaleone",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "허세 가득한 기사와 오합지졸이 영지를 찾아 떠나는 중세 모험",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 25
+        },
+        {
+          "id": "il-marchese-del-grillo-1981",
+          "year": 1981,
+          "en": "Il marchese del Grillo",
+          "ko": "Il marchese del Grillo",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "장난을 즐기는 로마 귀족이 자신과 닮은 숯장수와 신분을 바꾼다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 26
+        },
+        {
+          "id": "fantozzi-1975",
+          "year": 1975,
+          "en": "Fantozzi",
+          "ko": "Fantozzi",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "운 없는 회사원 판토치가 겪는 끝없는 굴욕과 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 27
+        },
+        {
+          "id": "il-ciclone-1996",
+          "year": 1996,
+          "en": "Il ciclone",
+          "ko": "Il ciclone",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "토스카나 시골집에 플라멩코 무용수들이 들이닥치며 생기는 소동",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 28
+        },
+        {
+          "id": "tre-uomini-e-una-gamba-1997",
+          "year": 1997,
+          "en": "Tre uomini e una gamba",
+          "ko": "Tre uomini e una gamba",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "결혼식에 조각상 다리를 배달하러 가는 세 남자의 로드무비",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 29
+        },
+        {
+          "id": "don-camillo-1952",
+          "year": 1952,
+          "en": "Don Camillo",
+          "ko": "Don Camillo",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "이탈리아",
+          "eras": [
+            "이탈리아"
+          ],
+          "plot": "마을 신부 돈 카밀로와 공산당 읍장 페포네의 티격태격 대결",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 30
+        },
+        {
+          "id": "intouchables-2011",
+          "year": 2011,
+          "en": "Intouchables",
+          "ko": "언터처블: 1%의 우정",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "전신마비 백만장자와 빈민가 출신 간병인의 우정",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 31
+        },
+        {
+          "id": "le-fabuleux-destin-d-amelie-poulain-2001",
+          "year": 2001,
+          "en": "Le Fabuleux Destin d'Amélie Poulain",
+          "ko": "아멜리에",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "몽마르트르 카페 종업원이 몰래 이웃들을 행복하게 만들기 시작한다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 32
+        },
+        {
+          "id": "les-choristes-2004",
+          "year": 2004,
+          "en": "Les Choristes",
+          "ko": "코러스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "문제아 기숙학교에 온 음악 교사가 합창으로 아이들을 바꾼다",
+          "ratio": "웃음 3:감동 7",
+          "kids": true,
+          "ord": 33
+        },
+        {
+          "id": "bienvenue-chez-les-ch-tis-2008",
+          "year": 2008,
+          "en": "Bienvenue chez les Ch'tis",
+          "ko": "웰컴 투 슈티",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "남프랑스 우체국장이 춥고 사투리 심한 북부로 발령나며 겪는 소동",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 34
+        },
+        {
+          "id": "le-diner-de-cons-1998",
+          "year": 1998,
+          "en": "Le Dîner de cons",
+          "ko": "디너 게임",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "바보를 초대해 놀리는 만찬에 데려갈 남자가 주인공의 하루를 망친다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 35
+        },
+        {
+          "id": "le-petit-nicolas-2009",
+          "year": 2009,
+          "en": "Le Petit Nicolas",
+          "ko": "꼬마 니콜라",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "동생이 생길까 걱정한 니콜라와 친구들의 엉뚱한 작전",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 36
+        },
+        {
+          "id": "la-famille-belier-2014",
+          "year": 2014,
+          "en": "La Famille Bélier",
+          "ko": "미라클 벨리에",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "청각장애인 가족의 유일한 청인 딸이 노래의 꿈을 찾아 나선다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 37
+        },
+        {
+          "id": "les-vacances-de-m-hulot-1953",
+          "year": 1953,
+          "en": "Les Vacances de M. Hulot",
+          "ko": "윌로씨의 휴가",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "엉뚱한 윌로 씨가 바닷가 휴양지에서 벌이는 말없는 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 38
+        },
+        {
+          "id": "mon-oncle-1958",
+          "year": 1958,
+          "en": "Mon Oncle",
+          "ko": "나의 아저씨",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "자동화된 현대식 집에 사는 조카와 엉뚱한 윌로 삼촌",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 39
+        },
+        {
+          "id": "playtime-1967",
+          "year": 1967,
+          "en": "Playtime",
+          "ko": "플레이타임",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "유리와 강철로 된 파리에서 길을 잃은 윌로 씨의 하루",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 40
+        },
+        {
+          "id": "la-boum-1980",
+          "year": 1980,
+          "en": "La Boum",
+          "ko": "라 붐",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "13살 빅이 첫 파티와 첫사랑을 겪으며 자라는 이야기",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 41
+        },
+        {
+          "id": "attila-marcel-2013",
+          "year": 2013,
+          "en": "Attila Marcel",
+          "ko": "마담 프루스트의 비밀정원",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "말을 잃은 피아니스트가 이웃 여인의 차를 마시며 잃어버린 기억을 찾는다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 42
+        },
+        {
+          "id": "cyrano-de-bergerac-1990",
+          "year": 1990,
+          "en": "Cyrano de Bergerac",
+          "ko": "시라노",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "큰 코 때문에 사랑을 숨긴 검객 시인이 연적 대신 편지를 써준다",
+          "ratio": "웃음 4:감동 6",
+          "kids": false,
+          "ord": 43
+        },
+        {
+          "id": "qu-est-ce-qu-on-a-fait-au-bon-dieu-2014",
+          "year": 2014,
+          "en": "Qu'est-ce qu'on a fait au Bon Dieu ?",
+          "ko": "컬러풀 웨딩즈",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "보수적인 부부의 네 딸이 모두 다른 출신 사위를 데려온다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 44
+        },
+        {
+          "id": "le-gout-des-autres-2000",
+          "year": 2000,
+          "en": "Le Goût des autres",
+          "ko": "타인의 취향",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "무뚝뚝한 사업가가 연극배우에게 반해 새로운 취향에 눈뜬다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 45
+        },
+        {
+          "id": "l-auberge-espagnole-2002",
+          "year": 2002,
+          "en": "L'Auberge espagnole",
+          "ko": "스패니쉬 아파트먼트",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "바르셀로나 교환학생이 다국적 룸메이트들과 한 해를 보낸다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 46
+        },
+        {
+          "id": "hors-normes-2019",
+          "year": 2019,
+          "en": "Hors normes",
+          "ko": "스페셜스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "자폐 청소년을 돌보는 두 남자의 열정과 현실",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 47
+        },
+        {
+          "id": "le-sens-de-la-fete-2017",
+          "year": 2017,
+          "en": "Le Sens de la fête",
+          "ko": "세라비, 이것이 인생!",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "베테랑 웨딩플래너가 모든 게 꼬이는 성대한 결혼식을 치른다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 48
+        },
+        {
+          "id": "ernest-et-celestine-2012",
+          "year": 2012,
+          "en": "Ernest et Célestine",
+          "ko": "어니스트와 셀레스틴",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "곰 어니스트와 생쥐 셀레스틴이 편견을 넘어 친구가 된다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 49
+        },
+        {
+          "id": "les-triplettes-de-belleville-2003",
+          "year": 2003,
+          "en": "Les Triplettes de Belleville",
+          "ko": "벨빌의 세 쌍둥이",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "납치된 사이클 선수 손자를 찾아 나선 할머니와 노가수 세 자매",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 50
+        },
+        {
+          "id": "asterix-obelix-mission-cleopatre-2002",
+          "year": 2002,
+          "en": "Astérix & Obélix : Mission Cléopâtre",
+          "ko": "아스테릭스: 미션 클레오파트라",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "골족 영웅들이 석 달 만에 궁전을 지어야 하는 건축가를 돕는다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 51
+        },
+        {
+          "id": "la-grande-vadrouille-1966",
+          "year": 1966,
+          "en": "La Grande Vadrouille",
+          "ko": "La Grande Vadrouille",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "점령기 파리에서 영국 조종사를 돕게 된 지휘자와 페인트공의 도주극",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 52
+        },
+        {
+          "id": "le-corniaud-1965",
+          "year": 1965,
+          "en": "Le Corniaud",
+          "ko": "Le Corniaud",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "사고 보상으로 이탈리아에서 차를 몰고 오는 남자가 밀수에 이용된다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 53
+        },
+        {
+          "id": "les-aventures-de-rabbi-jacob-1973",
+          "year": 1973,
+          "en": "Les Aventures de Rabbi Jacob",
+          "ko": "Les Aventures de Rabbi Jacob",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "편견 많은 사업가가 랍비로 변장해 쫓기며 벌어지는 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 54
+        },
+        {
+          "id": "le-pere-noel-est-une-ordure-1982",
+          "year": 1982,
+          "en": "Le père Noël est une ordure",
+          "ko": "Le père Noël est une ordure",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "크리스마스이브 상담전화 사무실에 엉뚱한 사람들이 몰려든다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 55
+        },
+        {
+          "id": "la-cage-aux-folles-1978",
+          "year": 1978,
+          "en": "La Cage aux folles",
+          "ko": "La Cage aux folles",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "게이 커플이 아들의 보수적인 예비 사돈을 맞으려 정체를 숨긴다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 56
+        },
+        {
+          "id": "les-emotifs-anonymes-2010",
+          "year": 2010,
+          "en": "Les Émotifs anonymes",
+          "ko": "Les Émotifs anonymes",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "수줍음 많은 초콜릿 장인과 직원의 서툰 사랑",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 57
+        },
+        {
+          "id": "le-prenom-2012",
+          "year": 2012,
+          "en": "Le Prénom",
+          "ko": "Le Prénom",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "아기 이름 하나로 시작된 저녁 식사가 가족의 비밀 폭로전이 된다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 58
+        },
+        {
+          "id": "tais-toi-2003",
+          "year": 2003,
+          "en": "Tais-toi !",
+          "ko": "Tais-toi !",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "말 많은 얼간이와 과묵한 강도가 감옥에서 엮여 탈옥한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 59
+        },
+        {
+          "id": "le-placard-2001",
+          "year": 2001,
+          "en": "Le Placard",
+          "ko": "Le Placard",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "프랑스",
+          "eras": [
+            "프랑스"
+          ],
+          "plot": "해고 위기의 회계원이 게이인 척하며 회사에 남는다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 60
+        },
+        {
+          "id": "notting-hill-1999",
+          "year": 1999,
+          "en": "Notting Hill",
+          "ko": "노팅힐",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "런던 서점 주인과 할리우드 스타의 사랑",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 61
+        },
+        {
+          "id": "love-actually-2003",
+          "year": 2003,
+          "en": "Love Actually",
+          "ko": "러브 액츄얼리",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "크리스마스를 앞둔 런던 사람들의 열 가지 사랑 이야기",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 62
+        },
+        {
+          "id": "the-full-monty-1997",
+          "year": 1997,
+          "en": "The Full Monty",
+          "ko": "풀 몬티",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "실직한 철강 노동자들이 돈을 벌려 스트립쇼 무대에 선다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 63
+        },
+        {
+          "id": "billy-elliot-2000",
+          "year": 2000,
+          "en": "Billy Elliot",
+          "ko": "빌리 엘리어트",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "탄광촌 소년이 권투 대신 발레의 꿈을 키운다",
+          "ratio": "웃음 4:감동 6",
+          "kids": false,
+          "ord": 64
+        },
+        {
+          "id": "about-time-2013",
+          "year": 2013,
+          "en": "About Time",
+          "ko": "어바웃 타임",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "시간을 되돌리는 능력을 가진 청년이 사랑과 가족의 소중함을 배운다",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 65
+        },
+        {
+          "id": "paddington-2014",
+          "year": 2014,
+          "en": "Paddington",
+          "ko": "패딩턴",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "페루에서 온 꼬마 곰이 런던의 브라운 가족과 집을 찾는다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 66
+        },
+        {
+          "id": "paddington-2-2017",
+          "year": 2017,
+          "en": "Paddington 2",
+          "ko": "패딩턴 2",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "억울하게 감옥에 간 패딩턴이 진범을 찾는다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 67
+        },
+        {
+          "id": "bridget-jones-s-diary-2001",
+          "year": 2001,
+          "en": "Bridget Jones's Diary",
+          "ko": "브리짓 존스의 일기",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "서른두 살 브리짓의 좌충우돌 연애와 일기",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 68
+        },
+        {
+          "id": "four-weddings-and-a-funeral-1994",
+          "year": 1994,
+          "en": "Four Weddings and a Funeral",
+          "ko": "네 번의 결혼식과 한 번의 장례식",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "결혼식마다 마주치는 미국 여인에게 빠진 영국 남자",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 69
+        },
+        {
+          "id": "bend-it-like-beckham-2002",
+          "year": 2002,
+          "en": "Bend It Like Beckham",
+          "ko": "슈팅 라이크 베컴",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "인도계 소녀가 가족 몰래 축구 선수의 꿈을 좇는다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 70
+        },
+        {
+          "id": "calendar-girls-2003",
+          "year": 2003,
+          "en": "Calendar Girls",
+          "ko": "캘린더 걸스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "시골 부인회 회원들이 기금을 위해 누드 달력을 찍는다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 71
+        },
+        {
+          "id": "brassed-off-1996",
+          "year": 1996,
+          "en": "Brassed Off",
+          "ko": "브래스드 오프",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "폐광 위기의 탄광촌 브라스 밴드가 전국 대회에 나선다",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 72
+        },
+        {
+          "id": "wallace-gromit-the-curse-of-the-were-rabbit-2005",
+          "year": 2005,
+          "en": "Wallace & Gromit: The Curse of the Were-Rabbit",
+          "ko": "월레스와 그로밋: 거대 토끼의 저주",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "채소 대회를 앞둔 마을에 거대 토끼가 나타난다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 73
+        },
+        {
+          "id": "chicken-run-2000",
+          "year": 2000,
+          "en": "Chicken Run",
+          "ko": "치킨 런",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "양계장 닭들이 파이가 되기 전 탈출을 꾀한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 74
+        },
+        {
+          "id": "bean-1997",
+          "year": 1997,
+          "en": "Bean",
+          "ko": "미스터 빈",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "미스터 빈이 미국 미술관에 명화를 모시러 파견된다",
+          "ratio": "웃음 10:감동 0",
+          "kids": true,
+          "ord": 75
+        },
+        {
+          "id": "mr-bean-s-holiday-2007",
+          "year": 2007,
+          "en": "Mr. Bean's Holiday",
+          "ko": "미스터 빈의 홀리데이",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "경품으로 칸 여행을 떠난 미스터 빈의 좌충우돌 여정",
+          "ratio": "웃음 10:감동 0",
+          "kids": true,
+          "ord": 76
+        },
+        {
+          "id": "pride-2014",
+          "year": 2014,
+          "en": "Pride",
+          "ko": "런던 프라이드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "1984년 광부 파업을 돕겠다고 나선 런던 성소수자들",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 77
+        },
+        {
+          "id": "monty-python-and-the-holy-grail-1975",
+          "year": 1975,
+          "en": "Monty Python and the Holy Grail",
+          "ko": "몬티 파이튼의 성배",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "아서왕과 기사들이 말 없이 성배를 찾아 떠나는 엉터리 모험",
+          "ratio": "웃음 10:감동 0",
+          "kids": false,
+          "ord": 78
+        },
+        {
+          "id": "a-fish-called-wanda-1988",
+          "year": 1988,
+          "en": "A Fish Called Wanda",
+          "ko": "완다라는 물고기",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "보석 강도 일당이 서로 속고 속이며 벌이는 소동",
+          "ratio": "웃음 10:감동 0",
+          "kids": false,
+          "ord": 79
+        },
+        {
+          "id": "one-chance-2013",
+          "year": 2013,
+          "en": "One Chance",
+          "ko": "원챈스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "휴대폰 판매원 폴 포츠가 오페라 가수의 꿈을 이룬다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 80
+        },
+        {
+          "id": "eddie-the-eagle-2016",
+          "year": 2016,
+          "en": "Eddie the Eagle",
+          "ko": "독수리 에디",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "재능은 없지만 포기를 모르는 영국 스키점프 선수의 올림픽 도전",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 81
+        },
+        {
+          "id": "local-hero-1983",
+          "year": 1983,
+          "en": "Local Hero",
+          "ko": "로컬 히어로",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "스코틀랜드 해안 마을을 사러 온 석유회사 직원이 마을에 반한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 82
+        },
+        {
+          "id": "educating-rita-1983",
+          "year": 1983,
+          "en": "Educating Rita",
+          "ko": "리타 길들이기",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "미용사 리타가 술꾼 교수에게 문학을 배우며 달라진다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 83
+        },
+        {
+          "id": "the-best-exotic-marigold-hotel-2011",
+          "year": 2011,
+          "en": "The Best Exotic Marigold Hotel",
+          "ko": "베스트 엑조틱 메리골드 호텔",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "인도의 낡은 호텔로 은퇴 여행을 떠난 영국 노인들",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 84
+        },
+        {
+          "id": "yesterday-2019",
+          "year": 2019,
+          "en": "Yesterday",
+          "ko": "예스터데이",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "비틀스가 사라진 세상에서 무명 가수만 그 노래를 기억한다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 85
+        },
+        {
+          "id": "kinky-boots-2005",
+          "year": 2005,
+          "en": "Kinky Boots",
+          "ko": "킨키 부츠",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "망해가는 구두 공장이 드래그퀸용 부츠로 재기를 노린다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 86
+        },
+        {
+          "id": "arthur-christmas-2011",
+          "year": 2011,
+          "en": "Arthur Christmas",
+          "ko": "아더 크리스마스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "산타의 막내아들이 빠뜨린 선물 하나를 배달하려 나선다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 87
+        },
+        {
+          "id": "shaun-the-sheep-movie-2015",
+          "year": 2015,
+          "en": "Shaun the Sheep Movie",
+          "ko": "숀더쉽",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "도시에서 기억을 잃은 농부를 찾아 양들이 나선다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 88
+        },
+        {
+          "id": "hot-fuzz-2007",
+          "year": 2007,
+          "en": "Hot Fuzz",
+          "ko": "뜨거운 녀석들",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "런던 경찰이 평화로운 시골 마을로 좌천되며 수상한 사건을 쫓는다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 89
+        },
+        {
+          "id": "wonka-2023",
+          "year": 2023,
+          "en": "Wonka",
+          "ko": "웡카",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "영국",
+          "eras": [
+            "영국"
+          ],
+          "plot": "젊은 윌리 웡카가 초콜릿 가게를 열기까지의 이야기",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 90
+        },
+        {
+          "id": "campeones-2018",
+          "year": 2018,
+          "en": "Campeones",
+          "ko": "챔피언스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "사고를 친 프로 농구 코치가 지적장애인 농구팀을 맡는다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 91
+        },
+        {
+          "id": "ocho-apellidos-vascos-2014",
+          "year": 2014,
+          "en": "Ocho apellidos vascos",
+          "ko": "Ocho apellidos vascos",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "세비야 남자가 바스크 여인을 쫓아가 바스크인 행세를 한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 92
+        },
+        {
+          "id": "ocho-apellidos-catalanes-2015",
+          "year": 2015,
+          "en": "Ocho apellidos catalanes",
+          "ko": "Ocho apellidos catalanes",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "바스크 아버지가 카탈루냐 남자와 결혼하려는 딸을 말리러 간다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 93
+        },
+        {
+          "id": "mujeres-al-borde-de-un-ataque-de-nervios-1988",
+          "year": 1988,
+          "en": "Mujeres al borde de un ataque de nervios",
+          "ko": "신경쇠약 직전의 여자",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "버림받은 성우의 아파트에 온갖 사람들이 꼬이며 벌어지는 하루",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 94
+        },
+        {
+          "id": "belle-epoque-1992",
+          "year": 1992,
+          "en": "Belle Époque",
+          "ko": "벨 에포크",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "탈영병 청년이 시골집 네 자매에게 차례로 반한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 95
+        },
+        {
+          "id": "la-lengua-de-las-mariposas-1999",
+          "year": 1999,
+          "en": "La lengua de las mariposas",
+          "ko": "나비의 혀",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "내전 직전 소년과 노교사의 따뜻한 우정",
+          "ratio": "웃음 3:감동 7",
+          "kids": true,
+          "ord": 96
+        },
+        {
+          "id": "klaus-2019",
+          "year": 2019,
+          "en": "Klaus",
+          "ko": "클라우스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "게으른 우편배달부와 외딴섬 목수가 산타 전설을 만든다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 97
+        },
+        {
+          "id": "bienvenido-mister-marshall-1953",
+          "year": 1953,
+          "en": "¡Bienvenido, Mister Marshall!",
+          "ko": "¡Bienvenido, Mister Marshall!",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "미국 원조단을 맞으려 마을 전체가 안달루시아 풍으로 꾸민다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 98
+        },
+        {
+          "id": "placido-1961",
+          "year": 1961,
+          "en": "Plácido",
+          "ko": "Plácido",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "크리스마스 자선 행사에 동원된 삼륜차 기사의 하루",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 99
+        },
+        {
+          "id": "el-verdugo-1963",
+          "year": 1963,
+          "en": "El verdugo",
+          "ko": "El verdugo",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "사형집행인의 딸과 결혼한 장의사가 직업을 물려받는다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 100
+        },
+        {
+          "id": "el-milagro-de-p-tinto-1998",
+          "year": 1998,
+          "en": "El milagro de P. Tinto",
+          "ko": "El milagro de P. Tinto",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "아이를 원하는 부부에게 엉뚱한 일들이 연이어 찾아온다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 101
+        },
+        {
+          "id": "el-otro-lado-de-la-cama-2002",
+          "year": 2002,
+          "en": "El otro lado de la cama",
+          "ko": "El otro lado de la cama",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "두 커플의 엇갈린 연애를 노래로 풀어낸 뮤지컬 코미디",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 102
+        },
+        {
+          "id": "dias-de-futbol-2003",
+          "year": 2003,
+          "en": "Días de fútbol",
+          "ko": "Días de fútbol",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "서른 넘은 친구들이 동네 축구팀을 만들어 인생을 다시 걷어찬다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 103
+        },
+        {
+          "id": "primos-2011",
+          "year": 2011,
+          "en": "Primos",
+          "ko": "Primos",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "파혼당한 남자가 사촌들과 첫사랑을 찾아 고향에 간다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 104
+        },
+        {
+          "id": "perdiendo-el-norte-2015",
+          "year": 2015,
+          "en": "Perdiendo el norte",
+          "ko": "Perdiendo el norte",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "일자리를 찾아 독일로 간 스페인 청년들의 현실",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 105
+        },
+        {
+          "id": "padre-no-hay-mas-que-uno-2019",
+          "year": 2019,
+          "en": "Padre no hay más que uno",
+          "ko": "Padre no hay más que uno",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "아내가 여행 간 사이 다섯 아이를 처음 혼자 돌보게 된 아빠",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 106
+        },
+        {
+          "id": "toc-toc-2017",
+          "year": 2017,
+          "en": "Toc Toc",
+          "ko": "Toc Toc",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "강박증 환자들이 정신과 대기실에서 함께 기다리며 벌어지는 소동",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 107
+        },
+        {
+          "id": "senor-dame-paciencia-2017",
+          "year": 2017,
+          "en": "Señor, dame paciencia",
+          "ko": "Señor, dame paciencia",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "보수적인 아버지가 아내의 유언대로 자식들과 여행을 떠난다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 108
+        },
+        {
+          "id": "ahora-o-nunca-2015",
+          "year": 2015,
+          "en": "Ahora o nunca",
+          "ko": "Ahora o nunca",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "결혼식을 위해 영국으로 가던 신랑과 친구들이 발이 묶인다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 109
+        },
+        {
+          "id": "la-gran-familia-espanola-2013",
+          "year": 2013,
+          "en": "La gran familia española",
+          "ko": "La gran familia española",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "결혼식 날 월드컵 결승이 겹친 다섯 형제의 하루",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 110
+        },
+        {
+          "id": "vivir-es-facil-con-los-ojos-cerrados-2013",
+          "year": 2013,
+          "en": "Vivir es fácil con los ojos cerrados",
+          "ko": "Vivir es fácil con los ojos cerrados",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "영어 교사가 존 레논을 만나러 알메리아로 떠나는 길에 두 청춘을 태운다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 111
+        },
+        {
+          "id": "abracadabra-2017",
+          "year": 2017,
+          "en": "Abracadabra",
+          "ko": "Abracadabra",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "최면에 걸린 남편이 다른 사람처럼 변해버린다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 112
+        },
+        {
+          "id": "sin-rodeos-2018",
+          "year": 2018,
+          "en": "Sin rodeos",
+          "ko": "Sin rodeos",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "참기만 하던 여자가 거절 못 하는 성격을 고치려다 폭주한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 113
+        },
+        {
+          "id": "el-buen-patron-2021",
+          "year": 2021,
+          "en": "El buen patrón",
+          "ko": "El buen patrón",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "스페인",
+          "eras": [
+            "스페인"
+          ],
+          "plot": "상 심사를 앞둔 공장 사장이 직원들 문제에 끝없이 개입한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 114
+        },
+        {
+          "id": "good-bye-lenin-2003",
+          "year": 2003,
+          "en": "Good Bye, Lenin!",
+          "ko": "굿바이 레닌",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "혼수상태에서 깬 엄마를 위해 아들이 무너진 동독을 재현한다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 115
+        },
+        {
+          "id": "soul-kitchen-2009",
+          "year": 2009,
+          "en": "Soul Kitchen",
+          "ko": "소울 키친",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "함부르크의 허름한 식당 주인이 가게를 지키려 고군분투한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 116
+        },
+        {
+          "id": "toni-erdmann-2016",
+          "year": 2016,
+          "en": "Toni Erdmann",
+          "ko": "토니 에드만",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "장난꾸러기 아버지가 일에 매인 딸 앞에 가짜 인물로 나타난다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 117
+        },
+        {
+          "id": "kirschbluten-hanami-2008",
+          "year": 2008,
+          "en": "Kirschblüten – Hanami",
+          "ko": "사랑 후에 남겨진 것들",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "아내를 잃은 남편이 아내의 꿈이던 일본으로 떠난다",
+          "ratio": "웃음 2:감동 8",
+          "kids": false,
+          "ord": 118
+        },
+        {
+          "id": "ich-bin-dein-mensch-2021",
+          "year": 2021,
+          "en": "Ich bin dein Mensch",
+          "ko": "아임 유어 맨",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "연구자가 자신에게 맞춰 만든 휴머노이드와 3주를 지낸다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 119
+        },
+        {
+          "id": "willkommen-bei-den-hartmanns-2016",
+          "year": 2016,
+          "en": "Willkommen bei den Hartmanns",
+          "ko": "Willkommen bei den Hartmanns",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "뮌헨의 중산층 가족이 나이지리아 난민을 집에 들인다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 120
+        },
+        {
+          "id": "fack-ju-gohte-2013",
+          "year": 2013,
+          "en": "Fack ju Göhte",
+          "ko": "Fack ju Göhte",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "출소한 강도가 돈을 찾으려 교사로 위장 취업한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 121
+        },
+        {
+          "id": "bella-martha-2001",
+          "year": 2001,
+          "en": "Bella Martha",
+          "ko": "Bella Martha",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "완벽주의 셰프가 조카와 이탈리아 요리사를 만나 마음을 연다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 122
+        },
+        {
+          "id": "das-wunder-von-bern-2003",
+          "year": 2003,
+          "en": "Das Wunder von Bern",
+          "ko": "Das Wunder von Bern",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "전쟁포로에서 돌아온 아버지와 아들이 1954 월드컵으로 가까워진다",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 123
+        },
+        {
+          "id": "der-schuh-des-manitu-2001",
+          "year": 2001,
+          "en": "Der Schuh des Manitu",
+          "ko": "Der Schuh des Manitu",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "서부극을 패러디한 인디언 형제의 보물 찾기",
+          "ratio": "웃음 10:감동 0",
+          "kids": true,
+          "ord": 124
+        },
+        {
+          "id": "keinohrhasen-2007",
+          "year": 2007,
+          "en": "Keinohrhasen",
+          "ko": "Keinohrhasen",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "바람둥이 기자가 사회봉사로 어린 시절 괴롭히던 친구의 유치원에 간다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 125
+        },
+        {
+          "id": "vincent-will-meer-2010",
+          "year": 2010,
+          "en": "Vincent will Meer",
+          "ko": "Vincent will Meer",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "투렛 증후군 청년이 병원 친구들과 바다를 향해 떠난다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 126
+        },
+        {
+          "id": "honig-im-kopf-2014",
+          "year": 2014,
+          "en": "Honig im Kopf",
+          "ko": "Honig im Kopf",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "치매에 걸린 할아버지와 손녀의 베네치아 여행",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 127
+        },
+        {
+          "id": "almanya-willkommen-in-deutschland-2011",
+          "year": 2011,
+          "en": "Almanya – Willkommen in Deutschland",
+          "ko": "Almanya – Willkommen in Deutschland",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "터키 이민 1세대 할아버지가 온 가족을 고향으로 데려간다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 128
+        },
+        {
+          "id": "sonnenallee-1999",
+          "year": 1999,
+          "en": "Sonnenallee",
+          "ko": "Sonnenallee",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "베를린 장벽 바로 옆 동독 거리의 10대들이 보내는 70년대",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 129
+        },
+        {
+          "id": "im-juli-2000",
+          "year": 2000,
+          "en": "Im Juli",
+          "ko": "Im Juli",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "소심한 교사가 사랑을 찾아 함부르크에서 이스탄불까지 떠난다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 130
+        },
+        {
+          "id": "herr-lehmann-2003",
+          "year": 2003,
+          "en": "Herr Lehmann",
+          "ko": "Herr Lehmann",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "장벽 붕괴 직전 베를린 크로이츠베르크 바텐더의 한가한 나날",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 131
+        },
+        {
+          "id": "kokowaah-2011",
+          "year": 2011,
+          "en": "Kokowääh",
+          "ko": "Kokowääh",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "바람둥이 작가 앞에 몰랐던 여덟 살 딸이 나타난다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 132
+        },
+        {
+          "id": "der-ganz-groe-traum-2011",
+          "year": 2011,
+          "en": "Der ganz große Traum",
+          "ko": "Der ganz große Traum",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "19세기 독일 김나지움에 축구를 들여온 영어 교사",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 133
+        },
+        {
+          "id": "das-fliegende-klassenzimmer-2003",
+          "year": 2003,
+          "en": "Das fliegende Klassenzimmer",
+          "ko": "Das fliegende Klassenzimmer",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "라이프치히 기숙학교 소년들이 성탄극을 준비한다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 134
+        },
+        {
+          "id": "oh-boy-2012",
+          "year": 2012,
+          "en": "Oh Boy",
+          "ko": "Oh Boy",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "독일",
+          "eras": [
+            "독일"
+          ],
+          "plot": "커피 한 잔을 못 마신 베를린 청년의 하루",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 135
+        },
+        {
+          "id": "the-commitments-1991",
+          "year": 1991,
+          "en": "The Commitments",
+          "ko": "커미트먼트",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "더블린 노동계급 청년들이 소울 밴드를 결성한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 136
+        },
+        {
+          "id": "sing-street-2016",
+          "year": 2016,
+          "en": "Sing Street",
+          "ko": "싱 스트리트",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "전학 간 소년이 마음에 든 소녀를 위해 밴드를 만든다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 137
+        },
+        {
+          "id": "once-2007",
+          "year": 2007,
+          "en": "Once",
+          "ko": "원스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "더블린 거리 악사와 체코 이민 여성이 함께 노래를 만든다",
+          "ratio": "웃음 3:감동 7",
+          "kids": false,
+          "ord": 138
+        },
+        {
+          "id": "waking-ned-1998",
+          "year": 1998,
+          "en": "Waking Ned",
+          "ko": "웨이킹 네드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "복권에 당첨된 채 숨진 이웃의 당첨금을 받으려 마을이 공모한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 139
+        },
+        {
+          "id": "song-of-the-sea-2014",
+          "year": 2014,
+          "en": "Song of the Sea",
+          "ko": "바다의 노래",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "셀키 동생을 지키려 바다로 향하는 남매의 모험",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 140
+        },
+        {
+          "id": "the-secret-of-kells-2009",
+          "year": 2009,
+          "en": "The Secret of Kells",
+          "ko": "켈스의 비밀",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "수도원 소년이 전설의 책을 완성하려 숲으로 들어간다",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 141
+        },
+        {
+          "id": "wolfwalkers-2020",
+          "year": 2020,
+          "en": "Wolfwalkers",
+          "ko": "울프워커스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "늑대 사냥꾼의 딸이 늑대로 변하는 소녀와 친구가 된다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 142
+        },
+        {
+          "id": "brooklyn-2015",
+          "year": 2015,
+          "en": "Brooklyn",
+          "ko": "브루클린",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "아일랜드 시골 처녀가 뉴욕 브루클린에서 새 삶과 사랑을 찾는다",
+          "ratio": "웃음 4:감동 6",
+          "kids": false,
+          "ord": 143
+        },
+        {
+          "id": "my-left-foot-1989",
+          "year": 1989,
+          "en": "My Left Foot",
+          "ko": "나의 왼발",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "뇌성마비로 왼발만 움직이던 크리스티 브라운이 화가이자 작가가 된다",
+          "ratio": "웃음 3:감동 7",
+          "kids": false,
+          "ord": 144
+        },
+        {
+          "id": "an-cailin-ciuin-2022",
+          "year": 2022,
+          "en": "An Cailín Ciúin",
+          "ko": "말없는 소녀",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "여름 동안 먼 친척 집에 맡겨진 소녀가 처음으로 보살핌을 받는다",
+          "ratio": "웃음 1:감동 9",
+          "kids": true,
+          "ord": 145
+        },
+        {
+          "id": "the-snapper-1993",
+          "year": 1993,
+          "en": "The Snapper",
+          "ko": "The Snapper",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "미혼으로 임신한 딸 때문에 더블린 가족이 들썩인다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 146
+        },
+        {
+          "id": "the-van-1996",
+          "year": 1996,
+          "en": "The Van",
+          "ko": "The Van",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "실직한 두 친구가 낡은 트럭으로 피시앤칩스 장사를 시작한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 147
+        },
+        {
+          "id": "intermission-2003",
+          "year": 2003,
+          "en": "Intermission",
+          "ko": "Intermission",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "더블린 사람들의 연애와 범죄가 우연히 얽힌다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 148
+        },
+        {
+          "id": "into-the-west-1992",
+          "year": 1992,
+          "en": "Into the West",
+          "ko": "Into the West",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "떠돌이 형제가 신비로운 백마를 데리고 서쪽으로 도망친다",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 149
+        },
+        {
+          "id": "extra-ordinary-2019",
+          "year": 2019,
+          "en": "Extra Ordinary",
+          "ko": "Extra Ordinary",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "유령을 보는 운전강사가 악마 숭배 가수에게서 소녀를 구한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 150
+        },
+        {
+          "id": "hear-my-song-1991",
+          "year": 1991,
+          "en": "Hear My Song",
+          "ko": "Hear My Song",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "망해가는 클럽 주인이 전설의 테너를 찾아 아일랜드로 간다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 151
+        },
+        {
+          "id": "agnes-browne-1999",
+          "year": 1999,
+          "en": "Agnes Browne",
+          "ko": "Agnes Browne",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "아일랜드",
+          "eras": [
+            "아일랜드"
+          ],
+          "plot": "남편을 잃은 더블린 시장 상인이 일곱 아이를 키우며 꿈을 꾼다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 152
+        },
+        {
+          "id": "adams-bler-2005",
+          "year": 2005,
+          "en": "Adams æbler",
+          "ko": "아담스 애플",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "가석방된 신나치가 낙천적인 목사의 교회에서 사과 파이를 굽게 된다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 153
+        },
+        {
+          "id": "druk-2020",
+          "year": 2020,
+          "en": "Druk",
+          "ko": "어나더 라운드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "네 교사가 혈중알코올농도 0.05% 유지 실험을 시작한다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 154
+        },
+        {
+          "id": "en-man-som-heter-ove-2015",
+          "year": 2015,
+          "en": "En man som heter Ove",
+          "ko": "오베라는 남자",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "까칠한 홀아비가 옆집 가족 때문에 다시 삶을 살게 된다",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 155
+        },
+        {
+          "id": "salmer-fra-kjkkenet-2003",
+          "year": 2003,
+          "en": "Salmer fra kjøkkenet",
+          "ko": "키친 스토리",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "노르웨이",
+          "eras": [
+            "북유럽",
+            "노르웨이"
+          ],
+          "plot": "부엌 동선을 연구하러 온 스웨덴 조사원과 노르웨이 노인의 우정",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 156
+        },
+        {
+          "id": "elling-2001",
+          "year": 2001,
+          "en": "Elling",
+          "ko": "엘링",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "노르웨이",
+          "eras": [
+            "북유럽",
+            "노르웨이"
+          ],
+          "plot": "정신병원에서 나온 두 남자가 오슬로 아파트에서 홀로서기를 한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 157
+        },
+        {
+          "id": "babettes-gstebud-1987",
+          "year": 1987,
+          "en": "Babettes gæstebud",
+          "ko": "바베트의 만찬",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "복권에 당첨된 프랑스인 하녀가 경건한 마을에 만찬을 차린다",
+          "ratio": "웃음 3:감동 7",
+          "kids": true,
+          "ord": 158
+        },
+        {
+          "id": "mitt-liv-som-hund-1985",
+          "year": 1985,
+          "en": "Mitt liv som hund",
+          "ko": "나의 개 같은 인생",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "시골 삼촌 집에 맡겨진 소년의 웃기고 아픈 한 해",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 159
+        },
+        {
+          "id": "tillsammans-2000",
+          "year": 2000,
+          "en": "Tillsammans",
+          "ko": "투게더",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "1975년 스톡홀름 공동체에 남편을 떠난 여자와 아이들이 들어온다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 160
+        },
+        {
+          "id": "hundraaringen-som-klev-ut-genom-fonstret-och-forsvann-2013",
+          "year": 2013,
+          "en": "Hundraåringen som klev ut genom fönstret och försvann",
+          "ko": "창문 넘어 도망친 100세 노인",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "100세 생일에 요양원 창문을 넘은 노인이 돈가방을 손에 넣는다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 161
+        },
+        {
+          "id": "kuolleet-lehdet-2023",
+          "year": 2023,
+          "en": "Kuolleet lehdet",
+          "ko": "사랑은 낙엽을 타고",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "핀란드",
+          "eras": [
+            "북유럽",
+            "핀란드"
+          ],
+          "plot": "헬싱키의 외로운 두 사람이 서툴게 사랑에 다가간다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 162
+        },
+        {
+          "id": "mies-vailla-menneisyytta-2002",
+          "year": 2002,
+          "en": "Mies vailla menneisyyttä",
+          "ko": "과거가 없는 남자",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "핀란드",
+          "eras": [
+            "북유럽",
+            "핀란드"
+          ],
+          "plot": "기억을 잃은 남자가 항구 컨테이너 마을에서 새 삶을 꾸린다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 163
+        },
+        {
+          "id": "toivon-tuolla-puolen-2017",
+          "year": 2017,
+          "en": "Toivon tuolla puolen",
+          "ko": "희망의 건너편",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "핀란드",
+          "eras": [
+            "북유럽",
+            "핀란드"
+          ],
+          "plot": "시리아 난민 청년과 식당을 연 핀란드 남자의 만남",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 164
+        },
+        {
+          "id": "leningrad-cowboys-go-america-1989",
+          "year": 1989,
+          "en": "Leningrad Cowboys Go America",
+          "ko": "레닌그라드 카우보이 미국에 가다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "핀란드",
+          "eras": [
+            "북유럽",
+            "핀란드"
+          ],
+          "plot": "뾰족머리 밴드가 성공을 찾아 미국 순회공연을 떠난다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 165
+        },
+        {
+          "id": "hrutar-2015",
+          "year": 2015,
+          "en": "Hrútar",
+          "ko": "램스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "아이슬란드",
+          "eras": [
+            "북유럽",
+            "아이슬란드"
+          ],
+          "plot": "40년간 말 안 하던 양치기 형제가 양들을 지키려 다시 손을 잡는다",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 166
+        },
+        {
+          "id": "en-duva-satt-pa-en-gren-och-funderade-pa-tillvaron-2014",
+          "year": 2014,
+          "en": "En duva satt på en gren och funderade på tillvaron",
+          "ko": "비둘기, 가지에 앉아 존재를 숙고하다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "웃음 상품을 파는 두 외판원의 기묘한 일화들",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 167
+        },
+        {
+          "id": "den-skaldede-frisr-2012",
+          "year": 2012,
+          "en": "Den skaldede frisør",
+          "ko": "러브 이즈 올 유 니드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "투병 후 남편의 외도를 안 미용사가 딸의 결혼식에서 사돈과 엮인다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 168
+        },
+        {
+          "id": "o-horten-2007",
+          "year": 2007,
+          "en": "O' Horten",
+          "ko": "오 호르텐",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "노르웨이",
+          "eras": [
+            "북유럽",
+            "노르웨이"
+          ],
+          "plot": "은퇴한 기관사가 마지막 운행 뒤 엉뚱한 하룻밤을 보낸다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 169
+        },
+        {
+          "id": "fusi-2015",
+          "year": 2015,
+          "en": "Fúsi",
+          "ko": "버진 마운틴",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "아이슬란드",
+          "eras": [
+            "북유럽",
+            "아이슬란드"
+          ],
+          "plot": "엄마와 사는 마흔셋 숫기 없는 남자가 처음 사랑을 한다",
+          "ratio": "웃음 5:감동 5",
+          "kids": false,
+          "ord": 170
+        },
+        {
+          "id": "101-reykjavik-2000",
+          "year": 2000,
+          "en": "101 Reykjavík",
+          "ko": "101 Reykjavík",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "아이슬란드",
+          "eras": [
+            "북유럽",
+            "아이슬란드"
+          ],
+          "plot": "엄마와 사는 백수 청년이 엄마의 연인과 엮인다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 171
+        },
+        {
+          "id": "sa-som-i-himmelen-2004",
+          "year": 2004,
+          "en": "Så som i himmelen",
+          "ko": "Så som i himmelen",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "은퇴한 지휘자가 고향 마을 교회 성가대를 맡는다",
+          "ratio": "웃음 4:감동 6",
+          "kids": false,
+          "ord": 172
+        },
+        {
+          "id": "italiensk-for-begyndere-2000",
+          "year": 2000,
+          "en": "Italiensk for begyndere",
+          "ko": "Italiensk for begyndere",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "이탈리아어 초급반에 모인 외로운 코펜하겐 사람들",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 173
+        },
+        {
+          "id": "blinkende-lygter-2000",
+          "year": 2000,
+          "en": "Blinkende lygter",
+          "ko": "Blinkende lygter",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "돈을 들고 도망친 갱 넷이 시골 식당에 눌러앉는다",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 174
+        },
+        {
+          "id": "den-eneste-ene-1999",
+          "year": 1999,
+          "en": "Den eneste ene",
+          "ko": "Den eneste ene",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "덴마크",
+          "eras": [
+            "북유럽",
+            "덴마크"
+          ],
+          "plot": "아기를 원하는 두 커플의 엇갈린 사랑",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 175
+        },
+        {
+          "id": "emil-i-lonneberga-1971",
+          "year": 1971,
+          "en": "Emil i Lönneberga",
+          "ko": "Emil i Lönneberga",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "스웨덴",
+          "eras": [
+            "북유럽",
+            "스웨덴"
+          ],
+          "plot": "말썽꾸러기 에밀이 스웨덴 시골 마을에서 벌이는 장난",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 176
+        },
+        {
+          "id": "kona-fer-i-stri-2018",
+          "year": 2018,
+          "en": "Kona fer í stríð",
+          "ko": "Kona fer í stríð",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "북유럽",
+          "countryDetail": "아이슬란드",
+          "eras": [
+            "북유럽",
+            "아이슬란드"
+          ],
+          "plot": "합창단 지휘자가 몰래 송전탑을 쓰러뜨리는 환경 투사로 활약한다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 177
+        }
+      ]
     }
   ],
   "uncertainTitles": [
