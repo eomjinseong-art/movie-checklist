@@ -558,3 +558,6 @@ footer a:hover { color: var(--gold); }
 .cpb-copy { flex: 1; min-width: 0; }
 .cpb-arrow { flex-shrink: 0; color: var(--gold); }
 .cpb-note { margin: 8px 0 0; color: var(--text-dim); font-size: 11px; line-height: 1.6; text-align: center; word-break: keep-all; }
+
+.group-filter { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .8rem; }
+.movie .plot { font-size: .82rem; opacity: .8; margin-top: .25rem; line-height: 1.4; }
