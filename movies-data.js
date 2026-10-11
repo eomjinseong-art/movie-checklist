@@ -7972,6 +7972,213 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 49,
           "type": "영화",
           "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-kings-letters-2019"
+        },
+        {
+          "id": "barbarians-2020",
+          "year": 2020,
+          "en": "Barbarians",
+          "ko": "바바리안",
+          "genre": "로마",
+          "note": "",
+          "eras": [
+            "로마"
+          ],
+          "period": "기원후 9년 – 기원후 16년",
+          "periodStart": 9,
+          "periodEnd": 16,
+          "ord": 50,
+          "type": "시리즈",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#barbarians-2020"
+        },
+        {
+          "id": "attila-2001",
+          "year": 2001,
+          "en": "Attila",
+          "ko": "아틸라",
+          "genre": "로마",
+          "note": "",
+          "eras": [
+            "로마"
+          ],
+          "period": "기원후 434년 – 기원후 453년",
+          "periodStart": 434,
+          "periodEnd": 453,
+          "ord": 51,
+          "type": "시리즈",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#attila-2001"
+        },
+        {
+          "id": "beowulf-2007",
+          "year": 2007,
+          "en": "Beowulf",
+          "ko": "베오울프",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 500년 – 기원후 550년",
+          "periodStart": 500,
+          "periodEnd": 550,
+          "ord": 52,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#beowulf-2007"
+        },
+        {
+          "id": "norsemen-2016",
+          "year": 2016,
+          "en": "Norsemen (Vikingane)",
+          "ko": "바이킹 따라잡기",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 790년 – 기원후 800년",
+          "periodStart": 790,
+          "periodEnd": 800,
+          "ord": 53,
+          "type": "시리즈",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#norsemen-2016",
+          "netflix": true
+        },
+        {
+          "id": "the-vikings-1958",
+          "year": 1958,
+          "en": "The Vikings",
+          "ko": "바이킹",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 793년 – 기원후 866년",
+          "periodStart": 793,
+          "periodEnd": 866,
+          "ord": 54,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-vikings-1958"
+        },
+        {
+          "id": "the-northman-2022",
+          "year": 2022,
+          "en": "The Northman",
+          "ko": "노스맨",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 895년 – 기원후 914년",
+          "periodStart": 895,
+          "periodEnd": 914,
+          "ord": 55,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-northman-2022"
+        },
+        {
+          "id": "the-13th-warrior-1999",
+          "year": 1999,
+          "en": "The 13th Warrior",
+          "ko": "13번째 전사",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 921년 – 기원후 922년",
+          "periodStart": 921,
+          "periodEnd": 922,
+          "ord": 56,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-13th-warrior-1999"
+        },
+        {
+          "id": "the-last-kingdom-seven-kings-must-die-2023",
+          "year": 2023,
+          "en": "The Last Kingdom: Seven Kings Must Die",
+          "ko": "세븐 킹스 머스트 다이",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 924년 – 기원후 937년",
+          "periodStart": 924,
+          "periodEnd": 937,
+          "ord": 57,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-kingdom-seven-kings-must-die-2023",
+          "netflix": true
+        },
+        {
+          "id": "pathfinder-2007",
+          "year": 2007,
+          "en": "Pathfinder",
+          "ko": "패스파인더",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 1000년 – 기원후 1010년",
+          "periodStart": 1000,
+          "periodEnd": 1010,
+          "ord": 58,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#pathfinder-2007"
+        },
+        {
+          "id": "valhalla-rising-2009",
+          "year": 2009,
+          "en": "Valhalla Rising",
+          "ko": "발할라 라이징",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 1000년 – 기원후 1100년",
+          "periodStart": 1000,
+          "periodEnd": 1100,
+          "ord": 59,
+          "type": "영화",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#valhalla-rising-2009"
+        },
+        {
+          "id": "vinland-saga-2019",
+          "year": 2019,
+          "en": "Vinland Saga",
+          "ko": "빈란드 사가",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 1002년 – 기원후 1020년",
+          "periodStart": 1002,
+          "periodEnd": 1020,
+          "ord": 60,
+          "type": "시리즈",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vinland-saga-2019"
+        },
+        {
+          "id": "vikings-valhalla-2022",
+          "year": 2022,
+          "en": "Vikings: Valhalla",
+          "ko": "바이킹스: 발할라",
+          "genre": "중세",
+          "note": "",
+          "eras": [
+            "중세"
+          ],
+          "period": "기원후 1002년 – 기원후 1066년",
+          "periodStart": 1002,
+          "periodEnd": 1066,
+          "ord": 61,
+          "type": "시리즈",
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vikings-valhalla-2022",
+          "netflix": true
         }
       ]
     }
