@@ -7,17 +7,17 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <title>영화봇 · 배우·감독별 영화 체크리스트</title>
-<meta name="description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 나라별 웃음과 감동 영화 177편, 총 1107편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
+<meta name="description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 나라별 웃음과 감동 영화 177편, 예술가 영화 32편, 총 1139편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
 <link rel="canonical" href="https://movie-checklist-sigma.vercel.app/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:site_name" content="영화봇" />
 <meta property="og:title" content="영화봇 · 배우·감독별 영화 체크리스트" />
-<meta property="og:description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 나라별 웃음과 감동 영화 177편, 총 1107편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
+<meta property="og:description" content="배우 19명의 장편 출연작, 감독 2명의 장편 연출작, 고대·중세 역사 영화 62편, 나라별 웃음과 감동 영화 177편, 예술가 영화 32편, 총 1139편을 체크하는 한국어 영화 체크리스트. 시청 기록은 동기화 코드로 여러 기기에 이어집니다." />
 <meta property="og:url" content="https://movie-checklist-sigma.vercel.app/" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="영화봇 · 배우·감독별 영화 체크리스트" />
-<meta name="twitter:description" content="배우 19명·감독 2명·역사 영화 62편·웃음과 감동 177편, 총 1107편을 체크하는 한국어 영화 체크리스트." />
+<meta name="twitter:description" content="배우 19명·감독 2명·역사 영화 62편·웃음과 감동 177편·예술가 영화 32편, 총 1139편을 체크하는 한국어 영화 체크리스트." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -40,6 +40,7 @@
       <a class="view-tab" href="/true-stories">실화 영화</a>
       <a class="view-tab" href="/?list=history" data-view="history">역사 영화</a>
       <a class="view-tab" href="/?list=laughs" data-view="laughs">웃음과 감동</a>
+      <a class="view-tab" href="/?list=arts" data-view="arts">예술가 영화</a>
     </nav>
     <header class="page-head">
       <h2 id="page-title">전체</h2>
@@ -93,6 +94,7 @@
       <a href="/true-stories">실화 영화 체크리스트</a> · 외국 실화·실화 바탕 작품<br />
       <a href="/?list=history">역사 영화 체크리스트</a> · 고대·중세 62편, 이야기가 놓인 시대 순<br />
       <a href="/?list=laughs">나라별 웃음과 감동</a> · 유럽 코미디·따뜻한 유머 영화 177편, 나라별 보기<br />
+      <a href="/?list=arts">예술가 영화</a> · 나두예술의 유럽 음악가·화가 영화 32편, 예술가 글로 이어 보기<br />
       <span id="footer-uncertain"></span>
     </footer>
   </main>
@@ -124,7 +126,7 @@
   if (requested && lists.some((a) => a.id === requested)) current = requested;
   let filter = "all";
   let groupFilter = "all"; // country filter for theme lists with groupBy
-  const TAB_LISTS = ["history", "laughs"]; // lists with their own view tab / ?list= URL
+  const TAB_LISTS = ["history", "laughs", "arts"]; // lists with their own view tab / ?list= URL
   let state = {}; // filled from synced items below
 
   const navEl = document.getElementById("actor-nav");
@@ -263,7 +265,7 @@
   function matchesSearch(m, q) {
     if (!q) return true;
     const eras = Array.isArray(m.eras) ? m.eras.join(" ") : "";
-    const hay = (m.ko + " " + m.en + " " + m.year + " " + (m.genre || "") + " " + (m.note || "") + " " + eras + " " + (m.period || "") + " " + (m.type || "") + (m.netflix ? " 넷플릭스 netflix" : "") + " " + (m.plot || "") + " " + (m.ratio || "") + (m.kids ? " 가족 아이" : "")).toLowerCase();
+    const hay = (m.ko + " " + m.en + " " + m.year + " " + (m.genre || "") + " " + (m.note || "") + " " + eras + " " + (m.period || "") + " " + (m.type || "") + (m.netflix ? " 넷플릭스 netflix" : "") + " " + (m.plot || "") + " " + (m.ratio || "") + (m.kids ? " 가족 아이" : "") + " " + (m.artist || "") + " " + (m.director || "")).toLowerCase();
     return hay.includes(q);
   }
 
@@ -281,12 +283,13 @@
     const particle = last === "감독" ? "을" : "를";
     return names.join("·") + particle + " 선택해 시청 체크를 이어가세요";
   }
-  function setPageSource(url) {
+  function setPageSource(url, label) {
     const sourceEl = document.getElementById("page-source");
     if (!sourceEl) return;
     if (url) {
       sourceEl.hidden = false;
       sourceEl.href = url;
+      sourceEl.textContent = label || "나두연표에서 보기";
     } else {
       sourceEl.hidden = true;
       sourceEl.removeAttribute("href");
@@ -360,7 +363,7 @@
     } else {
       pageSub.textContent = actor.nameEn + (dir ? " · Feature Film Directing Credits" : " · Feature Film Acting Credits");
     }
-    setPageSource(actor.sourceUrl || "");
+    setPageSource(actor.sourceUrl || "", actor.sourceLabel);
     const w = watchedSet(actor.id);
     const s = actorStats(actor);
     updateProgress(s.watched, s.total);
@@ -464,6 +467,12 @@
         kd.textContent = "아이와 함께";
         meta.appendChild(kd);
       }
+      if (m.director) {
+        const dr = document.createElement("span");
+        dr.className = "note";
+        dr.textContent = "감독 " + m.director;
+        meta.appendChild(dr);
+      }
       if (m.netflix) {
         const badge = document.createElement("span");
         badge.className = "netflix-badge";
@@ -476,8 +485,8 @@
         link.href = m.sourceUrl;
         link.target = "_blank";
         link.rel = "noopener noreferrer";
-        link.textContent = "나두연표에서 보기";
-        link.setAttribute("aria-label", m.ko + " 나두연표에서 보기");
+        link.textContent = m.sourceLabel || "나두연표에서 보기";
+        link.setAttribute("aria-label", m.ko + " " + (m.sourceLabel || "나두연표에서 보기"));
         link.addEventListener("click", (e) => e.stopPropagation());
         meta.appendChild(link);
       }
