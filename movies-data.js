@@ -11635,6 +11635,548 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 32
         }
       ]
+    },
+    {
+      "id": "chess",
+      "nameKo": "체스 영화",
+      "nameEn": "Chess Films",
+      "subtitle": "체스·보드게임 영화와 시리즈 · 게임별",
+      "groupBy": "game",
+      "groups": [
+        "체스",
+        "바둑"
+      ],
+      "movies": [
+        {
+          "id": "searching-for-bobby-fischer-1993",
+          "year": 1993,
+          "en": "Searching for Bobby Fischer",
+          "ko": "위대한 승부",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "체스 신동 소년이 이기는 법과 착한 마음 사이에서 자기 길을 찾는다",
+          "kids": true,
+          "ord": 1
+        },
+        {
+          "id": "pawn-sacrifice-2014",
+          "year": 2014,
+          "en": "Pawn Sacrifice",
+          "ko": "폰 세이크리파이스",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "냉전 한복판, 바비 피셔가 소련의 스파스키와 세계 챔피언전을 벌인다",
+          "kids": false,
+          "ord": 2
+        },
+        {
+          "id": "queen-of-katwe-2016",
+          "year": 2016,
+          "en": "Queen of Katwe",
+          "ko": "퀸 오브 카트웨",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "우간다 빈민가 소녀가 체스를 배워 국제 대회에 나선다",
+          "kids": true,
+          "ord": 3
+        },
+        {
+          "id": "the-luzhin-defence-2000",
+          "year": 2000,
+          "en": "The Luzhin Defence",
+          "ko": "루진 디펜스",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "천재 체스 기사가 세계 대회와 사랑 사이에서 무너져 간다",
+          "kids": false,
+          "ord": 4
+        },
+        {
+          "id": "magnus-2016",
+          "year": 2016,
+          "en": "Magnus",
+          "ko": "매그너스",
+          "genre": "",
+          "note": "한국어 제목 표기 미확인(마그너스로도 표기)",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "마그누스 칼센이 세계 챔피언이 되기까지를 따라간 다큐멘터리",
+          "kids": true,
+          "ord": 5,
+          "type": "다큐"
+        },
+        {
+          "id": "fresh-1994",
+          "year": 1994,
+          "en": "Fresh",
+          "ko": "프레쉬",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "뉴욕 빈민가 소년이 체스에서 배운 수읽기로 마약 조직을 상대한다",
+          "kids": false,
+          "ord": 6
+        },
+        {
+          "id": "det-sjunde-inseglet-1957",
+          "year": 1957,
+          "en": "Det sjunde inseglet",
+          "ko": "제7의 봉인",
+          "genre": "",
+          "note": "체스 모티프",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "십자군에서 돌아온 기사가 죽음의 사신과 목숨을 건 체스를 둔다",
+          "kids": false,
+          "ord": 7
+        },
+        {
+          "id": "the-queen-s-gambit-2020",
+          "year": 2020,
+          "en": "The Queen's Gambit",
+          "ko": "퀸스 갬빗",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "고아원 출신 소녀 베스가 체스 세계 정상에 도전한다",
+          "kids": false,
+          "ord": 8,
+          "type": "시리즈"
+        },
+        {
+          "id": "the-coldest-game-2019",
+          "year": 2019,
+          "en": "The Coldest Game",
+          "ko": "콜디스트 게임",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "쿠바 미사일 위기 때 체스 대회에 끌려간 천재 수학자가 첩보전에 휘말린다",
+          "kids": false,
+          "ord": 9
+        },
+        {
+          "id": "knight-moves-1992",
+          "year": 1992,
+          "en": "Knight Moves",
+          "ko": "나이트 무브",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "체스 대회 중 일어나는 연쇄 살인의 용의자가 된 그랜드마스터",
+          "kids": false,
+          "ord": 10
+        },
+        {
+          "id": "harry-potter-and-the-philosopher-s-stone-2001",
+          "year": 2001,
+          "en": "Harry Potter and the Philosopher's Stone",
+          "ko": "해리 포터와 마법사의 돌",
+          "genre": "",
+          "note": "체스 장면",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "마법 학교에 입학한 해리가 거대한 마법사 체스를 뚫고 마법사의 돌을 지킨다",
+          "kids": true,
+          "ord": 11
+        },
+        {
+          "id": "the-thomas-crown-affair-1968",
+          "year": 1968,
+          "en": "The Thomas Crown Affair",
+          "ko": "토마스 크라운 어페어",
+          "genre": "",
+          "note": "체스 장면",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "은행을 턴 백만장자와 그를 쫓는 보험 조사관이 체스판에서 맞선다",
+          "kids": false,
+          "ord": 12
+        },
+        {
+          "id": "sherlock-holmes-a-game-of-shadows-2011",
+          "year": 2011,
+          "en": "Sherlock Holmes: A Game of Shadows",
+          "ko": "셜록 홈즈: 그림자 게임",
+          "genre": "",
+          "note": "체스 장면",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "홈즈가 모리아티 교수와 유럽을 오가며 머리싸움을 벌이고 체스로 결판을 낸다",
+          "kids": false,
+          "ord": 13
+        },
+        {
+          "id": "the-divine-move-2014",
+          "year": 2014,
+          "en": "The Divine Move",
+          "ko": "신의 한 수",
+          "genre": "",
+          "note": "보드게임",
+          "game": "바둑",
+          "eras": [
+            "바둑"
+          ],
+          "plot": "내기 바둑으로 형을 잃은 프로 기사가 복수에 나선다",
+          "kids": false,
+          "ord": 14
+        },
+        {
+          "id": "the-divine-move-2-the-wrathful-2019",
+          "year": 2019,
+          "en": "The Divine Move 2: The Wrathful",
+          "ko": "신의 한 수: 귀수편",
+          "genre": "",
+          "note": "보드게임",
+          "game": "바둑",
+          "eras": [
+            "바둑"
+          ],
+          "plot": "바둑으로 모든 것을 잃은 귀수가 내기 바둑판의 고수들을 하나씩 꺾는다",
+          "kids": false,
+          "ord": 15
+        },
+        {
+          "id": "the-match-2025",
+          "year": 2025,
+          "en": "The Match",
+          "ko": "승부",
+          "genre": "",
+          "note": "보드게임",
+          "game": "바둑",
+          "eras": [
+            "바둑"
+          ],
+          "plot": "바둑 스승 조훈현과 제자 이창호가 정상에서 맞붙는 실화",
+          "kids": false,
+          "ord": 16
+        }
+      ]
+    },
+    {
+      "id": "cards",
+      "nameKo": "카드 게임 영화",
+      "nameEn": "Card Game Films",
+      "subtitle": "포커·블랙잭·바카라·화투 영화와 시리즈 · 게임별",
+      "groupBy": "game",
+      "groups": [
+        "포커",
+        "블랙잭",
+        "바카라",
+        "화투"
+      ],
+      "movies": [
+        {
+          "id": "rounders-1998",
+          "year": 1998,
+          "en": "Rounders",
+          "ko": "라운더스",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "포커로 모든 것을 잃은 법대생이 친구의 빚을 갚으려 다시 판에 앉는다",
+          "kids": false,
+          "ord": 1
+        },
+        {
+          "id": "molly-s-game-2017",
+          "year": 2017,
+          "en": "Molly's Game",
+          "ko": "몰리스 게임",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "전직 스키 선수가 할리우드 스타들의 비밀 포커 게임을 운영하다 FBI에 붙잡힌다",
+          "kids": false,
+          "ord": 2
+        },
+        {
+          "id": "casino-royale-2006",
+          "year": 2006,
+          "en": "Casino Royale",
+          "ko": "007 카지노 로얄",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "제임스 본드가 테러 자금을 쥔 르시프와 거액의 텍사스 홀덤을 벌인다",
+          "kids": false,
+          "ord": 3
+        },
+        {
+          "id": "21-2008",
+          "year": 2008,
+          "en": "21",
+          "ko": "21",
+          "genre": "",
+          "note": "",
+          "game": "블랙잭",
+          "eras": [
+            "블랙잭"
+          ],
+          "plot": "MIT 학생들이 카드 카운팅으로 라스베이거스 카지노를 턴다",
+          "kids": false,
+          "ord": 4
+        },
+        {
+          "id": "the-cincinnati-kid-1965",
+          "year": 1965,
+          "en": "The Cincinnati Kid",
+          "ko": "신시내티 키드",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "젊은 포커 고수가 전설의 노장과 스터드 포커 대결을 벌인다",
+          "kids": false,
+          "ord": 5
+        },
+        {
+          "id": "maverick-1994",
+          "year": 1994,
+          "en": "Maverick",
+          "ko": "매버릭",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "말솜씨 좋은 도박꾼이 큰 포커 대회 참가비를 모으려 서부를 누빈다",
+          "kids": true,
+          "ord": 6
+        },
+        {
+          "id": "the-sting-1973",
+          "year": 1973,
+          "en": "The Sting",
+          "ko": "스팅",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "두 사기꾼이 친구를 죽인 갱 두목에게 포커와 경마로 큰 판을 꾸민다",
+          "kids": true,
+          "ord": 7
+        },
+        {
+          "id": "lock-stock-and-two-smoking-barrels-1998",
+          "year": 1998,
+          "en": "Lock, Stock and Two Smoking Barrels",
+          "ko": "록 스탁 앤 투 스모킹 배럴즈",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "카드 게임에서 거액을 잃은 친구들이 일주일 안에 빚을 갚으려 범죄에 뛰어든다",
+          "kids": false,
+          "ord": 8
+        },
+        {
+          "id": "tazza-the-high-rollers-2006",
+          "year": 2006,
+          "en": "Tazza: The High Rollers",
+          "ko": "타짜",
+          "genre": "",
+          "note": "",
+          "game": "화투",
+          "eras": [
+            "화투"
+          ],
+          "plot": "화투판에서 돈을 잃은 청년이 전설의 타짜에게 기술을 배운다",
+          "kids": false,
+          "ord": 9
+        },
+        {
+          "id": "tazza-the-hidden-card-2014",
+          "year": 2014,
+          "en": "Tazza: The Hidden Card",
+          "ko": "타짜: 신의 손",
+          "genre": "",
+          "note": "",
+          "game": "화투",
+          "eras": [
+            "화투"
+          ],
+          "plot": "고니의 조카 대길이 도박판에 뛰어들어 목숨을 건 승부를 벌인다",
+          "kids": false,
+          "ord": 10
+        },
+        {
+          "id": "tazza-one-eyed-jack-2019",
+          "year": 2019,
+          "en": "Tazza: One Eyed Jack",
+          "ko": "타짜: 원 아이드 잭",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "공시생 도일출이 원 아이드 잭 팀과 함께 큰 포커판 사기를 벌인다",
+          "kids": false,
+          "ord": 11
+        },
+        {
+          "id": "the-card-counter-2021",
+          "year": 2021,
+          "en": "The Card Counter",
+          "ko": "카드 카운터",
+          "genre": "",
+          "note": "",
+          "game": "블랙잭",
+          "eras": [
+            "블랙잭"
+          ],
+          "plot": "전직 군인 출신 도박사가 카지노를 떠돌며 과거의 죄와 마주한다",
+          "kids": false,
+          "ord": 12
+        },
+        {
+          "id": "mississippi-grind-2015",
+          "year": 2015,
+          "en": "Mississippi Grind",
+          "ko": "미시시피 그라인드",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "빚에 쫓기는 도박꾼과 낯선 젊은이가 미시시피강을 따라 큰 판을 찾아 떠난다",
+          "kids": false,
+          "ord": 13
+        },
+        {
+          "id": "lucky-you-2007",
+          "year": 2007,
+          "en": "Lucky You",
+          "ko": "럭키 유",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "라스베이거스 포커꾼이 월드 시리즈 오브 포커에서 아버지와 맞선다",
+          "kids": false,
+          "ord": 14
+        },
+        {
+          "id": "the-gambler-2014",
+          "year": 2014,
+          "en": "The Gambler",
+          "ko": "더 갬블러",
+          "genre": "",
+          "note": "",
+          "game": "블랙잭",
+          "eras": [
+            "블랙잭"
+          ],
+          "plot": "도박 빚에 빠진 문학 교수가 블랙잭으로 인생을 걸고 끝까지 간다",
+          "kids": false,
+          "ord": 15
+        },
+        {
+          "id": "croupier-1998",
+          "year": 1998,
+          "en": "Croupier",
+          "ko": "크루피어",
+          "genre": "",
+          "note": "",
+          "game": "블랙잭",
+          "eras": [
+            "블랙잭"
+          ],
+          "plot": "작가 지망생이 카지노 딜러로 일하며 도박의 세계에 빠져든다",
+          "kids": false,
+          "ord": 16
+        },
+        {
+          "id": "all-in-2003",
+          "year": 2003,
+          "en": "All In",
+          "ko": "올인",
+          "genre": "",
+          "note": "",
+          "game": "포커",
+          "eras": [
+            "포커"
+          ],
+          "plot": "도박사 차민수의 삶을 바탕으로 한 사랑과 승부의 드라마",
+          "kids": false,
+          "ord": 17,
+          "type": "시리즈"
+        },
+        {
+          "id": "big-bet-2022",
+          "year": 2022,
+          "en": "Big Bet",
+          "ko": "카지노",
+          "genre": "",
+          "note": "",
+          "game": "바카라",
+          "eras": [
+            "바카라"
+          ],
+          "plot": "필리핀 카지노의 전설이 된 남자가 살인 사건에 휘말려 모든 것을 걸게 된다",
+          "kids": false,
+          "ord": 18,
+          "type": "시리즈"
+        }
+      ]
     }
   ],
   "uncertainTitles": [
@@ -11652,6 +12194,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Morgan Freeman: 1964~68 무크레딧 단역(The Pawnbroker 등)·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV 시리즈·TV 영화, 다큐·내레이션(March of the Penguins, War of the Worlds 등), 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만 맡은 작품, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son(해리와 아들)/That Was Then... This Is Now/Levity(레버티)/The Minute You Wake Up Dead/My Dead Friend Zoe(내 죽은 친구 조이) 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준",
     "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년",
     "Oliver Stone: 감독 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준",
-    "예술가 영화: 제목은 나두예술(/films) 기준 · 한국어 제목은 국내 개봉명과 다를 수 있어 원제를 같이 적음 · 에곤 쉴레: 욕망이 그린 그림은 개봉명 기준이며 다를 수 있음"
+    "예술가 영화: 제목은 나두예술(/films) 기준 · 한국어 제목은 국내 개봉명과 다를 수 있어 원제를 같이 적음 · 에곤 쉴레: 욕망이 그린 그림은 개봉명 기준이며 다를 수 있음",
+    "체스 영화: Magnus(2016) 한국어 제목 표기 미확인 — 매그너스/마그너스 · 카드 게임 영화: 카지노(2022, 디즈니+ 시리즈)의 영문 제목은 Big Bet"
   ]
 };
