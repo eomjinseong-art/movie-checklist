@@ -11081,6 +11081,560 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 177
         }
       ]
+    },
+    {
+      "id": "arts",
+      "nameKo": "예술가 영화",
+      "nameEn": "Films about European Artists",
+      "subtitle": "나두예술 · 유럽 음악가·화가를 다룬 영화",
+      "sourceUrl": "https://nadoo-arts.vercel.app/films",
+      "sourceLabel": "나두예술에서 보기",
+      "movies": [
+        {
+          "id": "la-mome-2007",
+          "year": 2007,
+          "en": "La Môme",
+          "ko": "라 비 앙 로즈",
+          "genre": "",
+          "note": "",
+          "artist": "에디트 피아프",
+          "eras": [
+            "에디트 피아프"
+          ],
+          "director": "올리비에 다앙",
+          "plot": "에디트 피아프의 일생. 마리옹 코티야르가 아카데미 여우주연상을 받았습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/piaf",
+          "sourceLabel": "나두예술 에디트 피아프 글 보기",
+          "ord": 1
+        },
+        {
+          "id": "at-eternity-s-gate-2018",
+          "year": 2018,
+          "en": "At Eternity's Gate",
+          "ko": "반 고흐: 영원의 문에서",
+          "genre": "",
+          "note": "",
+          "artist": "빈센트 반 고흐",
+          "eras": [
+            "빈센트 반 고흐"
+          ],
+          "director": "줄리언 슈나벨",
+          "plot": "아를과 오베르 시절. 윌렘 대포가 아카데미 남우주연상 후보에 올랐습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/van-gogh",
+          "sourceLabel": "나두예술 빈센트 반 고흐 글 보기",
+          "ord": 2
+        },
+        {
+          "id": "loving-vincent-2017",
+          "year": 2017,
+          "en": "Loving Vincent",
+          "ko": "러빙 빈센트",
+          "genre": "",
+          "note": "",
+          "artist": "빈센트 반 고흐",
+          "eras": [
+            "빈센트 반 고흐"
+          ],
+          "director": "도로타 코비엘라, 휴 웰치먼",
+          "plot": "화가들이 유화로 한 장 한 장 그린 장편 애니메이션.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/van-gogh",
+          "sourceLabel": "나두예술 빈센트 반 고흐 글 보기",
+          "ord": 3
+        },
+        {
+          "id": "lust-for-life-1956",
+          "year": 1956,
+          "en": "Lust for Life",
+          "ko": "열정의 랩소디",
+          "genre": "",
+          "note": "",
+          "artist": "빈센트 반 고흐",
+          "eras": [
+            "빈센트 반 고흐"
+          ],
+          "director": "빈센트 미넬리",
+          "plot": "커크 더글러스가 고흐, 앤서니 퀸이 고갱. 퀸이 아카데미 남우조연상을 받았습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/van-gogh",
+          "sourceLabel": "나두예술 빈센트 반 고흐 글 보기",
+          "ord": 4
+        },
+        {
+          "id": "caravaggio-1986",
+          "year": 1986,
+          "en": "Caravaggio",
+          "ko": "카라바조",
+          "genre": "",
+          "note": "",
+          "artist": "카라바조",
+          "eras": [
+            "카라바조"
+          ],
+          "director": "데릭 저먼",
+          "plot": "카라바조의 그림을 살아 있는 장면(타블로 비방)처럼 연출한 영국 영화.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/caravaggio",
+          "sourceLabel": "나두예술 카라바조 글 보기",
+          "ord": 5
+        },
+        {
+          "id": "l-ombra-di-caravaggio-2022",
+          "year": 2022,
+          "en": "L'ombra di Caravaggio",
+          "ko": "카라바조의 그림자",
+          "genre": "",
+          "note": "",
+          "artist": "카라바조",
+          "eras": [
+            "카라바조"
+          ],
+          "director": "미켈레 플라치도",
+          "plot": "교황청 조사관이 카라바조의 삶을 뒤쫓는 이탈리아 영화.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/caravaggio",
+          "sourceLabel": "나두예술 카라바조 글 보기",
+          "ord": 6
+        },
+        {
+          "id": "the-agony-and-the-ecstasy-1965",
+          "year": 1965,
+          "en": "The Agony and the Ecstasy",
+          "ko": "고뇌와 환희",
+          "genre": "",
+          "note": "",
+          "artist": "미켈란젤로 부오나로티",
+          "eras": [
+            "미켈란젤로 부오나로티"
+          ],
+          "director": "캐럴 리드",
+          "plot": "시스티나 천장화를 두고 미켈란젤로(찰턴 헤스턴)와 교황 율리우스 2세(렉스 해리슨)가 부딪칩니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/michelangelo",
+          "sourceLabel": "나두예술 미켈란젤로 부오나로티 글 보기",
+          "ord": 7
+        },
+        {
+          "id": "renoir-2012",
+          "year": 2012,
+          "en": "Renoir",
+          "ko": "르누아르",
+          "genre": "",
+          "note": "",
+          "artist": "피에르오귀스트 르누아르",
+          "eras": [
+            "피에르오귀스트 르누아르"
+          ],
+          "director": "질 부르도",
+          "plot": "말년의 르누아르와 아들 장 르누아르, 그리고 모델 이야기.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/renoir",
+          "sourceLabel": "나두예술 피에르오귀스트 르누아르 글 보기",
+          "ord": 8
+        },
+        {
+          "id": "cezanne-et-moi-2016",
+          "year": 2016,
+          "en": "Cézanne et moi",
+          "ko": "세잔과 졸라",
+          "genre": "",
+          "note": "",
+          "artist": "폴 세잔",
+          "eras": [
+            "폴 세잔"
+          ],
+          "director": "다니엘 톰슨",
+          "plot": "세잔과 에밀 졸라의 40년 우정과 갈등.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/cezanne",
+          "sourceLabel": "나두예술 폴 세잔 글 보기",
+          "ord": 9
+        },
+        {
+          "id": "modigliani-2004",
+          "year": 2004,
+          "en": "Modigliani",
+          "ko": "모딜리아니",
+          "genre": "",
+          "note": "",
+          "artist": "아메데오 모딜리아니",
+          "eras": [
+            "아메데오 모딜리아니"
+          ],
+          "director": "믹 데이비스",
+          "plot": "앤디 가르시아 주연. 피카소와의 경쟁을 극적으로 꾸몄습니다(사실과 다른 부분이 많음).",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/modigliani",
+          "sourceLabel": "나두예술 아메데오 모딜리아니 글 보기",
+          "ord": 10
+        },
+        {
+          "id": "the-devil-s-violinist-2013",
+          "year": 2013,
+          "en": "The Devil's Violinist",
+          "ko": "파가니니: 악마의 바이올리니스트",
+          "genre": "",
+          "note": "",
+          "artist": "니콜로 파가니니",
+          "eras": [
+            "니콜로 파가니니"
+          ],
+          "director": "버나드 로즈",
+          "plot": "바이올리니스트 데이비드 개릿이 파가니니를 연기하고 직접 연주했습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/paganini",
+          "sourceLabel": "나두예술 니콜로 파가니니 글 보기",
+          "ord": 11
+        },
+        {
+          "id": "bolero-2024",
+          "year": 2024,
+          "en": "Boléro",
+          "ko": "볼레로",
+          "genre": "",
+          "note": "",
+          "artist": "모리스 라벨",
+          "eras": [
+            "모리스 라벨"
+          ],
+          "director": "안 퐁텐",
+          "plot": "라벨이 ‘볼레로’를 쓰기까지. 라파엘 페르소나즈가 라벨을 맡았습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/ravel",
+          "sourceLabel": "나두예술 모리스 라벨 글 보기",
+          "ord": 12
+        },
+        {
+          "id": "ennio-2021",
+          "year": 2021,
+          "en": "Ennio",
+          "ko": "엔니오: 더 마에스트로",
+          "genre": "",
+          "note": "",
+          "artist": "엔니오 모리코네",
+          "eras": [
+            "엔니오 모리코네"
+          ],
+          "director": "주세페 토르나토레",
+          "plot": "모리코네의 삶과 음악을 담은 다큐멘터리. ‘시네마 천국’ 감독이 만들었습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/morricone",
+          "sourceLabel": "나두예술 엔니오 모리코네 글 보기",
+          "ord": 13
+        },
+        {
+          "id": "amadeus-1984",
+          "year": 1984,
+          "en": "Amadeus",
+          "ko": "아마데우스",
+          "genre": "",
+          "note": "",
+          "artist": "볼프강 아마데우스 모차르트",
+          "eras": [
+            "볼프강 아마데우스 모차르트"
+          ],
+          "director": "밀로시 포르만",
+          "plot": "모차르트와 궁정 작곡가 살리에리(이탈리아 레냐고 출신). 살리에리가 질투해 모차르트를 해쳤다는 이야기는 소문과 연극에서 온 허구입니다. 아카데미 작품상 등 8개 부문 수상.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/mozart",
+          "sourceLabel": "나두예술 볼프강 아마데우스 모차르트 글 보기",
+          "ord": 14
+        },
+        {
+          "id": "immortal-beloved-1994",
+          "year": 1994,
+          "en": "Immortal Beloved",
+          "ko": "불멸의 연인",
+          "genre": "",
+          "note": "",
+          "artist": "루트비히 판 베토벤",
+          "eras": [
+            "루트비히 판 베토벤"
+          ],
+          "director": "버나드 로즈",
+          "plot": "게리 올드먼이 베토벤. 베토벤이 남긴 ‘불멸의 연인’ 편지의 주인공을 찾는 이야기로, 영화의 결론은 학계 정설이 아닌 상상입니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/beethoven",
+          "sourceLabel": "나두예술 루트비히 판 베토벤 글 보기",
+          "ord": 15
+        },
+        {
+          "id": "copying-beethoven-2006",
+          "year": 2006,
+          "en": "Copying Beethoven",
+          "ko": "카핑 베토벤",
+          "genre": "",
+          "note": "",
+          "artist": "루트비히 판 베토벤",
+          "eras": [
+            "루트비히 판 베토벤"
+          ],
+          "director": "아그니에슈카 홀란드",
+          "plot": "에드 해리스가 베토벤. 교향곡 9번 초연을 돕는 젊은 악보 필사가는 지어낸 인물입니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/beethoven",
+          "sourceLabel": "나두예술 루트비히 판 베토벤 글 보기",
+          "ord": 16
+        },
+        {
+          "id": "la-note-bleue-1991",
+          "year": 1991,
+          "en": "La note bleue",
+          "ko": "쇼팽의 푸른 노트",
+          "genre": "",
+          "note": "",
+          "artist": "프레데리크 쇼팽",
+          "eras": [
+            "프레데리크 쇼팽"
+          ],
+          "director": "안제이 줄랍스키",
+          "plot": "쇼팽과 조르주 상드의 마지막 여름. 피아니스트 야누시 올레이니차크가 쇼팽을 맡았습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/chopin",
+          "sourceLabel": "나두예술 프레데리크 쇼팽 글 보기",
+          "ord": 17
+        },
+        {
+          "id": "chopin-chopin-2025",
+          "year": 2025,
+          "en": "Chopin, Chopin!",
+          "ko": "쇼팽, 파리 소나타",
+          "genre": "",
+          "note": "",
+          "artist": "프레데리크 쇼팽",
+          "eras": [
+            "프레데리크 쇼팽"
+          ],
+          "director": "미하우 크비에친스키",
+          "plot": "파리 사교계의 스타였던 쇼팽의 마지막 몇 해를 그린 폴란드 영화.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/chopin",
+          "sourceLabel": "나두예술 프레데리크 쇼팽 글 보기",
+          "ord": 18
+        },
+        {
+          "id": "tchaikovskys-wife-2022",
+          "year": 2022,
+          "en": "Жена Чайковского",
+          "ko": "차이콥스키의 아내",
+          "genre": "",
+          "note": "",
+          "artist": "표트르 일리치 차이콥스키",
+          "eras": [
+            "표트르 일리치 차이콥스키"
+          ],
+          "director": "키릴 세레브렌니코프",
+          "plot": "차이콥스키와 짧은 결혼 생활을 한 안토니나의 시선으로 본 이야기. 칸 영화제 경쟁 부문 상영.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/tchaikovsky",
+          "sourceLabel": "나두예술 표트르 일리치 차이콥스키 글 보기",
+          "ord": 19
+        },
+        {
+          "id": "mahler-auf-der-couch-2010",
+          "year": 2010,
+          "en": "Mahler auf der Couch",
+          "ko": "말러, 카우치에 눕다",
+          "genre": "",
+          "note": "",
+          "artist": "구스타프 말러",
+          "eras": [
+            "구스타프 말러"
+          ],
+          "director": "퍼시 애들런, 펠릭스 애들런",
+          "plot": "1910년 말러가 프로이트를 찾아간 실제 만남에서 출발한 이야기. 대화 내용은 상상입니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/mahler",
+          "sourceLabel": "나두예술 구스타프 말러 글 보기",
+          "ord": 20
+        },
+        {
+          "id": "nowhere-boy-2009",
+          "year": 2009,
+          "en": "Nowhere Boy",
+          "ko": "노웨어 보이",
+          "genre": "",
+          "note": "",
+          "artist": "비틀스",
+          "eras": [
+            "비틀스"
+          ],
+          "director": "샘 테일러존슨",
+          "plot": "10대의 존 레넌이 폴 매카트니를 만나 밴드를 시작하기까지.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/beatles",
+          "sourceLabel": "나두예술 비틀스 글 보기",
+          "ord": 21
+        },
+        {
+          "id": "bohemian-rhapsody-2018",
+          "year": 2018,
+          "en": "Bohemian Rhapsody",
+          "ko": "보헤미안 랩소디",
+          "genre": "",
+          "note": "",
+          "artist": "퀸",
+          "eras": [
+            "퀸"
+          ],
+          "director": "브라이언 싱어",
+          "plot": "퀸과 프레디 머큐리, 1985년 라이브 에이드까지. 라미 말렉이 아카데미 남우주연상을 받았습니다. 사건 순서를 바꾼 곳이 있습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/queen",
+          "sourceLabel": "나두예술 퀸 글 보기",
+          "ord": 22
+        },
+        {
+          "id": "mamma-mia-2008",
+          "year": 2008,
+          "en": "Mamma Mia!",
+          "ko": "맘마 미아!",
+          "genre": "",
+          "note": "",
+          "artist": "아바",
+          "eras": [
+            "아바"
+          ],
+          "director": "필리다 로이드",
+          "plot": "아바의 노래로 만든 뮤지컬(1999)을 영화로. 그리스 섬이 배경입니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/music/abba",
+          "sourceLabel": "나두예술 아바 글 보기",
+          "ord": 23
+        },
+        {
+          "id": "girl-with-a-pearl-earring-2003",
+          "year": 2003,
+          "en": "Girl with a Pearl Earring",
+          "ko": "진주 귀걸이를 한 소녀",
+          "genre": "",
+          "note": "",
+          "artist": "요하네스 페르메이르",
+          "eras": [
+            "요하네스 페르메이르"
+          ],
+          "director": "피터 웨버",
+          "plot": "스칼릿 조핸슨, 콜린 퍼스. 트레이시 슈발리에 소설이 원작이며 하녀 그리트는 지어낸 인물입니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/vermeer",
+          "sourceLabel": "나두예술 요하네스 페르메이르 글 보기",
+          "ord": 24
+        },
+        {
+          "id": "nightwatching-2007",
+          "year": 2007,
+          "en": "Nightwatching",
+          "ko": "야경: 렘브란트의 음모",
+          "genre": "",
+          "note": "",
+          "artist": "렘브란트 판 레인",
+          "eras": [
+            "렘브란트 판 레인"
+          ],
+          "director": "피터 그리너웨이",
+          "plot": "‘야경’ 속에 살인 음모가 숨어 있다는 상상으로 만든 영화.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/rembrandt",
+          "sourceLabel": "나두예술 렘브란트 판 레인 글 보기",
+          "ord": 25
+        },
+        {
+          "id": "mr-turner-2014",
+          "year": 2014,
+          "en": "Mr. Turner",
+          "ko": "미스터 터너",
+          "genre": "",
+          "note": "",
+          "artist": "J. M. W. 터너",
+          "eras": [
+            "J. M. W. 터너"
+          ],
+          "director": "마이크 리",
+          "plot": "말년의 터너. 티모시 스폴이 칸 영화제 남우주연상을 받았습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/turner",
+          "sourceLabel": "나두예술 J. M. W. 터너 글 보기",
+          "ord": 26
+        },
+        {
+          "id": "goya-s-ghosts-2006",
+          "year": 2006,
+          "en": "Goya's Ghosts",
+          "ko": "고야의 유령",
+          "genre": "",
+          "note": "",
+          "artist": "프란시스코 고야",
+          "eras": [
+            "프란시스코 고야"
+          ],
+          "director": "밀로시 포르만",
+          "plot": "스페인 종교 재판과 나폴레옹 전쟁 시대. 고야(스텔란 스카스가드)는 관찰자로 나오고 주인공들은 지어낸 인물입니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/goya",
+          "sourceLabel": "나두예술 프란시스코 고야 글 보기",
+          "ord": 27
+        },
+        {
+          "id": "klimt-2006",
+          "year": 2006,
+          "en": "Klimt",
+          "ko": "클림트",
+          "genre": "",
+          "note": "",
+          "artist": "구스타프 클림트",
+          "eras": [
+            "구스타프 클림트"
+          ],
+          "director": "라울 루이스",
+          "plot": "존 말코비치가 클림트. 죽어 가는 화가의 기억을 꿈처럼 엮었습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/klimt",
+          "sourceLabel": "나두예술 구스타프 클림트 글 보기",
+          "ord": 28
+        },
+        {
+          "id": "woman-in-gold-2015",
+          "year": 2015,
+          "en": "Woman in Gold",
+          "ko": "우먼 인 골드",
+          "genre": "",
+          "note": "",
+          "artist": "구스타프 클림트",
+          "eras": [
+            "구스타프 클림트"
+          ],
+          "director": "사이먼 커티스",
+          "plot": "나치에게 빼앗긴 클림트의 ‘아델레 블로흐바우어의 초상 I’을 되찾는 실화. 헬렌 미렌 주연.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/klimt",
+          "sourceLabel": "나두예술 구스타프 클림트 글 보기",
+          "ord": 29
+        },
+        {
+          "id": "egon-schiele-tod-und-madchen-2016",
+          "year": 2016,
+          "en": "Egon Schiele: Tod und Mädchen",
+          "ko": "에곤 쉴레: 욕망이 그린 그림",
+          "genre": "",
+          "note": "",
+          "artist": "에곤 실레",
+          "eras": [
+            "에곤 실레"
+          ],
+          "director": "디터 베르너",
+          "plot": "실레의 짧은 삶과 모델들. 한국어 제목은 개봉명 기준이며 다를 수 있습니다.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/schiele",
+          "sourceLabel": "나두예술 에곤 실레 글 보기",
+          "ord": 30
+        },
+        {
+          "id": "edvard-munch-1974",
+          "year": 1974,
+          "en": "Edvard Munch",
+          "ko": "에드바르 뭉크",
+          "genre": "",
+          "note": "",
+          "artist": "에드바르 뭉크",
+          "eras": [
+            "에드바르 뭉크"
+          ],
+          "director": "피터 왓킨스",
+          "plot": "다큐멘터리처럼 찍은 노르웨이·스웨덴 TV 영화.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/munch",
+          "sourceLabel": "나두예술 에드바르 뭉크 글 보기",
+          "ord": 31
+        },
+        {
+          "id": "effie-gray-2014",
+          "year": 2014,
+          "en": "Effie Gray",
+          "ko": "에피 그레이",
+          "genre": "",
+          "note": "",
+          "artist": "존 에버렛 밀레이",
+          "eras": [
+            "존 에버렛 밀레이"
+          ],
+          "director": "리처드 랙스턴",
+          "plot": "비평가 러스킨의 아내 에피와 밀레이의 사랑. 각본 에마 톰프슨.",
+          "sourceUrl": "https://nadoo-arts.vercel.app/art/millais",
+          "sourceLabel": "나두예술 존 에버렛 밀레이 글 보기",
+          "ord": 32
+        }
+      ]
     }
   ],
   "uncertainTitles": [
@@ -11097,6 +11651,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Chadwick Boseman: 단편, 블랙 팬서: 와칸다 포에버(아카이브 영상만 사용) 제외 · The Kill Hole 한국 개봉명 불확실 (킬 홀)",
     "Morgan Freeman: 1964~68 무크레딧 단역(The Pawnbroker 등)·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV 시리즈·TV 영화, 다큐·내레이션(March of the Penguins, War of the Worlds 등), 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만 맡은 작품, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son(해리와 아들)/That Was Then... This Is Now/Levity(레버티)/The Minute You Wake Up Dead/My Dead Friend Zoe(내 죽은 친구 조이) 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준",
     "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년",
-    "Oliver Stone: 감독 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준"
+    "Oliver Stone: 감독 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준",
+    "예술가 영화: 제목은 나두예술(/films) 기준 · 한국어 제목은 국내 개봉명과 다를 수 있어 원제를 같이 적음 · 에곤 쉴레: 욕망이 그린 그림은 개봉명 기준이며 다를 수 있음"
   ]
 };
