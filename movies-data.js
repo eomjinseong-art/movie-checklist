@@ -12663,6 +12663,140 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 38
         }
       ]
+    },
+    {
+      "id": "samguk",
+      "nameKo": "삼국지 영화",
+      "nameEn": "Three Kingdoms Films & Dramas",
+      "subtitle": "나두삼국지(nadoo-samguk)의 영화·드라마 · 연도 순",
+      "sourceUrl": "https://nadoo-samguk.vercel.app/films",
+      "sourceLabel": "나두삼국지에서 보기",
+      "movies": [
+        {
+          "id": "romance-1994",
+          "year": 1994,
+          "en": "Romance of the Three Kingdoms",
+          "ko": "삼국연의 (84부작)",
+          "genre": "",
+          "note": "",
+          "plot": "CCTV 84부작. 도원결의부터 진의 통일까지 소설 전체를 충실히 옮겼습니다. 국내에서는 «84부작 삼국지»로도 부릅니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#romance-1994",
+          "sourceLabel": "나두삼국지에서 보기",
+          "type": "시리즈",
+          "ord": 1
+        },
+        {
+          "id": "resurrection-dragon-2008",
+          "year": 2008,
+          "en": "Three Kingdoms: Resurrection of the Dragon",
+          "ko": "삼국지: 용의 부활",
+          "genre": "",
+          "note": "",
+          "plot": "이인항 감독, 유덕화가 조운입니다. 장판에서 노년의 북벌까지 조운의 일생을 그리고, 가공 인물이 많이 나옵니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#resurrection-dragon-2008",
+          "sourceLabel": "나두삼국지에서 보기",
+          "ord": 2
+        },
+        {
+          "id": "red-cliff-2008",
+          "year": 2008,
+          "en": "Red Cliff",
+          "ko": "적벽대전: 거대한 전쟁의 시작",
+          "genre": "",
+          "note": "",
+          "plot": "오우삼 감독, 양조위가 주유, 금성무가 제갈량입니다. 장판에서 적벽 전야까지. 해외 제목 «레드 클리프»가 이 작품입니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#red-cliff-1-2008",
+          "sourceLabel": "나두삼국지에서 보기",
+          "ord": 3
+        },
+        {
+          "id": "red-cliff-ii-2009",
+          "year": 2009,
+          "en": "Red Cliff II",
+          "ko": "적벽대전 2: 최후의 결전",
+          "genre": "",
+          "note": "",
+          "plot": "오우삼 감독. 초선차전과 화공까지 적벽의 결전. 손상향의 첩자 활약은 영화 창작입니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#red-cliff-2-2009",
+          "sourceLabel": "나두삼국지에서 보기",
+          "ord": 4
+        },
+        {
+          "id": "three-kingdoms-2010",
+          "year": 2010,
+          "en": "Three Kingdoms",
+          "ko": "삼국 (신삼국, 95부작)",
+          "genre": "",
+          "note": "",
+          "plot": "고희희 감독 95부작, 진건빈이 조조입니다. 동탁의 전횡부터 사마씨까지, 조조를 입체적으로 다시 그렸습니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#three-kingdoms-2010",
+          "sourceLabel": "나두삼국지에서 보기",
+          "type": "시리즈",
+          "ord": 5
+        },
+        {
+          "id": "the-lost-bladesman-2011",
+          "year": 2011,
+          "en": "The Lost Bladesman",
+          "ko": "삼국지: 명장 관우",
+          "genre": "",
+          "note": "",
+          "plot": "견자단이 관우, 강문이 조조입니다. 소설의 오관참육장을 바탕으로 한 무협 액션입니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#lost-bladesman-2011",
+          "sourceLabel": "나두삼국지에서 보기",
+          "ord": 6
+        },
+        {
+          "id": "the-assassins-2012",
+          "year": 2012,
+          "en": "The Assassins",
+          "ko": "조조: 황제의 반란",
+          "genre": "",
+          "note": "",
+          "plot": "주윤발이 만년의 조조입니다. 조조를 노리는 두 자객 이야기는 창작이고, 국내 개봉은 2013년입니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#assassins-2012",
+          "sourceLabel": "나두삼국지에서 보기",
+          "ord": 7
+        },
+        {
+          "id": "the-advisors-alliance-2017",
+          "year": 2017,
+          "en": "The Advisors Alliance",
+          "ko": "대군사 사마의",
+          "genre": "",
+          "note": "",
+          "plot": "오수파가 사마의입니다. 1부 «군사연맹», 2부 «호소용음» 합쳐 86부작. 국내 서비스 제목 표기가 갈립니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#advisors-alliance-2017",
+          "sourceLabel": "나두삼국지에서 보기",
+          "type": "시리즈",
+          "ord": 8
+        },
+        {
+          "id": "secrets-of-the-three-kingdoms-2018",
+          "year": 2018,
+          "en": "Secrets of the Three Kingdoms",
+          "ko": "삼국기밀",
+          "genre": "",
+          "note": "",
+          "plot": "54부작. 헌제에게 쌍둥이 형제가 있다는 가상의 설정으로 허도의 궁중 암투를 그립니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#secrets-2018",
+          "sourceLabel": "나두삼국지에서 보기",
+          "type": "시리즈",
+          "ord": 9
+        },
+        {
+          "id": "dynasty-warriors-2021",
+          "year": 2021,
+          "en": "Dynasty Warriors",
+          "ko": "진·삼국무쌍",
+          "genre": "",
+          "note": "",
+          "plot": "주현량 감독, 게임 원작의 판타지 액션. 반동탁 연합과 여포를 다루지만 역사와 소설 모두에서 크게 벗어납니다.",
+          "sourceUrl": "https://nadoo-samguk.vercel.app/films#dynasty-warriors-2021",
+          "sourceLabel": "나두삼국지에서 보기",
+          "ord": 10
+        }
+      ]
     }
   ],
   "uncertainTitles": [
@@ -12681,6 +12815,7 @@ window.MOVIE_CHECKLIST_DATA = {
     "Ridley Scott: 감독 장편만 수록 · 단편(Boy and Bicycle 등), 옴니버스 보이지 않는 아이들의 단편, 제작만 맡은 작품, TV, 미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년",
     "Oliver Stone: 감독 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준",
     "예술가 영화: 제목은 나두예술(/films) 기준 · 한국어 제목은 국내 개봉명과 다를 수 있어 원제를 같이 적음 · 에곤 쉴레: 욕망이 그린 그림은 개봉명 기준이며 다를 수 있음",
-    "체스 영화: Magnus(2016) 한국어 제목 표기 미확인 — 매그너스/마그너스 · 카드 게임 영화: 카지노(2022, 디즈니+ 시리즈)의 영문 제목은 Big Bet"
+    "체스 영화: Magnus(2016) 한국어 제목 표기 미확인 — 매그너스/마그너스 · 카드 게임 영화: 카지노(2022, 디즈니+ 시리즈)의 영문 제목은 Big Bet",
+    "삼국지 영화: 대군사 사마의(2017)는 국내 서비스 제목이 «사마의: 미완의 책사»·«사마의: 최후의 승자»로도 표기 · 신삼국(2010)의 국내 표기는 «삼국»/«신삼국»"
   ]
 };
