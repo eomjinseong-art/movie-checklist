@@ -25,15 +25,15 @@ def sentences(text):
 
 
 def validate():
-    if not 60 <= len(FILMS) <= 80:
-        raise SystemExit(f"film count {len(FILMS)} outside 60-80")
+    if not 60 <= len(FILMS) <= 120:
+        raise SystemExit(f"film count {len(FILMS)} outside 60-120")
     ids = [f["id"] for f in FILMS]
     if len(ids) != len(set(ids)):
         raise SystemExit("duplicate film id")
     raw = (ROOT / "movies-data.js").read_text(encoding="utf-8")
     raw = raw.replace("window.MOVIE_CHECKLIST_DATA = ", "", 1).strip().rstrip(";")
     data = json.loads(raw)
-    known = {f"{a['id']}:{m['id']}" for a in data["actors"] for m in a["movies"]}
+    known = {f"{a['id']}:{m['id']}" for group in ("actors", "directors", "themes") for a in data.get(group, []) for m in a["movies"]}
     used_tags = set()
     for film in FILMS:
         for field in ("ko", "en", "basis", "director", "cast", "genre", "country", "one", "plot", "real", "lesson"):
@@ -76,7 +76,10 @@ def film_html(film, index):
     tags = "".join(f'<span class="tagpill">#{esc(tag)}</span>' for tag in film["tags"])
     shared = ""
     if links:
-        shared = '<p class="shared-note">이 작품은 배우별 목록과 같은 시청 체크로 연결되어 있습니다.</p>'
+        shared = '<p class="shared-note">이 작품은 다른 목록(배우별·테마)과 같은 시청 체크로 연결되어 있습니다.</p>'
+    more = ""
+    if film.get("more"):
+        more = f'\n      <p class="shared-note"><a href="{esc(film["more"]["href"])}">{esc(film["more"]["label"])} →</a></p>'
     search = " ".join([
         film["ko"], film["en"], str(film["year"]), film["one"], film["director"], film["cast"],
         " ".join(film["tags"]), film["basis"],
@@ -103,7 +106,7 @@ def film_html(film, index):
       {shared}
       <div><h3>줄거리</h3><p>{esc(film['plot'])}</p></div>
       <div><h3>실제 이야기</h3><p>{esc(film['real'])}</p></div>
-      <div><h3>교훈</h3><p>{esc(film['lesson'])}</p></div>
+      <div><h3>교훈</h3><p>{esc(film['lesson'])}</p></div>{more}
     </div>
   </details>
 </article>"""
@@ -201,6 +204,7 @@ def render():
     <nav class="view-tabs" aria-label="목록 전환">
       <a class="view-tab" href="/">배우별</a>
       <a class="view-tab active" href="/true-stories" aria-current="page">실화 영화</a>
+      <a class="view-tab" href="/?list=history">역사 영화</a>
     </nav>
     <header class="page-head">
       <h1>실화 영화</h1>
@@ -249,7 +253,7 @@ def render():
     <footer>
       외국 실화 영화 · 포스터 없이 텍스트만 정리했습니다<br />
       시청 체크는 동기화 코드로 서버에 저장되어 배우별 목록과 이어집니다<br />
-      <a href="/">배우별 체크리스트로 돌아가기</a>
+      <a href="/">배우별 체크리스트로 돌아가기</a> · <a href="/?list=history">역사 영화</a>
     </footer>
   </main>
 </div>
