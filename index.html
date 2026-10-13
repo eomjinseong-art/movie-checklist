@@ -119,6 +119,8 @@
   // and the same "<listId>:<movieId>" check keys, so they share progress, sync and saved checks.
   const directors = DATA.directors || [];
   const themes = DATA.themes || [];
+  // 나두연표 허브(/films)에 같은 id로 있는 테마 목록. 데이터·저장소는 건드리지 않습니다.
+  const HUB_LISTS = ["history", "viking", "arts"];
   const lists = actors.concat(directors, themes); // actors, then directors, then theme lists
   const isDirector = (p) => directors.indexOf(p) !== -1;
   const isTheme = (p) => themes.indexOf(p) !== -1;
@@ -497,6 +499,17 @@
         link.setAttribute("aria-label", m.ko + " " + (m.sourceLabel || "나두연표에서 보기"));
         link.addEventListener("click", (e) => e.stopPropagation());
         meta.appendChild(link);
+      }
+      if (HUB_LISTS.indexOf(actor.id) !== -1) {
+        const hub = document.createElement("a");
+        hub.className = "film-source";
+        hub.href = "https://nadoo-timeline.vercel.app/films#" + encodeURIComponent(m.id);
+        hub.target = "_blank";
+        hub.rel = "noopener noreferrer";
+        hub.textContent = "실제 역사 보기";
+        hub.setAttribute("aria-label", m.ko + " 실제 역사 보기 (이야기 속 시대와 주인공 실존 여부)");
+        hub.addEventListener("click", (e) => e.stopPropagation());
+        meta.appendChild(hub);
       }
       info.append(titles, meta);
       if (m.plot) {
