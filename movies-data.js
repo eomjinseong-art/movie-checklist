@@ -8185,8 +8185,8 @@ window.MOVIE_CHECKLIST_DATA = {
     {
       "id": "laughs",
       "nameKo": "나라별 웃음과 감동",
-      "nameEn": "European Comedies & Warm Humor",
-      "subtitle": "유럽 코미디·따뜻한 유머 영화 · 나라별",
+      "nameEn": "Comedies & Warm Humor by Country",
+      "subtitle": "유럽·미국 코미디·따뜻한 유머 영화 · 나라별",
       "groupBy": "country",
       "groups": [
         "이탈리아",
@@ -8195,7 +8195,8 @@ window.MOVIE_CHECKLIST_DATA = {
         "스페인",
         "독일",
         "아일랜드",
-        "북유럽"
+        "북유럽",
+        "미국"
       ],
       "movies": [
         {
@@ -11079,6 +11080,806 @@ window.MOVIE_CHECKLIST_DATA = {
           "ratio": "웃음 6:감동 4",
           "kids": false,
           "ord": 177
+        },
+        {
+          "id": "it-happened-one-night-1934",
+          "year": 1934,
+          "en": "It Happened One Night",
+          "ko": "어느 날 밤에 생긴 일",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "가출한 상속녀와 특종을 노리는 기자가 함께 버스 여행을 하며 가까워진다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 178
+        },
+        {
+          "id": "it-s-a-wonderful-life-1946",
+          "year": 1946,
+          "en": "It's a Wonderful Life",
+          "ko": "멋진 인생",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "절망한 크리스마스이브, 천사가 한 남자에게 그가 없었을 세상을 보여 준다",
+          "ratio": "웃음 3:감동 7",
+          "kids": true,
+          "ord": 179
+        },
+        {
+          "id": "roman-holiday-1953",
+          "year": 1953,
+          "en": "Roman Holiday",
+          "ko": "로마의 휴일",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "궁을 몰래 빠져나온 공주가 신문기자와 로마에서 꿈같은 하루를 보낸다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 180
+        },
+        {
+          "id": "some-like-it-hot-1959",
+          "year": 1959,
+          "en": "Some Like It Hot",
+          "ko": "뜨거운 것이 좋아",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "갱단을 피해 여장을 하고 여성 악단에 숨어든 두 악사의 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 181
+        },
+        {
+          "id": "the-apartment-1960",
+          "year": 1960,
+          "en": "The Apartment",
+          "ko": "아파트 열쇠를 빌려드립니다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "출세를 위해 상사들에게 아파트를 빌려주던 회사원이 엘리베이터 걸을 사랑하게 된다",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 182
+        },
+        {
+          "id": "breakfast-at-tiffany-s-1961",
+          "year": 1961,
+          "en": "Breakfast at Tiffany's",
+          "ko": "티파니에서 아침을",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "뉴욕의 자유분방한 홀리와 이웃집 작가가 서로에게 마음을 연다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 183
+        },
+        {
+          "id": "ghostbusters-1984",
+          "year": 1984,
+          "en": "Ghostbusters",
+          "ko": "고스트버스터즈",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "해고된 과학자 셋이 유령 퇴치 회사를 차려 뉴욕을 구한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 184
+        },
+        {
+          "id": "back-to-the-future-1985",
+          "year": 1985,
+          "en": "Back to the Future",
+          "ko": "백 투 더 퓨처",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "타임머신을 타고 1955년으로 간 소년이 부모님의 연애를 이어 줘야 한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 185
+        },
+        {
+          "id": "ferris-bueller-s-day-off-1986",
+          "year": 1986,
+          "en": "Ferris Bueller's Day Off",
+          "ko": "페리스의 해방",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "꾀병으로 학교를 빼먹은 고등학생이 친구들과 시카고에서 하루를 즐긴다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 186
+        },
+        {
+          "id": "the-princess-bride-1987",
+          "year": 1987,
+          "en": "The Princess Bride",
+          "ko": "프린세스 브라이드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "할아버지가 들려주는 공주와 농장 소년의 모험과 진정한 사랑 이야기",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 187
+        },
+        {
+          "id": "big-1988",
+          "year": 1988,
+          "en": "Big",
+          "ko": "빅",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "하룻밤 사이 어른이 된 열두 살 소년이 장난감 회사에 취직한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 188
+        },
+        {
+          "id": "coming-to-america-1988",
+          "year": 1988,
+          "en": "Coming to America",
+          "ko": "구혼 작전",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "아프리카 왕국의 왕자가 진짜 사랑을 찾으러 뉴욕 퀸스에 신분을 숨기고 온다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 189
+        },
+        {
+          "id": "when-harry-met-sally-1989",
+          "year": 1989,
+          "en": "When Harry Met Sally...",
+          "ko": "해리가 샐리를 만났을 때",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "남녀 사이에 친구가 가능한지 다투던 두 사람의 12년에 걸친 우정과 사랑",
+          "ratio": "웃음 8:감동 2",
+          "kids": false,
+          "ord": 190
+        },
+        {
+          "id": "home-alone-1990",
+          "year": 1990,
+          "en": "Home Alone",
+          "ko": "나 홀로 집에",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "크리스마스에 홀로 남겨진 소년이 빈집털이 2인조를 기발한 함정으로 물리친다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 191
+        },
+        {
+          "id": "sister-act-1992",
+          "year": 1992,
+          "en": "Sister Act",
+          "ko": "시스터 액트",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "살인을 목격한 라스베이거스 가수가 수녀원에 숨어 성가대를 바꿔 놓는다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 192
+        },
+        {
+          "id": "groundhog-day-1993",
+          "year": 1993,
+          "en": "Groundhog Day",
+          "ko": "사랑의 블랙홀",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "냉소적인 기상 캐스터가 같은 하루를 끝없이 되풀이하며 달라진다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 193
+        },
+        {
+          "id": "mrs-doubtfire-1993",
+          "year": 1993,
+          "en": "Mrs. Doubtfire",
+          "ko": "미세스 다웃파이어",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "이혼한 아빠가 아이들 곁에 있으려고 할머니 가정부로 변장한다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 194
+        },
+        {
+          "id": "sleepless-in-seattle-1993",
+          "year": 1993,
+          "en": "Sleepless in Seattle",
+          "ko": "시애틀의 잠 못 이루는 밤",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "라디오 사연으로 알게 된 시애틀의 홀아비와 볼티모어의 기자가 운명처럼 이어진다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 195
+        },
+        {
+          "id": "forrest-gump-1994",
+          "year": 1994,
+          "en": "Forrest Gump",
+          "ko": "포레스트 검프",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "순박한 포레스트가 미국 현대사를 가로지르며 한 여인을 평생 사랑한다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 196
+        },
+        {
+          "id": "toy-story-1995",
+          "year": 1995,
+          "en": "Toy Story",
+          "ko": "토이 스토리",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "카우보이 인형 우디와 새 장난감 버즈가 경쟁하다 친구가 된다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 197
+        },
+        {
+          "id": "liar-liar-1997",
+          "year": 1997,
+          "en": "Liar Liar",
+          "ko": "라이어 라이어",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "아들의 생일 소원으로 하루 동안 거짓말을 못 하게 된 변호사의 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 198
+        },
+        {
+          "id": "good-will-hunting-1997",
+          "year": 1997,
+          "en": "Good Will Hunting",
+          "ko": "굿 윌 헌팅",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "수학 천재지만 마음을 닫은 청년이 상처 입은 심리학 교수를 만난다",
+          "ratio": "웃음 3:감동 7",
+          "kids": false,
+          "ord": 199
+        },
+        {
+          "id": "the-truman-show-1998",
+          "year": 1998,
+          "en": "The Truman Show",
+          "ko": "트루먼 쇼",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "평생 리얼리티 쇼 속에서 살아온 남자가 자기 세상의 진실을 알아챈다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 200
+        },
+        {
+          "id": "patch-adams-1998",
+          "year": 1998,
+          "en": "Patch Adams",
+          "ko": "패치 아담스",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "웃음으로 환자를 치료하려는 의대생이 규칙을 중시하는 의학계와 부딪힌다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 201
+        },
+        {
+          "id": "shrek-2001",
+          "year": 2001,
+          "en": "Shrek",
+          "ko": "슈렉",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "늪지대 괴물 슈렉이 당나귀와 함께 탑에 갇힌 공주를 구하러 떠난다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 202
+        },
+        {
+          "id": "legally-blonde-2001",
+          "year": 2001,
+          "en": "Legally Blonde",
+          "ko": "금발이 너무해",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "남자친구를 되찾으러 하버드 로스쿨에 들어간 금발 여대생이 실력으로 인정받는다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 203
+        },
+        {
+          "id": "elf-2003",
+          "year": 2003,
+          "en": "Elf",
+          "ko": "엘프",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "북극에서 요정으로 자란 청년이 친아빠를 찾아 뉴욕에 온다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 204
+        },
+        {
+          "id": "school-of-rock-2003",
+          "year": 2003,
+          "en": "School of Rock",
+          "ko": "스쿨 오브 락",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "가짜 대체교사가 된 무명 로커가 모범생들을 록 밴드로 키운다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 205
+        },
+        {
+          "id": "bruce-almighty-2003",
+          "year": 2003,
+          "en": "Bruce Almighty",
+          "ko": "브루스 올마이티",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "신을 원망하던 리포터가 일주일 동안 신의 능력을 받는다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 206
+        },
+        {
+          "id": "big-fish-2003",
+          "year": 2003,
+          "en": "Big Fish",
+          "ko": "빅 피쉬",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "허풍 같은 모험담만 늘어놓던 아버지의 진짜 삶을 아들이 찾아간다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 207
+        },
+        {
+          "id": "the-terminal-2004",
+          "year": 2004,
+          "en": "The Terminal",
+          "ko": "터미널",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "고국이 사라져 공항에 갇힌 남자가 터미널에서 삶을 꾸려 간다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 208
+        },
+        {
+          "id": "little-miss-sunshine-2006",
+          "year": 2006,
+          "en": "Little Miss Sunshine",
+          "ko": "미스 리틀 선샤인",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "어린이 미인대회에 나가는 막내를 위해 엉망진창 가족이 고물 버스로 달린다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 209
+        },
+        {
+          "id": "the-devil-wears-prada-2006",
+          "year": 2006,
+          "en": "The Devil Wears Prada",
+          "ko": "악마는 프라다를 입는다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "패션을 모르던 사회 초년생이 악명 높은 잡지 편집장의 비서가 된다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 210
+        },
+        {
+          "id": "night-at-the-museum-2006",
+          "year": 2006,
+          "en": "Night at the Museum",
+          "ko": "박물관이 살아있다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "밤마다 전시물이 살아나는 박물관에서 야간 경비원이 소동을 수습한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": true,
+          "ord": 211
+        },
+        {
+          "id": "the-pursuit-of-happyness-2006",
+          "year": 2006,
+          "en": "The Pursuit of Happyness",
+          "ko": "행복을 찾아서",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "노숙을 하면서도 아들을 지키며 무급 인턴을 버틴 아버지의 이야기",
+          "ratio": "웃음 3:감동 7",
+          "kids": true,
+          "ord": 212
+        },
+        {
+          "id": "superbad-2007",
+          "year": 2007,
+          "en": "Superbad",
+          "ko": "슈퍼배드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "졸업을 앞둔 단짝 고등학생 둘이 파티 하나를 위해 벌이는 하룻밤 소동",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 213
+        },
+        {
+          "id": "yes-man-2008",
+          "year": 2008,
+          "en": "Yes Man",
+          "ko": "예스맨",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "무엇이든 '아니'라고 하던 남자가 모든 일에 '예스'라고 답하기로 한다",
+          "ratio": "웃음 9:감동 1",
+          "kids": false,
+          "ord": 214
+        },
+        {
+          "id": "up-2009",
+          "year": 2009,
+          "en": "Up",
+          "ko": "업",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "풍선을 매단 집을 타고 남미로 떠난 할아버지와 보이스카우트 소년의 모험",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 215
+        },
+        {
+          "id": "julie-julia-2009",
+          "year": 2009,
+          "en": "Julie & Julia",
+          "ko": "줄리 & 줄리아",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "줄리아 차일드의 요리책 레시피를 1년 동안 따라 하는 블로거와 줄리아의 이야기",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 216
+        },
+        {
+          "id": "the-blind-side-2009",
+          "year": 2009,
+          "en": "The Blind Side",
+          "ko": "블라인드 사이드",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "갈 곳 없던 소년을 가족으로 맞은 가정과 미식축구 선수로 자라는 그의 이야기",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 217
+        },
+        {
+          "id": "the-secret-life-of-walter-mitty-2013",
+          "year": 2013,
+          "en": "The Secret Life of Walter Mitty",
+          "ko": "월터의 상상은 현실이 된다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "상상만 하던 잡지사 직원이 사라진 사진 한 장을 찾아 진짜 모험을 떠난다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 218
+        },
+        {
+          "id": "chef-2014",
+          "year": 2014,
+          "en": "Chef",
+          "ko": "아메리칸 셰프",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "레스토랑을 그만둔 셰프가 푸드트럭을 몰고 아들과 미국을 횡단한다",
+          "ratio": "웃음 7:감동 3",
+          "kids": false,
+          "ord": 219
+        },
+        {
+          "id": "inside-out-2015",
+          "year": 2015,
+          "en": "Inside Out",
+          "ko": "인사이드 아웃",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "이사 온 소녀의 머릿속에서 기쁨과 슬픔 등 감정들이 벌이는 모험",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 220
+        },
+        {
+          "id": "the-intern-2015",
+          "year": 2015,
+          "en": "The Intern",
+          "ko": "인턴",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "70세 인턴이 젊은 온라인 쇼핑몰 CEO의 든든한 친구가 된다",
+          "ratio": "웃음 7:감동 3",
+          "kids": true,
+          "ord": 221
+        },
+        {
+          "id": "coco-2017",
+          "year": 2017,
+          "en": "Coco",
+          "ko": "코코",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "음악을 꿈꾸는 멕시코 소년이 죽은 자들의 세상에서 가족의 비밀을 찾는다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 222
+        },
+        {
+          "id": "wonder-2017",
+          "year": 2017,
+          "en": "Wonder",
+          "ko": "원더",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "얼굴 기형으로 홈스쿨링하던 소년이 처음 학교에 가며 친구를 사귄다",
+          "ratio": "웃음 4:감동 6",
+          "kids": true,
+          "ord": 223
+        },
+        {
+          "id": "green-book-2018",
+          "year": 2018,
+          "en": "Green Book",
+          "ko": "그린 북",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "흑인 피아니스트와 이탈리아계 운전기사가 1960년대 남부 투어에서 우정을 쌓는다",
+          "ratio": "웃음 6:감동 4",
+          "kids": true,
+          "ord": 224
+        },
+        {
+          "id": "crazy-rich-asians-2018",
+          "year": 2018,
+          "en": "Crazy Rich Asians",
+          "ko": "크레이지 리치 아시안",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "뉴욕의 교수가 남자친구를 따라 싱가포르에 갔다가 그 집안이 엄청난 부자임을 알게 된다",
+          "ratio": "웃음 8:감동 2",
+          "kids": true,
+          "ord": 225
+        },
+        {
+          "id": "coda-2021",
+          "year": 2021,
+          "en": "CODA",
+          "ko": "코다",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "청각장애인 가족 중 유일하게 듣는 소녀가 노래의 꿈과 가족 사이에서 고민한다",
+          "ratio": "웃음 5:감동 5",
+          "kids": true,
+          "ord": 226
+        },
+        {
+          "id": "the-holdovers-2023",
+          "year": 2023,
+          "en": "The Holdovers",
+          "ko": "바튼 아카데미",
+          "genre": "코미디/드라마",
+          "note": "",
+          "country": "미국",
+          "eras": [
+            "미국"
+          ],
+          "plot": "성탄 연휴 기숙학교에 남겨진 깐깐한 교사와 문제아 학생, 주방장의 2주",
+          "ratio": "웃음 6:감동 4",
+          "kids": false,
+          "ord": 227
         }
       ]
     },
