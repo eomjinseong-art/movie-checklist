@@ -313,3 +313,60 @@
     start,
   };
 })();
+
+// Check confirmation: a click on a film's check asks first (확인/취소); nothing changes until 확인.
+(function () {
+  let open = null;
+  function ask(title, on) {
+    if (open) return Promise.resolve(false);
+    return new Promise((resolve) => {
+      const prevFocus = document.activeElement;
+      const overlay = document.createElement("div");
+      overlay.className = "check-confirm-overlay";
+      const box = document.createElement("div");
+      box.className = "check-confirm";
+      box.setAttribute("role", "alertdialog");
+      box.setAttribute("aria-modal", "true");
+      const msg = document.createElement("p");
+      msg.className = "check-confirm-msg";
+      msg.id = "check-confirm-msg";
+      msg.textContent = on
+        ? "「" + title + "」을(를) 봤음으로 표시할까요?"
+        : "「" + title + "」의 봤음 표시를 해제할까요?";
+      box.setAttribute("aria-labelledby", msg.id);
+      const btns = document.createElement("div");
+      btns.className = "check-confirm-btns";
+      const cancel = document.createElement("button");
+      cancel.type = "button";
+      cancel.className = "check-confirm-cancel";
+      cancel.textContent = "취소";
+      const ok = document.createElement("button");
+      ok.type = "button";
+      ok.className = "check-confirm-ok";
+      ok.textContent = "확인";
+      btns.append(cancel, ok);
+      box.append(msg, btns);
+      overlay.appendChild(box);
+      function done(result) {
+        document.removeEventListener("keydown", onKey, true);
+        overlay.remove();
+        open = null;
+        if (prevFocus && prevFocus.focus) { try { prevFocus.focus({ preventScroll: true }); } catch (e) {} }
+        resolve(result);
+      }
+      function onKey(e) {
+        if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); done(false); }
+        else if (e.key === "Enter") { e.preventDefault(); e.stopPropagation(); done(document.activeElement !== cancel); }
+        else if (e.key === "Tab") { e.preventDefault(); (document.activeElement === ok ? cancel : ok).focus(); }
+      }
+      ok.addEventListener("click", (e) => { e.stopPropagation(); done(true); });
+      cancel.addEventListener("click", (e) => { e.stopPropagation(); done(false); });
+      overlay.addEventListener("click", (e) => { e.stopPropagation(); if (e.target === overlay) done(false); });
+      document.addEventListener("keydown", onKey, true);
+      document.body.appendChild(overlay);
+      open = overlay;
+      ok.focus();
+    });
+  }
+  window.MovieConfirm = { ask };
+})();

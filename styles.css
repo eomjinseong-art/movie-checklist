@@ -561,3 +561,11 @@ footer a:hover { color: var(--gold); }
 
 .group-filter { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .8rem; }
 .movie .plot { font-size: .82rem; opacity: .8; margin-top: .25rem; line-height: 1.4; }
+/* Check confirmation dialog */
+.check-confirm-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.check-confirm { background: var(--bg-elevated); border: 1px solid var(--gold-border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px 20px 16px; width: 100%; max-width: 360px; }
+.check-confirm-msg { color: var(--text); font-size: 0.98rem; line-height: 1.55; margin-bottom: 16px; word-break: keep-all; }
+.check-confirm-btns { display: flex; gap: 8px; justify-content: flex-end; }
+.check-confirm-btns button { font: inherit; font-size: 0.9rem; padding: 8px 18px; border-radius: 8px; cursor: pointer; border: 1px solid #333; background: var(--bg-card); color: var(--text-muted); }
+.check-confirm-btns .check-confirm-ok { background: var(--gold-soft); border-color: var(--gold-border); color: var(--gold); font-weight: 600; }
+.check-confirm-btns button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }

@@ -63,7 +63,13 @@
     box.addEventListener("click", (e) => e.stopPropagation());
     box.addEventListener("change", () => {
       const keys = keysOf(el);
-      setFilm(keys, box.checked);
+      const on = box.checked;
+      box.checked = !on; // nothing changes until 확인
+      const t = el.querySelector("h2.ko");
+      window.MovieConfirm.ask(t ? t.textContent.trim() : "이 영화", on).then((ok) => {
+        if (ok) setFilm(keys, on);
+        else refresh();
+      });
     });
   });
 
