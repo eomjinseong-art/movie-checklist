@@ -20716,6 +20716,27 @@ window.MOVIE_CHECKLIST_DATA = {
           "imdb": 6.8,
           "imdbVotes": 2829,
           "criticEstimated": true
+        },
+        {
+          "id": "computer-chess-2013",
+          "year": 2013,
+          "en": "Computer Chess",
+          "ko": "컴퓨터 체스",
+          "genre": "",
+          "note": "",
+          "game": "체스",
+          "eras": [
+            "체스"
+          ],
+          "plot": "1980년대 컴퓨터 체스 대회에 모인 프로그래머들이 자기 프로그램으로 서로를 겨루는 코미디",
+          "kids": false,
+          "ord": 17,
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 5054,
+          "criticEstimated": false,
+          "rt": 88
         }
       ]
     },
