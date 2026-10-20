@@ -75,10 +75,14 @@
       <div class="search">
         <input type="search" id="search" placeholder="제목 검색 (한글/영문)…" autocomplete="off" enterkeyhint="search" />
       </div>
-      <div class="filter-group" role="group" aria-label="필터">
+      <div class="filter-group" id="watch-filter" role="group" aria-label="필터">
         <button type="button" class="filter-btn active" data-filter="all">전체</button>
         <button type="button" class="filter-btn" data-filter="watched">본 영화</button>
         <button type="button" class="filter-btn" data-filter="unwatched">안 본 영화</button>
+      </div>
+      <div class="filter-group" id="sort-filter" role="group" aria-label="정렬">
+        <button type="button" class="filter-btn sort-btn active" data-sort="best" aria-pressed="true" title="작품은 평가가 높은 순. 배우·감독·나라 등 목록은 많이 본 순이고, 같으면 평균 점수가 높은 순">베스트</button>
+        <button type="button" class="filter-btn sort-btn" data-sort="original" aria-pressed="false" title="목록과 작품 모두 실린 원래 순서">원래 순서</button>
       </div>
       <button type="button" class="btn danger" id="clear-btn" title="체크 해제">체크 해제</button>
     </div>
@@ -138,6 +142,13 @@
   if (requested && lists.some((a) => a.id === requested)) current = requested;
   let filter = "all";
   let groupFilter = "all"; // country filter for theme lists with groupBy
+  // Sort preference only. Watched checks stay in MovieSync / movie-checklist-items-v2.
+  const SORT_KEY = "movie-checklist-sort-v1";
+  let sortMode = "best";
+  try {
+    const savedSort = localStorage.getItem(SORT_KEY);
+    if (savedSort === "best" || savedSort === "original") sortMode = savedSort;
+  } catch (e) { /* private mode: keep the default */ }
   const TAB_LISTS = ["history", "laughs", "arts", "chess", "cards", "viking", "samguk", "musical"]; // lists with their own view tab / ?list= URL
   let state = {}; // filled from synced items below
 
@@ -209,6 +220,49 @@
     return { total: a.movies.length, watched: n };
   }
 
+  function averageScore(movies) {
+    let sum = 0;
+    let n = 0;
+    movies.forEach((m) => {
+      if (typeof m.score === "number") { sum += m.score; n++; }
+    });
+    return n ? sum / n : -1;
+  }
+  // Read watched checks only. Most watched first; equal counts use average quality, then the authored order.
+  function orderLists(group) {
+    const rows = group.map((list, index) => ({
+      list: list,
+      index: index,
+      watched: actorStats(list).watched,
+      avg: averageScore(list.movies)
+    }));
+    if (sortMode === "original") return group.slice();
+    rows.sort((a, b) => {
+      if (b.watched !== a.watched) return b.watched - a.watched;
+      if (b.avg !== a.avg) return b.avg - a.avg;
+      return a.index - b.index;
+    });
+    return rows.map((row) => row.list);
+  }
+  function orderGroupNames(actor) {
+    const names = actor.groups.slice();
+    if (sortMode === "original") return names;
+    const key = actor.groupBy;
+    const w = watchedSet(actor.id);
+    const rows = names.map((name, index) => {
+      const movies = actor.movies.filter((m) => m[key] === name);
+      let watched = 0;
+      movies.forEach((m) => { if (w.has(m.id)) watched++; });
+      return { name: name, index: index, watched: watched, avg: averageScore(movies) };
+    });
+    rows.sort((a, b) => {
+      if (b.watched !== a.watched) return b.watched - a.watched;
+      if (b.avg !== a.avg) return b.avg - a.avg;
+      return a.index - b.index;
+    });
+    return rows.map((row) => row.name);
+  }
+
   function closeDrawer() {
     sidebar.classList.remove("open");
     backdrop.classList.remove("show");
@@ -262,7 +316,7 @@
         h.textContent = label;
         navEl.appendChild(h);
       }
-      group.forEach(addBtn);
+      orderLists(group).forEach(addBtn);
     });
   }
 
@@ -342,9 +396,9 @@
       });
       contentEl.appendChild(grid);
     };
-    addGrid("배우", actors);
-    addGrid("감독", directors);
-    addGrid("테마", themes);
+    addGrid("배우", orderLists(actors));
+    addGrid("감독", orderLists(directors));
+    addGrid("테마", orderLists(themes));
     emptyEl.classList.remove("show");
   }
 
@@ -366,6 +420,30 @@
     return a.year - b.year || a.ko.localeCompare(b.ko, "ko");
   }
 
+  function scoreOf(m) {
+    return typeof m.score === "number" ? m.score : -1;
+  }
+  function sortMovies(actor, movies) {
+    const copy = movies.slice();
+    if (sortMode === "original") {
+      copy.sort((a, b) => compareMovies(actor, a, b));
+      return copy;
+    }
+    copy.sort((a, b) => {
+      const ds = scoreOf(b) - scoreOf(a);
+      if (ds) return ds;
+      return compareMovies(actor, a, b);
+    });
+    return copy;
+  }
+  function applySortButtons() {
+    document.querySelectorAll("#sort-filter .sort-btn").forEach((b) => {
+      const on = b.dataset.sort === sortMode;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
   function renderActorList(actor) {
     pageTitle.textContent = actor.nameKo;
     const dir = isDirector(actor);
@@ -384,34 +462,44 @@
     const q = searchEl.value.trim().toLowerCase();
     contentEl.innerHTML = "";
     const grouped = actor.groupBy && Array.isArray(actor.groups);
+    const groupNames = grouped ? orderGroupNames(actor) : [];
     if (grouped) {
-      if (groupFilter !== "all" && actor.groups.indexOf(groupFilter) === -1) groupFilter = "all";
+      if (groupFilter !== "all" && groupNames.indexOf(groupFilter) === -1) groupFilter = "all";
       const bar = document.createElement("div");
       bar.className = "group-filter";
-      ["all"].concat(actor.groups).forEach((g) => {
-        const n = g === "all" ? actor.movies.length : actor.movies.filter((m) => m[actor.groupBy] === g).length;
+      ["all"].concat(groupNames).forEach((g) => {
+        const subset = g === "all" ? actor.movies : actor.movies.filter((m) => m[actor.groupBy] === g);
+        const watchedN = subset.reduce((n, m) => n + (w.has(m.id) ? 1 : 0), 0);
         const b = document.createElement("button");
         b.type = "button";
         b.className = "filter-btn group-btn" + (groupFilter === g ? " active" : "");
-        b.textContent = (g === "all" ? "전체" : g) + " " + n;
+        b.textContent = (g === "all" ? "전체" : g) + " " + watchedN + "/" + subset.length;
         b.addEventListener("click", () => { groupFilter = g; render(); });
         bar.appendChild(b);
       });
       contentEl.appendChild(bar);
     }
-    const ul = document.createElement("ul");
-    ul.className = "list";
-    ul.setAttribute("aria-label", actor.nameKo + " 영화 목록");
+    let sections;
+    if (grouped && groupFilter === "all" && sortMode !== "original") {
+      sections = groupNames.map((name) => {
+        const subset = actor.movies.filter((m) => m[actor.groupBy] === name);
+        const watchedN = subset.reduce((n, m) => n + (w.has(m.id) ? 1 : 0), 0);
+        return {
+          label: name + " · 본 " + watchedN + "/" + subset.length,
+          movies: sortMovies(actor, subset)
+        };
+      });
+    } else if (grouped && groupFilter !== "all") {
+      sections = [{
+        label: "",
+        movies: sortMovies(actor, actor.movies.filter((m) => m[actor.groupBy] === groupFilter))
+      }];
+    } else {
+      sections = [{ label: "", movies: sortMovies(actor, actor.movies) }];
+    }
     let visible = 0;
-    const movies = actor.movies.slice().sort((a, b) => compareMovies(actor, a, b));
-
-    movies.forEach((m) => {
+    const appendMovie = (ul, m) => {
       const isWatched = w.has(m.id);
-      if (filter === "watched" && !isWatched) return;
-      if (filter === "unwatched" && isWatched) return;
-      if (!matchesSearch(m, q)) return;
-      if (grouped && groupFilter !== "all" && m[actor.groupBy] !== groupFilter) return;
-      visible++;
 
       const li = document.createElement("li");
       li.className = "movie" + (isWatched ? " watched" : "");
@@ -433,6 +521,28 @@
       titles.append(ko, en);
       const meta = document.createElement("div");
       meta.className = "meta";
+      if (typeof m.score === "number") {
+        const sc = document.createElement("span");
+        sc.className = "score" + (m.scoreEstimated ? " estimated" : "");
+        const shown = (m.score / 10).toFixed(1);
+        sc.appendChild(document.createTextNode(shown));
+        if (m.scoreEstimated) {
+          const est = document.createElement("span");
+          est.className = "est";
+          est.textContent = "추정";
+          sc.appendChild(est);
+        }
+        const bits = ["평가 " + shown + " / 10"];
+        if (typeof m.imdb === "number") {
+          bits.push("IMDb " + m.imdb.toFixed(1) + (m.imdbVotes ? " · " + Number(m.imdbVotes).toLocaleString("en-US") + "표" : ""));
+        }
+        if (typeof m.metacritic === "number") bits.push("메타크리틱 " + m.metacritic);
+        if (typeof m.rt === "number") bits.push("로튼토마토 " + m.rt + "%");
+        if (m.criticEstimated) bits.push("평론 점수는 추정");
+        else if (m.scoreEstimated) bits.push("일부 점수 추정");
+        sc.title = bits.join(" · ");
+        meta.appendChild(sc);
+      }
       const year = document.createElement("span");
       year.className = "year";
       year.textContent = m.year;
@@ -542,9 +652,29 @@
       });
       cb.addEventListener("change", toggle);
       ul.appendChild(li);
-    });
+    };
 
-    contentEl.appendChild(ul);
+    sections.forEach((section) => {
+      const shown = section.movies.filter((m) => {
+        const isWatched = w.has(m.id);
+        if (filter === "watched" && !isWatched) return false;
+        if (filter === "unwatched" && isWatched) return false;
+        if (!matchesSearch(m, q)) return false;
+        return true;
+      });
+      if (!shown.length) return;
+      if (section.label) {
+        const h = document.createElement("h3");
+        h.className = "list-group";
+        h.textContent = section.label;
+        contentEl.appendChild(h);
+      }
+      const ul = document.createElement("ul");
+      ul.className = "list";
+      ul.setAttribute("aria-label", actor.nameKo + (section.label ? " · " + section.label : " 영화 목록"));
+      shown.forEach((m) => { appendMovie(ul, m); visible++; });
+      contentEl.appendChild(ul);
+    });
     emptyEl.classList.toggle("show", visible === 0);
   }
 
@@ -576,24 +706,35 @@
     renderNav();
     syncViewTabs();
     rememberList();
-    if (current === "all") {
-      document.getElementById("controls").style.display = "none";
-      renderOverview();
-    } else {
-      document.getElementById("controls").style.display = "flex";
+    const onList = current !== "all";
+    document.getElementById("controls").style.display = "flex";
+    document.querySelector(".search").style.display = onList ? "" : "none";
+    document.getElementById("watch-filter").style.display = onList ? "" : "none";
+    clearBtn.style.display = onList ? "" : "none";
+    if (!onList) renderOverview();
+    else {
       const actor = lists.find((a) => a.id === current);
       if (actor) renderActorList(actor);
     }
   }
 
-  document.querySelectorAll(".filter-btn").forEach((btn) => {
+  document.querySelectorAll("#watch-filter .filter-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+      document.querySelectorAll("#watch-filter .filter-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       filter = btn.dataset.filter;
       render();
     });
   });
+  document.querySelectorAll("#sort-filter .sort-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      sortMode = btn.dataset.sort === "original" ? "original" : "best";
+      try { localStorage.setItem(SORT_KEY, sortMode); } catch (e) { /* ignore */ }
+      applySortButtons();
+      render();
+    });
+  });
+  applySortButtons();
   searchEl.addEventListener("input", () => { if (current !== "all") render(); });
 
   clearBtn.addEventListener("click", () => {

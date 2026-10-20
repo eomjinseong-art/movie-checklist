@@ -1,6 +1,7 @@
 window.MOVIE_CHECKLIST_DATA = {
   "version": 1,
   "storageKey": "movie-checklist-v1",
+  "scoreMethod": "0–100 best-first score. IMDb rating and vote count come from the public IMDb datasets (title.basics and title.ratings on datasets.imdbws.com), matched by title and year. Bayesian weighted rating WR = (v/(v+m))*R + (m/(v+m))*C with m=10000 and C=6.9, then WR*10 to a 0–100 scale. Critic acclaim is the Metacritic score (0–100) and the Rotten Tomatoes tomatometer (percent) from Wikidata property P444 where the reviewer is Metacritic or Rotten Tomatoes. When both exist, critic = 0.6*Metacritic + 0.4*Rotten Tomatoes. The critic share scales with how widely the film has been reviewed: confidence = v/(v+m), critic weight = 0.35*confidence, and the rest of the score is WR*10. When critic data is missing, critic is estimated as clamp(WR*10 - 6, 20, 95) and criticEstimated and scoreEstimated are true. A missing IMDb rating uses a prior of 6.3 from 1500 votes, or 6.9 from 80000 votes when the note records an Oscar nomination, or 7.7 from 200000 votes when it records an Oscar win, with imdbEstimated true.",
   "actors": [
     {
       "id": "denzel",
@@ -13,7 +14,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Carbon Copy",
           "ko": "카본 카피",
           "genre": "코미디",
-          "note": "장편 데뷔작"
+          "note": "장편 데뷔작",
+          "score": 65.1,
+          "scoreEstimated": true,
+          "imdb": 5.7,
+          "imdbVotes": 3827,
+          "criticEstimated": true
         },
         {
           "id": "soldiers-story",
@@ -21,7 +27,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Soldier's Story",
           "ko": "솔저 스토리",
           "genre": "드라마/미스터리",
-          "note": ""
+          "note": "",
+          "score": 74.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 12830,
+          "criticEstimated": false,
+          "rt": 90
         },
         {
           "id": "power",
@@ -29,7 +41,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Power",
           "ko": "파워",
           "genre": "드라마",
-          "note": "리처드 기어의 파워로도 표기"
+          "note": "리처드 기어의 파워로도 표기",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 3799,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "cry-freedom",
@@ -37,7 +55,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Cry Freedom",
           "ko": "자유의 절규",
           "genre": "전기/드라마",
-          "note": "오스카 남우조연 후보"
+          "note": "오스카 남우조연 후보",
+          "score": 72.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 15507,
+          "criticEstimated": false,
+          "rt": 73
         },
         {
           "id": "for-queen-and-country",
@@ -45,7 +69,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "For Queen and Country",
           "ko": "최후의 총성",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 63.4,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 2823,
+          "criticEstimated": false,
+          "rt": 31
         },
         {
           "id": "mighty-quinn",
@@ -53,7 +83,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mighty Quinn",
           "ko": "형사 퀸",
           "genre": "미스터리",
-          "note": ""
+          "note": "",
+          "score": 68.7,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 7848,
+          "criticEstimated": false,
+          "rt": 89
         },
         {
           "id": "glory",
@@ -61,7 +97,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Glory",
           "ko": "영광의 깃발",
           "genre": "전쟁/드라마",
-          "note": "오스카 남우조연상 수상"
+          "note": "오스카 남우조연상 수상",
+          "score": 79.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 154632,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 95
         },
         {
           "id": "heart-condition",
@@ -69,7 +112,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Heart Condition",
           "ko": "하트 컨디션",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 59.0,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 4501,
+          "criticEstimated": false,
+          "rt": 10
         },
         {
           "id": "mo-better-blues",
@@ -77,7 +126,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mo' Better Blues",
           "ko": "모 베터 블루스",
           "genre": "드라마/음악",
-          "note": "스파이크 리 연출"
+          "note": "스파이크 리 연출",
+          "score": 68.5,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 15209,
+          "criticEstimated": false,
+          "rt": 71
         },
         {
           "id": "mississippi-masala",
@@ -85,7 +140,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mississippi Masala",
           "ko": "미시시피 마살라",
           "genre": "로맨스/드라마",
-          "note": ""
+          "note": "",
+          "score": 72.1,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 7702,
+          "criticEstimated": false,
+          "rt": 92
         },
         {
           "id": "ricochet",
@@ -93,7 +154,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ricochet",
           "ko": "닉크",
           "genre": "액션/스릴러",
-          "note": "한국 개봉명 닉크"
+          "note": "한국 개봉명 닉크",
+          "score": 62.9,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 23201,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 74
         },
         {
           "id": "malcolm-x",
@@ -101,7 +169,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Malcolm X",
           "ko": "말콤 X",
           "genre": "전기/드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 77.3,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 112874,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 89
         },
         {
           "id": "much-ado",
@@ -109,7 +184,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Much Ado About Nothing",
           "ko": "헛소동",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 77.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 56396,
+          "criticEstimated": false,
+          "rt": 90
         },
         {
           "id": "pelican-brief",
@@ -117,7 +198,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Pelican Brief",
           "ko": "펠리칸 브리프",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 62.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 105850,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 56
         },
         {
           "id": "philadelphia",
@@ -125,7 +213,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Philadelphia",
           "ko": "필라델피아",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 75.4,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 277562,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 83
         },
         {
           "id": "crimson-tide",
@@ -133,7 +228,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Crimson Tide",
           "ko": "크림슨 타이드",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 74.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 138718,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 89
         },
         {
           "id": "virtuosity",
@@ -141,7 +243,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Virtuosity",
           "ko": "가상현실",
           "genre": "SF/액션",
-          "note": "일명 킬링 머신"
+          "note": "일명 킬링 머신",
+          "score": 52.1,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 35255,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 32
         },
         {
           "id": "devil-blue-dress",
@@ -149,7 +258,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Devil in a Blue Dress",
           "ko": "블루 데블",
           "genre": "미스터리/느와르",
-          "note": ""
+          "note": "",
+          "score": 71.9,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 28123,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 89
         },
         {
           "id": "courage-under-fire",
@@ -157,7 +273,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Courage Under Fire",
           "ko": "커리지 언더 파이어",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 70.6,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 64420,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 85
         },
         {
           "id": "preachers-wife",
@@ -165,7 +288,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Preacher's Wife",
           "ko": "프리쳐스 와이프",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 61.9,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 15280,
+          "criticEstimated": false,
+          "rt": 60
         },
         {
           "id": "fallen",
@@ -173,7 +302,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fallen",
           "ko": "다크 엔젤",
           "genre": "스릴러/공포",
-          "note": "한국 개봉명 다크 엔젤"
+          "note": "한국 개봉명 다크 엔젤",
+          "score": 60.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 106356,
+          "criticEstimated": false,
+          "rt": 40
         },
         {
           "id": "he-got-game",
@@ -181,7 +316,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "He Got Game",
           "ko": "히 갓 게임",
           "genre": "드라마/스포츠",
-          "note": "스파이크 리 연출"
+          "note": "스파이크 리 연출",
+          "score": 69.5,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 55418,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 81
         },
         {
           "id": "the-siege",
@@ -189,7 +331,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Siege",
           "ko": "비상계엄",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 59.8,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 84074,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 44
         },
         {
           "id": "bone-collector",
@@ -197,7 +346,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bone Collector",
           "ko": "본 콜렉터",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 57.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 203326,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 29
         },
         {
           "id": "the-hurricane",
@@ -205,7 +361,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Hurricane",
           "ko": "허리케인 카터",
           "genre": "전기/드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 76.0,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 109353,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 82
         },
         {
           "id": "remember-titans",
@@ -213,7 +376,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Remember the Titans",
           "ko": "리멤버 타이탄",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 70.8,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 254629,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 71
         },
         {
           "id": "training-day",
@@ -221,7 +391,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Training Day",
           "ko": "트레이닝 데이",
           "genre": "범죄/스릴러",
-          "note": "오스카 남우주연상 수상"
+          "note": "오스카 남우주연상 수상",
+          "score": 75.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 527913,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 74
         },
         {
           "id": "john-q",
@@ -229,7 +406,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "John Q.",
           "ko": "존 큐",
           "genre": "드라마/스릴러",
-          "note": ""
+          "note": "",
+          "score": 56.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 157086,
+          "criticEstimated": false,
+          "metacritic": 30,
+          "rt": 26
         },
         {
           "id": "antwone-fisher",
@@ -237,7 +421,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Antwone Fisher",
           "ko": "앤트원 피셔",
           "genre": "드라마",
-          "note": "감독·출연"
+          "note": "감독·출연",
+          "score": 71.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 41098,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 77
         },
         {
           "id": "out-of-time",
@@ -245,7 +436,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Out of Time",
           "ko": "아웃 오브 타임",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 72619,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 65
         },
         {
           "id": "man-on-fire",
@@ -253,7 +451,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Man on Fire",
           "ko": "맨 온 파이어",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 427574,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 39
         },
         {
           "id": "manchurian-candidate",
@@ -261,7 +466,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Manchurian Candidate",
           "ko": "맨추리안 캔디데이트",
           "genre": "정치 스릴러",
-          "note": ""
+          "note": "",
+          "score": 69.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 124053,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 79
         },
         {
           "id": "inside-man",
@@ -269,7 +481,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Inside Man",
           "ko": "인사이드 맨",
           "genre": "범죄/스릴러",
-          "note": "스파이크 리 연출"
+          "note": "스파이크 리 연출",
+          "score": 77.3,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 430720,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 86
         },
         {
           "id": "deja-vu",
@@ -277,7 +496,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Déjà Vu",
           "ko": "데자뷰",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 66.5,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 348954,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 56
         },
         {
           "id": "american-gangster",
@@ -285,7 +511,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "American Gangster",
           "ko": "아메리칸 갱스터",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 77.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 495656,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 81
         },
         {
           "id": "great-debaters",
@@ -293,7 +526,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Great Debaters",
           "ko": "그레이트 디베이터스",
           "genre": "드라마",
-          "note": "감독·출연"
+          "note": "감독·출연",
+          "score": 73.2,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 67000,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 80
         },
         {
           "id": "pelham-123",
@@ -301,7 +541,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Taking of Pelham 123",
           "ko": "서브웨이 하이재킹: 펠햄 123",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 60.6,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 219323,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 51
         },
         {
           "id": "book-of-eli",
@@ -309,7 +556,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Book of Eli",
           "ko": "일라이",
           "genre": "액션/SF",
-          "note": ""
+          "note": "",
+          "score": 62.1,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 365126,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 47
         },
         {
           "id": "unstoppable",
@@ -317,7 +571,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Unstoppable",
           "ko": "언스토퍼블",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 70.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 221346,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 87
         },
         {
           "id": "safe-house",
@@ -325,7 +586,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Safe House",
           "ko": "세이프 하우스",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 62.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 251531,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 52
         },
         {
           "id": "flight",
@@ -333,7 +601,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Flight",
           "ko": "플라이트",
           "genre": "드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 74.1,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 402053,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 77
         },
         {
           "id": "2-guns",
@@ -341,7 +616,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "2 Guns",
           "ko": "투건스",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 239781,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 64
         },
         {
           "id": "equalizer",
@@ -349,7 +631,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Equalizer",
           "ko": "더 이퀄라이저",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 68.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 473987,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 61
         },
         {
           "id": "magnificent-seven",
@@ -357,7 +646,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Magnificent Seven",
           "ko": "매그니피센트 7",
           "genre": "서부/액션",
-          "note": ""
+          "note": "",
+          "score": 65.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 249986,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 64
         },
         {
           "id": "fences",
@@ -365,7 +661,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fences",
           "ko": "펜스",
           "genre": "드라마",
-          "note": "감독·출연 · 오스카 남우주연 후보"
+          "note": "감독·출연 · 오스카 남우주연 후보",
+          "score": 75.8,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 126774,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 92
         },
         {
           "id": "roman-j-israel",
@@ -373,7 +676,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Roman J. Israel, Esq.",
           "ko": "로만 J 이스라엘, 에스콰이어",
           "genre": "드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 49168,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 54
         },
         {
           "id": "equalizer-2",
@@ -381,7 +691,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Equalizer 2",
           "ko": "더 이퀄라이저 2",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 61.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 234458,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 52
         },
         {
           "id": "little-things",
@@ -389,7 +706,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Little Things",
           "ko": "더 리틀 띵스",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 59.0,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 148019,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 44
         },
         {
           "id": "tragedy-macbeth",
@@ -397,7 +721,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Tragedy of Macbeth",
           "ko": "맥베스의 비극",
           "genre": "드라마",
-          "note": "오스카 남우주연 후보 · Apple TV+"
+          "note": "오스카 남우주연 후보 · Apple TV+",
+          "score": 76.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 45281,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 93
         },
         {
           "id": "equalizer-3",
@@ -405,7 +736,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Equalizer 3",
           "ko": "더 이퀄라이저 3",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 166878,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 76
         },
         {
           "id": "gladiator-2",
@@ -413,7 +751,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gladiator II",
           "ko": "글래디에이터 Ⅱ",
           "genre": "역사/액션",
-          "note": ""
+          "note": "",
+          "score": 64.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 315382,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 70
         },
         {
           "id": "highest-2-lowest",
@@ -421,7 +766,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Highest 2 Lowest",
           "ko": "천국부터 지옥까지",
           "genre": "범죄/스릴러",
-          "note": "스파이크 리 연출 · A24 / Apple TV+"
+          "note": "스파이크 리 연출 · A24 / Apple TV+",
+          "score": 63.8,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 36039,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 84
         }
       ]
     },
@@ -436,7 +788,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mystic Pizza",
           "ko": "미스틱 피자",
           "genre": "로맨스/코미디",
-          "note": "소역할"
+          "note": "소역할",
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 38347,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 78
         },
         {
           "id": "school-ties",
@@ -444,7 +803,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "School Ties",
           "ko": "스쿨 타이즈",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 29911,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 60
         },
         {
           "id": "geronimo",
@@ -452,7 +818,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Geronimo: An American Legend",
           "ko": "제로니모",
           "genre": "서부/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 15638,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "courage-under-fire-md",
@@ -460,7 +832,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Courage Under Fire",
           "ko": "커리지 언더 파이어",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 70.6,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 64420,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 85
         },
         {
           "id": "rainmaker",
@@ -468,7 +847,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Rainmaker",
           "ko": "레인메이커",
           "genre": "법정 드라마",
-          "note": ""
+          "note": "",
+          "score": 72.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 94108,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 81
         },
         {
           "id": "good-will-hunting",
@@ -476,7 +862,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Good Will Hunting",
           "ko": "굿 윌 헌팅",
           "genre": "드라마",
-          "note": "오스카 각본상 · 남우주연 후보"
+          "note": "오스카 각본상 · 남우주연 후보",
+          "score": 83.0,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 1248813,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 97
         },
         {
           "id": "saving-private-ryan",
@@ -484,7 +877,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Saving Private Ryan",
           "ko": "라이언 일병 구하기",
           "genre": "전쟁",
-          "note": ""
+          "note": "",
+          "score": 88.1,
+          "scoreEstimated": false,
+          "imdb": 8.6,
+          "imdbVotes": 1668623,
+          "criticEstimated": false,
+          "metacritic": 91,
+          "rt": 94
         },
         {
           "id": "rounders",
@@ -492,7 +892,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rounders",
           "ko": "라운더스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 174226,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 64
         },
         {
           "id": "dogma",
@@ -500,7 +907,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dogma",
           "ko": "도그마",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 70.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 243550,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 68
         },
         {
           "id": "talented-mr-ripley",
@@ -508,7 +922,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Talented Mr. Ripley",
           "ko": "탤런티드 미스터 리플리",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 75.8,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 276839,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 85
         },
         {
           "id": "legend-bagger-vance",
@@ -516,7 +937,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Legend of Bagger Vance",
           "ko": "배거 밴스의 전설",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 62922,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 43
         },
         {
           "id": "all-pretty-horses",
@@ -524,7 +952,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "All the Pretty Horses",
           "ko": "올 더 프리티 호시스",
           "genre": "서부/드라마",
-          "note": ""
+          "note": "",
+          "score": 58.8,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 15327,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 32
         },
         {
           "id": "oceans-eleven",
@@ -532,7 +967,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ocean's Eleven",
           "ko": "오션스 일레븐",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 77.1,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 686534,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 83
         },
         {
           "id": "bourne-identity",
@@ -540,7 +982,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bourne Identity",
           "ko": "본 아이덴티티",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 76.7,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 622887,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 84
         },
         {
           "id": "gerry",
@@ -548,7 +997,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gerry",
           "ko": "게리",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 61.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 20891,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 61
         },
         {
           "id": "stuck-on-you",
@@ -556,7 +1012,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Stuck on You",
           "ko": "스터크 온 유",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 60.2,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 57059,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 61
         },
         {
           "id": "bourne-supremacy",
@@ -564,7 +1027,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bourne Supremacy",
           "ko": "본 슈프리머시",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 76.8,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 519575,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 82
         },
         {
           "id": "oceans-twelve",
@@ -572,7 +1042,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ocean's Twelve",
           "ko": "오션스 트웰브",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 62.3,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 443232,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 55
         },
         {
           "id": "brothers-grimm",
@@ -580,7 +1057,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Brothers Grimm",
           "ko": "브라더스 그림",
           "genre": "판타지/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 55.2,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 133416,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 38
         },
         {
           "id": "syriana",
@@ -588,7 +1072,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Syriana",
           "ko": "시리아나",
           "genre": "정치 스릴러",
-          "note": ""
+          "note": "",
+          "score": 70.3,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 139383,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 73
         },
         {
           "id": "the-departed",
@@ -596,7 +1087,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Departed",
           "ko": "디파티드",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 85.8,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1585580,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 91
         },
         {
           "id": "good-shepherd",
@@ -604,7 +1102,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Good Shepherd",
           "ko": "굿 셰퍼드",
           "genre": "스파이/드라마",
-          "note": ""
+          "note": "",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 113596,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 56
         },
         {
           "id": "oceans-thirteen",
@@ -612,7 +1117,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ocean's Thirteen",
           "ko": "오션스 서틴",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 67.7,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 391738,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 70
         },
         {
           "id": "bourne-ultimatum",
@@ -620,7 +1132,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bourne Ultimatum",
           "ko": "본 얼티메이텀",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 82.6,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 690108,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 92
         },
         {
           "id": "informant",
@@ -628,7 +1147,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Informant!",
           "ko": "인포먼트!",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 68.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 70535,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 79
         },
         {
           "id": "invictus",
@@ -636,7 +1162,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Invictus",
           "ko": "인빅터스",
           "genre": "스포츠/드라마",
-          "note": "오스카 남우조연 후보"
+          "note": "오스카 남우조연 후보",
+          "score": 73.5,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 175871,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 76
         },
         {
           "id": "green-zone",
@@ -644,7 +1177,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Green Zone",
           "ko": "그린 존",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.1,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 148959,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 53
         },
         {
           "id": "hereafter",
@@ -652,7 +1192,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hereafter",
           "ko": "헤리어프터",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 61.2,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 98993,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 47
         },
         {
           "id": "true-grit",
@@ -660,7 +1207,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "True Grit",
           "ko": "트루 그릿",
           "genre": "서부",
-          "note": ""
+          "note": "",
+          "score": 79.3,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 380067,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 95
         },
         {
           "id": "adjustment-bureau",
@@ -668,7 +1222,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Adjustment Bureau",
           "ko": "애드저스트먼트 뷰로",
           "genre": "SF/로맨스",
-          "note": ""
+          "note": "",
+          "score": 68.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 285587,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 71
         },
         {
           "id": "contagion",
@@ -676,7 +1237,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Contagion",
           "ko": "컨테이젼",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 70.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 334970,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 85
         },
         {
           "id": "we-bought-a-zoo",
@@ -684,7 +1252,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "We Bought a Zoo",
           "ko": "우리는 동물원을 샀다",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 162686,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 64
         },
         {
           "id": "promised-land",
@@ -692,7 +1267,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Promised Land",
           "ko": "프로미스드 랜드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 63.1,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 41273,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 53
         },
         {
           "id": "elysium",
@@ -700,7 +1282,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Elysium",
           "ko": "엘리시움",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 64.7,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 496171,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 64
         },
         {
           "id": "zero-theorem",
@@ -708,7 +1297,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Zero Theorem",
           "ko": "제로 정리",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 57.9,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 52180,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 48
         },
         {
           "id": "monuments-men",
@@ -716,7 +1312,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Monuments Men",
           "ko": "모뉴먼츠 맨",
           "genre": "전쟁/코미디",
-          "note": ""
+          "note": "",
+          "score": 55.5,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 149817,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 30
         },
         {
           "id": "interstellar-md",
@@ -724,7 +1327,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Interstellar",
           "ko": "인터스텔라",
           "genre": "SF",
-          "note": "조연"
+          "note": "조연",
+          "score": 82.3,
+          "scoreEstimated": false,
+          "imdb": 8.7,
+          "imdbVotes": 2622703,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 73
         },
         {
           "id": "the-martian",
@@ -732,7 +1342,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Martian",
           "ko": "마션",
           "genre": "SF",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 81.5,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 1033986,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 91
         },
         {
           "id": "jason-bourne",
@@ -740,7 +1357,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jason Bourne",
           "ko": "제이슨 본",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 261108,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 55
         },
         {
           "id": "great-wall",
@@ -748,7 +1372,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Great Wall",
           "ko": "만리장성",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 52.9,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 161906,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 35
         },
         {
           "id": "downsizing",
@@ -756,7 +1387,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Downsizing",
           "ko": "다운사이징",
           "genre": "SF/코미디",
-          "note": ""
+          "note": "",
+          "score": 58.2,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 139434,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 47
         },
         {
           "id": "suburbicon",
@@ -764,7 +1402,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Suburbicon",
           "ko": "서브어비콘",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 53.0,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 50490,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 28
         },
         {
           "id": "ford-v-ferrari",
@@ -772,7 +1417,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ford v Ferrari",
           "ko": "포드 V 페라리",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 82.4,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 589970,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 92
         },
         {
           "id": "stillwater",
@@ -780,7 +1432,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Stillwater",
           "ko": "스틸워터",
           "genre": "드라마/스릴러",
-          "note": ""
+          "note": "",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 65367,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 75
         },
         {
           "id": "last-duel",
@@ -788,7 +1447,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Last Duel",
           "ko": "라스트 듀얼",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 211454,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 85
         },
         {
           "id": "air",
@@ -796,7 +1462,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Air",
           "ko": "에어",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 76.0,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 199864,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 92
         },
         {
           "id": "oppenheimer-md",
@@ -804,7 +1477,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Oppenheimer",
           "ko": "오펜하이머",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 85.1,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1106485,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 93
         },
         {
           "id": "instigators",
@@ -812,7 +1492,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Instigators",
           "ko": "인스티게이터스",
           "genre": "액션/코미디",
-          "note": "Apple TV+"
+          "note": "Apple TV+",
+          "score": 58.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 45628,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 40
         }
       ]
     },
@@ -827,7 +1514,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Power of One",
           "ko": "파워 오브 원",
           "genre": "드라마",
-          "note": "장편 데뷔"
+          "note": "장편 데뷔",
+          "score": 64.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 11551,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 35
         },
         {
           "id": "kid-king-arthur",
@@ -835,7 +1529,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Kid in King Arthur's Court",
           "ko": "아더왕의 궁전",
           "genre": "판타지/가족",
-          "note": ""
+          "note": "",
+          "score": 51.8,
+          "scoreEstimated": false,
+          "imdb": 4.8,
+          "imdbVotes": 7488,
+          "criticEstimated": false,
+          "rt": 5
         },
         {
           "id": "elizabeth",
@@ -843,7 +1543,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Elizabeth",
           "ko": "엘리자베스",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 75.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 111194,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 84
         },
         {
           "id": "love-is-devil",
@@ -851,7 +1558,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Love Is the Devil",
           "ko": "러브 이즈 더 데빌",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 67.7,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 4424,
+          "criticEstimated": false,
+          "rt": 67
         },
         {
           "id": "the-trench",
@@ -859,7 +1572,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Trench",
           "ko": "트렌치",
           "genre": "전쟁",
-          "note": ""
+          "note": "",
+          "score": 65.0,
+          "scoreEstimated": true,
+          "imdb": 5.9,
+          "imdbVotes": 4899,
+          "criticEstimated": true
         },
         {
           "id": "some-voices",
@@ -867,7 +1585,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Some Voices",
           "ko": "섬 보이시스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 1626,
+          "criticEstimated": false,
+          "rt": 40
         },
         {
           "id": "i-dreamed-africa",
@@ -875,7 +1599,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "I Dreamed of Africa",
           "ko": "아프리카의 꿈",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 59.7,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 5150,
+          "criticEstimated": false,
+          "metacritic": 33,
+          "rt": 10
         },
         {
           "id": "tomb-raider",
@@ -883,7 +1614,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lara Croft: Tomb Raider",
           "ko": "툼레이더",
           "genre": "액션/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 48.2,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 232497,
+          "criticEstimated": false,
+          "metacritic": 33,
+          "rt": 20
         },
         {
           "id": "road-to-perdition",
@@ -891,7 +1629,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Road to Perdition",
           "ko": "로드 투 퍼디션",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 75.7,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 303601,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 81
         },
         {
           "id": "sylvia",
@@ -899,7 +1644,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sylvia",
           "ko": "실비아",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.9,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 11674,
+          "criticEstimated": false,
+          "metacritic": 56
         },
         {
           "id": "the-mother",
@@ -907,7 +1658,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mother",
           "ko": "마더",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 69.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 4966,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 78
         },
         {
           "id": "layer-cake",
@@ -915,7 +1673,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Layer Cake",
           "ko": "레이어 케이크",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 73.2,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 209863,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 80
         },
         {
           "id": "enduring-love",
@@ -923,7 +1688,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Enduring Love",
           "ko": "인듀어링 러브",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 64.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 11464,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 59
         },
         {
           "id": "the-jacket",
@@ -931,7 +1703,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Jacket",
           "ko": "더 재킷",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 62.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 125853,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 44
         },
         {
           "id": "munich",
@@ -939,7 +1718,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Munich",
           "ko": "뮌헨",
           "genre": "스릴러/드라마",
-          "note": ""
+          "note": "",
+          "score": 75.1,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 256549,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 78
         },
         {
           "id": "infamous",
@@ -947,7 +1733,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Infamous",
           "ko": "인퍼머스",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 69.8,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 19022,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 74
         },
         {
           "id": "casino-royale",
@@ -955,7 +1748,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Casino Royale",
           "ko": "카지노 로얄",
           "genre": "액션/스파이",
-          "note": "007 데뷔"
+          "note": "007 데뷔",
+          "score": 81.8,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 756727,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 94
         },
         {
           "id": "the-invasion",
@@ -963,7 +1763,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Invasion",
           "ko": "인베이젼",
           "genre": "SF/스릴러",
-          "note": ""
+          "note": "",
+          "score": 52.1,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 89835,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 20
         },
         {
           "id": "golden-compass",
@@ -971,7 +1778,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Golden Compass",
           "ko": "황금나침반",
           "genre": "판타지",
-          "note": ""
+          "note": "",
+          "score": 56.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 205091,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 42
         },
         {
           "id": "quantum-solace",
@@ -979,7 +1793,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Quantum of Solace",
           "ko": "퀀텀 오브 솔러스",
           "genre": "액션/스파이",
-          "note": ""
+          "note": "",
+          "score": 63.3,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 504404,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 63
         },
         {
           "id": "defiance",
@@ -987,7 +1808,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Defiance",
           "ko": "디파이언스",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 66.6,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 162021,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 58
         },
         {
           "id": "flashbacks-fool",
@@ -995,7 +1823,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Flashbacks of a Fool",
           "ko": "플래시백스 오브 어 풀",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 62.9,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 13431,
+          "criticEstimated": false,
+          "rt": 41
         },
         {
           "id": "cowboys-aliens",
@@ -1003,7 +1837,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Cowboys & Aliens",
           "ko": "카우보이 & 에일리언",
           "genre": "SF/서부",
-          "note": ""
+          "note": "",
+          "score": 56.1,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 244241,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 44
         },
         {
           "id": "dream-house",
@@ -1011,7 +1852,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dream House",
           "ko": "드림 하우스",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 49.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 71360,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 6
         },
         {
           "id": "girl-dragon-tattoo",
@@ -1019,7 +1867,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Girl with the Dragon Tattoo",
           "ko": "여자를 증오한 남자들",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 77.5,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 535235,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 86
         },
         {
           "id": "skyfall",
@@ -1027,7 +1882,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Skyfall",
           "ko": "스카이폴",
           "genre": "액션/스파이",
-          "note": ""
+          "note": "",
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 782244,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 92
         },
         {
           "id": "spectre",
@@ -1035,7 +1897,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Spectre",
           "ko": "스펙터",
           "genre": "액션/스파이",
-          "note": ""
+          "note": "",
+          "score": 65.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 503031,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 63
         },
         {
           "id": "logan-lucky",
@@ -1043,7 +1912,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Logan Lucky",
           "ko": "로건 럭키",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 74.5,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 178928,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 92
         },
         {
           "id": "kings",
@@ -1051,7 +1927,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kings",
           "ko": "킹스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 58.6,
+          "scoreEstimated": false,
+          "imdb": 5.1,
+          "imdbVotes": 4074,
+          "criticEstimated": false,
+          "rt": 13
         },
         {
           "id": "knives-out",
@@ -1059,7 +1941,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Knives Out",
           "ko": "나이브스 아웃",
           "genre": "미스터리/코미디",
-          "note": ""
+          "note": "",
+          "score": 82.0,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 894250,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 97
         },
         {
           "id": "no-time-to-die",
@@ -1067,7 +1956,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "No Time to Die",
           "ko": "노 타임 투 다이",
           "genre": "액션/스파이",
-          "note": "007 마지막"
+          "note": "007 마지막",
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 496156,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 83
         },
         {
           "id": "glass-onion",
@@ -1075,7 +1971,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Glass Onion",
           "ko": "글래스 어니언: 나이브스 아웃",
           "genre": "미스터리/코미디",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 75.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 535605,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 92
         },
         {
           "id": "queer",
@@ -1083,7 +1986,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Queer",
           "ko": "퀴어",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 31425,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 77
         },
         {
           "id": "wake-up-dead-man",
@@ -1091,7 +2001,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Wake Up Dead Man",
           "ko": "웨이크 업 데드 맨",
           "genre": "미스터리",
-          "note": "나이브스 아웃 3"
+          "note": "나이브스 아웃 3",
+          "score": 76.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 263225,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 92
         }
       ]
     },
@@ -1106,7 +2023,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Endless Love",
           "ko": "엔드리스 러브",
           "genre": "로맨스",
-          "note": "소역할"
+          "note": "소역할",
+          "score": 53.5,
+          "scoreEstimated": false,
+          "imdb": 5.0,
+          "imdbVotes": 10874,
+          "criticEstimated": false,
+          "metacritic": 30,
+          "rt": 26
         },
         {
           "id": "taps",
@@ -1114,7 +2038,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Taps",
           "ko": "탭스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 22307,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 68
         },
         {
           "id": "losin-it",
@@ -1122,7 +2053,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Losin' It",
           "ko": "루징 잇",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 56.1,
+          "scoreEstimated": false,
+          "imdb": 5.0,
+          "imdbVotes": 6016,
+          "criticEstimated": false,
+          "rt": 18
         },
         {
           "id": "the-outsiders",
@@ -1130,7 +2067,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Outsiders",
           "ko": "아웃사이더",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 111909,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 63
         },
         {
           "id": "risky-business",
@@ -1138,7 +2082,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Risky Business",
           "ko": "리스키 비즈니스",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 72.5,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 110309,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 92
         },
         {
           "id": "all-right-moves",
@@ -1146,7 +2097,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "All the Right Moves",
           "ko": "올 더 라이트 무브스",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 62.6,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 21292,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 61
         },
         {
           "id": "legend-tc",
@@ -1154,7 +2112,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Legend",
           "ko": "레전드",
           "genre": "판타지",
-          "note": ""
+          "note": "",
+          "score": 53.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 81592,
+          "criticEstimated": false,
+          "metacritic": 30,
+          "rt": 34
         },
         {
           "id": "top-gun",
@@ -1162,7 +2127,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Top Gun",
           "ko": "탑건",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 64.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 563021,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 59
         },
         {
           "id": "color-of-money",
@@ -1170,7 +2142,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Color of Money",
           "ko": "컬러 오브 머니",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 73.6,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 103113,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 88
         },
         {
           "id": "cocktail",
@@ -1178,7 +2157,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Cocktail",
           "ko": "칵테일",
           "genre": "로맨스/드라마",
-          "note": ""
+          "note": "",
+          "score": 44.9,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 99884,
+          "criticEstimated": false,
+          "metacritic": 12,
+          "rt": 9
         },
         {
           "id": "rain-man",
@@ -1186,7 +2172,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rain Man",
           "ko": "레인맨",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 77.9,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 591846,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 88
         },
         {
           "id": "born-fourth-july",
@@ -1194,7 +2187,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Born on the Fourth of July",
           "ko": "7월 4일생",
           "genre": "전쟁/전기",
-          "note": "골든글로브 남우주연"
+          "note": "골든글로브 남우주연",
+          "score": 74.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 126530,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 84
         },
         {
           "id": "days-of-thunder",
@@ -1202,7 +2202,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Days of Thunder",
           "ko": "데이즈 오브 썬더",
           "genre": "스포츠/액션",
-          "note": ""
+          "note": "",
+          "score": 58.9,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 107243,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 38
         },
         {
           "id": "far-and-away",
@@ -1210,7 +2217,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Far and Away",
           "ko": "파 앤드 어웨이",
           "genre": "로맨스/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 61.1,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 73644,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 50
         },
         {
           "id": "few-good-men",
@@ -1218,7 +2232,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Few Good Men",
           "ko": "어 퓨 굿 맨",
           "genre": "법정 드라마",
-          "note": ""
+          "note": "",
+          "score": 75.4,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 323536,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 84
         },
         {
           "id": "the-firm",
@@ -1226,7 +2247,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Firm",
           "ko": "펌",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 67.7,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 165387,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 76
         },
         {
           "id": "interview-vampire",
@@ -1234,7 +2262,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Interview with the Vampire",
           "ko": "인터뷰 위드 뱀파이어",
           "genre": "공포/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.0,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 382502,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 66
         },
         {
           "id": "mission-impossible",
@@ -1242,7 +2277,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible",
           "ko": "미션 임파서블",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 68.3,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 524955,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 65
         },
         {
           "id": "jerry-maguire",
@@ -1250,7 +2292,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jerry Maguire",
           "ko": "제리 맥과이어",
           "genre": "로맨스/드라마",
-          "note": ""
+          "note": "",
+          "score": 75.2,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 317377,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 84
         },
         {
           "id": "eyes-wide-shut",
@@ -1258,7 +2307,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Eyes Wide Shut",
           "ko": "아이즈 와이드 셧",
           "genre": "드라마/스릴러",
-          "note": ""
+          "note": "",
+          "score": 74.0,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 442196,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 77
         },
         {
           "id": "magnolia",
@@ -1266,7 +2322,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Magnolia",
           "ko": "매그놀리아",
           "genre": "드라마",
-          "note": "오스카 남우조연 후보"
+          "note": "오스카 남우조연 후보",
+          "score": 79.7,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 354805,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 82
         },
         {
           "id": "mi2",
@@ -1274,7 +2337,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible 2",
           "ko": "미션 임파서블 2",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 60.0,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 419513,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 56
         },
         {
           "id": "vanilla-sky",
@@ -1282,7 +2352,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Vanilla Sky",
           "ko": "바닐라 스카이",
           "genre": "SF/로맨스",
-          "note": ""
+          "note": "",
+          "score": 60.6,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 313028,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 43
         },
         {
           "id": "minority-report",
@@ -1290,7 +2367,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Minority Report",
           "ko": "마이너리티 리포트",
           "genre": "SF/스릴러",
-          "note": ""
+          "note": "",
+          "score": 78.5,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 628832,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 89
         },
         {
           "id": "last-samurai",
@@ -1298,7 +2382,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Last Samurai",
           "ko": "라스트 사무라이",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 512424,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 65
         },
         {
           "id": "collateral",
@@ -1306,7 +2397,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Collateral",
           "ko": "콜래트럴",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 75.6,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 475869,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 86
         },
         {
           "id": "war-of-worlds",
@@ -1314,7 +2412,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "War of the Worlds",
           "ko": "우주전쟁",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 515803,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 76
         },
         {
           "id": "mi3",
@@ -1322,7 +2427,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible III",
           "ko": "미션 임파서블 3",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 429862,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 73
         },
         {
           "id": "lions-for-lambs",
@@ -1330,7 +2442,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lions for Lambs",
           "ko": "라이언스 포 램스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 57473,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 28
         },
         {
           "id": "tropic-thunder",
@@ -1338,7 +2457,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tropic Thunder",
           "ko": "트로픽 썬더",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 72.5,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 499353,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 82
         },
         {
           "id": "valkyrie",
@@ -1346,7 +2472,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Valkyrie",
           "ko": "발키리",
           "genre": "전쟁/스릴러",
-          "note": ""
+          "note": "",
+          "score": 66.7,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 277942,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 62
         },
         {
           "id": "knight-and-day",
@@ -1354,7 +2487,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Knight and Day",
           "ko": "나이트 앤 데이",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 58.3,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 226975,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 52
         },
         {
           "id": "mi-ghost",
@@ -1362,7 +2502,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible – Ghost Protocol",
           "ko": "미션 임파서블: 고스트 프로토콜",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 76.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 570743,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 93
         },
         {
           "id": "rock-of-ages",
@@ -1370,7 +2517,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rock of Ages",
           "ko": "락 오브 에이지스",
           "genre": "뮤지컬",
-          "note": ""
+          "note": "",
+          "score": 55.5,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 85314,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 43
         },
         {
           "id": "jack-reacher",
@@ -1378,7 +2532,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jack Reacher",
           "ko": "잭 리처",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 396671,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 64
         },
         {
           "id": "oblivion",
@@ -1386,7 +2547,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Oblivion",
           "ko": "오블리비언",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 592306,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 54
         },
         {
           "id": "edge-of-tomorrow",
@@ -1394,7 +2562,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Edge of Tomorrow",
           "ko": "엣지 오브 투모로우",
           "genre": "SF/액션",
-          "note": "일명 내일의 엣지"
+          "note": "일명 내일의 엣지",
+          "score": 78.9,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 818940,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 91
         },
         {
           "id": "mi-rogue",
@@ -1402,7 +2577,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible – Rogue Nation",
           "ko": "미션 임파서블: 로그네이션",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 76.9,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 451110,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 94
         },
         {
           "id": "jack-reacher-2",
@@ -1410,7 +2592,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jack Reacher: Never Go Back",
           "ko": "잭 리처: 네버 고 백",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 55.9,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 196386,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 37
         },
         {
           "id": "the-mummy",
@@ -1418,7 +2607,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mummy",
           "ko": "미이라",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 45.2,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 226043,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 15
         },
         {
           "id": "american-made",
@@ -1426,7 +2622,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "American Made",
           "ko": "아메리칸 메이드",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 72.4,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 238073,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 86
         },
         {
           "id": "mi-fallout",
@@ -1434,7 +2637,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible – Fallout",
           "ko": "미션 임파서블: 폴아웃",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 81.7,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 426101,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 97
         },
         {
           "id": "top-gun-maverick",
@@ -1442,7 +2652,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Top Gun: Maverick",
           "ko": "탑건: 매버릭",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 83.0,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 909994,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 96
         },
         {
           "id": "mi-dead-reckoning",
@@ -1450,7 +2667,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible – Dead Reckoning Part One",
           "ko": "미션 임파서블: 데드 레코닝 PART ONE",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 79.6,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 334235,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 96
         },
         {
           "id": "mi-final-reckoning",
@@ -1458,7 +2682,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible – The Final Reckoning",
           "ko": "미션 임파서블: 파이널 레코닝",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 242909,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 80
         }
       ]
     },
@@ -1473,7 +2704,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Prisoners of the Sun",
           "ko": "태양의 죄수",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 68.3,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 1087,
+          "criticEstimated": true
         },
         {
           "id": "the-crossing",
@@ -1481,7 +2717,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Crossing",
           "ko": "크로싱",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.9,
+          "scoreEstimated": true,
+          "imdb": 5.5,
+          "imdbVotes": 698,
+          "criticEstimated": true
         },
         {
           "id": "proof",
@@ -1489,7 +2730,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Proof",
           "ko": "프루프",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 73.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 7649,
+          "criticEstimated": false,
+          "rt": 94
         },
         {
           "id": "spotswood",
@@ -1497,7 +2744,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Spotswood",
           "ko": "스폿스우드",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 67.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 2590,
+          "criticEstimated": false,
+          "rt": 67
         },
         {
           "id": "romper-stomper",
@@ -1505,7 +2758,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Romper Stomper",
           "ko": "롬퍼 스톰퍼",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 43952,
+          "criticEstimated": false,
+          "rt": 79
         },
         {
           "id": "hammers-anvil",
@@ -1513,7 +2772,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hammers Over the Anvil",
           "ko": "해머스 오버 디 앤빌",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 68.1,
+          "scoreEstimated": true,
+          "imdb": 5.7,
+          "imdbVotes": 712,
+          "criticEstimated": true
         },
         {
           "id": "silver-brumby",
@@ -1521,7 +2785,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Silver Brumby",
           "ko": "실버 브럼비",
           "genre": "가족/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 67.3,
+          "scoreEstimated": true,
+          "imdb": 5.8,
+          "imdbVotes": 1447,
+          "criticEstimated": true
         },
         {
           "id": "for-the-moment",
@@ -1529,7 +2798,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "For the Moment",
           "ko": "포 더 모먼트",
           "genre": "전쟁/로맨스",
-          "note": ""
+          "note": "",
+          "score": 68.0,
+          "scoreEstimated": true,
+          "imdb": 6.1,
+          "imdbVotes": 1061,
+          "criticEstimated": true
         },
         {
           "id": "love-in-limbo",
@@ -1537,7 +2811,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Love in Limbo",
           "ko": "러브 인 림보",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 68.4,
+          "scoreEstimated": true,
+          "imdb": 5.5,
+          "imdbVotes": 397,
+          "criticEstimated": true
         },
         {
           "id": "sum-of-us",
@@ -1545,7 +2824,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Sum of Us",
           "ko": "섬 오브 어스",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 69.7,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 6279,
+          "criticEstimated": true
         },
         {
           "id": "quick-and-dead",
@@ -1553,7 +2837,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Quick and the Dead",
           "ko": "퀵 앤 더 데드",
           "genre": "서부",
-          "note": ""
+          "note": "",
+          "score": 61.7,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 115282,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 62
         },
         {
           "id": "no-way-back",
@@ -1561,7 +2852,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "No Way Back",
           "ko": "노 웨이 백",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 64.3,
+          "scoreEstimated": true,
+          "imdb": 5.1,
+          "imdbVotes": 3085,
+          "criticEstimated": true
         },
         {
           "id": "virtuosity-rc",
@@ -1569,7 +2865,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Virtuosity",
           "ko": "가상현실",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 52.1,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 35255,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 32
         },
         {
           "id": "rough-magic",
@@ -1577,7 +2880,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rough Magic",
           "ko": "러프 매직",
           "genre": "어드벤처/코미디",
-          "note": ""
+          "note": "",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 2297,
+          "criticEstimated": false,
+          "rt": 25
         },
         {
           "id": "la-confidential",
@@ -1585,7 +2894,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "L.A. Confidential",
           "ko": "엘에이 컨피덴셜",
           "genre": "범죄/느와르",
-          "note": ""
+          "note": "",
+          "score": 86.1,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 665465,
+          "criticEstimated": false,
+          "metacritic": 91,
+          "rt": 99
         },
         {
           "id": "heavens-burning",
@@ -1593,7 +2909,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Heaven's Burning",
           "ko": "헤븐스 버닝",
           "genre": "액션/드라마",
-          "note": ""
+          "note": "",
+          "score": 66.2,
+          "scoreEstimated": true,
+          "imdb": 5.7,
+          "imdbVotes": 2465,
+          "criticEstimated": true
         },
         {
           "id": "breaking-up",
@@ -1601,7 +2922,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Breaking Up",
           "ko": "브레이킹 업",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 63.2,
+          "scoreEstimated": true,
+          "imdb": 4.8,
+          "imdbVotes": 3316,
+          "criticEstimated": true
         },
         {
           "id": "mystery-alaska",
@@ -1609,7 +2935,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mystery, Alaska",
           "ko": "미스터리 알래스카",
           "genre": "스포츠/코미디",
-          "note": ""
+          "note": "",
+          "score": 59.5,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 30040,
+          "criticEstimated": false,
+          "rt": 37
         },
         {
           "id": "the-insider",
@@ -1617,7 +2949,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Insider",
           "ko": "인사이더",
           "genre": "드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 81.5,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 193889,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 96
         },
         {
           "id": "gladiator",
@@ -1625,7 +2964,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gladiator",
           "ko": "글래디에이터",
           "genre": "역사/액션",
-          "note": "오스카 남우주연상"
+          "note": "오스카 남우주연상",
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1889607,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 80
         },
         {
           "id": "proof-of-life",
@@ -1633,7 +2979,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Proof of Life",
           "ko": "프루프 오브 라이프",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 57.3,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 61400,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 38
         },
         {
           "id": "beautiful-mind",
@@ -1641,7 +2994,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Beautiful Mind",
           "ko": "뷰티풀 마인드",
           "genre": "전기/드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 78.7,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1066425,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 74
         },
         {
           "id": "master-commander",
@@ -1649,7 +3009,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Master and Commander: The Far Side of the World",
           "ko": "마스터 앤드 커맨더: 위대한 정복자",
           "genre": "전쟁/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 77.4,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 260459,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 85
         },
         {
           "id": "cinderella-man",
@@ -1657,7 +3024,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Cinderella Man",
           "ko": "신데렐라 맨",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 77.5,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 211573,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 80
         },
         {
           "id": "good-year",
@@ -1665,7 +3039,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Good Year",
           "ko": "어느 멋진 순간",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 59.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 108372,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 27
         },
         {
           "id": "310-yuma",
@@ -1673,7 +3054,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "3:10 to Yuma",
           "ko": "3:10 투 유마",
           "genre": "서부",
-          "note": ""
+          "note": "",
+          "score": 77.6,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 354540,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 89
         },
         {
           "id": "american-gangster-rc",
@@ -1681,7 +3069,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "American Gangster",
           "ko": "아메리칸 갱스터",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 77.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 495656,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 81
         },
         {
           "id": "body-of-lies",
@@ -1689,7 +3084,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Body of Lies",
           "ko": "바디 오브 라이즈",
           "genre": "스파이/스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 252903,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 55
         },
         {
           "id": "tenderness",
@@ -1697,7 +3099,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tenderness",
           "ko": "텐더니스",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 58.5,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 8599,
+          "criticEstimated": false,
+          "rt": 40
         },
         {
           "id": "state-of-play",
@@ -1705,7 +3113,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "State of Play",
           "ko": "스테이트 오브 플레이",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 167742,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 84
         },
         {
           "id": "robin-hood",
@@ -1713,7 +3128,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Robin Hood",
           "ko": "로빈 후드",
           "genre": "액션/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 60.4,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 299513,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 44
         },
         {
           "id": "next-three-days",
@@ -1721,7 +3143,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Next Three Days",
           "ko": "넥스트 쓰리 데이즈",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 217175,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 50
         },
         {
           "id": "iron-fists",
@@ -1729,7 +3158,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Man with the Iron Fists",
           "ko": "철권을 가진 사나이",
           "genre": "액션/무협",
-          "note": ""
+          "note": "",
+          "score": 54.5,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 65948,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 51
         },
         {
           "id": "les-miserables",
@@ -1737,7 +3173,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Les Misérables",
           "ko": "레미제라블",
           "genre": "뮤지컬/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 365667,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 70
         },
         {
           "id": "broken-city",
@@ -1745,7 +3188,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Broken City",
           "ko": "브로큰 시티",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 55.2,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 86476,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 28
         },
         {
           "id": "man-of-steel",
@@ -1753,7 +3203,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Man of Steel",
           "ko": "맨 오브 스틸",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 65.7,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 879007,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 57
         },
         {
           "id": "winters-tale",
@@ -1761,7 +3218,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Winter's Tale",
           "ko": "윈터스 테일",
           "genre": "판타지/로맨스",
-          "note": ""
+          "note": "",
+          "score": 51.3,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 59470,
+          "criticEstimated": false,
+          "metacritic": 31,
+          "rt": 13
         },
         {
           "id": "noah",
@@ -1769,7 +3233,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Noah",
           "ko": "노아",
           "genre": "성경/드라마",
-          "note": ""
+          "note": "",
+          "score": 62.6,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 279210,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 75
         },
         {
           "id": "water-diviner",
@@ -1777,7 +3248,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Water Diviner",
           "ko": "워터 디바이너",
           "genre": "전쟁/드라마",
-          "note": "감독·출연"
+          "note": "감독·출연",
+          "score": 65.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 81521,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 62
         },
         {
           "id": "fathers-daughters",
@@ -1785,7 +3263,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fathers and Daughters",
           "ko": "파더스 앤 도터스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 59.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 31319,
+          "criticEstimated": false,
+          "metacritic": 31,
+          "rt": 28
         },
         {
           "id": "nice-guys",
@@ -1793,7 +3278,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Nice Guys",
           "ko": "나이스 가이즈",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 75.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 426723,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 91
         },
         {
           "id": "mummy-rc",
@@ -1801,7 +3293,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mummy",
           "ko": "미이라",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 45.2,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 226043,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 15
         },
         {
           "id": "boy-erased",
@@ -1809,7 +3308,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Boy Erased",
           "ko": "보이 이레이즈드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 70.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 46684,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 80
         },
         {
           "id": "kelly-gang",
@@ -1817,7 +3323,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "True History of the Kelly Gang",
           "ko": "켈리 갱",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 14774,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 80
         },
         {
           "id": "unhinged",
@@ -1825,7 +3338,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Unhinged",
           "ko": "언힌지드",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 55.3,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 88576,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 48
         },
         {
           "id": "thor-love-thunder-rc",
@@ -1833,7 +3353,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Thor: Love and Thunder",
           "ko": "토르: 러브 앤 썬더",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 477487,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 64
         },
         {
           "id": "prizefighter",
@@ -1841,7 +3368,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Prizefighter: The Life of Jem Belcher",
           "ko": "더 챔피언",
           "genre": "전기/스포츠",
-          "note": ""
+          "note": "",
+          "score": 61.7,
+          "scoreEstimated": true,
+          "imdb": 5.5,
+          "imdbVotes": 8312,
+          "criticEstimated": true
         },
         {
           "id": "greatest-beer-run",
@@ -1849,7 +3381,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Greatest Beer Run Ever",
           "ko": "지상 최대 맥주 배달 작전",
           "genre": "전쟁/코미디",
-          "note": "Apple TV+"
+          "note": "Apple TV+",
+          "score": 60.4,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 38422,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 42
         },
         {
           "id": "poker-face",
@@ -1857,7 +3396,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Poker Face",
           "ko": "포커 페이스",
           "genre": "스릴러",
-          "note": "감독·출연"
+          "note": "감독·출연",
+          "score": 57.1,
+          "scoreEstimated": false,
+          "imdb": 5.2,
+          "imdbVotes": 16476,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 66
         },
         {
           "id": "popes-exorcist",
@@ -1865,7 +3411,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Pope's Exorcist",
           "ko": "교황의 엑소시스트",
           "genre": "공포",
-          "note": ""
+          "note": "",
+          "score": 56.9,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 104324,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 49
         },
         {
           "id": "land-of-bad",
@@ -1873,7 +3426,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Land of Bad",
           "ko": "랜드 오브 배드",
           "genre": "액션/전쟁",
-          "note": ""
+          "note": "",
+          "score": 64.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 61163,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 67
         },
         {
           "id": "sleeping-dogs",
@@ -1881,7 +3441,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sleeping Dogs",
           "ko": "슬리핑 독스",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 58.8,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 28273,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 43
         },
         {
           "id": "the-exorcism",
@@ -1889,7 +3456,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Exorcism",
           "ko": "엑소시즘",
           "genre": "공포",
-          "note": ""
+          "note": "",
+          "score": 50.0,
+          "scoreEstimated": false,
+          "imdb": 4.2,
+          "imdbVotes": 14524,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 27
         },
         {
           "id": "kraven",
@@ -1897,7 +3471,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kraven the Hunter",
           "ko": "크레이븐 더 헌터",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 47.2,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 89121,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 15
         },
         {
           "id": "nuremberg",
@@ -1905,7 +3486,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nuremberg",
           "ko": "뉘른베르크",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 72.5,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 122168,
+          "criticEstimated": false,
+          "rt": 72
         },
         {
           "id": "the-weight",
@@ -1913,7 +3500,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Weight",
           "ko": "더 웨이트",
           "genre": "드라마/스릴러",
-          "note": ""
+          "note": "",
+          "score": 68.4,
+          "scoreEstimated": true,
+          "imdb": 6.9,
+          "imdbVotes": 3899,
+          "criticEstimated": true
         },
         {
           "id": "beast-rc",
@@ -1921,7 +3513,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Beast",
           "ko": "비스트",
           "genre": "스포츠/액션",
-          "note": "각본 참여"
+          "note": "각본 참여",
+          "score": 64.8,
+          "scoreEstimated": true,
+          "imdb": 5.8,
+          "imdbVotes": 4778,
+          "criticEstimated": true
         },
         {
           "id": "the-get-out",
@@ -1929,7 +3526,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Get Out",
           "ko": "겟 아웃: 와일드 시티",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 64.1,
+          "scoreEstimated": true,
+          "imdb": 5.7,
+          "imdbVotes": 5300,
+          "criticEstimated": true
         }
       ]
     },
@@ -1944,7 +3546,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "This Boy's Life",
           "ko": "디스 보이스 라이프",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 70.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 63269,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 76
         },
         {
           "id": "whats-eating-gilbert",
@@ -1952,7 +3561,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "What's Eating Gilbert Grape",
           "ko": "길버트 그레이프",
           "genre": "드라마",
-          "note": "오스카 남우조연 후보"
+          "note": "오스카 남우조연 후보",
+          "score": 77.8,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 272027,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 90
         },
         {
           "id": "basketball-diaries",
@@ -1960,7 +3576,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Basketball Diaries",
           "ko": "농구 다이어리",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 64.1,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 134934,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 47
         },
         {
           "id": "total-eclipse",
@@ -1968,7 +3591,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Total Eclipse",
           "ko": "토탈 이클립스",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 59.1,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 16742,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 24
         },
         {
           "id": "romeo-juliet",
@@ -1976,7 +3606,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Romeo + Juliet",
           "ko": "로미오와 줄리엣",
           "genre": "로맨스",
-          "note": ""
+          "note": "",
+          "score": 66.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 264307,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 74
         },
         {
           "id": "marvin-room",
@@ -1984,7 +3621,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Marvin's Room",
           "ko": "마빈스 룸",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 32321,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 84
         },
         {
           "id": "titanic",
@@ -1992,7 +3636,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Titanic",
           "ko": "타이타닉",
           "genre": "로맨스/재난",
-          "note": ""
+          "note": "",
+          "score": 80.0,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 1417394,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 88
         },
         {
           "id": "man-iron-mask",
@@ -2000,7 +3651,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Man in the Iron Mask",
           "ko": "아이언 마스크",
           "genre": "어드벤처",
-          "note": ""
+          "note": "",
+          "score": 57.5,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 193015,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 32
         },
         {
           "id": "celebrity-ld",
@@ -2008,7 +3666,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Celebrity",
           "ko": "셀러브리티",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 58.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 28947,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 42
         },
         {
           "id": "the-beach",
@@ -2016,7 +3681,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Beach",
           "ko": "더 비치",
           "genre": "어드벤처/드라마",
-          "note": ""
+          "note": "",
+          "score": 55.3,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 271988,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 21
         },
         {
           "id": "gangs-new-york",
@@ -2024,7 +3696,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gangs of New York",
           "ko": "갱스 오브 뉴욕",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 73.9,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 512053,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 72
         },
         {
           "id": "catch-me",
@@ -2032,7 +3711,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Catch Me If You Can",
           "ko": "캐치 미 이프 유 캔",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 81.8,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 1270136,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 96
         },
         {
           "id": "the-aviator",
@@ -2040,7 +3726,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Aviator",
           "ko": "에비에이터",
           "genre": "전기/드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 76.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 414204,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 86
         },
         {
           "id": "departed-ld",
@@ -2048,7 +3741,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Departed",
           "ko": "디파티드",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 85.8,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1585580,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 91
         },
         {
           "id": "blood-diamond",
@@ -2056,7 +3756,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Blood Diamond",
           "ko": "블러드 다이아몬드",
           "genre": "어드벤처/드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 74.4,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 633014,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 64
         },
         {
           "id": "body-of-lies-ld",
@@ -2064,7 +3771,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Body of Lies",
           "ko": "바디 오브 라이즈",
           "genre": "스파이/스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 252903,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 55
         },
         {
           "id": "revolutionary-road",
@@ -2072,7 +3786,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Revolutionary Road",
           "ko": "레볼루셔너리 로드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 239081,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 67
         },
         {
           "id": "shutter-island",
@@ -2080,7 +3801,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Shutter Island",
           "ko": "셔터 아일랜드",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 76.0,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1692031,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 68
         },
         {
           "id": "inception-ld",
@@ -2088,7 +3816,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Inception",
           "ko": "인셉션",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 84.9,
+          "scoreEstimated": false,
+          "imdb": 8.8,
+          "imdbVotes": 2881103,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 87
         },
         {
           "id": "j-edgar",
@@ -2096,7 +3831,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "J. Edgar",
           "ko": "제이 에드거",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 61.1,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 139274,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 43
         },
         {
           "id": "django",
@@ -2104,7 +3846,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Django Unchained",
           "ko": "장고: 분노의 추적자",
           "genre": "서부",
-          "note": ""
+          "note": "",
+          "score": 84.4,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1921288,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 87
         },
         {
           "id": "great-gatsby",
@@ -2112,7 +3861,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Great Gatsby",
           "ko": "위대한 개츠비",
           "genre": "드라마/로맨스",
-          "note": ""
+          "note": "",
+          "score": 65.1,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 651475,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 48
         },
         {
           "id": "wolf-wall-street",
@@ -2120,7 +3876,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Wolf of Wall Street",
           "ko": "울프 오브 월 스트리트",
           "genre": "범죄/코미디",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 80.2,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1833065,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 80
         },
         {
           "id": "the-revenant",
@@ -2128,7 +3891,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Revenant",
           "ko": "레버넌트: 죽음에서 돌아온 자",
           "genre": "어드벤처/드라마",
-          "note": "오스카 남우주연상"
+          "note": "오스카 남우주연상",
+          "score": 78.8,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 965625,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 78
         },
         {
           "id": "once-upon-hollywood",
@@ -2136,7 +3906,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Once Upon a Time in Hollywood",
           "ko": "원스 어폰 어 타임 인 할리우드",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 78.9,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 983070,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 85
         },
         {
           "id": "dont-look-up",
@@ -2144,7 +3921,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Don't Look Up",
           "ko": "돈 룩 업",
           "genre": "코미디/SF",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 65.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 683813,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 67
         },
         {
           "id": "killers-flower-moon",
@@ -2152,7 +3936,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Killers of the Flower Moon",
           "ko": "플라워 킬링 문",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 80.2,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 315269,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 93
         },
         {
           "id": "one-battle",
@@ -2160,7 +3951,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "One Battle After Another",
           "ko": "원 배틀 애프터 어나더",
           "genre": "액션/드라마",
-          "note": ""
+          "note": "",
+          "score": 82.3,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 452778,
+          "criticEstimated": false,
+          "metacritic": 95,
+          "rt": 94
         }
       ]
     },
@@ -2175,7 +3973,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dazed and Confused",
           "ko": "데이즈드 앤 컨퓨즈드",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 79.4,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 219534,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 94
         },
         {
           "id": "angels-outfield",
@@ -2183,7 +3988,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Angels in the Outfield",
           "ko": "천사들의 경기",
           "genre": "가족/스포츠",
-          "note": ""
+          "note": "",
+          "score": 57.2,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 38367,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 31
         },
         {
           "id": "texas-chainsaw-next",
@@ -2191,7 +4003,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Texas Chainsaw Massacre: The Next Generation",
           "ko": "텍사스 전기톱 학살: 넥스트 제너레이션",
           "genre": "공포",
-          "note": ""
+          "note": "",
+          "score": 41.2,
+          "scoreEstimated": false,
+          "imdb": 3.4,
+          "imdbVotes": 29370,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 16
         },
         {
           "id": "boys-on-side",
@@ -2199,7 +4018,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Boys on the Side",
           "ko": "보이즈 온 더 사이드",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 16476,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 74
         },
         {
           "id": "lone-star",
@@ -2207,7 +4033,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lone Star",
           "ko": "론 스타",
           "genre": "미스터리/드라마",
-          "note": ""
+          "note": "",
+          "score": 75.9,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 36422,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 91
         },
         {
           "id": "time-to-kill",
@@ -2215,7 +4048,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Time to Kill",
           "ko": "타임 투 킬",
           "genre": "법정 드라마",
-          "note": ""
+          "note": "",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 213591,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 66
         },
         {
           "id": "contact",
@@ -2223,7 +4063,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Contact",
           "ko": "콘택트",
           "genre": "SF/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 318050,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 69
         },
         {
           "id": "amistad",
@@ -2231,7 +4078,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Amistad",
           "ko": "아미스타드",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 88927,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 78
         },
         {
           "id": "newton-boys",
@@ -2239,7 +4093,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Newton Boys",
           "ko": "뉴턴 보이즈",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 13347,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 64
         },
         {
           "id": "edtv",
@@ -2247,7 +4108,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "EDtv",
           "ko": "에드 TV",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 60.3,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 47100,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 64
         },
         {
           "id": "u-571",
@@ -2255,7 +4123,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "U-571",
           "ko": "유-571",
           "genre": "전쟁",
-          "note": ""
+          "note": "",
+          "score": 65.7,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 93138,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 68
         },
         {
           "id": "wedding-planner",
@@ -2263,7 +4138,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Wedding Planner",
           "ko": "웨딩 플래너",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 46.3,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 94439,
+          "criticEstimated": false,
+          "metacritic": 33,
+          "rt": 17
         },
         {
           "id": "frailty",
@@ -2271,7 +4153,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Frailty",
           "ko": "프레이티",
           "genre": "스릴러/공포",
-          "note": ""
+          "note": "",
+          "score": 70.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 102597,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 74
         },
         {
           "id": "reign-of-fire",
@@ -2279,7 +4168,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Reign of Fire",
           "ko": "레인 오브 파이어",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 55.1,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 154508,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 42
         },
         {
           "id": "how-lose-guy",
@@ -2287,7 +4183,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "How to Lose a Guy in 10 Days",
           "ko": "그녀를 잊는 법 10가지",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 58.5,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 333436,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 42
         },
         {
           "id": "sahara",
@@ -2295,7 +4198,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sahara",
           "ko": "사하라",
           "genre": "어드벤처",
-          "note": ""
+          "note": "",
+          "score": 54.5,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 110635,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 37
         },
         {
           "id": "two-for-money",
@@ -2303,7 +4213,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Two for the Money",
           "ko": "투 포 더 머니",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 56.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 55556,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 22
         },
         {
           "id": "failure-launch",
@@ -2311,7 +4228,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Failure to Launch",
           "ko": "페일리어 투 런치",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 51.5,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 96787,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 23
         },
         {
           "id": "we-are-marshall",
@@ -2319,7 +4243,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "We Are Marshall",
           "ko": "위 아 마셜",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 64.7,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 68431,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 48
         },
         {
           "id": "fools-gold",
@@ -2327,7 +4258,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fool's Gold",
           "ko": "풀스 골드",
           "genre": "어드벤처/코미디",
-          "note": ""
+          "note": "",
+          "score": 47.3,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 91521,
+          "criticEstimated": false,
+          "metacritic": 29,
+          "rt": 11
         },
         {
           "id": "tropic-thunder-mm",
@@ -2335,7 +4273,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tropic Thunder",
           "ko": "트로픽 썬더",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 72.5,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 499353,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 82
         },
         {
           "id": "ghosts-girlfriends",
@@ -2343,7 +4288,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ghosts of Girlfriends Past",
           "ko": "유령 애인들",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 50.1,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 101447,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 27
         },
         {
           "id": "lincoln-lawyer",
@@ -2351,7 +4303,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Lincoln Lawyer",
           "ko": "링컨 변호사",
           "genre": "법정/스릴러",
-          "note": ""
+          "note": "",
+          "score": 72.2,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 273556,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 83
         },
         {
           "id": "bernie",
@@ -2359,7 +4318,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bernie",
           "ko": "버니",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 67797,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 88
         },
         {
           "id": "killer-joe",
@@ -2367,7 +4333,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Killer Joe",
           "ko": "킬러 조",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 67.2,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 89821,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 80
         },
         {
           "id": "mud",
@@ -2375,7 +4348,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mud",
           "ko": "머드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 76.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 202168,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 97
         },
         {
           "id": "magic-mike",
@@ -2383,7 +4363,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Magic Mike",
           "ko": "매직 마이크",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 65.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 153764,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 78
         },
         {
           "id": "paperboy",
@@ -2391,7 +4378,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Paperboy",
           "ko": "페이퍼보이",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 55.3,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 42180,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 45
         },
         {
           "id": "dallas-buyers",
@@ -2399,7 +4393,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dallas Buyers Club",
           "ko": "달라스 바이어스 클럽",
           "genre": "전기/드라마",
-          "note": "오스카 남우주연상"
+          "note": "오스카 남우주연상",
+          "score": 80.3,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 553886,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 92
         },
         {
           "id": "wolf-wall-street-mm",
@@ -2407,7 +4408,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Wolf of Wall Street",
           "ko": "울프 오브 월 스트리트",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 80.2,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1833065,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 80
         },
         {
           "id": "interstellar-mm",
@@ -2415,7 +4423,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Interstellar",
           "ko": "인터스텔라",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 82.3,
+          "scoreEstimated": false,
+          "imdb": 8.7,
+          "imdbVotes": 2622703,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 73
         },
         {
           "id": "sea-of-trees",
@@ -2423,7 +4438,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Sea of Trees",
           "ko": "바다의 나무",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 52.8,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 20030,
+          "criticEstimated": false,
+          "rt": 17
         },
         {
           "id": "free-state-jones",
@@ -2431,7 +4452,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Free State of Jones",
           "ko": "프리 스테이트 오브 존스",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 69013,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 48
         },
         {
           "id": "gold",
@@ -2439,7 +4467,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gold",
           "ko": "골드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 60.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 75238,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 41
         },
         {
           "id": "dark-tower",
@@ -2447,7 +4482,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dark Tower",
           "ko": "다크 타워",
           "genre": "판타지/액션",
-          "note": ""
+          "note": "",
+          "score": 46.9,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 157662,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 16
         },
         {
           "id": "white-boy-rick",
@@ -2455,7 +4497,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "White Boy Rick",
           "ko": "화이트 보이 릭",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 49651,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 57
         },
         {
           "id": "serenity-mm",
@@ -2463,7 +4512,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Serenity",
           "ko": "세레니티",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 46.1,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 50279,
+          "criticEstimated": false,
+          "rt": 21
         },
         {
           "id": "beach-bum",
@@ -2471,7 +4526,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Beach Bum",
           "ko": "비치 범",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 58.3,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 27073,
+          "criticEstimated": false,
+          "rt": 57
         },
         {
           "id": "gentlemen",
@@ -2479,7 +4540,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Gentlemen",
           "ko": "젠틀맨",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 71.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 470738,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 75
         },
         {
           "id": "rivals-amziah",
@@ -2487,7 +4555,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Rivals of Amziah King",
           "ko": "아므지아 킹의 라이벌들",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 67.2,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 8080,
+          "criticEstimated": false,
+          "metacritic": 65
         },
         {
           "id": "lost-bus",
@@ -2495,7 +4569,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Lost Bus",
           "ko": "로스트 버스",
           "genre": "드라마/재난",
-          "note": ""
+          "note": "",
+          "score": 73.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 58202,
+          "criticEstimated": false,
+          "rt": 87
         }
       ]
     },
@@ -2510,7 +4590,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Black Hawk Down",
           "ko": "블랙 호크 다운",
           "genre": "전쟁",
-          "note": ""
+          "note": "",
+          "score": 76.1,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 461098,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 76
         },
         {
           "id": "deserter",
@@ -2518,7 +4605,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Deserter",
           "ko": "디저터",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 66.5,
+          "scoreEstimated": true,
+          "imdb": 5.3,
+          "imdbVotes": 1583,
+          "criticEstimated": true
         },
         {
           "id": "layer-cake-th",
@@ -2526,7 +4618,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Layer Cake",
           "ko": "레이어 케이크",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 73.2,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 209863,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 80
         },
         {
           "id": "star-trek-nemesis",
@@ -2534,7 +4633,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Star Trek: Nemesis",
           "ko": "스타트렉: 네메시스",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 58.6,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 88767,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 38
         },
         {
           "id": "marie-antoinette",
@@ -2542,7 +4648,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Marie Antoinette",
           "ko": "마리 앙투아네트",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.9,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 134100,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 57
         },
         {
           "id": "rocknrolla",
@@ -2550,7 +4663,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "RocknRolla",
           "ko": "락앤롤라",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 66.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 277534,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 60
         },
         {
           "id": "bronson",
@@ -2558,7 +4678,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bronson",
           "ko": "브론슨",
           "genre": "전기/범죄",
-          "note": ""
+          "note": "",
+          "score": 70.9,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 151913,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 76
         },
         {
           "id": "thick-as-thieves",
@@ -2566,7 +4693,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Thick as Thieves",
           "ko": "코드",
           "genre": "범죄",
-          "note": ""
+          "note": "",
+          "score": 49.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 37190,
+          "criticEstimated": false,
+          "rt": 17
         },
         {
           "id": "inception-th",
@@ -2574,7 +4707,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Inception",
           "ko": "인셉션",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 84.9,
+          "scoreEstimated": false,
+          "imdb": 8.8,
+          "imdbVotes": 2881103,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 87
         },
         {
           "id": "warrior",
@@ -2582,7 +4722,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Warrior",
           "ko": "워리어",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 79.2,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 534822,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 84
         },
         {
           "id": "tinker-tailor",
@@ -2590,7 +4737,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tinker Tailor Soldier Spy",
           "ko": "팅커 테일러 솔저 스파이",
           "genre": "스파이/스릴러",
-          "note": ""
+          "note": "",
+          "score": 74.9,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 228723,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 84
         },
         {
           "id": "this-means-war",
@@ -2598,7 +4752,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "This Means War",
           "ko": "디스 민스 워",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 51.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 201958,
+          "criticEstimated": false,
+          "metacritic": 31,
+          "rt": 25
         },
         {
           "id": "dark-knight-rises",
@@ -2606,7 +4767,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dark Knight Rises",
           "ko": "다크 나이트 라이즈",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 83.1,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 2033839,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 87
         },
         {
           "id": "lawless",
@@ -2614,7 +4782,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lawless",
           "ko": "로리스",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 68.4,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 264690,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 67
         },
         {
           "id": "locke",
@@ -2622,7 +4797,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Locke",
           "ko": "로크",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 76.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 171164,
+          "criticEstimated": false,
+          "metacritic": 83,
+          "rt": 91
         },
         {
           "id": "drop",
@@ -2630,7 +4812,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Drop",
           "ko": "더 드롭",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 72.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 171986,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 89
         },
         {
           "id": "mad-max-fury",
@@ -2638,7 +4827,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mad Max: Fury Road",
           "ko": "매드맥스: 분노의 도로",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 85.0,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 1224630,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 97
         },
         {
           "id": "legend-th",
@@ -2646,7 +4842,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Legend",
           "ko": "레전드",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 65.0,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 227696,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 60
         },
         {
           "id": "child-44",
@@ -2654,7 +4857,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Child 44",
           "ko": "차일드 44",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 55.7,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 80459,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 29
         },
         {
           "id": "revenant-th",
@@ -2662,7 +4872,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Revenant",
           "ko": "레버넌트: 죽음에서 돌아온 자",
           "genre": "어드벤처/드라마",
-          "note": ""
+          "note": "",
+          "score": 78.8,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 965625,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 78
         },
         {
           "id": "dunkirk",
@@ -2670,7 +4887,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dunkirk",
           "ko": "덩케르크",
           "genre": "전쟁",
-          "note": ""
+          "note": "",
+          "score": 83.2,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 830509,
+          "criticEstimated": false,
+          "metacritic": 94,
+          "rt": 92
         },
         {
           "id": "venom",
@@ -2678,7 +4902,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Venom",
           "ko": "베놈",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 54.7,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 619515,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 30
         },
         {
           "id": "capone",
@@ -2686,7 +4917,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Capone",
           "ko": "카포네",
           "genre": "전기/범죄",
-          "note": ""
+          "note": "",
+          "score": 50.8,
+          "scoreEstimated": false,
+          "imdb": 4.7,
+          "imdbVotes": 25685,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 40
         },
         {
           "id": "venom-2",
@@ -2694,7 +4932,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Venom: Let There Be Carnage",
           "ko": "베놈 2: 렛 데어 비 카니지",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 56.9,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 313064,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 57
         },
         {
           "id": "spiderhead",
@@ -2702,7 +4947,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Spiderhead",
           "ko": "스파이더헤드",
           "genre": "SF/스릴러",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 53.9,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 74607,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 38
         },
         {
           "id": "bikeriders",
@@ -2710,7 +4962,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bikeriders",
           "ko": "바이커라이더스",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 68.7,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 80184,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 80
         },
         {
           "id": "venom-3",
@@ -2718,7 +4977,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Venom: The Last Dance",
           "ko": "베놈: 라스트 댄스",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 53.9,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 166504,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 40
         },
         {
           "id": "havoc",
@@ -2726,7 +4992,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Havoc",
           "ko": "헤이복",
           "genre": "액션/스릴러",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 58.3,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 72009,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 64
         }
       ]
     },
@@ -2741,7 +5014,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mrs Brown",
           "ko": "미세스 브라운",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 72.7,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 16527,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 92
         },
         {
           "id": "tomorrow-never-dies",
@@ -2749,7 +5029,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tomorrow Never Dies",
           "ko": "007 투모로우 네버 다이",
           "genre": "액션/스파이",
-          "note": "소역할"
+          "note": "소역할",
+          "score": 61.6,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 218257,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 58
         },
         {
           "id": "tale-mummy",
@@ -2757,7 +5044,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tale of the Mummy",
           "ko": "테일 오브 더 미라",
           "genre": "공포",
-          "note": ""
+          "note": "",
+          "score": 57.0,
+          "scoreEstimated": false,
+          "imdb": 4.1,
+          "imdbVotes": 3824,
+          "criticEstimated": false,
+          "rt": 17
         },
         {
           "id": "dracula-2000",
@@ -2765,7 +5058,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dracula 2000",
           "ko": "드라큘라 2000",
           "genre": "공포",
-          "note": ""
+          "note": "",
+          "score": 44.5,
+          "scoreEstimated": false,
+          "imdb": 4.9,
+          "imdbVotes": 39317,
+          "criticEstimated": false,
+          "metacritic": 26,
+          "rt": 17
         },
         {
           "id": "reign-fire-gb",
@@ -2773,7 +5073,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Reign of Fire",
           "ko": "레인 오브 파이어",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 55.1,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 154508,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 42
         },
         {
           "id": "phantom-opera",
@@ -2781,7 +5088,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Phantom of the Opera",
           "ko": "오페라의 유령",
           "genre": "뮤지컬/로맨스",
-          "note": ""
+          "note": "",
+          "score": 60.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 140412,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 33
         },
         {
           "id": "tomb-raider-2",
@@ -2789,7 +5103,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lara Croft: Tomb Raider – The Cradle of Life",
           "ko": "툼레이더 2: 판도라의 상자",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 49.1,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 152298,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 24
         },
         {
           "id": "dear-frankie",
@@ -2797,7 +5118,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dear Frankie",
           "ko": "디어 프랭키",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 73.0,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 23209,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 81
         },
         {
           "id": "beowulf-grendel",
@@ -2805,7 +5133,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Beowulf & Grendel",
           "ko": "베오울프 & 그렌델",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 59.4,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 19392,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 49
         },
         {
           "id": "game-lives",
@@ -2813,7 +5148,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Game of Their Lives",
           "ko": "게임 오브 데어 라이브스",
           "genre": "스포츠",
-          "note": ""
+          "note": "",
+          "score": 62.9,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 3769,
+          "criticEstimated": false,
+          "rt": 26
         },
         {
           "id": "300",
@@ -2821,7 +5162,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "300",
           "ko": "300",
           "genre": "액션/전쟁",
-          "note": ""
+          "note": "",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 923508,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 61
         },
         {
           "id": "ps-i-love-you",
@@ -2829,7 +5177,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "P.S. I Love You",
           "ko": "피.에스. 아이 러브 유",
           "genre": "로맨스",
-          "note": ""
+          "note": "",
+          "score": 57.7,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 227272,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 25
         },
         {
           "id": "butterfly-wheel",
@@ -2837,7 +5192,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Butterfly on a Wheel",
           "ko": "버터플라이 온 어 휠",
           "genre": "스릴러",
-          "note": "일명 샤터드"
+          "note": "일명 샤터드",
+          "score": 65.0,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 35388,
+          "criticEstimated": true
         },
         {
           "id": "nim-island",
@@ -2845,7 +5205,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nim's Island",
           "ko": "님의 섬",
           "genre": "어드벤처/가족",
-          "note": ""
+          "note": "",
+          "score": 59.6,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 38493,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 52
         },
         {
           "id": "rocknrolla-gb",
@@ -2853,7 +5220,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "RocknRolla",
           "ko": "락앤롤라",
           "genre": "범죄",
-          "note": ""
+          "note": "",
+          "score": 66.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 277534,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 60
         },
         {
           "id": "ugly-truth",
@@ -2861,7 +5235,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Ugly Truth",
           "ko": "어글리 트루스",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 50.1,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 243924,
+          "criticEstimated": false,
+          "metacritic": 28,
+          "rt": 14
         },
         {
           "id": "gamer",
@@ -2869,7 +5250,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gamer",
           "ko": "게이머",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 48.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 144867,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 29
         },
         {
           "id": "law-abiding",
@@ -2877,7 +5265,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Law Abiding Citizen",
           "ko": "로 어바이딩 시티즌",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 59.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 350515,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 26
         },
         {
           "id": "bounty-hunter",
@@ -2885,7 +5280,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bounty Hunter",
           "ko": "바운티 헌터",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 44.3,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 141694,
+          "criticEstimated": false,
+          "metacritic": 22,
+          "rt": 13
         },
         {
           "id": "machine-gun-preacher",
@@ -2893,7 +5295,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Machine Gun Preacher",
           "ko": "머신건 프리처",
           "genre": "액션/드라마",
-          "note": ""
+          "note": "",
+          "score": 58.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 71812,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 28
         },
         {
           "id": "corsican",
@@ -2901,7 +5310,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Coriolanus",
           "ko": "코리올라누스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 68.6,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 35116,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 92
         },
         {
           "id": "playing-field",
@@ -2909,7 +5325,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Playing for Keeps",
           "ko": "플레잉 포 킵스",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 48.6,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 32517,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 4
         },
         {
           "id": "chasing-mavericks",
@@ -2917,7 +5340,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Chasing Mavericks",
           "ko": "체이싱 매버릭스",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 62.2,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 36522,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 33
         },
         {
           "id": "olympus-fallen",
@@ -2925,7 +5355,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Olympus Has Fallen",
           "ko": "백악관 최후의 날",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 58.2,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 309569,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 50
         },
         {
           "id": "gods-egypt",
@@ -2933,7 +5370,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gods of Egypt",
           "ko": "갓 오브 이집트",
           "genre": "판타지/액션",
-          "note": ""
+          "note": "",
+          "score": 43.8,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 137551,
+          "criticEstimated": false,
+          "metacritic": 25,
+          "rt": 14
         },
         {
           "id": "london-fallen",
@@ -2941,7 +5385,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "London Has Fallen",
           "ko": "런던 해즈 폴른",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 49.1,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 182629,
+          "criticEstimated": false,
+          "metacritic": 28,
+          "rt": 28
         },
         {
           "id": "geostorm",
@@ -2949,7 +5400,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Geostorm",
           "ko": "지오스톰",
           "genre": "SF/재난",
-          "note": ""
+          "note": "",
+          "score": 43.5,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 135507,
+          "criticEstimated": false,
+          "metacritic": 21,
+          "rt": 18
         },
         {
           "id": "den-thieves",
@@ -2957,7 +5415,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Den of Thieves",
           "ko": "도둑들",
           "genre": "범죄/액션",
-          "note": ""
+          "note": "",
+          "score": 62.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 156283,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 42
         },
         {
           "id": "hunter-killer",
@@ -2965,7 +5430,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hunter Killer",
           "ko": "헌터 킬러",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 58.3,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 82032,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 37
         },
         {
           "id": "angel-fallen",
@@ -2973,7 +5445,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Angel Has Fallen",
           "ko": "엔젤 해즈 폴른",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 57.3,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 124870,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 39
         },
         {
           "id": "greenland",
@@ -2981,7 +5460,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Greenland",
           "ko": "그린랜드",
           "genre": "재난/스릴러",
-          "note": ""
+          "note": "",
+          "score": 66.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 177415,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 78
         },
         {
           "id": "copshop",
@@ -2989,7 +5475,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Copshop",
           "ko": "캅샵",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 47014,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 82
         },
         {
           "id": "last-seen-alive",
@@ -2997,7 +5490,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Last Seen Alive",
           "ko": "라스트 신 얼라이브",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 47.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 36794,
+          "criticEstimated": false,
+          "rt": 14
         },
         {
           "id": "plane",
@@ -3005,7 +5504,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Plane",
           "ko": "플레인",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 105949,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 78
         },
         {
           "id": "kandahar",
@@ -3013,7 +5519,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kandahar",
           "ko": "칸다하르",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 58.6,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 47836,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 45
         },
         {
           "id": "den-thieves-2",
@@ -3021,7 +5534,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Den of Thieves 2: Pantera",
           "ko": "도둑들 2: 판테라",
           "genre": "범죄/액션",
-          "note": ""
+          "note": "",
+          "score": 63.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 46317,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 62
         },
         {
           "id": "greenland-2",
@@ -3029,7 +5549,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Greenland 2: Migration",
           "ko": "그린랜드 2: 마이그레이션",
           "genre": "재난",
-          "note": ""
+          "note": "",
+          "score": 53.0,
+          "scoreEstimated": false,
+          "imdb": 5.2,
+          "imdbVotes": 49973,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 48
         }
       ]
     },
@@ -3044,7 +5571,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "2 Days in the Valley",
           "ko": "투 데이즈 인 더 밸리",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 64.1,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 23155,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 60
         },
         {
           "id": "trial-error",
@@ -3052,7 +5586,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Trial and Error",
           "ko": "트라이얼 앤 에러",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 62.4,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 6884,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "devil-advocate",
@@ -3060,7 +5600,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Devil's Advocate",
           "ko": "디블스 어드보킷",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 70.2,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 453972,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 63
         },
         {
           "id": "celebrity-ct",
@@ -3068,7 +5615,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Celebrity",
           "ko": "셀러브리티",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 58.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 28947,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 42
         },
         {
           "id": "mighty-joe",
@@ -3076,7 +5630,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mighty Joe Young",
           "ko": "마이티 조 영",
           "genre": "어드벤처",
-          "note": ""
+          "note": "",
+          "score": 57.9,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 32963,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 55
         },
         {
           "id": "astronauts-wife",
@@ -3084,7 +5645,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Astronaut's Wife",
           "ko": "아스트로넛츠 와이프",
           "genre": "SF/스릴러",
-          "note": ""
+          "note": "",
+          "score": 48.0,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 59444,
+          "criticEstimated": false,
+          "metacritic": 38,
+          "rt": 15
         },
         {
           "id": "cider-house",
@@ -3092,7 +5660,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Cider House Rules",
           "ko": "사이더 하우스 룰",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 73.7,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 110444,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 72
         },
         {
           "id": "reindeer-games",
@@ -3100,7 +5675,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Reindeer Games",
           "ko": "레인디어 게임즈",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 52.1,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 45131,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 26
         },
         {
           "id": "legend-bagger-ct",
@@ -3108,7 +5690,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Legend of Bagger Vance",
           "ko": "배거 밴스의 전설",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 62922,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 43
         },
         {
           "id": "sweet-november",
@@ -3116,7 +5705,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sweet November",
           "ko": "스위트 노벰버",
           "genre": "로맨스",
-          "note": ""
+          "note": "",
+          "score": 52.9,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 99902,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 15
         },
         {
           "id": "15-minutes",
@@ -3124,7 +5720,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "15 Minutes",
           "ko": "15분",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 53.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 54061,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 32
         },
         {
           "id": "trapped",
@@ -3132,7 +5735,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Trapped",
           "ko": "트랩트",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 55.1,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 27472,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 17
         },
         {
           "id": "waking-life-dead",
@@ -3140,7 +5750,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Waking Up in Reno",
           "ko": "웨이킹 업 인 리노",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 57.6,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 6680,
+          "criticEstimated": false,
+          "metacritic": 28,
+          "rt": 13
         },
         {
           "id": "italian-job",
@@ -3148,7 +5765,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Italian Job",
           "ko": "이탈리안 잡",
           "genre": "액션/범죄",
-          "note": ""
+          "note": "",
+          "score": 69.8,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 411375,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 72
         },
         {
           "id": "monster",
@@ -3156,7 +5780,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Monster",
           "ko": "몬스터",
           "genre": "전기/범죄",
-          "note": "오스카 여우주연상"
+          "note": "오스카 여우주연상",
+          "score": 74.2,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 174334,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 82
         },
         {
           "id": "head-clouds",
@@ -3164,7 +5795,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Head in the Clouds",
           "ko": "헤드 인 더 클라우드",
           "genre": "드라마/로맨스",
-          "note": ""
+          "note": "",
+          "score": 58.6,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 16570,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 16
         },
         {
           "id": "north-country",
@@ -3172,7 +5810,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "North Country",
           "ko": "노스 컨트리",
           "genre": "드라마",
-          "note": "오스카 여우주연 후보"
+          "note": "오스카 여우주연 후보",
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 48101,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 70
         },
         {
           "id": "aeon-flux",
@@ -3180,7 +5825,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Æon Flux",
           "ko": "이온 플럭스",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 45.3,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 138138,
+          "criticEstimated": false,
+          "metacritic": 36,
+          "rt": 9
         },
         {
           "id": "valley-elah",
@@ -3188,7 +5840,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "In the Valley of Elah",
           "ko": "인 더 밸리 오브 엘라",
           "genre": "스릴러/드라마",
-          "note": ""
+          "note": "",
+          "score": 70.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 77889,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 73
         },
         {
           "id": "battle-in-seattle",
@@ -3196,7 +5855,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Battle in Seattle",
           "ko": "배틀 인 시애틀",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 15652,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 56
         },
         {
           "id": "hancock",
@@ -3204,7 +5870,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hancock",
           "ko": "핸콕",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 57.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 545025,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 42
         },
         {
           "id": "sleepwalking",
@@ -3212,7 +5885,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sleepwalking",
           "ko": "슬립워킹",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 61.1,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 6387,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 17
         },
         {
           "id": "the-road",
@@ -3220,7 +5900,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Road",
           "ko": "더 로드",
           "genre": "드라마/포스트아포칼립스",
-          "note": ""
+          "note": "",
+          "score": 70.6,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 274292,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 74
         },
         {
           "id": "young-adult",
@@ -3228,7 +5915,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Young Adult",
           "ko": "영 어덜트",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 90674,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 80
         },
         {
           "id": "snow-white-huntsman",
@@ -3236,7 +5930,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Snow White and the Huntsman",
           "ko": "백설공주와 사냥꾼",
           "genre": "판타지/액션",
-          "note": ""
+          "note": "",
+          "score": 58.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 317468,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 49
         },
         {
           "id": "prometheus",
@@ -3244,7 +5945,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Prometheus",
           "ko": "프로메테우스",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 708865,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 73
         },
         {
           "id": "million-ways",
@@ -3252,7 +5960,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Million Ways to Die in the West",
           "ko": "백만 가지 방법의 웨스턴",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 54.1,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 212660,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 33
         },
         {
           "id": "dark-places",
@@ -3260,7 +5975,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dark Places",
           "ko": "다크 플레이스",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 54.2,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 50590,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 23
         },
         {
           "id": "mad-max-ct",
@@ -3268,7 +5990,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mad Max: Fury Road",
           "ko": "매드맥스: 분노의 도로",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 85.0,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 1224630,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 97
         },
         {
           "id": "huntsman-winter",
@@ -3276,7 +6005,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Huntsman: Winter's War",
           "ko": "헌츠맨: 윈터스 워",
           "genre": "판타지",
-          "note": ""
+          "note": "",
+          "score": 51.0,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 128320,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 20
         },
         {
           "id": "kubo-ct",
@@ -3284,7 +6020,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kubo and the Two Strings",
           "ko": "쿠보와 전설의 악기",
           "genre": "애니메이션",
-          "note": "목소리"
+          "note": "목소리",
+          "score": 80.7,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 148942,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 97
         },
         {
           "id": "atomic-blonde",
@@ -3292,7 +6035,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Atomic Blonde",
           "ko": "아토믹 블론드",
           "genre": "액션/스파이",
-          "note": ""
+          "note": "",
+          "score": 67.9,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 222807,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 79
         },
         {
           "id": "fate-furious",
@@ -3300,7 +6050,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Fate of the Furious",
           "ko": "분노의 질주: 더 익스트림",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 279631,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 67
         },
         {
           "id": "tully",
@@ -3308,7 +6065,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tully",
           "ko": "털리",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 72.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 67146,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 87
         },
         {
           "id": "gringo",
@@ -3316,7 +6080,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gringo",
           "ko": "그링고",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 57.6,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 34106,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 40
         },
         {
           "id": "long-shot",
@@ -3324,7 +6095,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Long Shot",
           "ko": "롱 샷",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 69.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 130059,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 82
         },
         {
           "id": "bombshell",
@@ -3332,7 +6110,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bombshell",
           "ko": "밤쉘: 세상을 바꾼 폭탄선언",
           "genre": "드라마",
-          "note": "오스카 여우주연 후보"
+          "note": "오스카 여우주연 후보",
+          "score": 67.3,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 137927,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 68
         },
         {
           "id": "old-guard",
@@ -3340,7 +6125,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Old Guard",
           "ko": "올드 가드",
           "genre": "액션/판타지",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 69.4,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 213364,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 80
         },
         {
           "id": "f9",
@@ -3348,7 +6140,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "F9",
           "ko": "분노의 질주: 더 얼티메이트",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 54.7,
+          "scoreEstimated": false,
+          "imdb": 5.2,
+          "imdbVotes": 184984,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 59
         },
         {
           "id": "addams-family-2",
@@ -3356,7 +6155,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Addams Family 2",
           "ko": "아담스 패밀리 2",
           "genre": "애니메이션",
-          "note": "목소리"
+          "note": "목소리",
+          "score": 53.3,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 18889,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 28
         },
         {
           "id": "fast-x",
@@ -3364,7 +6170,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fast X",
           "ko": "분노의 질주: 라이드 오어 다이",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 57.2,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 151043,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 56
         },
         {
           "id": "old-guard-2",
@@ -3372,7 +6185,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Old Guard 2",
           "ko": "올드 가드 2",
           "genre": "액션/판타지",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 49.2,
+          "scoreEstimated": false,
+          "imdb": 5.1,
+          "imdbVotes": 48833,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 27
         }
       ]
     },
@@ -3387,7 +6207,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Girlfriends",
           "ko": "걸프렌즈",
           "genre": "드라마",
-          "note": "프랑스: Mes copines"
+          "note": "프랑스: Mes copines",
+          "score": 68.1,
+          "scoreEstimated": true,
+          "imdb": 4.2,
+          "imdbVotes": 326,
+          "criticEstimated": true
         },
         {
           "id": "on-war",
@@ -3395,7 +6220,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "On War",
           "ko": "온 워",
           "genre": "드라마",
-          "note": "프랑스: De la guerre"
+          "note": "프랑스: De la guerre",
+          "score": 68.3,
+          "scoreEstimated": true,
+          "imdb": 5.9,
+          "imdbVotes": 594,
+          "criticEstimated": true
         },
         {
           "id": "beautiful-person",
@@ -3403,7 +6233,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Beautiful Person",
           "ko": "뷰티풀 퍼슨",
           "genre": "드라마",
-          "note": "프랑스: La Belle Personne · 불확실 KR"
+          "note": "프랑스: La Belle Personne · 불확실 KR",
+          "score": 65.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 8675,
+          "criticEstimated": false,
+          "rt": 57
         },
         {
           "id": "lourdes",
@@ -3411,7 +6247,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lourdes",
           "ko": "루르드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 3955,
+          "criticEstimated": false,
+          "metacritic": 71
         },
         {
           "id": "belle-epine",
@@ -3419,7 +6261,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Belle Épine",
           "ko": "벨 에핀",
           "genre": "드라마",
-          "note": "불확실 KR"
+          "note": "불확실 KR",
+          "score": 67.6,
+          "scoreEstimated": true,
+          "imdb": 5.8,
+          "imdbVotes": 1208,
+          "criticEstimated": true
         },
         {
           "id": "robin-hood-ls",
@@ -3427,7 +6274,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Robin Hood",
           "ko": "로빈 후드",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 60.4,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 299513,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 44
         },
         {
           "id": "mysteries-lisbon",
@@ -3435,7 +6289,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mysteries of Lisbon",
           "ko": "리스본의 미스터리",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 71.6,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 3677,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 86
         },
         {
           "id": "midnight-paris",
@@ -3443,7 +6304,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Midnight in Paris",
           "ko": "미드나잇 인 파리",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 79.3,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 474975,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 93
         },
         {
           "id": "mission-impossible-gs",
@@ -3451,7 +6319,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mission: Impossible – Ghost Protocol",
           "ko": "미션 임파서블: 고스트 프로토콜",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 76.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 570743,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 93
         },
         {
           "id": "farewell-queen",
@@ -3459,7 +6334,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Farewell, My Queen",
           "ko": "여왕에게 작별을",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 67.6,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 9587,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 93
         },
         {
           "id": "sister",
@@ -3467,7 +6349,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sister",
           "ko": "시스터",
           "genre": "드라마",
-          "note": "프랑스: L'Enfant d'en haut"
+          "note": "프랑스: L'Enfant d'en haut",
+          "score": 72.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 7638,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 96
         },
         {
           "id": "blue-warmest",
@@ -3475,7 +6364,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Blue Is the Warmest Colour",
           "ko": "가장 따뜻한 색",
           "genre": "로맨스/드라마",
-          "note": "프랑스: La Vie d'Adèle"
+          "note": "프랑스: La Vie d'Adèle",
+          "score": 80.1,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 175090,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 88
         },
         {
           "id": "grand-central",
@@ -3483,7 +6379,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Grand Central",
           "ko": "그랑 상트랄",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 3213,
+          "criticEstimated": false,
+          "rt": 90
         },
         {
           "id": "beauty-beast",
@@ -3491,7 +6393,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Beauty and the Beast",
           "ko": "미녀와 야수",
           "genre": "판타지/로맨스",
-          "note": "프랑스판"
+          "note": "프랑스판",
+          "score": 59.1,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 24696,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 41
         },
         {
           "id": "saint-laurent",
@@ -3499,7 +6408,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Saint Laurent",
           "ko": "생 로랑",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 6928,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 60
         },
         {
           "id": "diary-chambermaid",
@@ -3507,7 +6423,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Diary of a Chambermaid",
           "ko": "하녀 일기",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 65.1,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 3239,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 66
         },
         {
           "id": "spectre-ls",
@@ -3515,7 +6438,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Spectre",
           "ko": "스펙터",
           "genre": "액션/스파이",
-          "note": ""
+          "note": "",
+          "score": 65.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 503031,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 63
         },
         {
           "id": "lob",
@@ -3523,7 +6453,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Lobster",
           "ko": "더 랍스터",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 75.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 339201,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 87
         },
         {
           "id": "only-end-world",
@@ -3531,7 +6468,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "It's Only the End of the World",
           "ko": "그저 세상의 끝",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 62.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 26513,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 44
         },
         {
           "id": "zoe",
@@ -3539,7 +6483,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Zoe",
           "ko": "조이",
           "genre": "SF/로맨스",
-          "note": ""
+          "note": "",
+          "score": 58.8,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 11106,
+          "criticEstimated": false,
+          "rt": 32
         },
         {
           "id": "course-vie",
@@ -3547,7 +6497,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kursk",
           "ko": "쿠르스크",
           "genre": "재난/드라마",
-          "note": ""
+          "note": "",
+          "score": 65.6,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 24118,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 72
         },
         {
           "id": "oh-mercy",
@@ -3555,7 +6512,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Oh Mercy!",
           "ko": "오 메르시!",
           "genre": "범죄/드라마",
-          "note": "프랑스: Roubaix, une lumière"
+          "note": "프랑스: Roubaix, une lumière",
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 2818,
+          "criticEstimated": false,
+          "rt": 59
         },
         {
           "id": "france",
@@ -3563,7 +6526,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "France",
           "ko": "프랑스",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 64.8,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 5676,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 67
         },
         {
           "id": "french-dispatch",
@@ -3571,7 +6541,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The French Dispatch",
           "ko": "프렌치 디스패치",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 72.2,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 171064,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 75
         },
         {
           "id": "no-time-die-ls",
@@ -3579,7 +6556,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "No Time to Die",
           "ko": "노 타임 투 다이",
           "genre": "액션/스파이",
-          "note": ""
+          "note": "",
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 496156,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 83
         },
         {
           "id": "crimes-future",
@@ -3587,7 +6571,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Crimes of the Future",
           "ko": "크라임즈 오브 더 퓨처",
           "genre": "SF/공포",
-          "note": ""
+          "note": "",
+          "score": 63.6,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 47866,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 80
         },
         {
           "id": "one-fine-morning",
@@ -3595,7 +6586,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "One Fine Morning",
           "ko": "어느 멋진 아침",
           "genre": "드라마",
-          "note": "프랑스: Un beau matin"
+          "note": "프랑스: Un beau matin",
+          "score": 72.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 9310,
+          "criticEstimated": false,
+          "metacritic": 86,
+          "rt": 92
         },
         {
           "id": "the-beast",
@@ -3603,7 +6601,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Beast",
           "ko": "더 비스트",
           "genre": "SF/드라마",
-          "note": "프랑스: La Bête"
+          "note": "프랑스: La Bête",
+          "score": 69.5,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 12936,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 87
         },
         {
           "id": "dune-2",
@@ -3611,7 +6616,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dune: Part Two",
           "ko": "듄: 파트 2",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 83.9,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 800190,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 92
         }
       ]
     },
@@ -3626,7 +6638,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Princess Diaries",
           "ko": "프린세스 다이어리",
           "genre": "코미디/로맨스",
-          "note": ""
+          "note": "",
+          "score": 59.8,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 186726,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 49
         },
         {
           "id": "other-side-heaven",
@@ -3634,7 +6653,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Other Side of Heaven",
           "ko": "아더 사이드 오브 헤븐",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 63.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 5188,
+          "criticEstimated": false,
+          "metacritic": 38,
+          "rt": 30
         },
         {
           "id": "nicholas-nickleby",
@@ -3642,7 +6668,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nicholas Nickleby",
           "ko": "니콜라스 니클비",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 71.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 15206,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 78
         },
         {
           "id": "ella-enchanted",
@@ -3650,7 +6683,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ella Enchanted",
           "ko": "엘라의 모험",
           "genre": "판타지/코미디",
-          "note": ""
+          "note": "",
+          "score": 60.0,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 82230,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 50
         },
         {
           "id": "princess-diaries-2",
@@ -3658,7 +6698,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Princess Diaries 2: Royal Engagement",
           "ko": "프린세스 다이어리 2",
           "genre": "코미디/로맨스",
-          "note": ""
+          "note": "",
+          "score": 52.4,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 99429,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 26
         },
         {
           "id": "havoc-ah",
@@ -3666,7 +6713,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Havoc",
           "ko": "헤이복",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 55.3,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 22340,
+          "criticEstimated": false,
+          "rt": 45
         },
         {
           "id": "brokeback",
@@ -3674,7 +6727,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Brokeback Mountain",
           "ko": "브로크백 마운틴",
           "genre": "로맨스/드라마",
-          "note": ""
+          "note": "",
+          "score": 80.4,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 423088,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 88
         },
         {
           "id": "devil-wears-prada",
@@ -3682,7 +6742,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Devil Wears Prada",
           "ko": "악마는 프라다를 입는다",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 69.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 575372,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 75
         },
         {
           "id": "becoming-jane",
@@ -3690,7 +6757,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Becoming Jane",
           "ko": "비커밍 제인",
           "genre": "전기/로맨스",
-          "note": ""
+          "note": "",
+          "score": 65.7,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 68861,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 58
         },
         {
           "id": "get-smart",
@@ -3698,7 +6772,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Get Smart",
           "ko": "겟 스마트",
           "genre": "액션/코미디",
-          "note": ""
+          "note": "",
+          "score": 61.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 241142,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 51
         },
         {
           "id": "passengers",
@@ -3706,7 +6787,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Passengers",
           "ko": "패신저스",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 53.3,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 41922,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 30
         },
         {
           "id": "rachel-getting",
@@ -3714,7 +6802,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rachel Getting Married",
           "ko": "레이첼, 결혼하다",
           "genre": "드라마",
-          "note": "오스카 여우주연 후보"
+          "note": "오스카 여우주연 후보",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 55167,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 84
         },
         {
           "id": "bride-wars",
@@ -3722,7 +6817,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bride Wars",
           "ko": "브라이드 워즈",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 43.8,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 125614,
+          "criticEstimated": false,
+          "metacritic": 24,
+          "rt": 10
         },
         {
           "id": "valentines-day",
@@ -3730,7 +6832,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Valentine's Day",
           "ko": "발렌타인 데이",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 48.6,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 132174,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 18
         },
         {
           "id": "love-other-drugs",
@@ -3738,7 +6847,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Love & Other Drugs",
           "ko": "러브 & 드럭스",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 62.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 256653,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 49
         },
         {
           "id": "one-day",
@@ -3746,7 +6862,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "One Day",
           "ko": "원 데이",
           "genre": "로맨스/드라마",
-          "note": ""
+          "note": "",
+          "score": 61.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 181894,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 37
         },
         {
           "id": "dark-knight-rises-ah",
@@ -3754,7 +6877,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dark Knight Rises",
           "ko": "다크 나이트 라이즈",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 83.1,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 2033839,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 87
         },
         {
           "id": "les-miserables-ah",
@@ -3762,7 +6892,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Les Misérables",
           "ko": "레미제라블",
           "genre": "뮤지컬/드라마",
-          "note": "오스카 여우조연상"
+          "note": "오스카 여우조연상",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 365667,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 70
         },
         {
           "id": "don-jon",
@@ -3770,7 +6907,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Don Jon",
           "ko": "돈 존",
           "genre": "코미디/로맨스",
-          "note": ""
+          "note": "",
+          "score": 67.3,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 256669,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 80
         },
         {
           "id": "interstellar-ah",
@@ -3778,7 +6922,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Interstellar",
           "ko": "인터스텔라",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 82.3,
+          "scoreEstimated": false,
+          "imdb": 8.7,
+          "imdbVotes": 2622703,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 73
         },
         {
           "id": "song-one",
@@ -3786,7 +6937,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Song One",
           "ko": "송 원",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 57.8,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 10790,
+          "criticEstimated": false,
+          "rt": 33
         },
         {
           "id": "intern",
@@ -3794,7 +6951,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Intern",
           "ko": "인턴",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 65.3,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 316197,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 59
         },
         {
           "id": "alice-looking",
@@ -3802,7 +6966,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Alice Through the Looking Glass",
           "ko": "이상한 나라의 앨리스: 거울 나라의 앨리스",
           "genre": "판타지",
-          "note": ""
+          "note": "",
+          "score": 52.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 137681,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 29
         },
         {
           "id": "colossal",
@@ -3810,7 +6981,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Colossal",
           "ko": "코로설",
           "genre": "SF/코미디",
-          "note": ""
+          "note": "",
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 76018,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 81
         },
         {
           "id": "oceans-8",
@@ -3818,7 +6996,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ocean's 8",
           "ko": "오션스 8",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 265751,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 69
         },
         {
           "id": "serenity-ah",
@@ -3826,7 +7011,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Serenity",
           "ko": "세레니티",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 46.1,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 50279,
+          "criticEstimated": false,
+          "rt": 21
         },
         {
           "id": "dark-waters",
@@ -3834,7 +7025,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dark Waters",
           "ko": "다크 워터스",
           "genre": "드라마/스릴러",
-          "note": ""
+          "note": "",
+          "score": 76.7,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 123888,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 89
         },
         {
           "id": "last-thing-wanted",
@@ -3842,7 +7040,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Last Thing He Wanted",
           "ko": "라스트 씽 히 원티드",
           "genre": "스릴러",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 46.3,
+          "scoreEstimated": false,
+          "imdb": 4.4,
+          "imdbVotes": 17758,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 5
         },
         {
           "id": "locked-down",
@@ -3850,7 +7055,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Locked Down",
           "ko": "락드 다운",
           "genre": "코미디/로맨스",
-          "note": ""
+          "note": "",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 5.3,
+          "imdbVotes": 14336,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 42
         },
         {
           "id": "armageddon-time",
@@ -3858,7 +7070,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Armageddon Time",
           "ko": "아마겟돈 타임",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.7,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 18438,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 75
         },
         {
           "id": "eileen",
@@ -3866,7 +7085,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Eileen",
           "ko": "아일린",
           "genre": "스릴러/드라마",
-          "note": ""
+          "note": "",
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 21076,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 82
         },
         {
           "id": "mothers-instinct",
@@ -3874,7 +7100,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mothers' Instinct",
           "ko": "마더스 인스팅트",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 63.1,
+          "scoreEstimated": true,
+          "imdb": 6.3,
+          "imdbVotes": 26219,
+          "criticEstimated": true
         },
         {
           "id": "idea-you",
@@ -3882,7 +7113,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Idea of You",
           "ko": "아이디어 오브 유",
           "genre": "로맨스",
-          "note": "Amazon"
+          "note": "Amazon",
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 90789,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 81
         }
       ]
     },
@@ -3897,7 +7135,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "About Time",
           "ko": "어바웃 타임",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 72.2,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 444652,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 71
         },
         {
           "id": "wolf-wall-street-mr",
@@ -3905,7 +7150,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Wolf of Wall Street",
           "ko": "울프 오브 월 스트리트",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 80.2,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1833065,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 80
         },
         {
           "id": "suite-francaise",
@@ -3913,7 +7165,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Suite Française",
           "ko": "수트 프랑세즈",
           "genre": "전쟁/로맨스",
-          "note": ""
+          "note": "",
+          "score": 69.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 30910,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 76
         },
         {
           "id": "focus",
@@ -3921,7 +7180,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Focus",
           "ko": "포커스",
           "genre": "범죄/코미디",
-          "note": ""
+          "note": "",
+          "score": 62.7,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 298112,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 56
         },
         {
           "id": "z-zachariah",
@@ -3929,7 +7195,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Z for Zachariah",
           "ko": "Z를 위하여",
           "genre": "SF/드라마",
-          "note": ""
+          "note": "",
+          "score": 64.8,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 35014,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 79
         },
         {
           "id": "whiskey-tango",
@@ -3937,7 +7210,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Whiskey Tango Foxtrot",
           "ko": "위스키 탱고 폭스트롯",
           "genre": "전쟁/코미디",
-          "note": ""
+          "note": "",
+          "score": 64.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 59407,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 67
         },
         {
           "id": "legend-tarzan",
@@ -3945,7 +7225,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Legend of Tarzan",
           "ko": "전설의 타잔",
           "genre": "어드벤처",
-          "note": ""
+          "note": "",
+          "score": 55.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 199942,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 35
         },
         {
           "id": "suicide-squad",
@@ -3953,7 +7240,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Suicide Squad",
           "ko": "수어사이드 스쿼드",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 50.6,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 768626,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 26
         },
         {
           "id": "i-tonya",
@@ -3961,7 +7255,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "I, Tonya",
           "ko": "아이, 토냐",
           "genre": "전기/드라마",
-          "note": "오스카 여우주연 후보"
+          "note": "오스카 여우주연 후보",
+          "score": 77.3,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 264496,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 90
         },
         {
           "id": "goodbye-christopher",
@@ -3969,7 +7270,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Goodbye Christopher Robin",
           "ko": "굿바이 크리스토퍼 로빈",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 68.8,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 32127,
+          "criticEstimated": false,
+          "rt": 64
         },
         {
           "id": "mary-queen",
@@ -3977,7 +7284,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mary Queen of Scots",
           "ko": "메리 퀸 오브 스코츠",
           "genre": "역사/드라마",
-          "note": ""
+          "note": "",
+          "score": 62.9,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 61435,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 62
         },
         {
           "id": "terminal",
@@ -3985,7 +7299,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Terminal",
           "ko": "터미널",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 48.5,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 27733,
+          "criticEstimated": false,
+          "rt": 21
         },
         {
           "id": "once-upon-mr",
@@ -3993,7 +7313,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Once Upon a Time in Hollywood",
           "ko": "원스 어폰 어 타임 인 할리우드",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 78.9,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 983070,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 85
         },
         {
           "id": "bombshell-mr",
@@ -4001,7 +7328,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bombshell",
           "ko": "밤쉘: 세상을 바꾼 폭탄선언",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 67.3,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 137927,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 68
         },
         {
           "id": "birds-of-prey",
@@ -4009,7 +7343,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Birds of Prey",
           "ko": "버즈 오브 프레이",
           "genre": "슈퍼히어로/액션",
-          "note": ""
+          "note": "",
+          "score": 62.8,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 286505,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 79
         },
         {
           "id": "dreamland",
@@ -4017,7 +7358,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dreamland",
           "ko": "드림랜드",
           "genre": "범죄/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.1,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 9570,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 60
         },
         {
           "id": "tss",
@@ -4025,7 +7373,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Suicide Squad",
           "ko": "더 수어사이드 스쿼드",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 74.4,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 467848,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 90
         },
         {
           "id": "amsterdam",
@@ -4033,7 +7388,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Amsterdam",
           "ko": "암스테르담",
           "genre": "코미디/미스터리",
-          "note": ""
+          "note": "",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 109571,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 32
         },
         {
           "id": "babylon",
@@ -4041,7 +7403,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Babylon",
           "ko": "바빌론",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 66.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 210952,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 56
         },
         {
           "id": "asteroid-city",
@@ -4049,7 +7418,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Asteroid City",
           "ko": "애스터로이드 시티",
           "genre": "코미디/드라마",
-          "note": ""
+          "note": "",
+          "score": 68.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 147603,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 75
         },
         {
           "id": "barbie",
@@ -4057,7 +7433,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Barbie",
           "ko": "바비",
           "genre": "코미디/판타지",
-          "note": ""
+          "note": "",
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 708721,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 88
         },
         {
           "id": "my-old-ass",
@@ -4065,7 +7448,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "My Old Ass",
           "ko": "마이 올드 애스",
           "genre": "코미디/드라마",
-          "note": "카메오·제작"
+          "note": "카메오·제작",
+          "score": 72.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 49130,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 90
         }
       ]
     },
@@ -4080,7 +7470,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Youngblood",
           "ko": "영블러드",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 16078,
+          "criticEstimated": false,
+          "rt": 44
         },
         {
           "id": "rivers-edge",
@@ -4088,7 +7484,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "River's Edge",
           "ko": "리버즈 에지",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 70.9,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 23842,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 88
         },
         {
           "id": "night-before",
@@ -4096,7 +7499,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Night Before",
           "ko": "더 나이트 비포",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 66.0,
+          "scoreEstimated": true,
+          "imdb": 6.1,
+          "imdbVotes": 4208,
+          "criticEstimated": true
         },
         {
           "id": "permanent-record",
@@ -4104,7 +7512,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Permanent Record",
           "ko": "퍼머넌트 레코드",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 66.5,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 2515,
+          "criticEstimated": false,
+          "rt": 47
         },
         {
           "id": "prince-pennsylvania",
@@ -4112,7 +7526,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Prince of Pennsylvania",
           "ko": "프린스 오브 펜실베이니아",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 64.8,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 1586,
+          "criticEstimated": false,
+          "rt": 14
         },
         {
           "id": "dangerous-liaisons",
@@ -4120,7 +7540,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dangerous Liaisons",
           "ko": "위험한 관계",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 76.7,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 80996,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 94
         },
         {
           "id": "bill-ted",
@@ -4128,7 +7555,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bill & Ted's Excellent Adventure",
           "ko": "빌과 테드의 미친 모험",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 151236,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 81
         },
         {
           "id": "parenthood-kr",
@@ -4136,7 +7570,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Parenthood",
           "ko": "페어런트후드",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 75.2,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 59793,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 91
         },
         {
           "id": "love-you-death",
@@ -4144,7 +7585,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "I Love You to Death",
           "ko": "아이 러브 유 투 데스",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 62.4,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 16730,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 58
         },
         {
           "id": "tune-tomorrow",
@@ -4152,7 +7600,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tune in Tomorrow",
           "ko": "튠 인 투모로우",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 2160,
+          "criticEstimated": false,
+          "rt": 55
         },
         {
           "id": "point-break",
@@ -4160,7 +7614,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Point Break",
           "ko": "포인트 브레이크",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 69.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 230819,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 69
         },
         {
           "id": "bill-ted-2",
@@ -4168,7 +7629,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bill & Ted's Bogus Journey",
           "ko": "빌과 테드의 가짜 여행",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 62.3,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 85884,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 57
         },
         {
           "id": "my-own-private-idaho",
@@ -4176,7 +7644,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "My Own Private Idaho",
           "ko": "마이 프라이빗 아이다호",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 68215,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 80
         },
         {
           "id": "bram-dracula",
@@ -4184,7 +7659,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bram Stoker's Dracula",
           "ko": "브램 스토커의 드라큘라",
           "genre": "공포",
-          "note": ""
+          "note": "",
+          "score": 69.8,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 272165,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 69
         },
         {
           "id": "much-ado-kr",
@@ -4192,7 +7674,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Much Ado About Nothing",
           "ko": "헛소동",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 77.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 56396,
+          "criticEstimated": false,
+          "rt": 90
         },
         {
           "id": "little-buddha",
@@ -4200,7 +7688,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Little Buddha",
           "ko": "리틀 부다",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 19455,
+          "criticEstimated": false,
+          "rt": 65
         },
         {
           "id": "speed",
@@ -4208,7 +7702,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Speed",
           "ko": "스피드",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 77.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 429130,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 95
         },
         {
           "id": "johnny-mnemonic",
@@ -4216,7 +7717,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Johnny Mnemonic",
           "ko": "조니 니모닉",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 48.7,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 82487,
+          "criticEstimated": false,
+          "metacritic": 36,
+          "rt": 20
         },
         {
           "id": "walk-clouds",
@@ -4224,7 +7732,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Walk in the Clouds",
           "ko": "클라우드 속 산책",
           "genre": "로맨스",
-          "note": ""
+          "note": "",
+          "score": 61.4,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 39612,
+          "criticEstimated": false,
+          "rt": 46
         },
         {
           "id": "chain-reaction",
@@ -4232,7 +7746,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Chain Reaction",
           "ko": "체인 리액션",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 46.5,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 59340,
+          "criticEstimated": false,
+          "rt": 18
         },
         {
           "id": "feeling-minnesota",
@@ -4240,7 +7760,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Feeling Minnesota",
           "ko": "필링 미네소타",
           "genre": "범죄/로맨스",
-          "note": ""
+          "note": "",
+          "score": 51.8,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 12135,
+          "criticEstimated": false,
+          "rt": 14
         },
         {
           "id": "devils-advocate-kr",
@@ -4248,7 +7774,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Devil's Advocate",
           "ko": "디블스 어드보킷",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 70.2,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 453972,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 63
         },
         {
           "id": "matrix",
@@ -4256,7 +7789,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Matrix",
           "ko": "매트릭스",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 83.5,
+          "scoreEstimated": false,
+          "imdb": 8.7,
+          "imdbVotes": 2287638,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 83
         },
         {
           "id": "replacements",
@@ -4264,7 +7804,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Replacements",
           "ko": "리플레이스먼트",
           "genre": "스포츠/코미디",
-          "note": ""
+          "note": "",
+          "score": 57.1,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 75411,
+          "criticEstimated": false,
+          "metacritic": 30,
+          "rt": 41
         },
         {
           "id": "the-watcher",
@@ -4272,7 +7819,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Watcher",
           "ko": "와처",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 46.7,
+          "scoreEstimated": false,
+          "imdb": 5.3,
+          "imdbVotes": 29850,
+          "criticEstimated": false,
+          "metacritic": 22,
+          "rt": 11
         },
         {
           "id": "the-gift",
@@ -4280,7 +7834,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Gift",
           "ko": "더 기프트",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 65.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 82742,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 57
         },
         {
           "id": "sweet-november-kr",
@@ -4288,7 +7849,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Sweet November",
           "ko": "스위트 노벰버",
           "genre": "로맨스",
-          "note": ""
+          "note": "",
+          "score": 52.9,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 99902,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 15
         },
         {
           "id": "hardball",
@@ -4296,7 +7864,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hardball",
           "ko": "하드볼",
           "genre": "스포츠/드라마",
-          "note": ""
+          "note": "",
+          "score": 59.7,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 36636,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 42
         },
         {
           "id": "matrix-reloaded",
@@ -4304,7 +7879,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Matrix Reloaded",
           "ko": "매트릭스 리로디드",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 70.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 678377,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 73
         },
         {
           "id": "matrix-revolutions",
@@ -4312,7 +7894,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Matrix Revolutions",
           "ko": "매트릭스 레볼루션",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 58.9,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 581553,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 33
         },
         {
           "id": "somethings-gotta-give",
@@ -4320,7 +7909,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Something's Gotta Give",
           "ko": "사랑할 때 버려야 할 아까운 것들",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 68.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 141652,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 72
         },
         {
           "id": "constantine",
@@ -4328,7 +7924,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Constantine",
           "ko": "콘스탄틴",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 62.6,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 414760,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 46
         },
         {
           "id": "thumbsucker",
@@ -4336,7 +7939,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Thumbsucker",
           "ko": "썸석커",
           "genre": "드라마/코미디",
-          "note": ""
+          "note": "",
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 22642,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 71
         },
         {
           "id": "scanner-darkly",
@@ -4344,7 +7954,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Scanner Darkly",
           "ko": "스케너 다클리",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 70.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 122779,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 68
         },
         {
           "id": "lake-house",
@@ -4352,7 +7969,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Lake House",
           "ko": "레이크 하우스",
           "genre": "로맨스/판타지",
-          "note": ""
+          "note": "",
+          "score": 60.5,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 167262,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 35
         },
         {
           "id": "street-kings",
@@ -4360,7 +7984,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Street Kings",
           "ko": "스트리트 킹즈",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 61.3,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 131181,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 36
         },
         {
           "id": "day-earth-stood",
@@ -4368,7 +7999,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Day the Earth Stood Still",
           "ko": "지구가 멈추는 날",
           "genre": "SF",
-          "note": ""
+          "note": "",
+          "score": 48.0,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 189229,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 21
         },
         {
           "id": "pippa-lee",
@@ -4376,7 +8014,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Private Lives of Pippa Lee",
           "ko": "피파 리의 사생활",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 63.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 14824,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 70
         },
         {
           "id": "henrys-crime",
@@ -4384,7 +8029,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Henry's Crime",
           "ko": "헨리의 범죄",
           "genre": "코미디/범죄",
-          "note": ""
+          "note": "",
+          "score": 58.2,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 22489,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 42
         },
         {
           "id": "man-tai-chi",
@@ -4392,7 +8044,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Man of Tai Chi",
           "ko": "맨 오브 타이치",
           "genre": "액션",
-          "note": "감독·출연"
+          "note": "감독·출연",
+          "score": 61.0,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 42649,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 70
         },
         {
           "id": "47-ronin",
@@ -4400,7 +8059,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "47 Ronin",
           "ko": "47로닌",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 50.0,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 181497,
+          "criticEstimated": false,
+          "metacritic": 28,
+          "rt": 16
         },
         {
           "id": "john-wick",
@@ -4408,7 +8074,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "John Wick",
           "ko": "존 윅",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 75.0,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 843576,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 86
         },
         {
           "id": "knock-knock",
@@ -4416,7 +8089,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Knock Knock",
           "ko": "낙낙",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 49.3,
+          "scoreEstimated": false,
+          "imdb": 4.9,
+          "imdbVotes": 117506,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 37
         },
         {
           "id": "neon-demon",
@@ -4424,7 +8104,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Neon Demon",
           "ko": "네온 데몬",
           "genre": "스릴러/공포",
-          "note": ""
+          "note": "",
+          "score": 59.3,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 112682,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 59
         },
         {
           "id": "whole-truth",
@@ -4432,7 +8119,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Whole Truth",
           "ko": "홀 트루스",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 57.3,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 37352,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 34
         },
         {
           "id": "bad-batch",
@@ -4440,7 +8134,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bad Batch",
           "ko": "배드 배치",
           "genre": "SF/드라마",
-          "note": ""
+          "note": "",
+          "score": 56.2,
+          "scoreEstimated": false,
+          "imdb": 5.2,
+          "imdbVotes": 38330,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 52
         },
         {
           "id": "to-the-bone",
@@ -4448,7 +8149,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "To the Bone",
           "ko": "투 더 본",
           "genre": "드라마",
-          "note": "Netflix"
+          "note": "Netflix",
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 60247,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 70
         },
         {
           "id": "john-wick-2",
@@ -4456,7 +8164,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "John Wick: Chapter 2",
           "ko": "존 윅: 리로드",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 76.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 580801,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 89
         },
         {
           "id": "destination-wedding",
@@ -4464,7 +8179,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Destination Wedding",
           "ko": "데스티네이션 웨딩",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 58.1,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 37096,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 51
         },
         {
           "id": "siberia",
@@ -4472,7 +8194,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Siberia",
           "ko": "시베리아",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 45.8,
+          "scoreEstimated": false,
+          "imdb": 4.3,
+          "imdbVotes": 19003,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 12
         },
         {
           "id": "replicas",
@@ -4480,7 +8209,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Replicas",
           "ko": "레플리카",
           "genre": "SF/스릴러",
-          "note": ""
+          "note": "",
+          "score": 44.1,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 45926,
+          "criticEstimated": false,
+          "rt": 11
         },
         {
           "id": "john-wick-3",
@@ -4488,7 +8223,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "John Wick: Chapter 3 – Parabellum",
           "ko": "존 윅 3: 파라벨룸",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 75.8,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 490025,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 89
         },
         {
           "id": "toy-story-4",
@@ -4496,7 +8238,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Toy Story 4",
           "ko": "토이 스토리 4",
           "genre": "애니메이션",
-          "note": "목소리 · 듀크 카붐"
+          "note": "목소리 · 듀크 카붐",
+          "score": 80.2,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 332159,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 96
         },
         {
           "id": "bill-ted-3",
@@ -4504,7 +8253,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bill & Ted Face the Music",
           "ko": "빌과 테드 페이스 더 뮤직",
           "genre": "코미디",
-          "note": ""
+          "note": "",
+          "score": 63.9,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 57458,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 82
         },
         {
           "id": "matrix-resurrections",
@@ -4512,7 +8268,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Matrix Resurrections",
           "ko": "매트릭스: 리저렉션",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 58.6,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 307780,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 63
         },
         {
           "id": "john-wick-4",
@@ -4520,7 +8283,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "John Wick: Chapter 4",
           "ko": "존 윅 4",
           "genre": "액션",
-          "note": ""
+          "note": "",
+          "score": 78.8,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 421459,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 94
         }
       ]
     },
@@ -4535,7 +8305,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Erskineville Kings",
           "ko": "어스킨빌 킹스",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 68.4,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 749,
+          "criticEstimated": true
         },
         {
           "id": "paperback-hero",
@@ -4543,7 +8318,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Paperback Hero",
           "ko": "페이퍼백 히어로",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 67.5,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 2737,
+          "criticEstimated": true
         },
         {
           "id": "x-men",
@@ -4551,7 +8331,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "X-Men",
           "ko": "엑스맨",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 72.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 707906,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 82
         },
         {
           "id": "someone-like-you",
@@ -4559,7 +8346,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Someone like You",
           "ko": "썸원 라이크 유",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 28114,
+          "criticEstimated": false,
+          "metacritic": 32,
+          "rt": 41
         },
         {
           "id": "kate-leopold",
@@ -4567,7 +8361,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kate & Leopold",
           "ko": "케이트 & 레오폴드",
           "genre": "로맨스/코미디",
-          "note": ""
+          "note": "",
+          "score": 59.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 94990,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 52
         },
         {
           "id": "swordfish",
@@ -4575,7 +8376,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Swordfish",
           "ko": "소드피쉬",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 53.4,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 204930,
+          "criticEstimated": false,
+          "metacritic": 32,
+          "rt": 27
         },
         {
           "id": "x2",
@@ -4583,7 +8391,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "X2",
           "ko": "엑스맨 2",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 74.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 622598,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 85
         },
         {
           "id": "van-helsing",
@@ -4591,7 +8406,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Van Helsing",
           "ko": "반 헬싱",
           "genre": "액션/판타지",
-          "note": ""
+          "note": "",
+          "score": 50.9,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 311084,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 24
         },
         {
           "id": "x-men-last-stand",
@@ -4599,7 +8421,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "X-Men: The Last Stand",
           "ko": "엑스맨: 최후의 전쟁",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 582259,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 56
         },
         {
           "id": "scoop",
@@ -4607,7 +8436,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Scoop",
           "ko": "스쿱",
           "genre": "코미디/미스터리",
-          "note": ""
+          "note": "",
+          "score": 59.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 91210,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 42
         },
         {
           "id": "prestige",
@@ -4615,7 +8451,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Prestige",
           "ko": "프레스티지",
           "genre": "미스터리/스릴러",
-          "note": ""
+          "note": "",
+          "score": 79.9,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1634949,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 77
         },
         {
           "id": "flushed-away",
@@ -4623,7 +8466,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Flushed Away",
           "ko": "플러쉬드 어웨이",
           "genre": "애니메이션",
-          "note": "목소리"
+          "note": "목소리",
+          "score": 68.5,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 151985,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 72
         },
         {
           "id": "happy-feet",
@@ -4631,7 +8481,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Happy Feet",
           "ko": "해피 피트",
           "genre": "애니메이션",
-          "note": "목소리"
+          "note": "목소리",
+          "score": 68.4,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 216416,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 76
         },
         {
           "id": "deception-hj",
@@ -4639,7 +8496,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Deception",
           "ko": "디셉션",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 50.7,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 42447,
+          "criticEstimated": false,
+          "metacritic": 31,
+          "rt": 11
         },
         {
           "id": "australia",
@@ -4647,7 +8511,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Australia",
           "ko": "오스트레일리아",
           "genre": "드라마/로맨스",
-          "note": ""
+          "note": "",
+          "score": 61.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 134549,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 53
         },
         {
           "id": "x-men-origins",
@@ -4655,7 +8526,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "X-Men Origins: Wolverine",
           "ko": "엑스맨 오리진: 울버린",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 577747,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 37
         },
         {
           "id": "real-steel",
@@ -4663,7 +8541,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Real Steel",
           "ko": "리얼 스틸",
           "genre": "SF/스포츠",
-          "note": ""
+          "note": "",
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 385739,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 60
         },
         {
           "id": "snow-flower",
@@ -4671,7 +8556,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Snow Flower and the Secret Fan",
           "ko": "설화와 비밀의 부채",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 62.0,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 4200,
+          "criticEstimated": false,
+          "rt": 22
         },
         {
           "id": "les-miserables-hj",
@@ -4679,7 +8570,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Les Misérables",
           "ko": "레미제라블",
           "genre": "뮤지컬/드라마",
-          "note": "오스카 남우주연 후보"
+          "note": "오스카 남우주연 후보",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 365667,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 70
         },
         {
           "id": "wolverine",
@@ -4687,7 +8585,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Wolverine",
           "ko": "더 울버린",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 532244,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 71
         },
         {
           "id": "prisoners",
@@ -4695,7 +8600,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Prisoners",
           "ko": "프리즈너스",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 79.4,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 964091,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 82
         },
         {
           "id": "x-men-dofp",
@@ -4703,7 +8615,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "X-Men: Days of Future Past",
           "ko": "엑스맨: 데이즈 오브 퓨처 패스트",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 79.6,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 800138,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 90
         },
         {
           "id": "chappie",
@@ -4711,7 +8630,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Chappie",
           "ko": "채피",
           "genre": "SF/액션",
-          "note": ""
+          "note": "",
+          "score": 57.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 286529,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 32
         },
         {
           "id": "pan",
@@ -4719,7 +8645,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Pan",
           "ko": "팬",
           "genre": "판타지/어드벤처",
-          "note": ""
+          "note": "",
+          "score": 50.4,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 70291,
+          "criticEstimated": false,
+          "metacritic": 36,
+          "rt": 26
         },
         {
           "id": "eddie-eagle",
@@ -4727,7 +8660,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Eddie the Eagle",
           "ko": "에디 더 이글",
           "genre": "스포츠/코미디",
-          "note": ""
+          "note": "",
+          "score": 70.1,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 108865,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 81
         },
         {
           "id": "logan",
@@ -4735,7 +8675,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Logan",
           "ko": "로건",
           "genre": "슈퍼히어로/드라마",
-          "note": ""
+          "note": "",
+          "score": 81.7,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 944266,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 93
         },
         {
           "id": "greatest-showman",
@@ -4743,7 +8690,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Greatest Showman",
           "ko": "위대한 쇼맨",
           "genre": "뮤지컬",
-          "note": ""
+          "note": "",
+          "score": 66.9,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 354888,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 57
         },
         {
           "id": "front-runner",
@@ -4751,7 +8705,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Front Runner",
           "ko": "프론트 러너",
           "genre": "전기/드라마",
-          "note": ""
+          "note": "",
+          "score": 63.3,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 15181,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 58
         },
         {
           "id": "missing-link",
@@ -4759,7 +8720,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Missing Link",
           "ko": "미싱 링크",
           "genre": "애니메이션",
-          "note": "목소리"
+          "note": "목소리",
+          "score": 69.7,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 31373,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 88
         },
         {
           "id": "reminiscence",
@@ -4767,7 +8735,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Reminiscence",
           "ko": "레미니센스",
           "genre": "SF/로맨스",
-          "note": ""
+          "note": "",
+          "score": 54.7,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 71807,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 37
         },
         {
           "id": "the-son",
@@ -4775,7 +8750,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Son",
           "ko": "더 선",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 59.6,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 21727,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 29
         },
         {
           "id": "deadpool-wolverine",
@@ -4783,7 +8765,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Deadpool & Wolverine",
           "ko": "데드풀과 울버린",
           "genre": "슈퍼히어로",
-          "note": ""
+          "note": "",
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 598676,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 78
         },
         {
           "id": "song-sung-blue",
@@ -4791,7 +8780,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Song Sung Blue",
           "ko": "송 성 블루",
           "genre": "전기/뮤지컬",
-          "note": ""
+          "note": "",
+          "score": 73.4,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 33857,
+          "criticEstimated": false,
+          "rt": 77
         }
       ]
     },
@@ -4806,7 +8801,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mummy Returns",
           "ko": "미이라 2",
           "genre": "액션/어드벤처",
-          "note": "장편 데뷔 · 스콜피언 킹"
+          "note": "장편 데뷔 · 스콜피언 킹",
+          "score": 58.4,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 372330,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 46
         },
         {
           "id": "scorpion-king",
@@ -4814,7 +8816,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Scorpion King",
           "ko": "스코피언 킹",
           "genre": "액션/판타지",
-          "note": "첫 주연 · 마타이어스"
+          "note": "첫 주연 · 마타이어스",
+          "score": 51.8,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 153156,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 41
         },
         {
           "id": "the-rundown",
@@ -4822,7 +8831,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Rundown",
           "ko": "웰컴 투 더 정글",
           "genre": "액션/코미디",
-          "note": "회수 전문가 벡"
+          "note": "회수 전문가 벡",
+          "score": 65.1,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 149302,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 69
         },
         {
           "id": "walking-tall",
@@ -4830,7 +8846,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Walking Tall",
           "ko": "워킹 톨",
           "genre": "액션",
-          "note": "크리스 본"
+          "note": "크리스 본",
+          "score": 54.3,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 114227,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 26
         },
         {
           "id": "be-cool",
@@ -4838,7 +8861,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Be Cool",
           "ko": "쿨!",
           "genre": "범죄/코미디",
-          "note": "보디가드 엘리엇"
+          "note": "보디가드 엘리엇",
+          "score": 50.3,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 75525,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 30
         },
         {
           "id": "doom",
@@ -4846,7 +8876,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Doom",
           "ko": "둠",
           "genre": "SF/액션",
-          "note": "사지(Sarge)"
+          "note": "사지(Sarge)",
+          "score": 44.9,
+          "scoreEstimated": false,
+          "imdb": 5.2,
+          "imdbVotes": 125329,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 18
         },
         {
           "id": "southland-tales",
@@ -4854,7 +8891,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Southland Tales",
           "ko": "사우스랜드 테일",
           "genre": "SF/코미디",
-          "note": "박서 산타로스"
+          "note": "박서 산타로스",
+          "score": 52.2,
+          "scoreEstimated": false,
+          "imdb": 5.3,
+          "imdbVotes": 42620,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 40
         },
         {
           "id": "gridiron-gang",
@@ -4862,7 +8906,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gridiron Gang",
           "ko": "그리다이언 갱",
           "genre": "스포츠/드라마",
-          "note": "실화 바탕 · 숀 포터"
+          "note": "실화 바탕 · 숀 포터",
+          "score": 62.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 83564,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 42
         },
         {
           "id": "game-plan",
@@ -4870,7 +8921,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Game Plan",
           "ko": "게임 플랜",
           "genre": "코미디",
-          "note": "쿼터백 조 킹먼"
+          "note": "쿼터백 조 킹먼",
+          "score": 51.9,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 104938,
+          "criticEstimated": false,
+          "rt": 29
         },
         {
           "id": "get-smart",
@@ -4878,7 +8935,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Get Smart",
           "ko": "겟 스마트",
           "genre": "액션/코미디",
-          "note": "에이전트 23"
+          "note": "에이전트 23",
+          "score": 61.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 241142,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 51
         },
         {
           "id": "race-to-witch-mountain",
@@ -4886,7 +8950,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Race to Witch Mountain",
           "ko": "윗치 마운틴",
           "genre": "SF/어드벤처",
-          "note": "택시 기사 잭 브루노"
+          "note": "택시 기사 잭 브루노",
+          "score": 55.3,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 67020,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 42
         },
         {
           "id": "planet-51",
@@ -4894,7 +8965,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Planet 51",
           "ko": "플래닛 51",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 척 베이커 선장"
+          "note": "목소리 출연 · 척 베이커 선장",
+          "score": 52.6,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 62834,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 23
         },
         {
           "id": "tooth-fairy",
@@ -4902,7 +8980,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Tooth Fairy",
           "ko": "미스터 이빨요정",
           "genre": "코미디",
-          "note": "데릭 톰프슨"
+          "note": "데릭 톰프슨",
+          "score": 46.3,
+          "scoreEstimated": false,
+          "imdb": 5.1,
+          "imdbVotes": 54129,
+          "criticEstimated": false,
+          "metacritic": 36,
+          "rt": 17
         },
         {
           "id": "the-other-guys",
@@ -4910,7 +8995,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Other Guys",
           "ko": "스탠바이 캅",
           "genre": "액션/코미디",
-          "note": "조연 · 하이스미스 형사"
+          "note": "조연 · 하이스미스 형사",
+          "score": 68.1,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 314278,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 79
         },
         {
           "id": "faster",
@@ -4918,7 +9010,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Faster",
           "ko": "복수자",
           "genre": "액션/스릴러",
-          "note": "드라이버"
+          "note": "드라이버",
+          "score": 57.6,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 118001,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 42
         },
         {
           "id": "fast-five",
@@ -4926,7 +9025,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fast Five",
           "ko": "분노의 질주: 언리미티드",
           "genre": "액션",
-          "note": "루크 홉스 첫 등장"
+          "note": "루크 홉스 첫 등장",
+          "score": 72.2,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 439753,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 78
         },
         {
           "id": "journey-2",
@@ -4934,7 +9040,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Journey 2: The Mysterious Island",
           "ko": "잃어버린 세계를 찾아서 2: 신비의 섬",
           "genre": "어드벤처",
-          "note": "행크"
+          "note": "행크",
+          "score": 52.9,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 122977,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 45
         },
         {
           "id": "snitch",
@@ -4942,7 +9055,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Snitch",
           "ko": "스니치",
           "genre": "범죄/스릴러",
-          "note": "존 매튜스"
+          "note": "존 매튜스",
+          "score": 61.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 96621,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 57
         },
         {
           "id": "gi-joe-retaliation",
@@ -4950,7 +9070,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "G.I. Joe: Retaliation",
           "ko": "지.아이.조 2",
           "genre": "SF/액션",
-          "note": "로드블록"
+          "note": "로드블록",
+          "score": 50.5,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 194375,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 29
         },
         {
           "id": "pain-and-gain",
@@ -4958,7 +9085,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Pain & Gain",
           "ko": "페인 앤 게인",
           "genre": "범죄/코미디",
-          "note": "실화 바탕 · 폴 도일"
+          "note": "실화 바탕 · 폴 도일",
+          "score": 58.3,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 243609,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 49
         },
         {
           "id": "fast-and-furious-6",
@@ -4966,7 +9100,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fast & Furious 6",
           "ko": "분노의 질주: 더 맥시멈",
           "genre": "액션",
-          "note": "루크 홉스"
+          "note": "루크 홉스",
+          "score": 68.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 445718,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 71
         },
         {
           "id": "hercules",
@@ -4974,7 +9115,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hercules",
           "ko": "허큘리스",
           "genre": "액션/판타지",
-          "note": "허큘리스 역"
+          "note": "허큘리스 역",
+          "score": 57.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 174579,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 58
         },
         {
           "id": "furious-7",
@@ -4982,7 +9130,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Furious 7",
           "ko": "분노의 질주: 더 세븐",
           "genre": "액션",
-          "note": "루크 홉스"
+          "note": "루크 홉스",
+          "score": 71.5,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 446082,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 81
         },
         {
           "id": "san-andreas",
@@ -4990,7 +9145,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "San Andreas",
           "ko": "샌 안드레아스",
           "genre": "재난/액션",
-          "note": "구조헬기 조종사 레이"
+          "note": "구조헬기 조종사 레이",
+          "score": 55.8,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 279736,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 48
         },
         {
           "id": "central-intelligence",
@@ -4998,7 +9160,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Central Intelligence",
           "ko": "센트럴 인텔리전스",
           "genre": "액션/코미디",
-          "note": "밥 스톤 · 케빈 하트 공연"
+          "note": "밥 스톤 · 케빈 하트 공연",
+          "score": 62.0,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 243371,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 71
         },
         {
           "id": "moana",
@@ -5006,7 +9175,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Moana",
           "ko": "모아나",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 마우이"
+          "note": "목소리 출연 · 마우이",
+          "score": 79.5,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 451980,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 95
         },
         {
           "id": "fate-of-the-furious",
@@ -5014,7 +9190,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Fate of the Furious",
           "ko": "분노의 질주: 더 익스트림",
           "genre": "액션",
-          "note": "루크 홉스"
+          "note": "루크 홉스",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 279631,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 67
         },
         {
           "id": "baywatch",
@@ -5022,7 +9205,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Baywatch",
           "ko": "베이워치: SOS 해상 구조대",
           "genre": "액션/코미디",
-          "note": "미치 뷰캐넌"
+          "note": "미치 뷰캐넌",
+          "score": 46.7,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 222340,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 17
         },
         {
           "id": "jumanji-welcome",
@@ -5030,7 +9220,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jumanji: Welcome to the Jungle",
           "ko": "쥬만지: 새로운 세계",
           "genre": "어드벤처/코미디",
-          "note": "브레이브스톤 박사"
+          "note": "브레이브스톤 박사",
+          "score": 67.8,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 514073,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 77
         },
         {
           "id": "rampage",
@@ -5038,7 +9235,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rampage",
           "ko": "램페이지",
           "genre": "SF/액션",
-          "note": "영장류학자 데이비스 오코예"
+          "note": "영장류학자 데이비스 오코예",
+          "score": 56.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 205318,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 51
         },
         {
           "id": "skyscraper",
@@ -5046,7 +9250,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Skyscraper",
           "ko": "스카이스크래퍼",
           "genre": "액션/스릴러",
-          "note": "윌 소여"
+          "note": "윌 소여",
+          "score": 55.8,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 147730,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 48
         },
         {
           "id": "hobbs-and-shaw",
@@ -5054,7 +9265,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Fast & Furious Presents: Hobbs & Shaw",
           "ko": "분노의 질주: 홉스&쇼",
           "genre": "액션",
-          "note": "스핀오프 · 루크 홉스"
+          "note": "스핀오프 · 루크 홉스",
+          "score": 63.7,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 262255,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 67
         },
         {
           "id": "jumanji-next-level",
@@ -5062,7 +9280,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jumanji: The Next Level",
           "ko": "쥬만지: 넥스트 레벨",
           "genre": "어드벤처/코미디",
-          "note": "브레이브스톤 박사"
+          "note": "브레이브스톤 박사",
+          "score": 65.2,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 326589,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 72
         },
         {
           "id": "jungle-cruise",
@@ -5070,7 +9295,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Jungle Cruise",
           "ko": "정글 크루즈",
           "genre": "어드벤처",
-          "note": "프랭크 선장"
+          "note": "프랭크 선장",
+          "score": 61.7,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 230408,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 62
         },
         {
           "id": "red-notice",
@@ -5078,7 +9310,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Red Notice",
           "ko": "레드 노티스",
           "genre": "액션/코미디",
-          "note": "Netflix · FBI 요원 하틀리"
+          "note": "Netflix · FBI 요원 하틀리",
+          "score": 54.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 361571,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 36
         },
         {
           "id": "dc-super-pets",
@@ -5086,7 +9325,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "DC League of Super-Pets",
           "ko": "DC 리그 오브 슈퍼-펫",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 크립토"
+          "note": "목소리 출연 · 크립토",
+          "score": 66.5,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 81050,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 73
         },
         {
           "id": "black-adam",
@@ -5094,7 +9340,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Black Adam",
           "ko": "블랙 아담",
           "genre": "슈퍼히어로",
-          "note": "블랙 아담 역"
+          "note": "블랙 아담 역",
+          "score": 54.0,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 309881,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 38
         },
         {
           "id": "red-one",
@@ -5102,7 +9355,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Red One",
           "ko": "레드 원",
           "genre": "액션/코미디",
-          "note": "칼럼 드리프트"
+          "note": "칼럼 드리프트",
+          "score": 52.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 162434,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 30
         },
         {
           "id": "moana-2",
@@ -5110,7 +9370,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Moana 2",
           "ko": "모아나 2",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 마우이"
+          "note": "목소리 출연 · 마우이",
+          "score": 62.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 130792,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 61
         },
         {
           "id": "smashing-machine",
@@ -5118,7 +9385,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Smashing Machine",
           "ko": "더 스매싱 머신",
           "genre": "전기/스포츠",
-          "note": "마크 커 · 골든글로브 남우주연 후보"
+          "note": "마크 커 · 골든글로브 남우주연 후보",
+          "score": 65.6,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 78623,
+          "criticEstimated": false,
+          "rt": 70
         },
         {
           "id": "moana-live-action",
@@ -5126,7 +9399,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Moana",
           "ko": "모아나",
           "genre": "뮤지컬/어드벤처",
-          "note": "실사판 · 마우이"
+          "note": "실사판 · 마우이",
+          "score": 60.3,
+          "scoreEstimated": true,
+          "imdb": 5.8,
+          "imdbVotes": 19652,
+          "criticEstimated": true
         }
       ]
     },
@@ -5141,7 +9419,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Excalibur",
           "ko": "엑스칼리버",
           "genre": "판타지/어드벤처",
-          "note": "가웨인 역"
+          "note": "가웨인 역",
+          "score": 69.4,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 75160,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 72
         },
         {
           "id": "krull",
@@ -5149,7 +9434,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Krull",
           "ko": "혹성의 위기",
           "genre": "판타지/SF",
-          "note": "케건 역"
+          "note": "케건 역",
+          "score": 56.6,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 39964,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 35
         },
         {
           "id": "the-bounty",
@@ -5157,7 +9449,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bounty",
           "ko": "바운티 호의 반란",
           "genre": "역사/드라마",
-          "note": "찰스 처칠 역"
+          "note": "찰스 처칠 역",
+          "score": 71.5,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 35544,
+          "criticEstimated": false,
+          "rt": 74
         },
         {
           "id": "lamb",
@@ -5165,7 +9463,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lamb",
           "ko": "램",
           "genre": "드라마",
-          "note": "주연 · 마이클 램 수사"
+          "note": "주연 · 마이클 램 수사",
+          "score": 68.4,
+          "scoreEstimated": true,
+          "imdb": 6.3,
+          "imdbVotes": 763,
+          "criticEstimated": true
         },
         {
           "id": "the-innocent",
@@ -5173,7 +9476,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Innocent",
           "ko": "이노센트",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 68.7,
+          "scoreEstimated": true,
+          "imdb": 5.1,
+          "imdbVotes": 155,
+          "criticEstimated": true
         },
         {
           "id": "the-mission",
@@ -5181,7 +9489,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Mission",
           "ko": "미션",
           "genre": "역사/드라마",
-          "note": "필딩 신부"
+          "note": "필딩 신부",
+          "score": 69.1,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 70639,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 66
         },
         {
           "id": "duet-for-one",
@@ -5189,7 +9504,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Duet for One",
           "ko": "듀엣 포 원",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 68.6,
+          "scoreEstimated": true,
+          "imdb": 6.7,
+          "imdbVotes": 1115,
+          "criticEstimated": true
         },
         {
           "id": "suspect",
@@ -5197,7 +9517,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Suspect",
           "ko": "의혹의 밤",
           "genre": "법정/스릴러",
-          "note": "청각장애 노숙인 용의자"
+          "note": "청각장애 노숙인 용의자",
+          "score": 68.0,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 13273,
+          "criticEstimated": false,
+          "rt": 71
         },
         {
           "id": "prayer-for-the-dying",
@@ -5205,7 +9531,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Prayer for the Dying",
           "ko": "죽는 자를 위한 기도",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 64.3,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 6491,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "satisfaction",
@@ -5213,7 +9545,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Satisfaction",
           "ko": "새티스팩션",
           "genre": "드라마/음악",
-          "note": ""
+          "note": "",
+          "score": 61.0,
+          "scoreEstimated": false,
+          "imdb": 5.0,
+          "imdbVotes": 4154,
+          "criticEstimated": false,
+          "rt": 40
         },
         {
           "id": "high-spirits",
@@ -5221,7 +9559,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "High Spirits",
           "ko": "유령 호텔",
           "genre": "판타지/코미디",
-          "note": ""
+          "note": "",
+          "score": 56.7,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 12468,
+          "criticEstimated": false,
+          "rt": 31
         },
         {
           "id": "the-dead-pool",
@@ -5229,7 +9573,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dead Pool",
           "ko": "더티 해리 5: 추적자",
           "genre": "범죄/액션",
-          "note": "더티 해리 5편 · 피터 스완"
+          "note": "더티 해리 5편 · 피터 스완",
+          "score": 59.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 51789,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 53
         },
         {
           "id": "the-good-mother",
@@ -5237,7 +9588,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Good Mother",
           "ko": "모정",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 1909,
+          "criticEstimated": false,
+          "rt": 54
         },
         {
           "id": "next-of-kin",
@@ -5245,7 +9602,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Next of Kin",
           "ko": "불타는 복수",
           "genre": "액션/범죄",
-          "note": ""
+          "note": "",
+          "score": 61.1,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 12667,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 50
         },
         {
           "id": "darkman",
@@ -5253,7 +9617,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Darkman",
           "ko": "다크맨",
           "genre": "슈퍼히어로",
-          "note": "샘 레이미 연출 · 다크맨"
+          "note": "샘 레이미 연출 · 다크맨",
+          "score": 66.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 75815,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 83
         },
         {
           "id": "the-big-man",
@@ -5261,7 +9632,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Big Man",
           "ko": "위대한 챔피언",
           "genre": "드라마/스포츠",
-          "note": ""
+          "note": "",
+          "score": 65.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 1632,
+          "criticEstimated": false,
+          "rt": 20
         },
         {
           "id": "under-suspicion",
@@ -5269,7 +9646,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Under Suspicion",
           "ko": "써스피션",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 61.8,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 5770,
+          "criticEstimated": false,
+          "rt": 25
         },
         {
           "id": "shining-through",
@@ -5277,7 +9660,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Shining Through",
           "ko": "사랑의 용기",
           "genre": "전쟁/드라마",
-          "note": ""
+          "note": "",
+          "score": 61.5,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 11704,
+          "criticEstimated": false,
+          "rt": 41
         },
         {
           "id": "husbands-and-wives",
@@ -5285,7 +9674,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Husbands and Wives",
           "ko": "우디 알렌의 부부일기",
           "genre": "드라마/코미디",
-          "note": "우디 앨런 연출"
+          "note": "우디 앨런 연출",
+          "score": 78.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 33290,
+          "criticEstimated": false,
+          "rt": 93
         },
         {
           "id": "leap-of-faith",
@@ -5293,7 +9688,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Leap of Faith",
           "ko": "기적 만들기",
           "genre": "드라마/코미디",
-          "note": "보안관 윌"
+          "note": "보안관 윌",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 15942,
+          "criticEstimated": false,
+          "rt": 64
         },
         {
           "id": "ethan-frome",
@@ -5301,7 +9702,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ethan Frome",
           "ko": "에단 프롬",
           "genre": "로맨스/드라마",
-          "note": "타이틀롤"
+          "note": "타이틀롤",
+          "score": 66.6,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 2416,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "ruby-cairo",
@@ -5309,7 +9716,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ruby Cairo",
           "ko": "베일 속의 카이로",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 64.4,
+          "scoreEstimated": true,
+          "imdb": 5.0,
+          "imdbVotes": 2774,
+          "criticEstimated": true
         },
         {
           "id": "schindlers-list",
@@ -5317,7 +9729,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Schindler's List",
           "ko": "쉰들러 리스트",
           "genre": "전기/드라마",
-          "note": "오스카 쉰들러 · 오스카 남우주연 후보"
+          "note": "오스카 쉰들러 · 오스카 남우주연 후보",
+          "score": 92.1,
+          "scoreEstimated": false,
+          "imdb": 9.0,
+          "imdbVotes": 1609531,
+          "criticEstimated": false,
+          "metacritic": 95,
+          "rt": 98
         },
         {
           "id": "nell",
@@ -5325,7 +9744,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nell",
           "ko": "넬",
           "genre": "드라마",
-          "note": "제리 러벨 박사"
+          "note": "제리 러벨 박사",
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 32789,
+          "criticEstimated": false,
+          "rt": 55
         },
         {
           "id": "rob-roy",
@@ -5333,7 +9758,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Rob Roy",
           "ko": "롭 로이",
           "genre": "역사/드라마",
-          "note": "타이틀롤"
+          "note": "타이틀롤",
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 50043,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 73
         },
         {
           "id": "before-and-after",
@@ -5341,7 +9773,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Before and After",
           "ko": "비포 앤 애프터",
           "genre": "드라마",
-          "note": "메릴 스트립 공연"
+          "note": "메릴 스트립 공연",
+          "score": 59.1,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 11653,
+          "criticEstimated": false,
+          "rt": 35
         },
         {
           "id": "michael-collins",
@@ -5349,7 +9787,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Michael Collins",
           "ko": "마이클 콜린스",
           "genre": "전기/드라마",
-          "note": "베니스 남우주연상 수상"
+          "note": "베니스 남우주연상 수상",
+          "score": 69.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 36602,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 77
         },
         {
           "id": "les-miserables",
@@ -5357,7 +9802,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Les Misérables",
           "ko": "레 미제라블",
           "genre": "드라마",
-          "note": "장 발장 역"
+          "note": "장 발장 역",
+          "score": 73.6,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 44856,
+          "criticEstimated": false,
+          "rt": 75
         },
         {
           "id": "phantom-menace",
@@ -5365,7 +9816,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Star Wars: Episode I – The Phantom Menace",
           "ko": "스타워즈 에피소드 1: 보이지 않는 위험",
           "genre": "SF/판타지",
-          "note": "콰이곤 진"
+          "note": "콰이곤 진",
+          "score": 60.6,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 941389,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 54
         },
         {
           "id": "the-haunting",
@@ -5373,7 +9831,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Haunting",
           "ko": "더 헌팅",
           "genre": "공포",
-          "note": "매로우 박사"
+          "note": "매로우 박사",
+          "score": 41.3,
+          "scoreEstimated": false,
+          "imdb": 5.1,
+          "imdbVotes": 85709,
+          "criticEstimated": false,
+          "rt": 16
         },
         {
           "id": "gun-shy",
@@ -5381,7 +9845,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gun Shy",
           "ko": "건 샤이",
           "genre": "범죄/코미디",
-          "note": "DEA 요원 찰리"
+          "note": "DEA 요원 찰리",
+          "score": 58.7,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 8364,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 26
         },
         {
           "id": "k-19",
@@ -5389,7 +9860,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "K-19: The Widowmaker",
           "ko": "K-19",
           "genre": "전쟁/스릴러",
-          "note": "해리슨 포드 공연"
+          "note": "해리슨 포드 공연",
+          "score": 64.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 73135,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 60
         },
         {
           "id": "gangs-of-new-york",
@@ -5397,7 +9875,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gangs of New York",
           "ko": "갱스 오브 뉴욕",
           "genre": "범죄/드라마",
-          "note": "프리스트 발론"
+          "note": "프리스트 발론",
+          "score": 73.9,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 512053,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 72
         },
         {
           "id": "love-actually",
@@ -5405,7 +9890,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Love Actually",
           "ko": "러브 액츄얼리",
           "genre": "로맨스/코미디",
-          "note": "다니엘 역"
+          "note": "다니엘 역",
+          "score": 69.3,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 585545,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 64
         },
         {
           "id": "kinsey",
@@ -5413,7 +9905,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kinsey",
           "ko": "킨제이 보고서",
           "genre": "전기/드라마",
-          "note": "앨프리드 킨제이 · 골든글로브 남우주연 후보"
+          "note": "앨프리드 킨제이 · 골든글로브 남우주연 후보",
+          "score": 73.8,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 52894,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 90
         },
         {
           "id": "kingdom-of-heaven",
@@ -5421,7 +9920,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kingdom of Heaven",
           "ko": "킹덤 오브 헤븐",
           "genre": "역사/액션",
-          "note": "이벨린의 고프리"
+          "note": "이벨린의 고프리",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 363244,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 39
         },
         {
           "id": "batman-begins",
@@ -5429,7 +9935,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Batman Begins",
           "ko": "배트맨 비긴즈",
           "genre": "슈퍼히어로",
-          "note": "라스 알 굴"
+          "note": "라스 알 굴",
+          "score": 79.9,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1750056,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 85
         },
         {
           "id": "breakfast-on-pluto",
@@ -5437,7 +9950,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Breakfast on Pluto",
           "ko": "플루토에서 아침을",
           "genre": "드라마/코미디",
-          "note": "리암 신부"
+          "note": "리암 신부",
+          "score": 67.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 26859,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 57
         },
         {
           "id": "narnia-1",
@@ -5445,7 +9965,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
           "ko": "나니아 연대기: 사자, 마녀 그리고 옷장",
           "genre": "판타지",
-          "note": "목소리 출연 · 아슬란"
+          "note": "목소리 출연 · 아슬란",
+          "score": 71.1,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 463714,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 75
         },
         {
           "id": "seraphim-falls",
@@ -5453,7 +9980,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Seraphim Falls",
           "ko": "세라핌 폴스",
           "genre": "서부/액션",
-          "note": "피어스 브로스넌 공연"
+          "note": "피어스 브로스넌 공연",
+          "score": 64.6,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 37093,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 55
         },
         {
           "id": "narnia-2",
@@ -5461,7 +9995,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Chronicles of Narnia: Prince Caspian",
           "ko": "나니아 연대기: 캐스피언 왕자",
           "genre": "판타지",
-          "note": "목소리 출연 · 아슬란"
+          "note": "목소리 출연 · 아슬란",
+          "score": 64.6,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 242358,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 66
         },
         {
           "id": "the-other-man",
@@ -5469,7 +10010,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Other Man",
           "ko": "디 아더 맨",
           "genre": "드라마/스릴러",
-          "note": ""
+          "note": "",
+          "score": 53.6,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 13285,
+          "criticEstimated": false,
+          "metacritic": 34,
+          "rt": 15
         },
         {
           "id": "taken",
@@ -5477,7 +10025,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Taken",
           "ko": "테이큰",
           "genre": "액션/스릴러",
-          "note": "브라이언 밀스 첫 등장"
+          "note": "브라이언 밀스 첫 등장",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 680019,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 60
         },
         {
           "id": "five-minutes-of-heaven",
@@ -5485,7 +10040,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Five Minutes of Heaven",
           "ko": "천국에서의 5분간",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 13642,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 75
         },
         {
           "id": "after-life",
@@ -5493,7 +10055,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "After.Life",
           "ko": "애프터 라이프",
           "genre": "스릴러",
-          "note": "장의사 엘리엇"
+          "note": "장의사 엘리엇",
+          "score": 52.5,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 43375,
+          "criticEstimated": false,
+          "metacritic": 36,
+          "rt": 25
         },
         {
           "id": "chloe",
@@ -5501,7 +10070,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Chloe",
           "ko": "클로이",
           "genre": "스릴러",
-          "note": ""
+          "note": "",
+          "score": 58.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 84233,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 51
         },
         {
           "id": "clash-of-the-titans",
@@ -5509,7 +10085,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Clash of the Titans",
           "ko": "타이탄",
           "genre": "판타지/액션",
-          "note": "제우스"
+          "note": "제우스",
+          "score": 50.2,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 308376,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 27
         },
         {
           "id": "the-a-team",
@@ -5517,7 +10100,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The A-Team",
           "ko": "A-특공대",
           "genre": "액션",
-          "note": "한니발 스미스"
+          "note": "한니발 스미스",
+          "score": 60.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 278912,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 49
         },
         {
           "id": "narnia-3",
@@ -5525,7 +10115,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
           "ko": "나니아 연대기: 새벽 출정호의 항해",
           "genre": "판타지",
-          "note": "목소리 출연 · 아슬란"
+          "note": "목소리 출연 · 아슬란",
+          "score": 59.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 179995,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 50
         },
         {
           "id": "next-three-days",
@@ -5533,7 +10130,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Next Three Days",
           "ko": "쓰리 데이즈",
           "genre": "스릴러",
-          "note": "조연"
+          "note": "조연",
+          "score": 65.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 217175,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 50
         },
         {
           "id": "unknown",
@@ -5541,7 +10145,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Unknown",
           "ko": "언노운",
           "genre": "액션/스릴러",
-          "note": "마틴 해리스 박사"
+          "note": "마틴 해리스 박사",
+          "score": 63.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 277890,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 55
         },
         {
           "id": "the-grey",
@@ -5549,7 +10160,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Grey",
           "ko": "더 그레이",
           "genre": "액션/생존",
-          "note": ""
+          "note": "",
+          "score": 68.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 276574,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 80
         },
         {
           "id": "wrath-of-the-titans",
@@ -5557,7 +10175,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Wrath of the Titans",
           "ko": "타이탄의 분노",
           "genre": "판타지/액션",
-          "note": "제우스"
+          "note": "제우스",
+          "score": 49.2,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 205419,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 26
         },
         {
           "id": "battleship",
@@ -5565,7 +10190,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Battleship",
           "ko": "배틀쉽",
           "genre": "SF/액션",
-          "note": "셰인 제독"
+          "note": "셰인 제독",
+          "score": 51.6,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 272288,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 34
         },
         {
           "id": "taken-2",
@@ -5573,7 +10205,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Taken 2",
           "ko": "테이큰 2",
           "genre": "액션/스릴러",
-          "note": "브라이언 밀스"
+          "note": "브라이언 밀스",
+          "score": 53.2,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 339862,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 22
         },
         {
           "id": "third-person",
@@ -5581,7 +10220,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Third Person",
           "ko": "써드 퍼슨",
           "genre": "로맨스/드라마",
-          "note": "폴 해기스 연출"
+          "note": "폴 해기스 연출",
+          "score": 56.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 30463,
+          "criticEstimated": false,
+          "metacritic": 38,
+          "rt": 25
         },
         {
           "id": "khumba",
@@ -5589,7 +10235,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Khumba",
           "ko": "쿰바: 반쪽무늬 얼룩말의 대모험",
           "genre": "애니메이션",
-          "note": "목소리 출연"
+          "note": "목소리 출연",
+          "score": 60.5,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 6975,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 44
         },
         {
           "id": "the-nut-job",
@@ -5597,7 +10250,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Nut Job",
           "ko": "넛잡: 땅콩 도둑들",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 라쿤"
+          "note": "목소리 출연 · 라쿤",
+          "score": 47.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 32947,
+          "criticEstimated": false,
+          "rt": 12
         },
         {
           "id": "the-lego-movie",
@@ -5605,7 +10264,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Lego Movie",
           "ko": "레고 무비",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 배드 캅"
+          "note": "목소리 출연 · 배드 캅",
+          "score": 80.7,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 422479,
+          "criticEstimated": false,
+          "metacritic": 83,
+          "rt": 96
         },
         {
           "id": "the-prophet",
@@ -5613,7 +10279,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kahlil Gibran's The Prophet",
           "ko": "칼릴 지브란의 예언자",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 무스타파"
+          "note": "목소리 출연 · 무스타파",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 5392,
+          "criticEstimated": false,
+          "rt": 66
         },
         {
           "id": "non-stop",
@@ -5621,7 +10293,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Non-Stop",
           "ko": "논스톱",
           "genre": "액션/스릴러",
-          "note": "항공 보안관 빌 막스"
+          "note": "항공 보안관 빌 막스",
+          "score": 65.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 289729,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 62
         },
         {
           "id": "million-ways",
@@ -5629,7 +10308,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Million Ways to Die in the West",
           "ko": "밀리언 웨이즈",
           "genre": "서부/코미디",
-          "note": "무법자 클린치"
+          "note": "무법자 클린치",
+          "score": 54.1,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 212660,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 33
         },
         {
           "id": "walk-among-the-tombstones",
@@ -5637,7 +10323,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Walk Among the Tombstones",
           "ko": "툼스톤",
           "genre": "범죄/스릴러",
-          "note": "탐정 매튜 스커더"
+          "note": "탐정 매튜 스커더",
+          "score": 64.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 132623,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 68
         },
         {
           "id": "taken-3",
@@ -5645,7 +10338,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Taken 3",
           "ko": "테이큰 3",
           "genre": "액션/스릴러",
-          "note": "브라이언 밀스"
+          "note": "브라이언 밀스",
+          "score": 47.1,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 217140,
+          "criticEstimated": false,
+          "metacritic": 26,
+          "rt": 13
         },
         {
           "id": "run-all-night",
@@ -5653,7 +10353,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Run All Night",
           "ko": "런 올 나이트",
           "genre": "액션/범죄",
-          "note": ""
+          "note": "",
+          "score": 63.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 120778,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 59
         },
         {
           "id": "operation-chromite",
@@ -5661,7 +10368,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Operation Chromite",
           "ko": "인천상륙작전",
           "genre": "전쟁/액션",
-          "note": "한국 영화 · 맥아더 장군"
+          "note": "한국 영화 · 맥아더 장군",
+          "score": 63.3,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 6880,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 40
         },
         {
           "id": "a-monster-calls",
@@ -5669,7 +10383,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Monster Calls",
           "ko": "몬스터 콜",
           "genre": "판타지/드라마",
-          "note": "목소리·모션캡처 · 몬스터"
+          "note": "목소리·모션캡처 · 몬스터",
+          "score": 75.6,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 100161,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 86
         },
         {
           "id": "silence",
@@ -5677,7 +10398,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Silence",
           "ko": "사일런스",
           "genre": "역사/드라마",
-          "note": "마틴 스코세이지 연출 · 페헤이라 신부"
+          "note": "마틴 스코세이지 연출 · 페헤이라 신부",
+          "score": 74.7,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 136618,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 83
         },
         {
           "id": "mark-felt",
@@ -5685,7 +10413,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Mark Felt: The Man Who Brought Down the White House",
           "ko": "백악관을 무너뜨린 사나이",
           "genre": "전기/스릴러",
-          "note": "마크 펠트 · 워터게이트 '딥 스로트'"
+          "note": "마크 펠트 · 워터게이트 '딥 스로트'",
+          "score": 61.1,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 16274,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 36
         },
         {
           "id": "the-commuter",
@@ -5693,7 +10428,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Commuter",
           "ko": "커뮤터",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 60.9,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 135510,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 55
         },
         {
           "id": "buster-scruggs",
@@ -5701,7 +10443,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Ballad of Buster Scruggs",
           "ko": "카우보이의 노래",
           "genre": "서부/옴니버스",
-          "note": "Netflix · 옴니버스"
+          "note": "Netflix · 옴니버스",
+          "score": 75.6,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 187835,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 89
         },
         {
           "id": "widows",
@@ -5709,7 +10458,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Widows",
           "ko": "위도우즈",
           "genre": "범죄/스릴러",
-          "note": "해리 롤링스"
+          "note": "해리 롤링스",
+          "score": 74.1,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 110002,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 91
         },
         {
           "id": "cold-pursuit",
@@ -5717,7 +10473,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Cold Pursuit",
           "ko": "콜드 체이싱",
           "genre": "액션/스릴러",
-          "note": "제설차 기사 넬스"
+          "note": "제설차 기사 넬스",
+          "score": 62.3,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 85402,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 68
         },
         {
           "id": "mib-international",
@@ -5725,7 +10488,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Men in Black: International",
           "ko": "맨 인 블랙: 인터내셔널",
           "genre": "SF/액션",
-          "note": "하이 T"
+          "note": "하이 T",
+          "score": 48.6,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 163342,
+          "criticEstimated": false,
+          "metacritic": 38,
+          "rt": 23
         },
         {
           "id": "ordinary-love",
@@ -5733,7 +10503,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ordinary Love",
           "ko": "오디너리 러브",
           "genre": "드라마",
-          "note": ""
+          "note": "",
+          "score": 71.1,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 5817,
+          "criticEstimated": false,
+          "rt": 93
         },
         {
           "id": "made-in-italy",
@@ -5741,7 +10517,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Made in Italy",
           "ko": "메이드 인 이태리",
           "genre": "코미디/드라마",
-          "note": "아들 마이클 리처드슨과 공연"
+          "note": "아들 마이클 리처드슨과 공연",
+          "score": 60.0,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 13032,
+          "criticEstimated": false,
+          "rt": 44
         },
         {
           "id": "honest-thief",
@@ -5749,7 +10531,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Honest Thief",
           "ko": "어니스트 씨프",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 55.8,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 64388,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 39
         },
         {
           "id": "the-marksman",
@@ -5757,7 +10546,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Marksman",
           "ko": "마크맨",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 54.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 49930,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 39
         },
         {
           "id": "the-ice-road",
@@ -5765,7 +10561,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Ice Road",
           "ko": "아이스 로드",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 54.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 58039,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 44
         },
         {
           "id": "blacklight",
@@ -5773,7 +10576,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Blacklight",
           "ko": "블랙라이트",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 45.2,
+          "scoreEstimated": false,
+          "imdb": 4.9,
+          "imdbVotes": 29318,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 10
         },
         {
           "id": "memory",
@@ -5781,7 +10591,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Memory",
           "ko": "메모리",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 53.3,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 43027,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 29
         },
         {
           "id": "marlowe",
@@ -5789,7 +10606,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Marlowe",
           "ko": "탐정 말로",
           "genre": "범죄/누아르",
-          "note": "필립 말로 · 100번째 영화"
+          "note": "필립 말로 · 100번째 영화",
+          "score": 54.6,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 15233,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 25
         },
         {
           "id": "retribution",
@@ -5797,7 +10621,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Retribution",
           "ko": "레트리뷰션",
           "genre": "액션/스릴러",
-          "note": ""
+          "note": "",
+          "score": 56.2,
+          "scoreEstimated": true,
+          "imdb": 5.4,
+          "imdbVotes": 29396,
+          "criticEstimated": true
         },
         {
           "id": "saints-and-sinners",
@@ -5805,7 +10634,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "In the Land of Saints and Sinners",
           "ko": "원맨",
           "genre": "범죄/스릴러",
-          "note": "원제 In the Land of Saints and Sinners"
+          "note": "원제 In the Land of Saints and Sinners",
+          "score": 63.5,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 33259,
+          "criticEstimated": true
         },
         {
           "id": "wildcat",
@@ -5813,7 +10647,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Wildcat",
           "ko": "와일드캣",
           "genre": "전기/드라마",
-          "note": "조연 · 에단 호크 연출"
+          "note": "조연 · 에단 호크 연출",
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 1791,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 59
         },
         {
           "id": "absolution",
@@ -5821,7 +10662,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Absolution",
           "ko": "앱솔루션",
           "genre": "범죄/스릴러",
-          "note": ""
+          "note": "",
+          "score": 58.8,
+          "scoreEstimated": true,
+          "imdb": 5.2,
+          "imdbVotes": 11369,
+          "criticEstimated": true
         },
         {
           "id": "ice-road-vengeance",
@@ -5829,7 +10675,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ice Road: Vengeance",
           "ko": "아이스 로드: 벤전스",
           "genre": "액션/스릴러",
-          "note": "아이스 로드 속편"
+          "note": "아이스 로드 속편",
+          "score": 54.5,
+          "scoreEstimated": true,
+          "imdb": 4.9,
+          "imdbVotes": 19261,
+          "criticEstimated": true
         },
         {
           "id": "the-naked-gun",
@@ -5837,7 +10688,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Naked Gun",
           "ko": "총알 탄 사나이",
           "genre": "코미디",
-          "note": "프랭크 드레빈 주니어"
+          "note": "프랭크 드레빈 주니어",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 136600,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 88
         },
         {
           "id": "cold-storage",
@@ -5845,7 +10703,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Cold Storage",
           "ko": "콜드 스토리지",
           "genre": "SF/공포",
-          "note": ""
+          "note": "",
+          "score": 60.6,
+          "scoreEstimated": true,
+          "imdb": 6.0,
+          "imdbVotes": 31471,
+          "criticEstimated": true
         },
         {
           "id": "the-fix",
@@ -5853,7 +10716,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Fix",
           "ko": "더 픽스",
           "genre": "액션/스릴러",
-          "note": "가제 Hotel Tehran"
+          "note": "가제 Hotel Tehran",
+          "score": 64.7,
+          "scoreEstimated": true,
+          "imdb": 4.8,
+          "imdbVotes": 2298,
+          "criticEstimated": true
         }
       ]
     },
@@ -5868,7 +10736,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Express",
           "ko": "익스프레스",
           "genre": "전기/스포츠",
-          "note": "장편 데뷔 · 플로이드 리틀"
+          "note": "장편 데뷔 · 플로이드 리틀",
+          "score": 68.3,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 23778,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 62
         },
         {
           "id": "the-kill-hole",
@@ -5876,7 +10751,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Kill Hole",
           "ko": "킬 홀",
           "genre": "스릴러",
-          "note": "주연 · 새뮤얼 드레이크"
+          "note": "주연 · 새뮤얼 드레이크",
+          "score": 66.7,
+          "scoreEstimated": false,
+          "imdb": 4.5,
+          "imdbVotes": 642,
+          "criticEstimated": false,
+          "rt": 25
         },
         {
           "id": "42",
@@ -5884,7 +10765,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "42",
           "ko": "42",
           "genre": "전기/스포츠",
-          "note": "재키 로빈슨"
+          "note": "재키 로빈슨",
+          "score": 72.9,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 110188,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 81
         },
         {
           "id": "draft-day",
@@ -5892,7 +10780,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Draft Day",
           "ko": "드래프트 데이",
           "genre": "스포츠/드라마",
-          "note": "드래프트 유망주 본테이 맥"
+          "note": "드래프트 유망주 본테이 맥",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 74196,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 60
         },
         {
           "id": "get-on-up",
@@ -5900,7 +10795,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Get On Up",
           "ko": "겟 온 업",
           "genre": "전기/음악",
-          "note": "제임스 브라운"
+          "note": "제임스 브라운",
+          "score": 70.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 27519,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 80
         },
         {
           "id": "gods-of-egypt",
@@ -5908,7 +10810,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gods of Egypt",
           "ko": "갓 오브 이집트",
           "genre": "판타지/액션",
-          "note": "지혜의 신 토트"
+          "note": "지혜의 신 토트",
+          "score": 43.8,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 137551,
+          "criticEstimated": false,
+          "metacritic": 25,
+          "rt": 14
         },
         {
           "id": "civil-war",
@@ -5916,7 +10825,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Captain America: Civil War",
           "ko": "캡틴 아메리카: 시빌 워",
           "genre": "슈퍼히어로",
-          "note": "블랙 팬서 첫 등장"
+          "note": "블랙 팬서 첫 등장",
+          "score": 79.0,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 953934,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 90
         },
         {
           "id": "message-from-the-king",
@@ -5924,7 +10840,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Message from the King",
           "ko": "메시지 프롬 더 킹",
           "genre": "범죄/스릴러",
-          "note": "Netflix · 제이콥 킹"
+          "note": "Netflix · 제이콥 킹",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 19529,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 50
         },
         {
           "id": "marshall",
@@ -5932,7 +10855,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Marshall",
           "ko": "마셜",
           "genre": "전기/법정",
-          "note": "서굿 마셜"
+          "note": "서굿 마셜",
+          "score": 72.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 29396,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 81
         },
         {
           "id": "black-panther",
@@ -5940,7 +10870,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Black Panther",
           "ko": "블랙 팬서",
           "genre": "슈퍼히어로",
-          "note": "트찰라 · 단독 주연작"
+          "note": "트찰라 · 단독 주연작",
+          "score": 79.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 930232,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 96
         },
         {
           "id": "infinity-war",
@@ -5948,7 +10885,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Avengers: Infinity War",
           "ko": "어벤져스: 인피니티 워",
           "genre": "슈퍼히어로",
-          "note": "블랙 팬서"
+          "note": "블랙 팬서",
+          "score": 80.7,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 1418488,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 85
         },
         {
           "id": "endgame",
@@ -5956,7 +10900,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Avengers: Endgame",
           "ko": "어벤져스: 엔드게임",
           "genre": "슈퍼히어로",
-          "note": "블랙 팬서"
+          "note": "블랙 팬서",
+          "score": 84.1,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 1501119,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 94
         },
         {
           "id": "21-bridges",
@@ -5964,7 +10915,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "21 Bridges",
           "ko": "21 브릿지: 테러 셧다운",
           "genre": "액션/범죄",
-          "note": "안드레 데이비스 형사 · 제작 겸"
+          "note": "안드레 데이비스 형사 · 제작 겸",
+          "score": 62.5,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 82024,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 54
         },
         {
           "id": "da-5-bloods",
@@ -5972,7 +10930,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Da 5 Bloods",
           "ko": "Da 5 블러드",
           "genre": "전쟁/드라마",
-          "note": "Netflix · 스파이크 리 연출"
+          "note": "Netflix · 스파이크 리 연출",
+          "score": 71.7,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 58069,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 92
         },
         {
           "id": "ma-rainey",
@@ -5980,7 +10945,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ma Rainey's Black Bottom",
           "ko": "마 레이니, 그녀가 블루스",
           "genre": "드라마/음악",
-          "note": "유작 · Netflix · 골든글로브 남우주연상"
+          "note": "유작 · Netflix · 골든글로브 남우주연상",
+          "score": 75.8,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 78852,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 97
         }
       ]
     },
@@ -5995,7 +10967,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Brubaker",
           "ko": "도전",
           "genre": "드라마",
-          "note": "로버트 레드포드 주연 교도소 개혁 실화극 · 수감자 월터 역, 초기 조연"
+          "note": "로버트 레드포드 주연 교도소 개혁 실화극 · 수감자 월터 역, 초기 조연",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 21804,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 74
         },
         {
           "id": "eyewitness",
@@ -6003,7 +10982,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Eyewitness",
           "ko": "살인 특종",
           "genre": "스릴러",
-          "note": "윌리엄 허트·시고니 위버 · 블랙 경위 역 · 피터 예이츠 연출"
+          "note": "윌리엄 허트·시고니 위버 · 블랙 경위 역 · 피터 예이츠 연출",
+          "score": 66.2,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 6383,
+          "criticEstimated": false,
+          "rt": 73
         },
         {
           "id": "teachers",
@@ -6011,7 +10996,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Teachers",
           "ko": "끝없는 사랑",
           "genre": "코미디/드라마",
-          "note": "닉 놀테 주연 고교 풍자극 · 앨런 루이스 역"
+          "note": "닉 놀테 주연 고교 풍자극 · 앨런 루이스 역",
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 4997,
+          "criticEstimated": false,
+          "rt": 59
         },
         {
           "id": "harry-and-son",
@@ -6019,7 +11010,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Harry & Son",
           "ko": "해리와 아들",
           "genre": "드라마",
-          "note": "폴 뉴먼 감독·주연 · 시에마노프스키 역 · 한국 제목 불확실"
+          "note": "폴 뉴먼 감독·주연 · 시에마노프스키 역 · 한국 제목 불확실",
+          "score": 64.0,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 2684,
+          "criticEstimated": false,
+          "rt": 30
         },
         {
           "id": "marie",
@@ -6027,7 +11024,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Marie",
           "ko": "마리",
           "genre": "전기/드라마",
-          "note": "시시 스페이식 주연 · 테네시 주 사면 비리 폭로 실화 · 찰스 트로버 역"
+          "note": "시시 스페이식 주연 · 테네시 주 사면 비리 폭로 실화 · 찰스 트로버 역",
+          "score": 68.5,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 1171,
+          "criticEstimated": true
         },
         {
           "id": "that-was-then",
@@ -6035,7 +11037,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "That Was Then... This Is Now",
           "ko": "댓 워즈 덴... 디스 이즈 나우",
           "genre": "드라마",
-          "note": "에밀리오 에스테베즈 각본·주연, S.E. 힌턴 원작 · 찰리 역 · 한국 개봉명 미확인"
+          "note": "에밀리오 에스테베즈 각본·주연, S.E. 힌턴 원작 · 찰리 역 · 한국 개봉명 미확인",
+          "score": 61.8,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 2947,
+          "criticEstimated": false,
+          "rt": 0
         },
         {
           "id": "street-smart",
@@ -6043,7 +11051,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Street Smart",
           "ko": "스트리트 스마트",
           "genre": "범죄/드라마",
-          "note": "크리스토퍼 리브 · 위험한 포주 패스트 블랙 역 · 오스카 남우조연 첫 후보, 출세작"
+          "note": "크리스토퍼 리브 · 위험한 포주 패스트 블랙 역 · 오스카 남우조연 첫 후보, 출세작",
+          "score": 67.3,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 4750,
+          "criticEstimated": false,
+          "rt": 67
         },
         {
           "id": "clean-and-sober",
@@ -6051,7 +11065,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Clean and Sober",
           "ko": "재생자",
           "genre": "드라마",
-          "note": "마이클 키튼 · 중독 재활 상담사 크레이그 역"
+          "note": "마이클 키튼 · 중독 재활 상담사 크레이그 역",
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 7939,
+          "criticEstimated": false,
+          "rt": 57
         },
         {
           "id": "glory",
@@ -6059,7 +11079,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Glory",
           "ko": "영광의 깃발",
           "genre": "전쟁/드라마",
-          "note": "덴젤 워싱턴·매튜 브로데릭 · 흑인 연대의 존 롤린스 상사 역"
+          "note": "덴젤 워싱턴·매튜 브로데릭 · 흑인 연대의 존 롤린스 상사 역",
+          "score": 79.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 154632,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 95
         },
         {
           "id": "driving-miss-daisy",
@@ -6067,7 +11094,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Driving Miss Daisy",
           "ko": "드라이빙 미스 데이지",
           "genre": "드라마",
-          "note": "제시카 탠디 · 운전기사 호크 역 · 오스카 작품상, 남우주연 후보·골든글로브 수상"
+          "note": "제시카 탠디 · 운전기사 호크 역 · 오스카 작품상, 남우주연 후보·골든글로브 수상",
+          "score": 75.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 124979,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 85
         },
         {
           "id": "lean-on-me",
@@ -6075,7 +11109,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lean on Me",
           "ko": "고독한 스승",
           "genre": "전기/드라마",
-          "note": "무너진 고교를 바로 세운 실존 교장 조 클라크 역"
+          "note": "무너진 고교를 바로 세운 실존 교장 조 클라크 역",
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 25173,
+          "criticEstimated": false,
+          "rt": 68
         },
         {
           "id": "johnny-handsome",
@@ -6083,7 +11123,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Johnny Handsome",
           "ko": "쟈니 핸섬",
           "genre": "범죄/스릴러",
-          "note": "미키 루크 · 집요한 드론스 경위 역 · 월터 힐 연출"
+          "note": "미키 루크 · 집요한 드론스 경위 역 · 월터 힐 연출",
+          "score": 63.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 12168,
+          "criticEstimated": false,
+          "rt": 60
         },
         {
           "id": "bonfire-of-the-vanities",
@@ -6091,7 +11137,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bonfire of the Vanities",
           "ko": "허영의 불꽃",
           "genre": "코미디/드라마",
-          "note": "톰 행크스·브루스 윌리스 · 화이트 판사 역 · 브라이언 드 팔마 연출"
+          "note": "톰 행크스·브루스 윌리스 · 화이트 판사 역 · 브라이언 드 팔마 연출",
+          "score": 50.0,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 27741,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 16
         },
         {
           "id": "robin-hood-prince-of-thieves",
@@ -6099,7 +11152,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Robin Hood: Prince of Thieves",
           "ko": "로빈 후드: 도둑들의 왕자",
           "genre": "액션/어드벤처",
-          "note": "케빈 코스트너·앨런 릭먼 · 무어인 전사 아짐 역"
+          "note": "케빈 코스트너·앨런 릭먼 · 무어인 전사 아짐 역",
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 224872,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 51
         },
         {
           "id": "unforgiven",
@@ -6107,7 +11167,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Unforgiven",
           "ko": "용서받지 못한 자",
           "genre": "서부",
-          "note": "클린트 이스트우드·진 해크먼 · 옛 동료 네드 로건 역 · 오스카 작품상"
+          "note": "클린트 이스트우드·진 해크먼 · 옛 동료 네드 로건 역 · 오스카 작품상",
+          "score": 84.4,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 474050,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 96
         },
         {
           "id": "power-of-one",
@@ -6115,7 +11182,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Power of One",
           "ko": "파워 오브 원",
           "genre": "드라마",
-          "note": "스티븐 도프·다니엘 크레이그 · 남아공 감옥의 권투 스승 기엘 피트 역"
+          "note": "스티븐 도프·다니엘 크레이그 · 남아공 감옥의 권투 스승 기엘 피트 역",
+          "score": 64.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 11551,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 35
         },
         {
           "id": "shawshank-redemption",
@@ -6123,7 +11197,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Shawshank Redemption",
           "ko": "쇼생크 탈출",
           "genre": "드라마",
-          "note": "장기수 레드 역·내레이션 · 오스카 남우주연 후보 · 대표작"
+          "note": "장기수 레드 역·내레이션 · 오스카 남우주연 후보 · 대표작",
+          "score": 90.1,
+          "scoreEstimated": false,
+          "imdb": 9.3,
+          "imdbVotes": 3254567,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 89
         },
         {
           "id": "outbreak",
@@ -6131,7 +11212,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Outbreak",
           "ko": "아웃브레이크",
           "genre": "스릴러/재난",
-          "note": "더스틴 호프먼·르네 루소 · 빌리 포드 장군 역"
+          "note": "더스틴 호프먼·르네 루소 · 빌리 포드 장군 역",
+          "score": 64.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 147503,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 60
         },
         {
           "id": "seven",
@@ -6139,7 +11227,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Seven",
           "ko": "세븐",
           "genre": "범죄/스릴러",
-          "note": "브래드 피트 · 은퇴를 앞둔 형사 서머싯 역 · 데이비드 핀처 연출"
+          "note": "브래드 피트 · 은퇴를 앞둔 형사 서머싯 역 · 데이비드 핀처 연출",
+          "score": 81.3,
+          "scoreEstimated": false,
+          "imdb": 8.6,
+          "imdbVotes": 2069883,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 84
         },
         {
           "id": "chain-reaction",
@@ -6147,7 +11242,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Chain Reaction",
           "ko": "체인 리액션",
           "genre": "액션/스릴러",
-          "note": "키아누 리브스 · 재단 책임자 폴 섀넌 역"
+          "note": "키아누 리브스 · 재단 책임자 폴 섀넌 역",
+          "score": 46.5,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 59340,
+          "criticEstimated": false,
+          "rt": 18
         },
         {
           "id": "moll-flanders",
@@ -6155,7 +11256,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Moll Flanders",
           "ko": "몰 플랜더스",
           "genre": "시대극/드라마",
-          "note": "스토커드 채닝 · 히블 역"
+          "note": "스토커드 채닝 · 히블 역",
+          "score": 65.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 4788,
+          "criticEstimated": false,
+          "rt": 46
         },
         {
           "id": "amistad",
@@ -6163,7 +11270,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Amistad",
           "ko": "아미스타드",
           "genre": "역사/드라마",
-          "note": "스티븐 스필버그 연출 · 노예제 폐지론자 조드슨 역 · 앤서니 홉킨스·매튜 맥커너히"
+          "note": "스티븐 스필버그 연출 · 노예제 폐지론자 조드슨 역 · 앤서니 홉킨스·매튜 맥커너히",
+          "score": 71.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 88927,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 78
         },
         {
           "id": "kiss-the-girls",
@@ -6171,7 +11285,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kiss the Girls",
           "ko": "키스 더 걸",
           "genre": "범죄/스릴러",
-          "note": "애슐리 저드 · 프로파일러 알렉스 크로스 첫 등장"
+          "note": "애슐리 저드 · 프로파일러 알렉스 크로스 첫 등장",
+          "score": 58.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 101861,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 39
         },
         {
           "id": "deep-impact",
@@ -6179,7 +11300,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Deep Impact",
           "ko": "딥 임팩트",
           "genre": "SF/재난",
-          "note": "혜성 충돌 앞의 미국 대통령 벡 역"
+          "note": "혜성 충돌 앞의 미국 대통령 벡 역",
+          "score": 56.2,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 208308,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 45
         },
         {
           "id": "hard-rain",
@@ -6187,7 +11315,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hard Rain",
           "ko": "하드 레인",
           "genre": "액션/스릴러",
-          "note": "크리스찬 슬레이터 · 홍수 속 현금 수송차를 노리는 강도 짐 역"
+          "note": "크리스찬 슬레이터 · 홍수 속 현금 수송차를 노리는 강도 짐 역",
+          "score": 53.8,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 38931,
+          "criticEstimated": false,
+          "metacritic": 36,
+          "rt": 34
         },
         {
           "id": "nurse-betty",
@@ -6195,7 +11330,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nurse Betty",
           "ko": "너스 베티",
           "genre": "코미디/범죄",
-          "note": "르네 젤위거·크리스 록 · 노련한 킬러 찰리 역"
+          "note": "르네 젤위거·크리스 록 · 노련한 킬러 찰리 역",
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 36006,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 83
         },
         {
           "id": "under-suspicion",
@@ -6203,7 +11345,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Under Suspicion",
           "ko": "언더 서스피션",
           "genre": "범죄/스릴러",
-          "note": "진 해크먼과의 심문 대결 · 베네젯 경감 역 · 제작총지휘 겸"
+          "note": "진 해크먼과의 심문 대결 · 베네젯 경감 역 · 제작총지휘 겸",
+          "score": 60.1,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 30814,
+          "criticEstimated": false,
+          "metacritic": 43,
+          "rt": 50
         },
         {
           "id": "along-came-a-spider",
@@ -6211,7 +11360,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Along Came a Spider",
           "ko": "스파이더 게임",
           "genre": "범죄/스릴러",
-          "note": "알렉스 크로스 두 번째 이야기 · 모니카 포터"
+          "note": "알렉스 크로스 두 번째 이야기 · 모니카 포터",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 105399,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 32
         },
         {
           "id": "sum-of-all-fears",
@@ -6219,7 +11375,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Sum of All Fears",
           "ko": "썸 오브 올 피어스",
           "genre": "스릴러",
-          "note": "벤 애플렉 · CIA 국장 캐벗 역 · 잭 라이언 시리즈"
+          "note": "벤 애플렉 · CIA 국장 캐벗 역 · 잭 라이언 시리즈",
+          "score": 60.5,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 135715,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 59
         },
         {
           "id": "high-crimes",
@@ -6227,7 +11390,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "High Crimes",
           "ko": "하이 크라임",
           "genre": "법정/스릴러",
-          "note": "애슐리 저드와 재회 · 전직 군법무관 찰리 그라임스 역"
+          "note": "애슐리 저드와 재회 · 전직 군법무관 찰리 그라임스 역",
+          "score": 57.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 52562,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 31
         },
         {
           "id": "bruce-almighty",
@@ -6235,7 +11405,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Bruce Almighty",
           "ko": "브루스 올마이티",
           "genre": "코미디/판타지",
-          "note": "짐 캐리 · 능력을 빌려주는 신 역"
+          "note": "짐 캐리 · 능력을 빌려주는 신 역",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 477076,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 48
         },
         {
           "id": "dreamcatcher",
@@ -6243,7 +11420,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dreamcatcher",
           "ko": "드림캐쳐",
           "genre": "SF/공포",
-          "note": "스티븐 킹 원작 · 커티스 대령 역"
+          "note": "스티븐 킹 원작 · 커티스 대령 역",
+          "score": 49.2,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 102235,
+          "criticEstimated": false,
+          "metacritic": 35,
+          "rt": 28
         },
         {
           "id": "levity",
@@ -6251,7 +11435,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Levity",
           "ko": "레버티",
           "genre": "드라마",
-          "note": "빌리 밥 손튼·홀리 헌터 · 마일스 목사 역 · 제작총지휘 겸 · 한국 개봉명 불확실"
+          "note": "빌리 밥 손튼·홀리 헌터 · 마일스 목사 역 · 제작총지휘 겸 · 한국 개봉명 불확실",
+          "score": 62.8,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 6979,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 34
         },
         {
           "id": "big-bounce",
@@ -6259,7 +11450,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Big Bounce",
           "ko": "빅 바운스",
           "genre": "범죄/코미디",
-          "note": "오언 윌슨 · 판사 월터 크루스 역 · 엘모어 레너드 원작"
+          "note": "오언 윌슨 · 판사 월터 크루스 역 · 엘모어 레너드 원작",
+          "score": 52.6,
+          "scoreEstimated": false,
+          "imdb": 4.9,
+          "imdbVotes": 19403,
+          "criticEstimated": false,
+          "metacritic": 42
         },
         {
           "id": "million-dollar-baby",
@@ -6267,7 +11464,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Million Dollar Baby",
           "ko": "밀리언 달러 베이비",
           "genre": "드라마/스포츠",
-          "note": "클린트 이스트우드·힐러리 스왱크 · 스크랩 역·내레이션 · 오스카 남우조연상 수상"
+          "note": "클린트 이스트우드·힐러리 스왱크 · 스크랩 역·내레이션 · 오스카 남우조연상 수상",
+          "score": 83.2,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 775584,
+          "criticEstimated": false,
+          "metacritic": 86,
+          "rt": 90
         },
         {
           "id": "unfinished-life",
@@ -6275,7 +11479,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "An Unfinished Life",
           "ko": "언피니쉬드 라이프",
           "genre": "드라마",
-          "note": "로버트 레드포드·제니퍼 로페즈 · 곰에게 다친 친구 미치 역"
+          "note": "로버트 레드포드·제니퍼 로페즈 · 곰에게 다친 친구 미치 역",
+          "score": 64.4,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 36685,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 52
         },
         {
           "id": "batman-begins",
@@ -6283,7 +11494,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Batman Begins",
           "ko": "배트맨 비긴즈",
           "genre": "슈퍼히어로",
-          "note": "크리스찬 베일 · 루시어스 폭스 첫 등장 · 크리스토퍼 놀란 연출"
+          "note": "크리스찬 베일 · 루시어스 폭스 첫 등장 · 크리스토퍼 놀란 연출",
+          "score": 79.9,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1750056,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 85
         },
         {
           "id": "unleashed",
@@ -6291,7 +11509,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Unleashed",
           "ko": "더 독",
           "genre": "액션/드라마",
-          "note": "이연걸 · 맹인 피아노 조율사 샘 역 · 원제 Danny the Dog"
+          "note": "이연걸 · 맹인 피아노 조율사 샘 역 · 원제 Danny the Dog",
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 112956,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 66
         },
         {
           "id": "edison",
@@ -6299,7 +11524,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Edison",
           "ko": "에디슨 시티",
           "genre": "범죄/스릴러",
-          "note": "저스틴 팀버레이크·케빈 스페이시 · 신문 편집장 애시퍼드 역"
+          "note": "저스틴 팀버레이크·케빈 스페이시 · 신문 편집장 애시퍼드 역",
+          "score": 48.3,
+          "scoreEstimated": false,
+          "imdb": 5.3,
+          "imdbVotes": 17100,
+          "criticEstimated": false,
+          "rt": 11
         },
         {
           "id": "the-contract",
@@ -6307,7 +11538,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Contract",
           "ko": "더 콘트랙트",
           "genre": "액션/스릴러",
-          "note": "존 쿠삭 · 호송 중 탈주하는 청부살인자 카든 역"
+          "note": "존 쿠삭 · 호송 중 탈주하는 청부살인자 카든 역",
+          "score": 44.2,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 27663,
+          "criticEstimated": false,
+          "rt": 0
         },
         {
           "id": "lucky-number-slevin",
@@ -6315,7 +11552,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lucky Number Slevin",
           "ko": "럭키 넘버 슬레븐",
           "genre": "범죄/스릴러",
-          "note": "조시 하트넷·벤 킹슬리 · 갱단 두목 보스 역"
+          "note": "조시 하트넷·벤 킹슬리 · 갱단 두목 보스 역",
+          "score": 68.6,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 342266,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 52
         },
         {
           "id": "10-items-or-less",
@@ -6323,7 +11567,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "10 Items or Less",
           "ko": "텐 아이템 오어 레스",
           "genre": "코미디/드라마",
-          "note": "파즈 베가 · 본인 역 주연 · 제작총지휘 겸"
+          "note": "파즈 베가 · 본인 역 주연 · 제작총지휘 겸",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 17290,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 63
         },
         {
           "id": "evan-almighty",
@@ -6331,7 +11582,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Evan Almighty",
           "ko": "에반 올마이티",
           "genre": "코미디/판타지",
-          "note": "스티브 카렐 · 신 역 재연"
+          "note": "스티브 카렐 · 신 역 재연",
+          "score": 47.9,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 164766,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 24
         },
         {
           "id": "feast-of-love",
@@ -6339,7 +11597,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Feast of Love",
           "ko": "피스트 오브 러브",
           "genre": "로맨스/드라마",
-          "note": "그렉 키니어 · 교수 해리 역·내레이션"
+          "note": "그렉 키니어 · 교수 해리 역·내레이션",
+          "score": 61.9,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 17770,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 39
         },
         {
           "id": "gone-baby-gone",
@@ -6347,7 +11612,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gone Baby Gone",
           "ko": "가라, 아이야, 가라",
           "genre": "범죄/미스터리",
-          "note": "벤 애플렉 감독 데뷔작 · 케이시 애플렉 · 잭 도일 경감 역 · 국내 DVD 제목(곤 베이비 곤으로도 표기)"
+          "note": "벤 애플렉 감독 데뷔작 · 케이시 애플렉 · 잭 도일 경감 역 · 국내 DVD 제목(곤 베이비 곤으로도 표기)",
+          "score": 77.5,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 314269,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 94
         },
         {
           "id": "bucket-list",
@@ -6355,7 +11627,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Bucket List",
           "ko": "버킷 리스트: 죽기 전에 꼭 하고 싶은 것들",
           "genre": "드라마/코미디",
-          "note": "잭 니콜슨 · 정비공 카터 역 · 롭 라이너 연출"
+          "note": "잭 니콜슨 · 정비공 카터 역 · 롭 라이너 연출",
+          "score": 62.2,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 275833,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 40
         },
         {
           "id": "wanted",
@@ -6363,7 +11642,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Wanted",
           "ko": "원티드",
           "genre": "액션",
-          "note": "제임스 맥어보이·안젤리나 졸리 · 암살자 조직 수장 슬론 역"
+          "note": "제임스 맥어보이·안젤리나 졸리 · 암살자 조직 수장 슬론 역",
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 431930,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 71
         },
         {
           "id": "dark-knight",
@@ -6371,7 +11657,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dark Knight",
           "ko": "다크 나이트",
           "genre": "슈퍼히어로",
-          "note": "크리스찬 베일·히스 레저 · 루시어스 폭스 역"
+          "note": "크리스찬 베일·히스 레저 · 루시어스 폭스 역",
+          "score": 90.1,
+          "scoreEstimated": false,
+          "imdb": 9.1,
+          "imdbVotes": 3240996,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 94
         },
         {
           "id": "thick-as-thieves",
@@ -6379,7 +11672,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Thick as Thieves",
           "ko": "코드",
           "genre": "범죄/하이스트",
-          "note": "안토니오 반데라스·톰 하디 · 전설의 도둑 키스 리플리 역 · 일명 The Code · 국내 2012 개봉"
+          "note": "안토니오 반데라스·톰 하디 · 전설의 도둑 키스 리플리 역 · 일명 The Code · 국내 2012 개봉",
+          "score": 49.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 37190,
+          "criticEstimated": false,
+          "rt": 17
         },
         {
           "id": "maiden-heist",
@@ -6387,7 +11686,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Maiden Heist",
           "ko": "박물관을 털어라",
           "genre": "코미디/범죄",
-          "note": "크리스토퍼 월켄·윌리엄 H. 메이시 · 미술관 경비원 찰스 역"
+          "note": "크리스토퍼 월켄·윌리엄 H. 메이시 · 미술관 경비원 찰스 역",
+          "score": 61.8,
+          "scoreEstimated": true,
+          "imdb": 6.0,
+          "imdbVotes": 18814,
+          "criticEstimated": true
         },
         {
           "id": "invictus",
@@ -6395,7 +11699,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Invictus",
           "ko": "인빅터스",
           "genre": "스포츠/드라마",
-          "note": "맷 데이먼 · 넬슨 만델라 역 · 오스카 남우주연 후보 · 클린트 이스트우드 연출 · 국내 개봉명 우리가 꿈꾸는 기적: 인빅터스"
+          "note": "맷 데이먼 · 넬슨 만델라 역 · 오스카 남우주연 후보 · 클린트 이스트우드 연출 · 국내 개봉명 우리가 꿈꾸는 기적: 인빅터스",
+          "score": 73.5,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 175871,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 76
         },
         {
           "id": "red",
@@ -6403,7 +11714,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "RED",
           "ko": "레드",
           "genre": "액션/코미디",
-          "note": "브루스 윌리스·헬렌 미렌 · 은퇴한 전직 요원 조 역"
+          "note": "브루스 윌리스·헬렌 미렌 · 은퇴한 전직 요원 조 역",
+          "score": 68.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 341559,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 72
         },
         {
           "id": "dolphin-tale",
@@ -6411,7 +11729,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dolphin Tale",
           "ko": "돌핀 테일",
           "genre": "가족/드라마",
-          "note": "꼬리 잃은 돌고래 윈터 실화 · 의수 전문의 맥카시 박사 역"
+          "note": "꼬리 잃은 돌고래 윈터 실화 · 의수 전문의 맥카시 박사 역",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 27131,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 81
         },
         {
           "id": "magic-of-belle-isle",
@@ -6419,7 +11744,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Magic of Belle Isle",
           "ko": "더 매직 오브 벨 아일",
           "genre": "드라마",
-          "note": "롭 라이너 연출 · 은둔 작가 몬티 역"
+          "note": "롭 라이너 연출 · 은둔 작가 몬티 역",
+          "score": 62.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 22692,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 29
         },
         {
           "id": "dark-knight-rises",
@@ -6427,7 +11759,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dark Knight Rises",
           "ko": "다크 나이트 라이즈",
           "genre": "슈퍼히어로",
-          "note": "톰 하디·앤 해서웨이 · 루시어스 폭스 역 · 놀란 3부작 완결"
+          "note": "톰 하디·앤 해서웨이 · 루시어스 폭스 역 · 놀란 3부작 완결",
+          "score": 83.1,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 2033839,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 87
         },
         {
           "id": "olympus-has-fallen",
@@ -6435,7 +11774,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Olympus Has Fallen",
           "ko": "백악관 최후의 날",
           "genre": "액션",
-          "note": "제라드 버틀러 · 하원의장 트럼불 역 · 폴른 시리즈 1편"
+          "note": "제라드 버틀러 · 하원의장 트럼불 역 · 폴른 시리즈 1편",
+          "score": 58.2,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 309569,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 50
         },
         {
           "id": "oblivion",
@@ -6443,7 +11789,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Oblivion",
           "ko": "오블리비언",
           "genre": "SF/액션",
-          "note": "톰 크루즈 · 저항군 지도자 비치 역"
+          "note": "톰 크루즈 · 저항군 지도자 비치 역",
+          "score": 64.5,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 592306,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 54
         },
         {
           "id": "now-you-see-me",
@@ -6451,7 +11804,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Now You See Me",
           "ko": "나우 유 씨 미: 마술사기단",
           "genre": "범죄/스릴러",
-          "note": "제시 아이젠버그·마크 러팔로 · 마술 폭로 전문가 태디어스 역"
+          "note": "제시 아이젠버그·마크 러팔로 · 마술 폭로 전문가 태디어스 역",
+          "score": 64.4,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 780568,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 50
         },
         {
           "id": "last-vegas",
@@ -6459,7 +11819,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Last Vegas",
           "ko": "라스트 베가스",
           "genre": "코미디",
-          "note": "로버트 드 니로·마이클 더글러스·케빈 클라인 · 아치 역"
+          "note": "로버트 드 니로·마이클 더글러스·케빈 클라인 · 아치 역",
+          "score": 60.0,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 141110,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 46
         },
         {
           "id": "lego-movie",
@@ -6467,7 +11834,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Lego Movie",
           "ko": "레고 무비",
           "genre": "애니메이션",
-          "note": "목소리 출연 · 예언자 비트루비우스 역"
+          "note": "목소리 출연 · 예언자 비트루비우스 역",
+          "score": 80.7,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 422479,
+          "criticEstimated": false,
+          "metacritic": 83,
+          "rt": 96
         },
         {
           "id": "transcendence",
@@ -6475,7 +11849,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Transcendence",
           "ko": "트랜센던스",
           "genre": "SF/스릴러",
-          "note": "조니 뎁·레베카 홀 · 과학자 조셉 태거 역"
+          "note": "조니 뎁·레베카 홀 · 과학자 조셉 태거 역",
+          "score": 52.4,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 249087,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 19
         },
         {
           "id": "lucy",
@@ -6483,7 +11864,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Lucy",
           "ko": "루시",
           "genre": "SF/액션",
-          "note": "스칼렛 요한슨 · 뇌과학자 노먼 교수 역 · 뤽 베송 연출"
+          "note": "스칼렛 요한슨 · 뇌과학자 노먼 교수 역 · 뤽 베송 연출",
+          "score": 63.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 587284,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 66
         },
         {
           "id": "dolphin-tale-2",
@@ -6491,7 +11879,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Dolphin Tale 2",
           "ko": "돌핀 테일 2",
           "genre": "가족/드라마",
-          "note": "맥카시 박사 역 재연"
+          "note": "맥카시 박사 역 재연",
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 10410,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 66
         },
         {
           "id": "5-flights-up",
@@ -6499,7 +11894,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "5 Flights Up",
           "ko": "브루클린의 멋진 주말",
           "genre": "코미디/드라마",
-          "note": "다이앤 키튼 · 40년 산 아파트를 내놓은 노부부 · 제작 겸 · 국내 2015 공개"
+          "note": "다이앤 키튼 · 40년 산 아파트를 내놓은 노부부 · 제작 겸 · 국내 2015 공개",
+          "score": 61.5,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 12066,
+          "criticEstimated": false,
+          "rt": 46
         },
         {
           "id": "last-knights",
@@ -6507,7 +11908,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Last Knights",
           "ko": "제7기사단",
           "genre": "액션/드라마",
-          "note": "클라이브 오웬 · 영주 바르톡 역 · 기리야 가즈아키 연출"
+          "note": "클라이브 오웬 · 영주 바르톡 역 · 기리야 가즈아키 연출",
+          "score": 51.4,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 48247,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 16
         },
         {
           "id": "ted-2",
@@ -6515,7 +11923,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ted 2",
           "ko": "19곰 테드 2",
           "genre": "코미디",
-          "note": "마크 월버그 · 인권 변호사 패트릭 미건 역(조연)"
+          "note": "마크 월버그 · 인권 변호사 패트릭 미건 역(조연)",
+          "score": 57.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 267147,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 44
         },
         {
           "id": "momentum",
@@ -6523,7 +11938,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Momentum",
           "ko": "모멘텀",
           "genre": "액션/스릴러",
-          "note": "올가 쿠릴렌코 · 배후의 상원의원 역(소역)"
+          "note": "올가 쿠릴렌코 · 배후의 상원의원 역(소역)",
+          "score": 51.3,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 17951,
+          "criticEstimated": false,
+          "metacritic": 18,
+          "rt": 26
         },
         {
           "id": "london-has-fallen",
@@ -6531,7 +11953,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "London Has Fallen",
           "ko": "런던 해즈 폴른",
           "genre": "액션",
-          "note": "제라드 버틀러 · 부통령 트럼불 역"
+          "note": "제라드 버틀러 · 부통령 트럼불 역",
+          "score": 49.1,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 182629,
+          "criticEstimated": false,
+          "metacritic": 28,
+          "rt": 28
         },
         {
           "id": "now-you-see-me-2",
@@ -6539,7 +11968,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Now You See Me 2",
           "ko": "나우 유 씨 미 2",
           "genre": "범죄/스릴러",
-          "note": "대니얼 래드클리프 합류 · 태디어스 역"
+          "note": "대니얼 래드클리프 합류 · 태디어스 역",
+          "score": 56.3,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 367447,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 34
         },
         {
           "id": "ben-hur",
@@ -6547,7 +11983,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Ben-Hur",
           "ko": "벤허",
           "genre": "역사/액션",
-          "note": "잭 휴스턴 · 셰이크 일데림 역"
+          "note": "잭 휴스턴 · 셰이크 일데림 역",
+          "score": 51.3,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 50801,
+          "criticEstimated": false,
+          "metacritic": 38,
+          "rt": 25
         },
         {
           "id": "going-in-style",
@@ -6555,7 +11998,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Going in Style",
           "ko": "고잉 인 스타일",
           "genre": "범죄/코미디",
-          "note": "마이클 케인·앨런 아킨 · 연금을 잃은 노인 3인조의 은행털이"
+          "note": "마이클 케인·앨런 아킨 · 연금을 잃은 노인 3인조의 은행털이",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 100820,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 47
         },
         {
           "id": "just-getting-started",
@@ -6563,7 +12013,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Just Getting Started",
           "ko": "저스트 겟팅 스타티드",
           "genre": "코미디",
-          "note": "토미 리 존스 · 리조트 매니저 듀크 역"
+          "note": "토미 리 존스 · 리조트 매니저 듀크 역",
+          "score": 49.1,
+          "scoreEstimated": false,
+          "imdb": 4.6,
+          "imdbVotes": 9220,
+          "criticEstimated": false,
+          "rt": 5
         },
         {
           "id": "nutcracker-four-realms",
@@ -6571,7 +12027,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Nutcracker and the Four Realms",
           "ko": "호두까기 인형과 4개의 왕국",
           "genre": "판타지",
-          "note": "매켄지 포이·키이라 나이틀리 · 드로셀마이어 역"
+          "note": "매켄지 포이·키이라 나이틀리 · 드로셀마이어 역",
+          "score": 52.3,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 40989,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 32
         },
         {
           "id": "poison-rose",
@@ -6579,7 +12042,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Poison Rose",
           "ko": "포이즌 로즈",
           "genre": "범죄/느와르",
-          "note": "존 트라볼타·브렌던 프레이저 · 닥 역"
+          "note": "존 트라볼타·브렌던 프레이저 · 닥 역",
+          "score": 46.3,
+          "scoreEstimated": false,
+          "imdb": 4.8,
+          "imdbVotes": 12287,
+          "criticEstimated": false,
+          "rt": 0
         },
         {
           "id": "angel-has-fallen",
@@ -6587,7 +12056,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Angel Has Fallen",
           "ko": "엔젤 해즈 폴른",
           "genre": "액션",
-          "note": "제라드 버틀러 · 대통령 트럼불 역"
+          "note": "제라드 버틀러 · 대통령 트럼불 역",
+          "score": 57.3,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 124870,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 39
         },
         {
           "id": "comeback-trail",
@@ -6595,7 +12071,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Comeback Trail",
           "ko": "컴백 트레일",
           "genre": "코미디",
-          "note": "로버트 드 니로·토미 리 존스 · 갱스터 레지 역 · 국내 2021 개봉"
+          "note": "로버트 드 니로·토미 리 존스 · 갱스터 레지 역 · 국내 2021 개봉",
+          "score": 55.1,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 14943,
+          "criticEstimated": false,
+          "rt": 30
         },
         {
           "id": "vanquish",
@@ -6603,7 +12085,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Vanquish",
           "ko": "뱅퀴시",
           "genre": "액션/스릴러",
-          "note": "루비 로즈 · 전직 경찰 데이먼 역"
+          "note": "루비 로즈 · 전직 경찰 데이먼 역",
+          "score": 48.5,
+          "scoreEstimated": false,
+          "imdb": 3.1,
+          "imdbVotes": 5844,
+          "criticEstimated": false,
+          "rt": 5
         },
         {
           "id": "hitmans-wifes-bodyguard",
@@ -6611,7 +12099,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hitman's Wife's Bodyguard",
           "ko": "킬러의 보디가드 2",
           "genre": "액션/코미디",
-          "note": "라이언 레이놀즈·새뮤얼 L. 잭슨·셀마 헤이엑 · 마이클 브라이스 시니어 역"
+          "note": "라이언 레이놀즈·새뮤얼 L. 잭슨·셀마 헤이엑 · 마이클 브라이스 시니어 역",
+          "score": 51.3,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 121727,
+          "criticEstimated": false,
+          "metacritic": 32,
+          "rt": 26
         },
         {
           "id": "paradise-highway",
@@ -6619,7 +12114,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Paradise Highway",
           "ko": "파라다이스 하이웨이",
           "genre": "범죄/스릴러",
-          "note": "쥘리에트 비노슈·프랭크 그릴로 · FBI 분석관 게릭 역"
+          "note": "쥘리에트 비노슈·프랭크 그릴로 · FBI 분석관 게릭 역",
+          "score": 59.0,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 8186,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 14
         },
         {
           "id": "minute-you-wake-up-dead",
@@ -6627,7 +12129,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Minute You Wake Up Dead",
           "ko": "더 미닛 유 웨이크 업 데드",
           "genre": "범죄/스릴러",
-          "note": "콜 하우저 · 보안관 파울러 역 · 한국 개봉명 미확인"
+          "note": "콜 하우저 · 보안관 파울러 역 · 한국 개봉명 미확인",
+          "score": 57.5,
+          "scoreEstimated": false,
+          "imdb": 4.5,
+          "imdbVotes": 3892,
+          "criticEstimated": false,
+          "rt": 14
         },
         {
           "id": "ritual-killer",
@@ -6635,7 +12143,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Ritual Killer",
           "ko": "무티: 주술살인",
           "genre": "범죄/스릴러",
-          "note": "콜 하우저 · 인류학 교수 매클스 역 · 국내 2024.1 개봉"
+          "note": "콜 하우저 · 인류학 교수 매클스 역 · 국내 2024.1 개봉",
+          "score": 55.3,
+          "scoreEstimated": true,
+          "imdb": 4.3,
+          "imdbVotes": 9528,
+          "criticEstimated": true
         },
         {
           "id": "a-good-person",
@@ -6643,7 +12156,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Good Person",
           "ko": "어 굿 퍼슨",
           "genre": "드라마",
-          "note": "플로렌스 퓨 · 아들을 잃은 전직 경찰 대니얼 역 · 잭 브래프 연출"
+          "note": "플로렌스 퓨 · 아들을 잃은 전직 경찰 대니얼 역 · 잭 브래프 연출",
+          "score": 68.9,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 30023,
+          "criticEstimated": true
         },
         {
           "id": "57-seconds",
@@ -6651,7 +12169,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "57 Seconds",
           "ko": "타임코드 57",
           "genre": "SF/스릴러",
-          "note": "조시 허처슨 · 테크 거물 앤튼 버렐 역"
+          "note": "조시 허처슨 · 테크 거물 앤튼 버렐 역",
+          "score": 50.3,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 14735,
+          "criticEstimated": false,
+          "rt": 13
         },
         {
           "id": "my-dead-friend-zoe",
@@ -6659,7 +12183,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "My Dead Friend Zoe",
           "ko": "내 죽은 친구 조이",
           "genre": "코미디/드라마",
-          "note": "소네콰 마틴-그린·에드 해리스 · 재향군인 상담사 콜 박사 역 · 한국 제목 불확실"
+          "note": "소네콰 마틴-그린·에드 해리스 · 재향군인 상담사 콜 박사 역 · 한국 제목 불확실",
+          "score": 69.1,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 4245,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 100
         },
         {
           "id": "gunner",
@@ -6667,7 +12198,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gunner",
           "ko": "거너",
           "genre": "액션",
-          "note": "루크 헴스워스 · 켄드릭 라이커 역 · 국내 2025.4 개봉"
+          "note": "루크 헴스워스 · 켄드릭 라이커 역 · 국내 2025.4 개봉",
+          "score": 58.5,
+          "scoreEstimated": true,
+          "imdb": 3.2,
+          "imdbVotes": 3688,
+          "criticEstimated": true
         },
         {
           "id": "now-you-see-me-3",
@@ -6675,7 +12211,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Now You See Me: Now You Don't",
           "ko": "나우 유 씨 미 3",
           "genre": "범죄/스릴러",
-          "note": "제시 아이젠버그·우디 해럴슨 · 태디어스 역 · 최신작"
+          "note": "제시 아이젠버그·우디 해럴슨 · 태디어스 역 · 최신작",
+          "score": 58.3,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 81480,
+          "criticEstimated": false,
+          "metacritic": 50,
+          "rt": 61
         }
       ]
     }
@@ -6692,7 +12235,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Duellists",
           "ko": "결투자들",
           "genre": "역사/드라마",
-          "note": "키스 캐러딘·하비 케이틀 · 장편 데뷔작 · 나폴레옹 시대 두 장교의 15년 결투 · 칸 영화제 데뷔작상"
+          "note": "키스 캐러딘·하비 케이틀 · 장편 데뷔작 · 나폴레옹 시대 두 장교의 15년 결투 · 칸 영화제 데뷔작상",
+          "score": 72.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 29102,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 74
         },
         {
           "id": "alien",
@@ -6700,7 +12250,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Alien",
           "ko": "에이리언",
           "genre": "SF/호러",
-          "note": "시고니 위버 · 리플리의 탄생, SF 호러의 교과서 · 오스카 시각효과상"
+          "note": "시고니 위버 · 리플리의 탄생, SF 호러의 교과서 · 오스카 시각효과상",
+          "score": 86.2,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 1080413,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 93
         },
         {
           "id": "blade-runner",
@@ -6708,7 +12265,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Blade Runner",
           "ko": "블레이드 러너",
           "genre": "SF/누아르",
-          "note": "해리슨 포드·룻거 하우어 · 사이버펑크 미학의 원형 · 감독이 직접 다듬은 파이널 컷 추천"
+          "note": "해리슨 포드·룻거 하우어 · 사이버펑크 미학의 원형 · 감독이 직접 다듬은 파이널 컷 추천",
+          "score": 82.6,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 894347,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 89
         },
         {
           "id": "legend",
@@ -6716,7 +12280,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Legend",
           "ko": "레전드",
           "genre": "판타지",
-          "note": "톰 크루즈·미아 사라·팀 커리 · 팀 커리의 어둠의 군주와 동화 같은 미장센"
+          "note": "톰 크루즈·미아 사라·팀 커리 · 팀 커리의 어둠의 군주와 동화 같은 미장센",
+          "score": 53.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 81592,
+          "criticEstimated": false,
+          "metacritic": 30,
+          "rt": 34
         },
         {
           "id": "someone-to-watch-over-me",
@@ -6724,7 +12295,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Someone to Watch Over Me",
           "ko": "위험한 연인",
           "genre": "스릴러/로맨스",
-          "note": "톰 베린저·미미 로저스·로레인 브라코 · 살인 목격자를 지키는 형사의 위험한 사랑, 80년대 뉴욕 네오누아르"
+          "note": "톰 베린저·미미 로저스·로레인 브라코 · 살인 목격자를 지키는 형사의 위험한 사랑, 80년대 뉴욕 네오누아르",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 13535,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 67
         },
         {
           "id": "black-rain",
@@ -6732,7 +12310,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Black Rain",
           "ko": "블랙 레인",
           "genre": "액션/범죄",
-          "note": "마이클 더글러스·앤디 가르시아·다카쿠라 켄 · 네온 빛 오사카 누아르 · 마쓰다 유사쿠의 유작"
+          "note": "마이클 더글러스·앤디 가르시아·다카쿠라 켄 · 네온 빛 오사카 누아르 · 마쓰다 유사쿠의 유작",
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 65842,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 54
         },
         {
           "id": "thelma-louise",
@@ -6740,7 +12325,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Thelma & Louise",
           "ko": "델마와 루이스",
           "genre": "로드무비/드라마",
-          "note": "수잔 서랜든·지나 데이비스 · 여성 로드무비의 대표작, 브래드 피트 출세작 · 오스카 각본상"
+          "note": "수잔 서랜든·지나 데이비스 · 여성 로드무비의 대표작, 브래드 피트 출세작 · 오스카 각본상",
+          "score": 79.8,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 197712,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 87
         },
         {
           "id": "1492",
@@ -6748,7 +12340,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "1492: Conquest of Paradise",
           "ko": "1492 콜럼버스",
           "genre": "역사/드라마",
-          "note": "제라르 드파르디유·시고니 위버 · 신대륙 도착 500주년 기념 대작 · 반젤리스 음악"
+          "note": "제라르 드파르디유·시고니 위버 · 신대륙 도착 500주년 기념 대작 · 반젤리스 음악",
+          "score": 56.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 35689,
+          "criticEstimated": false,
+          "rt": 32
         },
         {
           "id": "white-squall",
@@ -6756,7 +12354,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "White Squall",
           "ko": "화이트 스콜",
           "genre": "드라마/어드벤처",
-          "note": "제프 브리지스 · 1961년 범선 훈련선 알바트로스호 침몰 실화 · 소년들의 성장 항해극"
+          "note": "제프 브리지스 · 1961년 범선 훈련선 알바트로스호 침몰 실화 · 소년들의 성장 항해극",
+          "score": 63.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 26383,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 58
         },
         {
           "id": "gi-jane",
@@ -6764,7 +12369,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "G.I. Jane",
           "ko": "지.아이. 제인",
           "genre": "액션/드라마",
-          "note": "데미 무어·비고 모텐슨 · 해군 특수부대 지옥 훈련에 도전한 여성 장교, 삭발 투혼"
+          "note": "데미 무어·비고 모텐슨 · 해군 특수부대 지옥 훈련에 도전한 여성 장교, 삭발 투혼",
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 93064,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 53
         },
         {
           "id": "gladiator",
@@ -6772,7 +12384,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gladiator",
           "ko": "글래디에이터",
           "genre": "역사/액션",
-          "note": "러셀 크로우·호아킨 피닉스 · 검투사 서사극의 정점 · 오스카 작품상 포함 5관왕"
+          "note": "러셀 크로우·호아킨 피닉스 · 검투사 서사극의 정점 · 오스카 작품상 포함 5관왕",
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1889607,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 80
         },
         {
           "id": "hannibal",
@@ -6780,7 +12399,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Hannibal",
           "ko": "한니발",
           "genre": "스릴러",
-          "note": "앤서니 홉킨스·줄리안 무어 · 양들의 침묵 10년 후, 피렌체에 숨은 렉터 박사"
+          "note": "앤서니 홉킨스·줄리안 무어 · 양들의 침묵 10년 후, 피렌체에 숨은 렉터 박사",
+          "score": 61.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 317810,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 39
         },
         {
           "id": "black-hawk-down",
@@ -6788,7 +12414,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Black Hawk Down",
           "ko": "블랙 호크 다운",
           "genre": "전쟁",
-          "note": "조시 하트넷·이완 맥그리거·에릭 바나 · 1993년 모가디슈 전투 실화, 압도적 시가전 · 오스카 편집·음향상"
+          "note": "조시 하트넷·이완 맥그리거·에릭 바나 · 1993년 모가디슈 전투 실화, 압도적 시가전 · 오스카 편집·음향상",
+          "score": 76.1,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 461098,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 76
         },
         {
           "id": "matchstick-men",
@@ -6796,7 +12429,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Matchstick Men",
           "ko": "매치스틱 맨",
           "genre": "범죄/코미디",
-          "note": "니콜라스 케이지·샘 록웰·앨리슨 로먼 · 강박증 사기꾼과 딸의 반전 사기극"
+          "note": "니콜라스 케이지·샘 록웰·앨리슨 로먼 · 강박증 사기꾼과 딸의 반전 사기극",
+          "score": 71.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 146986,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 82
         },
         {
           "id": "kingdom-of-heaven",
@@ -6804,7 +12444,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Kingdom of Heaven",
           "ko": "킹덤 오브 헤븐",
           "genre": "역사/액션",
-          "note": "올랜도 블룸·에바 그린·리암 니슨 · 1187년 예루살렘 공방전 · 감독판 강력 추천"
+          "note": "올랜도 블룸·에바 그린·리암 니슨 · 1187년 예루살렘 공방전 · 감독판 강력 추천",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 363244,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 39
         },
         {
           "id": "good-year",
@@ -6812,7 +12459,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "A Good Year",
           "ko": "어느 멋진 순간",
           "genre": "로맨스/코미디",
-          "note": "러셀 크로우·마리옹 꼬띠아르 · 런던 펀드매니저의 프로방스 포도밭 힐링 로맨스"
+          "note": "러셀 크로우·마리옹 꼬띠아르 · 런던 펀드매니저의 프로방스 포도밭 힐링 로맨스",
+          "score": 59.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 108372,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 27
         },
         {
           "id": "american-gangster",
@@ -6820,7 +12474,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "American Gangster",
           "ko": "아메리칸 갱스터",
           "genre": "범죄/드라마",
-          "note": "덴젤 워싱턴·러셀 크로우 · 실존 마약왕 프랭크 루카스와 그를 쫓는 형사의 실화"
+          "note": "덴젤 워싱턴·러셀 크로우 · 실존 마약왕 프랭크 루카스와 그를 쫓는 형사의 실화",
+          "score": 77.9,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 495656,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 81
         },
         {
           "id": "body-of-lies",
@@ -6828,7 +12489,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Body of Lies",
           "ko": "바디 오브 라이즈",
           "genre": "스파이/스릴러",
-          "note": "레오나르도 디카프리오·러셀 크로우 · 현장 요원과 본부 상관이 엇갈리는 중동 대테러 첩보전"
+          "note": "레오나르도 디카프리오·러셀 크로우 · 현장 요원과 본부 상관이 엇갈리는 중동 대테러 첩보전",
+          "score": 65.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 252903,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 55
         },
         {
           "id": "robin-hood",
@@ -6836,7 +12504,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Robin Hood",
           "ko": "로빈 후드",
           "genre": "액션/어드벤처",
-          "note": "러셀 크로우·케이트 블란쳇 · 전설이 되기 전 궁수 로빈 롱스트라이드의 기원담"
+          "note": "러셀 크로우·케이트 블란쳇 · 전설이 되기 전 궁수 로빈 롱스트라이드의 기원담",
+          "score": 60.4,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 299513,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 44
         },
         {
           "id": "prometheus",
@@ -6844,7 +12519,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Prometheus",
           "ko": "프로메테우스",
           "genre": "SF",
-          "note": "누미 라파스·마이클 패스벤더·샤를리즈 테론 · 에이리언 프리퀄, 인류의 기원을 찾는 탐사"
+          "note": "누미 라파스·마이클 패스벤더·샤를리즈 테론 · 에이리언 프리퀄, 인류의 기원을 찾는 탐사",
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 708865,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 73
         },
         {
           "id": "counselor",
@@ -6852,7 +12534,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Counselor",
           "ko": "카운슬러",
           "genre": "범죄/스릴러",
-          "note": "마이클 패스벤더·페넬로페 크루즈·카메론 디아즈·하비에르 바르뎀·브래드 피트 · 코맥 매카시의 첫 오리지널 각본"
+          "note": "마이클 패스벤더·페넬로페 크루즈·카메론 디아즈·하비에르 바르뎀·브래드 피트 · 코맥 매카시의 첫 오리지널 각본",
+          "score": 51.0,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 111077,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 33
         },
         {
           "id": "exodus",
@@ -6860,7 +12549,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Exodus: Gods and Kings",
           "ko": "엑소더스: 신들과 왕들",
           "genre": "역사/드라마",
-          "note": "크리스찬 베일·조엘 에저튼 · 모세와 람세스의 대립, 열 가지 재앙과 홍해 스펙터클"
+          "note": "크리스찬 베일·조엘 에저튼 · 모세와 람세스의 대립, 열 가지 재앙과 홍해 스펙터클",
+          "score": 54.6,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 188604,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 29
         },
         {
           "id": "the-martian",
@@ -6868,7 +12564,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Martian",
           "ko": "마션",
           "genre": "SF",
-          "note": "맷 데이먼·제시카 차스테인 · 화성에 홀로 남은 식물학자의 유쾌한 생존기 · 골든글로브 작품상(뮤지컬·코미디)"
+          "note": "맷 데이먼·제시카 차스테인 · 화성에 홀로 남은 식물학자의 유쾌한 생존기 · 골든글로브 작품상(뮤지컬·코미디)",
+          "score": 81.5,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 1033986,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 91
         },
         {
           "id": "alien-covenant",
@@ -6876,7 +12579,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Alien: Covenant",
           "ko": "에이리언: 커버넌트",
           "genre": "SF/호러",
-          "note": "마이클 패스벤더·캐서린 워터스턴 · 프로메테우스 속편, 안드로이드 데이빗의 창조"
+          "note": "마이클 패스벤더·캐서린 워터스턴 · 프로메테우스 속편, 안드로이드 데이빗의 창조",
+          "score": 64.4,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 350226,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 65
         },
         {
           "id": "all-the-money",
@@ -6884,7 +12594,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "All the Money in the World",
           "ko": "올 더 머니",
           "genre": "범죄/드라마",
-          "note": "미셸 윌리엄스·크리스토퍼 플러머·마크 월버그 · 1973년 게티 손자 납치 실화 · 플러머 긴급 재촬영 투입, 오스카 남우조연 후보"
+          "note": "미셸 윌리엄스·크리스토퍼 플러머·마크 월버그 · 1973년 게티 손자 납치 실화 · 플러머 긴급 재촬영 투입, 오스카 남우조연 후보",
+          "score": 70.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 97509,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 79
         },
         {
           "id": "last-duel",
@@ -6892,7 +12609,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Last Duel",
           "ko": "라스트 듀얼: 최후의 결투",
           "genre": "역사/드라마",
-          "note": "맷 데이먼·애덤 드라이버·조디 코머·벤 애플렉 · 14세기 프랑스 마지막 결투재판 실화를 세 시점으로"
+          "note": "맷 데이먼·애덤 드라이버·조디 코머·벤 애플렉 · 14세기 프랑스 마지막 결투재판 실화를 세 시점으로",
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 211454,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 85
         },
         {
           "id": "house-of-gucci",
@@ -6900,7 +12624,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "House of Gucci",
           "ko": "하우스 오브 구찌",
           "genre": "범죄/드라마",
-          "note": "레이디 가가·애덤 드라이버·알 파치노·자레드 레토 · 구찌 가문의 몰락과 마우리치오 구찌 피살 실화"
+          "note": "레이디 가가·애덤 드라이버·알 파치노·자레드 레토 · 구찌 가문의 몰락과 마우리치오 구찌 피살 실화",
+          "score": 64.4,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 177543,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 62
         },
         {
           "id": "napoleon",
@@ -6908,7 +12639,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Napoleon",
           "ko": "나폴레옹",
           "genre": "역사/전쟁",
-          "note": "호아킨 피닉스·바네사 커비 · 나폴레옹과 조제핀, 아우스터리츠 전투 장면이 압권"
+          "note": "호아킨 피닉스·바네사 커비 · 나폴레옹과 조제핀, 아우스터리츠 전투 장면이 압권",
+          "score": 62.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 191976,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 58
         },
         {
           "id": "gladiator-2",
@@ -6916,7 +12654,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Gladiator II",
           "ko": "글래디에이터 Ⅱ",
           "genre": "역사/액션",
-          "note": "폴 메스칼·페드로 파스칼·덴젤 워싱턴 · 24년 만의 속편, 콜로세움에 선 루키우스"
+          "note": "폴 메스칼·페드로 파스칼·덴젤 워싱턴 · 24년 만의 속편, 콜로세움에 선 루키우스",
+          "score": 64.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 315382,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 70
         },
         {
           "id": "dog-stars",
@@ -6924,7 +12669,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Dog Stars",
           "ko": "도그 스타: 마지막 희망",
           "genre": "SF/드라마",
-          "note": "제이콥 엘로디·조슈 브롤린·마가렛 퀄리 · 대재앙 이후 반려견과 사는 파일럿의 생존 로드무비 · 최신작(국내 2026.8.26 개봉)"
+          "note": "제이콥 엘로디·조슈 브롤린·마가렛 퀄리 · 대재앙 이후 반려견과 사는 파일럿의 생존 로드무비 · 최신작(국내 2026.8.26 개봉)",
+          "score": 64.4,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 17911,
+          "criticEstimated": true
         }
       ]
     },
@@ -6939,7 +12689,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Seizure",
           "ko": "강탈",
           "genre": "공포",
-          "note": "조나단 프라이드·마르틴 베스윅 · 장편 데뷔작, 저예산 캐나다 호러 · 일명 지옥의 여왕(Queen of Evil) · 한국 개봉명 불확실"
+          "note": "조나단 프라이드·마르틴 베스윅 · 장편 데뷔작, 저예산 캐나다 호러 · 일명 지옥의 여왕(Queen of Evil) · 한국 개봉명 불확실",
+          "score": 66.1,
+          "scoreEstimated": true,
+          "imdb": 4.7,
+          "imdbVotes": 1357,
+          "criticEstimated": true
         },
         {
           "id": "the-hand",
@@ -6947,7 +12702,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Hand",
           "ko": "핸드",
           "genre": "공포",
-          "note": "마이클 케인 · 잘린 손이 살인을 저지르는 심리 호러 · 제임스 호너 음악 · 일명 손"
+          "note": "마이클 케인 · 잘린 손이 살인을 저지르는 심리 호러 · 제임스 호너 음악 · 일명 손",
+          "score": 57.8,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 7634,
+          "criticEstimated": false,
+          "rt": 29
         },
         {
           "id": "salvador",
@@ -6955,7 +12716,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Salvador",
           "ko": "살바도르",
           "genre": "전쟁/드라마",
-          "note": "제임스 우즈·제임스 벨루시 · 1980년 엘살바도르 내전의 종군기자 · 우즈 오스카 남우주연 후보"
+          "note": "제임스 우즈·제임스 벨루시 · 1980년 엘살바도르 내전의 종군기자 · 우즈 오스카 남우주연 후보",
+          "score": 76.5,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 25894,
+          "criticEstimated": false,
+          "rt": 90
         },
         {
           "id": "platoon",
@@ -6963,7 +12730,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Platoon",
           "ko": "플래툰",
           "genre": "전쟁",
-          "note": "찰리 신·톰 베린저·윌렘 데포 · 감독의 베트남 참전 경험을 그린 출세작 · 오스카 작품상·감독상 포함 4관왕"
+          "note": "찰리 신·톰 베린저·윌렘 데포 · 감독의 베트남 참전 경험을 그린 출세작 · 오스카 작품상·감독상 포함 4관왕",
+          "score": 83.6,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 478581,
+          "criticEstimated": false,
+          "metacritic": 92,
+          "rt": 89
         },
         {
           "id": "wall-street",
@@ -6971,7 +12745,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Wall Street",
           "ko": "월 스트리트",
           "genre": "범죄/드라마",
-          "note": "마이클 더글러스·찰리 신 · 탐욕의 증권가와 고든 게코 · 더글러스 오스카 남우주연상"
+          "note": "마이클 더글러스·찰리 신 · 탐욕의 증권가와 고든 게코 · 더글러스 오스카 남우주연상",
+          "score": 70.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 176407,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 79
         },
         {
           "id": "talk-radio",
@@ -6979,7 +12760,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Talk Radio",
           "ko": "토크 라디오",
           "genre": "드라마",
-          "note": "에릭 보고시언 · 증오를 받는 라디오 진행자의 하룻밤 · 동명 희곡 각색, 베를린 황금곰 후보"
+          "note": "에릭 보고시언 · 증오를 받는 라디오 진행자의 하룻밤 · 동명 희곡 각색, 베를린 황금곰 후보",
+          "score": 73.2,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 15778,
+          "criticEstimated": false,
+          "rt": 82
         },
         {
           "id": "born-on-the-fourth",
@@ -6987,7 +12774,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Born on the Fourth of July",
           "ko": "7월 4일생",
           "genre": "전기/드라마",
-          "note": "톰 크루즈 · 참전 용사가 반전 운동가로 선 론 코빅 실화 · 오스카 감독상, 베트남 3부작의 두 번째"
+          "note": "톰 크루즈 · 참전 용사가 반전 운동가로 선 론 코빅 실화 · 오스카 감독상, 베트남 3부작의 두 번째",
+          "score": 74.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 126530,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 84
         },
         {
           "id": "the-doors",
@@ -6995,7 +12789,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "The Doors",
           "ko": "도어즈",
           "genre": "전기/음악",
-          "note": "발 킬머·멕 라이언 · 짐 모리슨과 도어즈의 흥망 · 킬머가 직접 노래"
+          "note": "발 킬머·멕 라이언 · 짐 모리슨과 도어즈의 흥망 · 킬머가 직접 노래",
+          "score": 67.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 108387,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 56
         },
         {
           "id": "jfk",
@@ -7003,7 +12804,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "JFK",
           "ko": "JFK",
           "genre": "정치 스릴러",
-          "note": "케빈 코스트너·토미 리 존스 · 케네디 암살과 짐 개리슨의 음모론 · 오스카 편집·촬영상, 감독·작품 후보"
+          "note": "케빈 코스트너·토미 리 존스 · 케네디 암살과 짐 개리슨의 음모론 · 오스카 편집·촬영상, 감독·작품 후보",
+          "score": 78.7,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 183965,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 85
         },
         {
           "id": "heaven-and-earth",
@@ -7011,7 +12819,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Heaven & Earth",
           "ko": "하늘과 땅",
           "genre": "전쟁/드라마",
-          "note": "히엡 티 레·토미 리 존스 · 베트남 여성 레이 리의 실화 · 베트남 3부작의 마지막"
+          "note": "히엡 티 레·토미 리 존스 · 베트남 여성 레이 리의 실화 · 베트남 3부작의 마지막",
+          "score": 62.9,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 16325,
+          "criticEstimated": false,
+          "rt": 43
         },
         {
           "id": "natural-born-killers",
@@ -7019,7 +12833,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Natural Born Killers",
           "ko": "올리버 스톤의 킬러",
           "genre": "범죄/드라마",
-          "note": "우디 해럴슨·줄리엣 루이스 · 미디어가 키운 연쇄살인 커플 · 타란티노 원안, 베네치아 심사위원대상"
+          "note": "우디 해럴슨·줄리엣 루이스 · 미디어가 키운 연쇄살인 커플 · 타란티노 원안, 베네치아 심사위원대상",
+          "score": 69.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 270679,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 51
         },
         {
           "id": "nixon",
@@ -7027,7 +12848,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Nixon",
           "ko": "닉슨",
           "genre": "전기/드라마",
-          "note": "앤서니 홉킨스·조앤 앨런 · 리처드 닉슨의 권력과 몰락 · 오스카 남우주연·여우조연·각본·음악 후보"
+          "note": "앤서니 홉킨스·조앤 앨런 · 리처드 닉슨의 권력과 몰락 · 오스카 남우주연·여우조연·각본·음악 후보",
+          "score": 69.7,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 34923,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 75
         },
         {
           "id": "u-turn",
@@ -7035,7 +12863,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "U Turn",
           "ko": "유턴",
           "genre": "범죄/스릴러",
-          "note": "숀 펜·제니퍼 로페즈·닉 놀테 · 사막 마을에 갇힌 건달의 네오누아르 · 엔니오 모리코네 음악"
+          "note": "숀 펜·제니퍼 로페즈·닉 놀테 · 사막 마을에 갇힌 건달의 네오누아르 · 엔니오 모리코네 음악",
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 58165,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 61
         },
         {
           "id": "any-given-sunday",
@@ -7043,7 +12878,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Any Given Sunday",
           "ko": "애니 기븐 선데이",
           "genre": "스포츠/드라마",
-          "note": "알 파치노·카메론 디아즈·제이미 폭스 · 프로 미식축구 구단의 하루, 감독과 쿼터백의 충돌"
+          "note": "알 파치노·카메론 디아즈·제이미 폭스 · 프로 미식축구 구단의 하루, 감독과 쿼터백의 충돌",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 132520,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 52
         },
         {
           "id": "alexander",
@@ -7051,7 +12893,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Alexander",
           "ko": "알렉산더",
           "genre": "역사/전쟁",
-          "note": "콜린 파렐·안젤리나 졸리·발 킬머 · 알렉산드로스 대왕의 원정과 몰락 · 반젤리스 음악"
+          "note": "콜린 파렐·안젤리나 졸리·발 킬머 · 알렉산드로스 대왕의 원정과 몰락 · 반젤리스 음악",
+          "score": 47.8,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 185229,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 15
         },
         {
           "id": "world-trade-center",
@@ -7059,7 +12908,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "World Trade Center",
           "ko": "월드 트레이드 센터",
           "genre": "드라마",
-          "note": "니콜라스 케이지·마이클 페냐 · 9·11 붕괴 잔해에 묻힌 항만청 경찰 두 명의 생존 실화"
+          "note": "니콜라스 케이지·마이클 페냐 · 9·11 붕괴 잔해에 묻힌 항만청 경찰 두 명의 생존 실화",
+          "score": 62.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 93270,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 66
         },
         {
           "id": "w",
@@ -7067,7 +12923,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "W.",
           "ko": "더 프레지던트",
           "genre": "전기/드라마",
-          "note": "조슈 브롤린 · 조지 W. 부시의 집권과 이라크 전쟁 · 스탠리 와이저 각본 · 국내 2021 개봉, 일명 더블유"
+          "note": "조슈 브롤린 · 조지 W. 부시의 집권과 이라크 전쟁 · 스탠리 와이저 각본 · 국내 2021 개봉, 일명 더블유",
+          "score": 61.9,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 51796,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 58
         },
         {
           "id": "money-never-sleeps",
@@ -7075,7 +12938,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Wall Street: Money Never Sleeps",
           "ko": "월 스트리트: 머니 네버 슬립스",
           "genre": "범죄/드라마",
-          "note": "마이클 더글러스·샤이아 라보프·캐리 멀리건 · 2008년 금융위기, 게코의 귀환"
+          "note": "마이클 더글러스·샤이아 라보프·캐리 멀리건 · 2008년 금융위기, 게코의 귀환",
+          "score": 60.8,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 110547,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 54
         },
         {
           "id": "savages",
@@ -7083,7 +12953,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Savages",
           "ko": "파괴자들",
           "genre": "액션/범죄",
-          "note": "테일러 키치·에런 테일러존슨·블레이크 라이블리·셀마 헤이엑 · 대마 사업과 멕시코 카르텔의 납치극 · 돈 윈즐로 원작"
+          "note": "테일러 키치·에런 테일러존슨·블레이크 라이블리·셀마 헤이엑 · 대마 사업과 멕시코 카르텔의 납치극 · 돈 윈즐로 원작",
+          "score": 61.4,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 139544,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 50
         },
         {
           "id": "snowden",
@@ -7091,7 +12968,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "en": "Snowden",
           "ko": "스노든",
           "genre": "전기/스릴러",
-          "note": "조셉 고든 레빗·샤일린 우들리 · NSA 내부고발자 에드워드 스노든 실화 · 개봉한 마지막 장편 극영화"
+          "note": "조셉 고든 레빗·샤일린 우들리 · NSA 내부고발자 에드워드 스노든 실화 · 개봉한 마지막 장편 극영화",
+          "score": 68.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 175056,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 61
         }
       ]
     }
@@ -7119,7 +13003,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -2345,
           "ord": 0,
           "type": "다큐",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#secrets-of-the-saqqara-tomb-2020"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#secrets-of-the-saqqara-tomb-2020",
+          "score": 69.4,
+          "scoreEstimated": true,
+          "imdb": 7.2,
+          "imdbVotes": 7656,
+          "criticEstimated": true
         },
         {
           "id": "exodus-gods-and-kings-2014",
@@ -7137,7 +13026,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1446,
           "ord": 1,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#exodus-gods-and-kings-2014"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#exodus-gods-and-kings-2014",
+          "score": 54.6,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 188604,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 29
         },
         {
           "id": "prince-of-egypt-1998",
@@ -7155,7 +13051,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1446,
           "ord": 2,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#prince-of-egypt-1998"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#prince-of-egypt-1998",
+          "score": 71.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 165291,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 79
         },
         {
           "id": "testament-story-of-moses-2024",
@@ -7173,7 +13076,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1446,
           "ord": 3,
           "type": "다큐",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#testament-story-of-moses-2024"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#testament-story-of-moses-2024",
+          "score": 66.7,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 4880,
+          "criticEstimated": true
         },
         {
           "id": "the-ten-commandments-1956",
@@ -7191,7 +13099,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1446,
           "ord": 4,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-ten-commandments-1956"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-ten-commandments-1956",
+          "score": 79.9,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 85899,
+          "criticEstimated": false,
+          "rt": 84
         },
         {
           "id": "helen-of-troy-1956",
@@ -7208,7 +13122,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1184,
           "ord": 5,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#helen-of-troy-1956"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#helen-of-troy-1956",
+          "score": 66.6,
+          "scoreEstimated": true,
+          "imdb": 6.1,
+          "imdbVotes": 3088,
+          "criticEstimated": true
         },
         {
           "id": "helen-of-troy-2003",
@@ -7225,7 +13144,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1184,
           "ord": 6,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#helen-of-troy-2003"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#helen-of-troy-2003",
+          "score": 65.2,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 7243,
+          "criticEstimated": true
         },
         {
           "id": "troy-2004",
@@ -7242,7 +13166,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1184,
           "ord": 7,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#troy-2004"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#troy-2004",
+          "score": 66.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 652190,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 53
         },
         {
           "id": "troy-fall-of-a-city-2018",
@@ -7259,7 +13190,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1184,
           "ord": 8,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#troy-fall-of-a-city-2018"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#troy-fall-of-a-city-2018",
+          "score": 50.7,
+          "scoreEstimated": true,
+          "imdb": 4.2,
+          "imdbVotes": 16852,
+          "criticEstimated": true
         },
         {
           "id": "trojan-women-1971",
@@ -7276,7 +13212,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1184,
           "ord": 9,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#trojan-women-1971"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#trojan-women-1971",
+          "score": 68.7,
+          "scoreEstimated": true,
+          "imdb": 6.9,
+          "imdbVotes": 1929,
+          "criticEstimated": true
         },
         {
           "id": "the-odyssey-1997",
@@ -7293,7 +13234,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1174,
           "ord": 10,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-odyssey-1997"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-odyssey-1997",
+          "score": 68.9,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 21808,
+          "criticEstimated": true
         },
         {
           "id": "the-odyssey-2026",
@@ -7310,7 +13256,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1174,
           "ord": 11,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-odyssey-2026"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-odyssey-2026",
+          "score": 86.2,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 532014,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 94
         },
         {
           "id": "the-return-2024",
@@ -7327,7 +13280,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -1174,
           "ord": 12,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-return-2024"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-return-2024",
+          "score": 66.7,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 18577,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 78
         },
         {
           "id": "300-2006",
@@ -7345,7 +13305,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -480,
           "ord": 13,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#300-2006"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#300-2006",
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 923508,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 61
         },
         {
           "id": "300-rise-of-an-empire-2014",
@@ -7363,7 +13330,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -480,
           "ord": 14,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#300-rise-of-an-empire-2014"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#300-rise-of-an-empire-2014",
+          "score": 57.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 332350,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 45
         },
         {
           "id": "alexander-2004",
@@ -7382,7 +13356,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -323,
           "ord": 15,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#alexander-2004"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#alexander-2004",
+          "score": 47.8,
+          "scoreEstimated": false,
+          "imdb": 5.6,
+          "imdbVotes": 185229,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 15
         },
         {
           "id": "alexander-the-great-1956",
@@ -7401,7 +13382,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -323,
           "ord": 16,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#alexander-the-great-1956"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#alexander-the-great-1956",
+          "score": 58.1,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 4735,
+          "criticEstimated": false,
+          "rt": 0
         },
         {
           "id": "spartacus-1960",
@@ -7418,7 +13405,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -71,
           "ord": 17,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#spartacus-1960"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#spartacus-1960",
+          "score": 82.1,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 152746,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 94
         },
         {
           "id": "rome-hbo-2005",
@@ -7435,7 +13429,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -30,
           "ord": 18,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#rome-hbo-2005"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#rome-hbo-2005",
+          "score": 88.1,
+          "scoreEstimated": false,
+          "imdb": 8.7,
+          "imdbVotes": 207978,
+          "criticEstimated": false,
+          "rt": 92
         },
         {
           "id": "roman-empire-2016",
@@ -7452,7 +13452,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 192,
           "ord": 19,
           "type": "다큐",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#roman-empire-2016"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#roman-empire-2016",
+          "score": 68.9,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 10530,
+          "criticEstimated": true
         },
         {
           "id": "cleopatra-1963",
@@ -7470,7 +13475,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -30,
           "ord": 20,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#cleopatra-1963"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#cleopatra-1963",
+          "score": 66.6,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 41983,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 56
         },
         {
           "id": "i-claudius-1976",
@@ -7487,7 +13499,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 54,
           "ord": 21,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#i-claudius-1976"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#i-claudius-1976",
+          "score": 80.7,
+          "scoreEstimated": true,
+          "imdb": 8.8,
+          "imdbVotes": 22558,
+          "criticEstimated": true
         },
         {
           "id": "mary-2024",
@@ -7504,7 +13521,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": -4,
           "ord": 22,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#mary-2024"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#mary-2024",
+          "score": 55.5,
+          "scoreEstimated": false,
+          "imdb": 5.3,
+          "imdbVotes": 9420,
+          "criticEstimated": false,
+          "metacritic": 27,
+          "rt": 28
         },
         {
           "id": "the-chosen-2019",
@@ -7521,7 +13545,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 30,
           "ord": 23,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-chosen-2019"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-chosen-2019",
+          "score": 86.5,
+          "scoreEstimated": true,
+          "imdb": 9.1,
+          "imdbVotes": 72269,
+          "criticEstimated": true
         },
         {
           "id": "ben-hur-1959",
@@ -7539,7 +13568,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 33,
           "ord": 24,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#ben-hur-1959"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#ben-hur-1959",
+          "score": 83.4,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 274225,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 87
         },
         {
           "id": "the-passion-of-the-christ-2004",
@@ -7556,7 +13592,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 30,
           "ord": 25,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-passion-of-the-christ-2004"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-passion-of-the-christ-2004",
+          "score": 64.4,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 277890,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 49
         },
         {
           "id": "quo-vadis-1951",
@@ -7574,7 +13617,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 64,
           "ord": 26,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#quo-vadis-1951"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#quo-vadis-1951",
+          "score": 73.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 18771,
+          "criticEstimated": false,
+          "rt": 84
         },
         {
           "id": "pompeii-2014",
@@ -7591,7 +13640,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 79,
           "ord": 27,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#pompeii-2014"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#pompeii-2014",
+          "score": 49.4,
+          "scoreEstimated": false,
+          "imdb": 5.5,
+          "imdbVotes": 123762,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 27
         },
         {
           "id": "fall-of-the-roman-empire-1964",
@@ -7608,7 +13664,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 192,
           "ord": 28,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#fall-of-the-roman-empire-1964"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#fall-of-the-roman-empire-1964",
+          "score": 72.6,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 11570,
+          "criticEstimated": false,
+          "rt": 93
         },
         {
           "id": "gladiator-2000",
@@ -7625,7 +13687,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 192,
           "ord": 29,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#gladiator-2000"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#gladiator-2000",
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1889607,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 80
         },
         {
           "id": "gladiator-ii-2024",
@@ -7642,7 +13711,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 211,
           "ord": 30,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#gladiator-ii-2024"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#gladiator-ii-2024",
+          "score": 64.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 315382,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 70
         },
         {
           "id": "agora-2009",
@@ -7660,7 +13736,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 415,
           "ord": 31,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#agora-2009"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#agora-2009",
+          "score": 66.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 77200,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 56
         },
         {
           "id": "king-arthur-2004",
@@ -7678,7 +13761,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 476,
           "ord": 32,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#king-arthur-2004"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#king-arthur-2004",
+          "score": 55.4,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 184274,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 30
         },
         {
           "id": "the-last-legion-2007",
@@ -7696,7 +13786,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 500,
           "ord": 33,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-legion-2007"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-legion-2007",
+          "score": 49.1,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 38600,
+          "criticEstimated": false,
+          "metacritic": 37,
+          "rt": 15
         },
         {
           "id": "excalibur-1981",
@@ -7713,7 +13810,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 550,
           "ord": 34,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#excalibur-1981"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#excalibur-1981",
+          "score": 69.4,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 75160,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 72
         },
         {
           "id": "king-arthur-legend-of-the-sword-2017",
@@ -7730,7 +13834,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 550,
           "ord": 35,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#king-arthur-legend-of-the-sword-2017"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#king-arthur-legend-of-the-sword-2017",
+          "score": 57.0,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 250657,
+          "criticEstimated": false,
+          "metacritic": 41,
+          "rt": 31
         },
         {
           "id": "the-great-battle-2018",
@@ -7747,7 +13858,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 645,
           "ord": 36,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-great-battle-2018"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-great-battle-2018",
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 6997,
+          "criticEstimated": false,
+          "rt": 86
         },
         {
           "id": "hwangsanbeol-2003",
@@ -7764,7 +13881,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 660,
           "ord": 37,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#hwangsanbeol-2003"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#hwangsanbeol-2003",
+          "score": 68.5,
+          "scoreEstimated": true,
+          "imdb": 5.7,
+          "imdbVotes": 339,
+          "criticEstimated": true
         },
         {
           "id": "vikings-2013",
@@ -7781,7 +13903,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 900,
           "ord": 38,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vikings-2013"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vikings-2013",
+          "score": 82.7,
+          "scoreEstimated": true,
+          "imdb": 8.5,
+          "imdbVotes": 652073,
+          "criticEstimated": true
         },
         {
           "id": "the-last-kingdom-2015",
@@ -7799,7 +13926,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 39,
           "type": "시리즈",
           "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-kingdom-2015",
-          "netflix": true
+          "netflix": true,
+          "score": 82.2,
+          "scoreEstimated": true,
+          "imdb": 8.5,
+          "imdbVotes": 193816,
+          "criticEstimated": true
         },
         {
           "id": "kingdom-of-heaven-2005",
@@ -7817,7 +13949,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1187,
           "ord": 40,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#kingdom-of-heaven-2005"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#kingdom-of-heaven-2005",
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 363244,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 39
         },
         {
           "id": "robin-hood-2010",
@@ -7834,7 +13973,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1194,
           "ord": 41,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#robin-hood-2010"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#robin-hood-2010",
+          "score": 60.4,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 299513,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 44
         },
         {
           "id": "braveheart-1995",
@@ -7851,7 +13997,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1305,
           "ord": 42,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#braveheart-1995"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#braveheart-1995",
+          "score": 78.6,
+          "scoreEstimated": false,
+          "imdb": 8.3,
+          "imdbVotes": 1174990,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 74
         },
         {
           "id": "outlaw-king-2018",
@@ -7868,7 +14021,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1314,
           "ord": 43,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#outlaw-king-2018"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#outlaw-king-2018",
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 89780,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 63
         },
         {
           "id": "the-name-of-the-rose-1986",
@@ -7885,7 +14045,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1327,
           "ord": 44,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-name-of-the-rose-1986"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-name-of-the-rose-1986",
+          "score": 71.5,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 129115,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 72
         },
         {
           "id": "the-last-duel-2021",
@@ -7902,7 +14069,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1386,
           "ord": 45,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-duel-2021"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-duel-2021",
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 211454,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 85
         },
         {
           "id": "the-king-2019",
@@ -7920,7 +14094,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 46,
           "type": "영화",
           "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-king-2019",
-          "netflix": true
+          "netflix": true,
+          "score": 70.4,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 183882,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 71
         },
         {
           "id": "the-messenger-1999",
@@ -7937,7 +14118,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1431,
           "ord": 47,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-messenger-1999"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-messenger-1999",
+          "score": 58.5,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 73874,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 31
         },
         {
           "id": "forbidden-dream-2019",
@@ -7954,7 +14142,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1442,
           "ord": 48,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#forbidden-dream-2019"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#forbidden-dream-2019",
+          "score": 68.8,
+          "scoreEstimated": true,
+          "imdb": 6.7,
+          "imdbVotes": 534,
+          "criticEstimated": true
         },
         {
           "id": "the-kings-letters-2019",
@@ -7971,7 +14164,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1446,
           "ord": 49,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-kings-letters-2019"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-kings-letters-2019",
+          "score": 68.6,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 617,
+          "criticEstimated": true
         },
         {
           "id": "barbarians-2020",
@@ -7988,7 +14186,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 16,
           "ord": 50,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#barbarians-2020"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#barbarians-2020",
+          "score": 69.7,
+          "scoreEstimated": true,
+          "imdb": 7.2,
+          "imdbVotes": 34025,
+          "criticEstimated": true
         },
         {
           "id": "attila-2001",
@@ -8005,7 +14208,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 453,
           "ord": 51,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#attila-2001"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#attila-2001",
+          "score": 66.3,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 11593,
+          "criticEstimated": true
         },
         {
           "id": "beowulf-2007",
@@ -8022,7 +14230,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 550,
           "ord": 52,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#beowulf-2007"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#beowulf-2007",
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 181075,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 71
         },
         {
           "id": "norsemen-2016",
@@ -8040,7 +14255,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 53,
           "type": "시리즈",
           "sourceUrl": "https://nadoo-timeline.vercel.app/movies#norsemen-2016",
-          "netflix": true
+          "netflix": true,
+          "score": 73.2,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 24437,
+          "criticEstimated": true
         },
         {
           "id": "the-vikings-1958",
@@ -8057,7 +14277,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 866,
           "ord": 54,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-vikings-1958"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-vikings-1958",
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 17714,
+          "criticEstimated": false,
+          "rt": 77
         },
         {
           "id": "the-northman-2022",
@@ -8074,7 +14300,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 914,
           "ord": 55,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-northman-2022"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-northman-2022",
+          "score": 75.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 307890,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 89
         },
         {
           "id": "the-13th-warrior-1999",
@@ -8091,7 +14324,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 922,
           "ord": 56,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-13th-warrior-1999"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-13th-warrior-1999",
+          "score": 57.1,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 140803,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 33
         },
         {
           "id": "the-last-kingdom-seven-kings-must-die-2023",
@@ -8109,7 +14349,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 57,
           "type": "영화",
           "sourceUrl": "https://nadoo-timeline.vercel.app/movies#the-last-kingdom-seven-kings-must-die-2023",
-          "netflix": true
+          "netflix": true,
+          "score": 66.9,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 45125,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 82
         },
         {
           "id": "pathfinder-2007",
@@ -8126,7 +14373,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1010,
           "ord": 58,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#pathfinder-2007"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#pathfinder-2007",
+          "score": 46.4,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 47989,
+          "criticEstimated": false,
+          "metacritic": 29,
+          "rt": 10
         },
         {
           "id": "valhalla-rising-2009",
@@ -8143,7 +14397,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1100,
           "ord": 59,
           "type": "영화",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#valhalla-rising-2009"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#valhalla-rising-2009",
+          "score": 62.7,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 67241,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 74
         },
         {
           "id": "vinland-saga-2019",
@@ -8160,7 +14421,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "periodEnd": 1020,
           "ord": 60,
           "type": "시리즈",
-          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vinland-saga-2019"
+          "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vinland-saga-2019",
+          "score": 85.8,
+          "scoreEstimated": true,
+          "imdb": 8.9,
+          "imdbVotes": 153589,
+          "criticEstimated": true
         },
         {
           "id": "vikings-valhalla-2022",
@@ -8178,7 +14444,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "ord": 61,
           "type": "시리즈",
           "sourceUrl": "https://nadoo-timeline.vercel.app/movies#vikings-valhalla-2022",
-          "netflix": true
+          "netflix": true,
+          "score": 71.6,
+          "scoreEstimated": true,
+          "imdb": 7.4,
+          "imdbVotes": 72861,
+          "criticEstimated": true
         }
       ]
     },
@@ -8213,7 +14484,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "수용소에 끌려간 아버지가 어린 아들을 위해 모든 것을 놀이라고 속인다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 1
+          "ord": 1,
+          "score": 79.4,
+          "scoreEstimated": false,
+          "imdb": 8.6,
+          "imdbVotes": 825910,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 81
         },
         {
           "id": "nuovo-cinema-paradiso-1988",
@@ -8229,7 +14507,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "시칠리아 마을 극장의 영사기사와 꼬마 토토의 평생에 걸친 우정",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 2
+          "ord": 2,
+          "score": 84.3,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 322002,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 90
         },
         {
           "id": "il-postino-1994",
@@ -8245,7 +14530,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "섬마을 우편배달부가 망명 시인 네루다에게 시와 사랑을 배운다",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 3
+          "ord": 3,
+          "score": 79.1,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 42052,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 94
         },
         {
           "id": "mediterraneo-1991",
@@ -8261,7 +14553,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "그리스 외딴섬에 고립된 이탈리아 병사들이 전쟁을 잊고 섬 생활에 빠진다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 4
+          "ord": 4,
+          "score": 74.0,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 18052,
+          "criticEstimated": false,
+          "rt": 80
         },
         {
           "id": "pane-e-tulipani-2000",
@@ -8277,7 +14575,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "휴게소에 남겨진 주부가 즉흥적으로 베네치아에 머물며 새 삶을 찾는다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 5
+          "ord": 5,
+          "score": 70.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 12602,
+          "criticEstimated": false,
+          "metacritic": 68
         },
         {
           "id": "caro-diario-1993",
@@ -8293,7 +14597,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "난니 모레티가 스쿠터·섬·병원을 오가며 들려주는 세 편의 일기",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 6
+          "ord": 6,
+          "score": 69.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 10276,
+          "criticEstimated": false,
+          "rt": 67
         },
         {
           "id": "divorzio-all-italiana-1961",
@@ -8309,7 +14619,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "이혼이 불가능한 시칠리아에서 귀족이 아내를 떼어낼 기막힌 계획을 짠다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 7
+          "ord": 7,
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 16017,
+          "criticEstimated": false,
+          "rt": 100
         },
         {
           "id": "matrimonio-all-italiana-1964",
@@ -8325,7 +14641,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "오랜 연인에게 결혼을 받아내려는 여인의 끈질기고 유쾌한 작전",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 8
+          "ord": 8,
+          "score": 74.6,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 12898,
+          "criticEstimated": false,
+          "rt": 86
         },
         {
           "id": "ieri-oggi-domani-1963",
@@ -8341,7 +14663,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "소피아 로렌과 마스트로이안니가 세 도시에서 펼치는 세 편의 사랑 소동",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 9
+          "ord": 9,
+          "score": 72.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 11677,
+          "criticEstimated": false,
+          "rt": 78
         },
         {
           "id": "amarcord-1973",
@@ -8357,7 +14685,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "1930년대 바닷가 소도시 사람들의 한 해를 추억처럼 그린 펠리니의 회상",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 10
+          "ord": 10,
+          "score": 79.6,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 52047,
+          "criticEstimated": false,
+          "rt": 87
         },
         {
           "id": "la-leggenda-del-pianista-sull-oceano-1998",
@@ -8373,7 +14707,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "평생 배에서 내려본 적 없는 천재 피아니스트의 이야기",
           "ratio": "웃음 3:감동 7",
           "kids": true,
-          "ord": 11
+          "ord": 11,
+          "score": 72.1,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 74477,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 56
         },
         {
           "id": "la-tigre-e-la-neve-2005",
@@ -8389,7 +14730,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "전쟁 중인 바그다드로 사랑하는 여인을 살리러 달려간 시인",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 12
+          "ord": 12,
+          "score": 59.5,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 14915,
+          "criticEstimated": false,
+          "metacritic": 22,
+          "rt": 20
         },
         {
           "id": "pinocchio-2019",
@@ -8405,7 +14753,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "제페토가 깎은 나무 인형 피노키오의 모험을 실사로 옮긴 동화",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 13
+          "ord": 13,
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 16158,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 83
         },
         {
           "id": "habemus-papam-2011",
@@ -8421,7 +14776,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "교황에 뽑힌 추기경이 공포에 질려 로마 거리로 도망친다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 14
+          "ord": 14,
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 15427,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 65
         },
         {
           "id": "il-sorpasso-1962",
@@ -8437,7 +14799,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "소심한 법대생과 허풍쟁이 남자의 즉흥 드라이브 여행",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 15
+          "ord": 15,
+          "score": 75.5,
+          "scoreEstimated": true,
+          "imdb": 8.2,
+          "imdbVotes": 14844,
+          "criticEstimated": true
         },
         {
           "id": "i-soliti-ignoti-1958",
@@ -8453,7 +14820,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "어설픈 좀도둑들이 전당포 금고를 털려다 벌어지는 소동",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 16
+          "ord": 16,
+          "score": 77.5,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 13105,
+          "criticEstimated": false,
+          "rt": 89
         },
         {
           "id": "perfetti-sconosciuti-2016",
@@ -8469,7 +14842,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "저녁 식사 자리에서 휴대폰을 공개하기로 한 친구들의 비밀이 드러난다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 17
+          "ord": 17,
+          "score": 76.4,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 78521,
+          "criticEstimated": false,
+          "rt": 77
         },
         {
           "id": "benvenuti-al-sud-2010",
@@ -8485,7 +14864,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "남부로 좌천된 북부 우체국장이 편견을 깨고 마을에 정든다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 18
+          "ord": 18,
+          "score": 66.3,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 11583,
+          "criticEstimated": true
         },
         {
           "id": "mine-vaganti-2010",
@@ -8501,7 +14885,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "커밍아웃하려던 아들이 형에게 선수를 빼앗기며 가족이 뒤집힌다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 19
+          "ord": 19,
+          "score": 71.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 14187,
+          "criticEstimated": false,
+          "rt": 72
         },
         {
           "id": "johnny-stecchino-1991",
@@ -8517,7 +14907,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "순진한 버스 기사가 마피아 보스와 똑같이 생긴 탓에 소동에 휘말린다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 20
+          "ord": 20,
+          "score": 65.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 12586,
+          "criticEstimated": false,
+          "rt": 46
         },
         {
           "id": "pranzo-di-ferragosto-2008",
@@ -8533,7 +14929,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "엄마와 사는 중년 남자가 휴가철 할머니들을 떠맡아 점심을 차린다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 21
+          "ord": 21,
+          "score": 70.2,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 4526,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 88
         },
         {
           "id": "quo-vado-2016",
@@ -8549,7 +14952,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "평생직장을 지키려는 공무원이 북극까지 전출당하며 버틴다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 22
+          "ord": 22,
+          "score": 66.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 14765,
+          "criticEstimated": false,
+          "rt": 60
         },
         {
           "id": "smetto-quando-voglio-2014",
@@ -8565,7 +14974,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "해고된 연구원들이 합법 신종 약물로 한몫 잡으려 뭉친다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 23
+          "ord": 23,
+          "score": 68.4,
+          "scoreEstimated": true,
+          "imdb": 7.0,
+          "imdbVotes": 10444,
+          "criticEstimated": true
         },
         {
           "id": "pane-amore-e-fantasia-1953",
@@ -8581,7 +14995,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "산골 마을에 부임한 경찰서장과 말괄량이 처녀의 사랑 소동",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 24
+          "ord": 24,
+          "score": 68.6,
+          "scoreEstimated": true,
+          "imdb": 6.9,
+          "imdbVotes": 2599,
+          "criticEstimated": true
         },
         {
           "id": "l-armata-brancaleone-1966",
@@ -8597,7 +15016,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "허세 가득한 기사와 오합지졸이 영지를 찾아 떠나는 중세 모험",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 25
+          "ord": 25,
+          "score": 71.2,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 5959,
+          "criticEstimated": true
         },
         {
           "id": "il-marchese-del-grillo-1981",
@@ -8613,7 +15037,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "장난을 즐기는 로마 귀족이 자신과 닮은 숯장수와 신분을 바꾼다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 26
+          "ord": 26,
+          "score": 70.8,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 4334,
+          "criticEstimated": true
         },
         {
           "id": "fantozzi-1975",
@@ -8629,7 +15058,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "운 없는 회사원 판토치가 겪는 끝없는 굴욕과 소동",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 27
+          "ord": 27,
+          "score": 72.1,
+          "scoreEstimated": true,
+          "imdb": 7.8,
+          "imdbVotes": 8117,
+          "criticEstimated": true
         },
         {
           "id": "il-ciclone-1996",
@@ -8645,7 +15079,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "토스카나 시골집에 플라멩코 무용수들이 들이닥치며 생기는 소동",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 28
+          "ord": 28,
+          "score": 67.7,
+          "scoreEstimated": true,
+          "imdb": 6.8,
+          "imdbVotes": 6772,
+          "criticEstimated": true
         },
         {
           "id": "tre-uomini-e-una-gamba-1997",
@@ -8661,7 +15100,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "결혼식에 조각상 다리를 배달하러 가는 세 남자의 로드무비",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 29
+          "ord": 29,
+          "score": 72.4,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 13655,
+          "criticEstimated": true
         },
         {
           "id": "don-camillo-1952",
@@ -8677,7 +15121,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "마을 신부 돈 카밀로와 공산당 읍장 페포네의 티격태격 대결",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 30
+          "ord": 30,
+          "score": 70.7,
+          "scoreEstimated": true,
+          "imdb": 7.6,
+          "imdbVotes": 5319,
+          "criticEstimated": true
         },
         {
           "id": "intouchables-2011",
@@ -8693,7 +15142,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "전신마비 백만장자와 빈민가 출신 간병인의 우정",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 31
+          "ord": 31,
+          "score": 77.8,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1046049,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 76
         },
         {
           "id": "le-fabuleux-destin-d-amelie-poulain-2001",
@@ -8709,7 +15165,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "몽마르트르 카페 종업원이 몰래 이웃들을 행복하게 만들기 시작한다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 32
+          "ord": 32,
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 848973,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 90
         },
         {
           "id": "les-choristes-2004",
@@ -8725,7 +15188,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "문제아 기숙학교에 온 음악 교사가 합창으로 아이들을 바꾼다",
           "ratio": "웃음 3:감동 7",
           "kids": true,
-          "ord": 33
+          "ord": 33,
+          "score": 72.6,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 73131,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 68
         },
         {
           "id": "bienvenue-chez-les-ch-tis-2008",
@@ -8741,7 +15211,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "남프랑스 우체국장이 춥고 사투리 심한 북부로 발령나며 겪는 소동",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 34
+          "ord": 34,
+          "score": 69.6,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 48200,
+          "criticEstimated": false,
+          "rt": 67
         },
         {
           "id": "le-diner-de-cons-1998",
@@ -8757,7 +15233,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바보를 초대해 놀리는 만찬에 데려갈 남자가 주인공의 하루를 망친다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 35
+          "ord": 35,
+          "score": 74.4,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 47025,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 74
         },
         {
           "id": "le-petit-nicolas-2009",
@@ -8773,7 +15256,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "동생이 생길까 걱정한 니콜라와 친구들의 엉뚱한 작전",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 36
+          "ord": 36,
+          "score": 68.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 15092,
+          "criticEstimated": false,
+          "rt": 60
         },
         {
           "id": "la-famille-belier-2014",
@@ -8789,7 +15278,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "청각장애인 가족의 유일한 청인 딸이 노래의 꿈을 찾아 나선다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 37
+          "ord": 37,
+          "score": 75.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 31726,
+          "criticEstimated": false,
+          "rt": 83
         },
         {
           "id": "les-vacances-de-m-hulot-1953",
@@ -8805,7 +15300,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "엉뚱한 윌로 씨가 바닷가 휴양지에서 벌이는 말없는 소동",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 38
+          "ord": 38,
+          "score": 78.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 22295,
+          "criticEstimated": false,
+          "rt": 100
         },
         {
           "id": "mon-oncle-1958",
@@ -8821,7 +15322,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "자동화된 현대식 집에 사는 조카와 엉뚱한 윌로 삼촌",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 39
+          "ord": 39,
+          "score": 79.0,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 25237,
+          "criticEstimated": false,
+          "rt": 94
         },
         {
           "id": "playtime-1967",
@@ -8837,7 +15344,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "유리와 강철로 된 파리에서 길을 잃은 윌로 씨의 하루",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 40
+          "ord": 40,
+          "score": 81.8,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 30333,
+          "criticEstimated": false,
+          "metacritic": 99,
+          "rt": 98
         },
         {
           "id": "la-boum-1980",
@@ -8853,7 +15367,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "13살 빅이 첫 파티와 첫사랑을 겪으며 자라는 이야기",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 41
+          "ord": 41,
+          "score": 66.8,
+          "scoreEstimated": true,
+          "imdb": 6.7,
+          "imdbVotes": 12123,
+          "criticEstimated": true
         },
         {
           "id": "attila-marcel-2013",
@@ -8869,7 +15388,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "말을 잃은 피아니스트가 이웃 여인의 차를 마시며 잃어버린 기억을 찾는다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 42
+          "ord": 42,
+          "score": 68.7,
+          "scoreEstimated": true,
+          "imdb": 7.0,
+          "imdbVotes": 3524,
+          "criticEstimated": true
         },
         {
           "id": "cyrano-de-bergerac-1990",
@@ -8885,7 +15409,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "큰 코 때문에 사랑을 숨긴 검객 시인이 연적 대신 편지를 써준다",
           "ratio": "웃음 4:감동 6",
           "kids": false,
-          "ord": 43
+          "ord": 43,
+          "score": 80.3,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 27902,
+          "criticEstimated": false,
+          "rt": 100
         },
         {
           "id": "qu-est-ce-qu-on-a-fait-au-bon-dieu-2014",
@@ -8901,7 +15431,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "보수적인 부부의 네 딸이 모두 다른 출신 사위를 데려온다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 44
+          "ord": 44,
+          "score": 68.1,
+          "scoreEstimated": true,
+          "imdb": 7.0,
+          "imdbVotes": 48978,
+          "criticEstimated": true
         },
         {
           "id": "le-gout-des-autres-2000",
@@ -8917,7 +15452,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "무뚝뚝한 사업가가 연극배우에게 반해 새로운 취향에 눈뜬다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 45
+          "ord": 45,
+          "score": 73.6,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 11305,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 100
         },
         {
           "id": "l-auberge-espagnole-2002",
@@ -8933,7 +15475,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바르셀로나 교환학생이 다국적 룸메이트들과 한 해를 보낸다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 46
+          "ord": 46,
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 44301,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 76
         },
         {
           "id": "hors-normes-2019",
@@ -8949,7 +15498,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "자폐 청소년을 돌보는 두 남자의 열정과 현실",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 47
+          "ord": 47,
+          "score": 73.8,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 12638,
+          "criticEstimated": false,
+          "rt": 82
         },
         {
           "id": "le-sens-de-la-fete-2017",
@@ -8965,7 +15520,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "베테랑 웨딩플래너가 모든 게 꼬이는 성대한 결혼식을 치른다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 48
+          "ord": 48,
+          "score": 71.5,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 14112,
+          "criticEstimated": false,
+          "rt": 81
         },
         {
           "id": "ernest-et-celestine-2012",
@@ -8981,7 +15542,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "곰 어니스트와 생쥐 셀레스틴이 편견을 넘어 친구가 된다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 49
+          "ord": 49,
+          "score": 79.2,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 24744,
+          "criticEstimated": false,
+          "metacritic": 86,
+          "rt": 98
         },
         {
           "id": "les-triplettes-de-belleville-2003",
@@ -8997,7 +15565,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "납치된 사이클 선수 손자를 찾아 나선 할머니와 노가수 세 자매",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 50
+          "ord": 50,
+          "score": 80.7,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 58812,
+          "criticEstimated": false,
+          "metacritic": 91,
+          "rt": 94
         },
         {
           "id": "asterix-obelix-mission-cleopatre-2002",
@@ -9013,7 +15588,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "골족 영웅들이 석 달 만에 궁전을 지어야 하는 건축가를 돕는다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 51
+          "ord": 51,
+          "score": 72.9,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 64152,
+          "criticEstimated": false,
+          "rt": 86
         },
         {
           "id": "la-grande-vadrouille-1966",
@@ -9029,7 +15610,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "점령기 파리에서 영국 조종사를 돕게 된 지휘자와 페인트공의 도주극",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 52
+          "ord": 52,
+          "score": 73.8,
+          "scoreEstimated": true,
+          "imdb": 7.8,
+          "imdbVotes": 22826,
+          "criticEstimated": true
         },
         {
           "id": "le-corniaud-1965",
@@ -9045,7 +15631,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "사고 보상으로 이탈리아에서 차를 몰고 오는 남자가 밀수에 이용된다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 53
+          "ord": 53,
+          "score": 69.9,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 9155,
+          "criticEstimated": true
         },
         {
           "id": "les-aventures-de-rabbi-jacob-1973",
@@ -9061,7 +15652,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "편견 많은 사업가가 랍비로 변장해 쫓기며 벌어지는 소동",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 54
+          "ord": 54,
+          "score": 70.8,
+          "scoreEstimated": true,
+          "imdb": 7.4,
+          "imdbVotes": 16614,
+          "criticEstimated": true
         },
         {
           "id": "le-pere-noel-est-une-ordure-1982",
@@ -9077,7 +15673,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "크리스마스이브 상담전화 사무실에 엉뚱한 사람들이 몰려든다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 55
+          "ord": 55,
+          "score": 70.6,
+          "scoreEstimated": true,
+          "imdb": 7.4,
+          "imdbVotes": 11686,
+          "criticEstimated": true
         },
         {
           "id": "la-cage-aux-folles-1978",
@@ -9093,7 +15694,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "게이 커플이 아들의 보수적인 예비 사돈을 맞으려 정체를 숨긴다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 56
+          "ord": 56,
+          "score": 75.8,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 13381,
+          "criticEstimated": false,
+          "rt": 96
         },
         {
           "id": "les-emotifs-anonymes-2010",
@@ -9109,7 +15716,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "수줍음 많은 초콜릿 장인과 직원의 서툰 사랑",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 57
+          "ord": 57,
+          "score": 70.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 12654,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 86
         },
         {
           "id": "le-prenom-2012",
@@ -9125,7 +15739,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아기 이름 하나로 시작된 저녁 식사가 가족의 비밀 폭로전이 된다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 58
+          "ord": 58,
+          "score": 70.8,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 20476,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 71
         },
         {
           "id": "tais-toi-2003",
@@ -9141,7 +15762,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "말 많은 얼간이와 과묵한 강도가 감옥에서 엮여 탈옥한다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 59
+          "ord": 59,
+          "score": 68.9,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 32867,
+          "criticEstimated": true
         },
         {
           "id": "le-placard-2001",
@@ -9157,7 +15783,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "해고 위기의 회계원이 게이인 척하며 회사에 남는다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 60
+          "ord": 60,
+          "score": 71.4,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 19247,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 85
         },
         {
           "id": "notting-hill-1999",
@@ -9173,7 +15806,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "런던 서점 주인과 할리우드 스타의 사랑",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 61
+          "ord": 61,
+          "score": 72.8,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 391800,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 84
         },
         {
           "id": "love-actually-2003",
@@ -9189,7 +15829,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "크리스마스를 앞둔 런던 사람들의 열 가지 사랑 이야기",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 62
+          "ord": 62,
+          "score": 69.3,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 585545,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 64
         },
         {
           "id": "the-full-monty-1997",
@@ -9205,7 +15852,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "실직한 철강 노동자들이 돈을 벌려 스트립쇼 무대에 선다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 63
+          "ord": 63,
+          "score": 75.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 121126,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 96
         },
         {
           "id": "billy-elliot-2000",
@@ -9221,7 +15875,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "탄광촌 소년이 권투 대신 발레의 꿈을 키운다",
           "ratio": "웃음 4:감동 6",
           "kids": false,
-          "ord": 64
+          "ord": 64,
+          "score": 77.1,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 154253,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 85
         },
         {
           "id": "about-time-2013",
@@ -9237,7 +15898,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "시간을 되돌리는 능력을 가진 청년이 사랑과 가족의 소중함을 배운다",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 65
+          "ord": 65,
+          "score": 72.2,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 444652,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 71
         },
         {
           "id": "paddington-2014",
@@ -9253,7 +15921,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "페루에서 온 꼬마 곰이 런던의 브라운 가족과 집을 찾는다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 66
+          "ord": 66,
+          "score": 76.8,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 159643,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 97
         },
         {
           "id": "paddington-2-2017",
@@ -9269,7 +15944,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "억울하게 감옥에 간 패딩턴이 진범을 찾는다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 67
+          "ord": 67,
+          "score": 82.2,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 116937,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 99
         },
         {
           "id": "bridget-jones-s-diary-2001",
@@ -9285,7 +15967,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "서른두 살 브리짓의 좌충우돌 연애와 일기",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 68
+          "ord": 68,
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 290053,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 80
         },
         {
           "id": "four-weddings-and-a-funeral-1994",
@@ -9301,7 +15990,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "결혼식마다 마주치는 미국 여인에게 빠진 영국 남자",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 69
+          "ord": 69,
+          "score": 75.7,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 185072,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 92
         },
         {
           "id": "bend-it-like-beckham-2002",
@@ -9317,7 +16013,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "인도계 소녀가 가족 몰래 축구 선수의 꿈을 좇는다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 70
+          "ord": 70,
+          "score": 69.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 124556,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 85
         },
         {
           "id": "calendar-girls-2003",
@@ -9333,7 +16036,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "시골 부인회 회원들이 기금을 위해 누드 달력을 찍는다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 71
+          "ord": 71,
+          "score": 68.0,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 28538,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 73
         },
         {
           "id": "brassed-off-1996",
@@ -9349,7 +16059,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "폐광 위기의 탄광촌 브라스 밴드가 전국 대회에 나선다",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 72
+          "ord": 72,
+          "score": 70.2,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 22645,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 79
         },
         {
           "id": "wallace-gromit-the-curse-of-the-were-rabbit-2005",
@@ -9365,7 +16082,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "채소 대회를 앞둔 마을에 거대 토끼가 나타난다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 73
+          "ord": 73,
+          "score": 79.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 159135,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 95
         },
         {
           "id": "chicken-run-2000",
@@ -9381,7 +16105,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "양계장 닭들이 파이가 되기 전 탈출을 꾀한다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 74
+          "ord": 74,
+          "score": 77.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 227388,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 97
         },
         {
           "id": "bean-1997",
@@ -9397,7 +16128,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "미스터 빈이 미국 미술관에 명화를 모시러 파견된다",
           "ratio": "웃음 10:감동 0",
           "kids": true,
-          "ord": 75
+          "ord": 75,
+          "score": 59.6,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 117650,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 41
         },
         {
           "id": "mr-bean-s-holiday-2007",
@@ -9413,7 +16151,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "경품으로 칸 여행을 떠난 미스터 빈의 좌충우돌 여정",
           "ratio": "웃음 10:감동 0",
           "kids": true,
-          "ord": 76
+          "ord": 76,
+          "score": 60.9,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 143675,
+          "criticEstimated": false,
+          "metacritic": 56,
+          "rt": 51
         },
         {
           "id": "pride-2014",
@@ -9429,7 +16174,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "1984년 광부 파업을 돕겠다고 나선 런던 성소수자들",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 77
+          "ord": 77,
+          "score": 79.1,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 65928,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 92
         },
         {
           "id": "monty-python-and-the-holy-grail-1975",
@@ -9445,7 +16197,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아서왕과 기사들이 말 없이 성배를 찾아 떠나는 엉터리 모험",
           "ratio": "웃음 10:감동 0",
           "kids": false,
-          "ord": 78
+          "ord": 78,
+          "score": 84.5,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 609260,
+          "criticEstimated": false,
+          "metacritic": 91,
+          "rt": 92
         },
         {
           "id": "a-fish-called-wanda-1988",
@@ -9461,7 +16220,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "보석 강도 일당이 서로 속고 속이며 벌이는 소동",
           "ratio": "웃음 10:감동 0",
           "kids": false,
-          "ord": 79
+          "ord": 79,
+          "score": 78.5,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 167693,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 96
         },
         {
           "id": "one-chance-2013",
@@ -9477,7 +16243,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "휴대폰 판매원 폴 포츠가 오페라 가수의 꿈을 이룬다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 80
+          "ord": 80,
+          "score": 66.0,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 14119,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 63
         },
         {
           "id": "eddie-the-eagle-2016",
@@ -9493,7 +16266,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "재능은 없지만 포기를 모르는 영국 스키점프 선수의 올림픽 도전",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 81
+          "ord": 81,
+          "score": 70.1,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 108865,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 81
         },
         {
           "id": "local-hero-1983",
@@ -9509,7 +16289,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "스코틀랜드 해안 마을을 사러 온 석유회사 직원이 마을에 반한다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 82
+          "ord": 82,
+          "score": 76.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 30563,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 100
         },
         {
           "id": "educating-rita-1983",
@@ -9525,7 +16312,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "미용사 리타가 술꾼 교수에게 문학을 배우며 달라진다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 83
+          "ord": 83,
+          "score": 69.6,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 15993,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 82
         },
         {
           "id": "the-best-exotic-marigold-hotel-2011",
@@ -9541,7 +16335,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "인도의 낡은 호텔로 은퇴 여행을 떠난 영국 노인들",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 84
+          "ord": 84,
+          "score": 70.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 104662,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 77
         },
         {
           "id": "yesterday-2019",
@@ -9557,7 +16358,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "비틀스가 사라진 세상에서 무명 가수만 그 노래를 기억한다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 85
+          "ord": 85,
+          "score": 64.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 187756,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 63
         },
         {
           "id": "kinky-boots-2005",
@@ -9573,7 +16381,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "망해가는 구두 공장이 드래그퀸용 부츠로 재기를 노린다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 86
+          "ord": 86,
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 23073,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 57
         },
         {
           "id": "arthur-christmas-2011",
@@ -9589,7 +16404,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "산타의 막내아들이 빠뜨린 선물 하나를 배달하려 나선다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 87
+          "ord": 87,
+          "score": 73.2,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 74340,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 93
         },
         {
           "id": "shaun-the-sheep-movie-2015",
@@ -9605,7 +16427,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "도시에서 기억을 잃은 농부를 찾아 양들이 나선다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 88
+          "ord": 88,
+          "score": 76.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 47610,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 99
         },
         {
           "id": "hot-fuzz-2007",
@@ -9621,7 +16450,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "런던 경찰이 평화로운 시골 마을로 좌천되며 수상한 사건을 쫓는다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 89
+          "ord": 89,
+          "score": 80.3,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 574247,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 91
         },
         {
           "id": "wonka-2023",
@@ -9637,7 +16473,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "젊은 윌리 웡카가 초콜릿 가게를 열기까지의 이야기",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 90
+          "ord": 90,
+          "score": 70.1,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 198259,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 82
         },
         {
           "id": "campeones-2018",
@@ -9653,7 +16496,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "사고를 친 프로 농구 코치가 지적장애인 농구팀을 맡는다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 91
+          "ord": 91,
+          "score": 69.5,
+          "scoreEstimated": true,
+          "imdb": 7.2,
+          "imdbVotes": 13238,
+          "criticEstimated": true
         },
         {
           "id": "ocho-apellidos-vascos-2014",
@@ -9669,7 +16517,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "세비야 남자가 바스크 여인을 쫓아가 바스크인 행세를 한다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 92
+          "ord": 92,
+          "score": 64.9,
+          "scoreEstimated": true,
+          "imdb": 6.5,
+          "imdbVotes": 20054,
+          "criticEstimated": true
         },
         {
           "id": "ocho-apellidos-catalanes-2015",
@@ -9685,7 +16538,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바스크 아버지가 카탈루냐 남자와 결혼하려는 딸을 말리러 간다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 93
+          "ord": 93,
+          "score": 61.0,
+          "scoreEstimated": true,
+          "imdb": 5.4,
+          "imdbVotes": 8710,
+          "criticEstimated": true
         },
         {
           "id": "mujeres-al-borde-de-un-ataque-de-nervios-1988",
@@ -9701,7 +16559,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "버림받은 성우의 아파트에 온갖 사람들이 꼬이며 벌어지는 하루",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 94
+          "ord": 94,
+          "score": 78.3,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 51478,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 94
         },
         {
           "id": "belle-epoque-1992",
@@ -9717,7 +16582,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "탈영병 청년이 시골집 네 자매에게 차례로 반한다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 95
+          "ord": 95,
+          "score": 74.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 12347,
+          "criticEstimated": false,
+          "rt": 95
         },
         {
           "id": "la-lengua-de-las-mariposas-1999",
@@ -9733,7 +16604,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "내전 직전 소년과 노교사의 따뜻한 우정",
           "ratio": "웃음 3:감동 7",
           "kids": true,
-          "ord": 96
+          "ord": 96,
+          "score": 73.9,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 10806,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 96
         },
         {
           "id": "klaus-2019",
@@ -9749,7 +16627,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "게으른 우편배달부와 외딴섬 목수가 산타 전설을 만든다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 97
+          "ord": 97,
+          "score": 80.0,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 243833,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 95
         },
         {
           "id": "bienvenido-mister-marshall-1953",
@@ -9765,7 +16650,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "미국 원조단을 맞으려 마을 전체가 안달루시아 풍으로 꾸민다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 98
+          "ord": 98,
+          "score": 71.7,
+          "scoreEstimated": true,
+          "imdb": 7.9,
+          "imdbVotes": 5320,
+          "criticEstimated": true
         },
         {
           "id": "placido-1961",
@@ -9781,7 +16671,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "크리스마스 자선 행사에 동원된 삼륜차 기사의 하루",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 99
+          "ord": 99,
+          "score": 71.1,
+          "scoreEstimated": true,
+          "imdb": 7.8,
+          "imdbVotes": 4273,
+          "criticEstimated": true
         },
         {
           "id": "el-verdugo-1963",
@@ -9797,7 +16692,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "사형집행인의 딸과 결혼한 장의사가 직업을 물려받는다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 100
+          "ord": 100,
+          "score": 72.6,
+          "scoreEstimated": true,
+          "imdb": 7.9,
+          "imdbVotes": 8334,
+          "criticEstimated": true
         },
         {
           "id": "el-milagro-de-p-tinto-1998",
@@ -9813,7 +16713,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아이를 원하는 부부에게 엉뚱한 일들이 연이어 찾아온다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 101
+          "ord": 101,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 4618,
+          "criticEstimated": true
         },
         {
           "id": "el-otro-lado-de-la-cama-2002",
@@ -9829,7 +16734,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "두 커플의 엇갈린 연애를 노래로 풀어낸 뮤지컬 코미디",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 102
+          "ord": 102,
+          "score": 66.3,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 6164,
+          "criticEstimated": true
         },
         {
           "id": "dias-de-futbol-2003",
@@ -9845,7 +16755,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "서른 넘은 친구들이 동네 축구팀을 만들어 인생을 다시 걷어찬다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 103
+          "ord": 103,
+          "score": 66.8,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 3256,
+          "criticEstimated": true
         },
         {
           "id": "primos-2011",
@@ -9861,7 +16776,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "파혼당한 남자가 사촌들과 첫사랑을 찾아 고향에 간다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 104
+          "ord": 104,
+          "score": 67.2,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 5430,
+          "criticEstimated": true
         },
         {
           "id": "perdiendo-el-norte-2015",
@@ -9877,7 +16797,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "일자리를 찾아 독일로 간 스페인 청년들의 현실",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 105
+          "ord": 105,
+          "score": 64.2,
+          "scoreEstimated": true,
+          "imdb": 5.8,
+          "imdbVotes": 5787,
+          "criticEstimated": true
         },
         {
           "id": "padre-no-hay-mas-que-uno-2019",
@@ -9893,7 +16818,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아내가 여행 간 사이 다섯 아이를 처음 혼자 돌보게 된 아빠",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 106
+          "ord": 106,
+          "score": 65.9,
+          "scoreEstimated": true,
+          "imdb": 6.0,
+          "imdbVotes": 3893,
+          "criticEstimated": true
         },
         {
           "id": "toc-toc-2017",
@@ -9909,7 +16839,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "강박증 환자들이 정신과 대기실에서 함께 기다리며 벌어지는 소동",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 107
+          "ord": 107,
+          "score": 66.8,
+          "scoreEstimated": true,
+          "imdb": 6.8,
+          "imdbVotes": 23433,
+          "criticEstimated": true
         },
         {
           "id": "senor-dame-paciencia-2017",
@@ -9925,7 +16860,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "보수적인 아버지가 아내의 유언대로 자식들과 여행을 떠난다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 108
+          "ord": 108,
+          "score": 65.7,
+          "scoreEstimated": true,
+          "imdb": 5.3,
+          "imdbVotes": 2261,
+          "criticEstimated": true
         },
         {
           "id": "ahora-o-nunca-2015",
@@ -9941,7 +16881,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "결혼식을 위해 영국으로 가던 신랑과 친구들이 발이 묶인다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 109
+          "ord": 109,
+          "score": 64.5,
+          "scoreEstimated": true,
+          "imdb": 5.2,
+          "imdbVotes": 3047,
+          "criticEstimated": true
         },
         {
           "id": "la-gran-familia-espanola-2013",
@@ -9957,7 +16902,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "결혼식 날 월드컵 결승이 겹친 다섯 형제의 하루",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 110
+          "ord": 110,
+          "score": 66.1,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 4794,
+          "criticEstimated": true
         },
         {
           "id": "vivir-es-facil-con-los-ojos-cerrados-2013",
@@ -9973,7 +16923,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "영어 교사가 존 레논을 만나러 알메리아로 떠나는 길에 두 청춘을 태운다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 111
+          "ord": 111,
+          "score": 72.9,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 6918,
+          "criticEstimated": false,
+          "rt": 94
         },
         {
           "id": "abracadabra-2017",
@@ -9989,7 +16945,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "최면에 걸린 남편이 다른 사람처럼 변해버린다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 112
+          "ord": 112,
+          "score": 68.9,
+          "scoreEstimated": false,
+          "imdb": 5.7,
+          "imdbVotes": 2780,
+          "criticEstimated": false,
+          "rt": 100
         },
         {
           "id": "sin-rodeos-2018",
@@ -10005,7 +16967,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "참기만 하던 여자가 거절 못 하는 성격을 고치려다 폭주한다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 113
+          "ord": 113,
+          "score": 65.9,
+          "scoreEstimated": true,
+          "imdb": 5.7,
+          "imdbVotes": 2809,
+          "criticEstimated": true
         },
         {
           "id": "el-buen-patron-2021",
@@ -10021,7 +16988,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "상 심사를 앞둔 공장 사장이 직원들 문제에 끝없이 개입한다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 114
+          "ord": 114,
+          "score": 71.5,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 16934,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 92
         },
         {
           "id": "good-bye-lenin-2003",
@@ -10037,7 +17011,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "혼수상태에서 깬 엄마를 위해 아들이 무너진 동독을 재현한다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 115
+          "ord": 115,
+          "score": 76.8,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 161216,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 91
         },
         {
           "id": "soul-kitchen-2009",
@@ -10053,7 +17034,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "함부르크의 허름한 식당 주인이 가게를 지키려 고군분투한다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 116
+          "ord": 116,
+          "score": 72.4,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 43037,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 73
         },
         {
           "id": "toni-erdmann-2016",
@@ -10069,7 +17057,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "장난꾸러기 아버지가 일에 매인 딸 앞에 가짜 인물로 나타난다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 117
+          "ord": 117,
+          "score": 78.5,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 55793,
+          "criticEstimated": false,
+          "metacritic": 93,
+          "rt": 93
         },
         {
           "id": "kirschbluten-hanami-2008",
@@ -10085,7 +17080,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아내를 잃은 남편이 아내의 꿈이던 일본으로 떠난다",
           "ratio": "웃음 2:감동 8",
           "kids": false,
-          "ord": 118
+          "ord": 118,
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 6377,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 79
         },
         {
           "id": "ich-bin-dein-mensch-2021",
@@ -10101,7 +17103,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "연구자가 자신에게 맞춰 만든 휴머노이드와 3주를 지낸다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 119
+          "ord": 119,
+          "score": 73.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 15755,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 96
         },
         {
           "id": "willkommen-bei-den-hartmanns-2016",
@@ -10117,7 +17126,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "뮌헨의 중산층 가족이 나이지리아 난민을 집에 들인다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 120
+          "ord": 120,
+          "score": 65.6,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 6064,
+          "criticEstimated": true
         },
         {
           "id": "fack-ju-gohte-2013",
@@ -10133,7 +17147,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "출소한 강도가 돈을 찾으려 교사로 위장 취업한다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 121
+          "ord": 121,
+          "score": 67.4,
+          "scoreEstimated": true,
+          "imdb": 6.9,
+          "imdbVotes": 35330,
+          "criticEstimated": true
         },
         {
           "id": "bella-martha-2001",
@@ -10149,7 +17168,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "완벽주의 셰프가 조카와 이탈리아 요리사를 만나 마음을 연다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 122
+          "ord": 122,
+          "score": 72.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 8919,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 92
         },
         {
           "id": "das-wunder-von-bern-2003",
@@ -10165,7 +17191,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "전쟁포로에서 돌아온 아버지와 아들이 1954 월드컵으로 가까워진다",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 123
+          "ord": 123,
+          "score": 67.2,
+          "scoreEstimated": true,
+          "imdb": 6.7,
+          "imdbVotes": 8050,
+          "criticEstimated": true
         },
         {
           "id": "der-schuh-des-manitu-2001",
@@ -10181,7 +17212,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "서부극을 패러디한 인디언 형제의 보물 찾기",
           "ratio": "웃음 10:감동 0",
           "kids": true,
-          "ord": 124
+          "ord": 124,
+          "score": 66.1,
+          "scoreEstimated": true,
+          "imdb": 6.7,
+          "imdbVotes": 23526,
+          "criticEstimated": true
         },
         {
           "id": "keinohrhasen-2007",
@@ -10197,7 +17233,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바람둥이 기자가 사회봉사로 어린 시절 괴롭히던 친구의 유치원에 간다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 125
+          "ord": 125,
+          "score": 65.0,
+          "scoreEstimated": true,
+          "imdb": 6.5,
+          "imdbVotes": 19556,
+          "criticEstimated": true
         },
         {
           "id": "vincent-will-meer-2010",
@@ -10213,7 +17254,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "투렛 증후군 청년이 병원 친구들과 바다를 향해 떠난다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 126
+          "ord": 126,
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 6189,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 64
         },
         {
           "id": "honig-im-kopf-2014",
@@ -10229,7 +17277,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "치매에 걸린 할아버지와 손녀의 베네치아 여행",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 127
+          "ord": 127,
+          "score": 66.8,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 7778,
+          "criticEstimated": true
         },
         {
           "id": "almanya-willkommen-in-deutschland-2011",
@@ -10245,7 +17298,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "터키 이민 1세대 할아버지가 온 가족을 고향으로 데려간다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 128
+          "ord": 128,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 7511,
+          "criticEstimated": true
         },
         {
           "id": "sonnenallee-1999",
@@ -10261,7 +17319,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "베를린 장벽 바로 옆 동독 거리의 10대들이 보내는 70년대",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 129
+          "ord": 129,
+          "score": 67.7,
+          "scoreEstimated": true,
+          "imdb": 6.8,
+          "imdbVotes": 7621,
+          "criticEstimated": true
         },
         {
           "id": "im-juli-2000",
@@ -10277,7 +17340,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "소심한 교사가 사랑을 찾아 함부르크에서 이스탄불까지 떠난다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 130
+          "ord": 130,
+          "score": 75.0,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 23674,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 89
         },
         {
           "id": "herr-lehmann-2003",
@@ -10293,7 +17363,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "장벽 붕괴 직전 베를린 크로이츠베르크 바텐더의 한가한 나날",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 131
+          "ord": 131,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 7958,
+          "criticEstimated": true
         },
         {
           "id": "kokowaah-2011",
@@ -10309,7 +17384,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바람둥이 작가 앞에 몰랐던 여덟 살 딸이 나타난다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 132
+          "ord": 132,
+          "score": 64.2,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 10926,
+          "criticEstimated": true
         },
         {
           "id": "der-ganz-groe-traum-2011",
@@ -10325,7 +17405,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "19세기 독일 김나지움에 축구를 들여온 영어 교사",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 133
+          "ord": 133,
+          "score": 68.3,
+          "scoreEstimated": true,
+          "imdb": 6.8,
+          "imdbVotes": 2795,
+          "criticEstimated": true
         },
         {
           "id": "das-fliegende-klassenzimmer-2003",
@@ -10341,7 +17426,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "라이프치히 기숙학교 소년들이 성탄극을 준비한다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 134
+          "ord": 134,
+          "score": 67.9,
+          "scoreEstimated": true,
+          "imdb": 6.3,
+          "imdbVotes": 1583,
+          "criticEstimated": true
         },
         {
           "id": "oh-boy-2012",
@@ -10357,7 +17447,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "커피 한 잔을 못 마신 베를린 청년의 하루",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 135
+          "ord": 135,
+          "score": 70.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 18433,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 77
         },
         {
           "id": "the-commitments-1991",
@@ -10373,7 +17470,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "더블린 노동계급 청년들이 소울 밴드를 결성한다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 136
+          "ord": 136,
+          "score": 76.0,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 43930,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 89
         },
         {
           "id": "sing-street-2016",
@@ -10389,7 +17493,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "전학 간 소년이 마음에 든 소녀를 위해 밴드를 만든다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 137
+          "ord": 137,
+          "score": 80.5,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 109364,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 95
         },
         {
           "id": "once-2007",
@@ -10405,7 +17516,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "더블린 거리 악사와 체코 이민 여성이 함께 노래를 만든다",
           "ratio": "웃음 3:감동 7",
           "kids": false,
-          "ord": 138
+          "ord": 138,
+          "score": 82.4,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 126774,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 97
         },
         {
           "id": "waking-ned-1998",
@@ -10421,7 +17539,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "복권에 당첨된 채 숨진 이웃의 당첨금을 받으려 마을이 공모한다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 139
+          "ord": 139,
+          "score": 73.1,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 30129,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 84
         },
         {
           "id": "song-of-the-sea-2014",
@@ -10437,7 +17562,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "셀키 동생을 지키려 바다로 향하는 남매의 모험",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 140
+          "ord": 140,
+          "score": 82.3,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 69193,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 99
         },
         {
           "id": "the-secret-of-kells-2009",
@@ -10453,7 +17585,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "수도원 소년이 전설의 책을 완성하려 숲으로 들어간다",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 141
+          "ord": 141,
+          "score": 76.9,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 41368,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 90
         },
         {
           "id": "wolfwalkers-2020",
@@ -10469,7 +17608,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "늑대 사냥꾼의 딸이 늑대로 변하는 소녀와 친구가 된다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 142
+          "ord": 142,
+          "score": 82.0,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 46478,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 99
         },
         {
           "id": "brooklyn-2015",
@@ -10485,7 +17631,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아일랜드 시골 처녀가 뉴욕 브루클린에서 새 삶과 사랑을 찾는다",
           "ratio": "웃음 4:감동 6",
           "kids": false,
-          "ord": 143
+          "ord": 143,
+          "score": 80.2,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 159922,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 97
         },
         {
           "id": "my-left-foot-1989",
@@ -10501,7 +17654,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "뇌성마비로 왼발만 움직이던 크리스티 브라운이 화가이자 작가가 된다",
           "ratio": "웃음 3:감동 7",
           "kids": false,
-          "ord": 144
+          "ord": 144,
+          "score": 83.4,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 86212,
+          "criticEstimated": false,
+          "metacritic": 97,
+          "rt": 98
         },
         {
           "id": "an-cailin-ciuin-2022",
@@ -10517,7 +17677,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "여름 동안 먼 친척 집에 맡겨진 소녀가 처음으로 보살핌을 받는다",
           "ratio": "웃음 1:감동 9",
           "kids": true,
-          "ord": 145
+          "ord": 145,
+          "score": 79.5,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 30157,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 97
         },
         {
           "id": "the-snapper-1993",
@@ -10533,7 +17700,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "미혼으로 임신한 딸 때문에 더블린 가족이 들썩인다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 146
+          "ord": 146,
+          "score": 73.9,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 6622,
+          "criticEstimated": false,
+          "rt": 97
         },
         {
           "id": "the-van-1996",
@@ -10549,7 +17722,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "실직한 두 친구가 낡은 트럭으로 피시앤칩스 장사를 시작한다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 147
+          "ord": 147,
+          "score": 65.2,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 5155,
+          "criticEstimated": false,
+          "rt": 42
         },
         {
           "id": "intermission-2003",
@@ -10565,7 +17744,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "더블린 사람들의 연애와 범죄가 우연히 얽힌다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 148
+          "ord": 148,
+          "score": 68.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 17490,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 73
         },
         {
           "id": "into-the-west-1992",
@@ -10581,7 +17767,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "떠돌이 형제가 신비로운 백마를 데리고 서쪽으로 도망친다",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 149
+          "ord": 149,
+          "score": 70.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 3442,
+          "criticEstimated": false,
+          "rt": 77
         },
         {
           "id": "extra-ordinary-2019",
@@ -10597,7 +17789,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "유령을 보는 운전강사가 악마 숭배 가수에게서 소녀를 구한다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 150
+          "ord": 150,
+          "score": 69.4,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 12981,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 98
         },
         {
           "id": "hear-my-song-1991",
@@ -10613,7 +17812,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "망해가는 클럽 주인이 전설의 테너를 찾아 아일랜드로 간다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 151
+          "ord": 151,
+          "score": 70.4,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 2088,
+          "criticEstimated": false,
+          "rt": 90
         },
         {
           "id": "agnes-browne-1999",
@@ -10629,7 +17834,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "남편을 잃은 더블린 시장 상인이 일곱 아이를 키우며 꿈을 꾼다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 152
+          "ord": 152,
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 2279,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 41
         },
         {
           "id": "adams-bler-2005",
@@ -10647,7 +17859,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "가석방된 신나치가 낙천적인 목사의 교회에서 사과 파이를 굽게 된다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 153
+          "ord": 153,
+          "score": 70.7,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 60199,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 70
         },
         {
           "id": "druk-2020",
@@ -10665,7 +17884,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "네 교사가 혈중알코올농도 0.05% 유지 실험을 시작한다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 154
+          "ord": 154,
+          "score": 79.2,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 231943,
+          "criticEstimated": false,
+          "metacritic": 79,
+          "rt": 92
         },
         {
           "id": "en-man-som-heter-ove-2015",
@@ -10683,7 +17909,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "까칠한 홀아비가 옆집 가족 때문에 다시 삶을 살게 된다",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 155
+          "ord": 155,
+          "score": 76.8,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 75925,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 91
         },
         {
           "id": "salmer-fra-kjkkenet-2003",
@@ -10701,7 +17934,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "부엌 동선을 연구하러 온 스웨덴 조사원과 노르웨이 노인의 우정",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 156
+          "ord": 156,
+          "score": 72.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 8934,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 91
         },
         {
           "id": "elling-2001",
@@ -10719,7 +17959,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "정신병원에서 나온 두 남자가 오슬로 아파트에서 홀로서기를 한다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 157
+          "ord": 157,
+          "score": 73.0,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 16831,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 85
         },
         {
           "id": "babettes-gstebud-1987",
@@ -10737,7 +17984,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "복권에 당첨된 프랑스인 하녀가 경건한 마을에 만찬을 차린다",
           "ratio": "웃음 3:감동 7",
           "kids": true,
-          "ord": 158
+          "ord": 158,
+          "score": 80.7,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 24333,
+          "criticEstimated": false,
+          "rt": 97
         },
         {
           "id": "mitt-liv-som-hund-1985",
@@ -10755,7 +18008,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "시골 삼촌 집에 맡겨진 소년의 웃기고 아픈 한 해",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 159
+          "ord": 159,
+          "score": 80.3,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 23139,
+          "criticEstimated": false,
+          "rt": 100
         },
         {
           "id": "tillsammans-2000",
@@ -10773,7 +18032,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "1975년 스톡홀름 공동체에 남편을 떠난 여자와 아이들이 들어온다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 160
+          "ord": 160,
+          "score": 75.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 24407,
+          "criticEstimated": false,
+          "metacritic": 84
         },
         {
           "id": "hundraaringen-som-klev-ut-genom-fonstret-och-forsvann-2013",
@@ -10791,7 +18056,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "100세 생일에 요양원 창문을 넘은 노인이 돈가방을 손에 넣는다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 161
+          "ord": 161,
+          "score": 67.6,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 44531,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 68
         },
         {
           "id": "kuolleet-lehdet-2023",
@@ -10809,7 +18081,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "헬싱키의 외로운 두 사람이 서툴게 사랑에 다가간다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 162
+          "ord": 162,
+          "score": 76.7,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 37625,
+          "criticEstimated": false,
+          "metacritic": 86,
+          "rt": 98
         },
         {
           "id": "mies-vailla-menneisyytta-2002",
@@ -10827,7 +18106,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "기억을 잃은 남자가 항구 컨테이너 마을에서 새 삶을 꾸린다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 163
+          "ord": 163,
+          "score": 78.2,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 29369,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 98
         },
         {
           "id": "toivon-tuolla-puolen-2017",
@@ -10845,7 +18131,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "시리아 난민 청년과 식당을 연 핀란드 남자의 만남",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 164
+          "ord": 164,
+          "score": 74.2,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 14985,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 92
         },
         {
           "id": "leningrad-cowboys-go-america-1989",
@@ -10863,7 +18156,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "뾰족머리 밴드가 성공을 찾아 미국 순회공연을 떠난다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 165
+          "ord": 165,
+          "score": 74.7,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 9645,
+          "criticEstimated": false,
+          "rt": 100
         },
         {
           "id": "hrutar-2015",
@@ -10881,7 +18180,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "40년간 말 안 하던 양치기 형제가 양들을 지키려 다시 손을 잡는다",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 166
+          "ord": 166,
+          "score": 74.4,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 15854,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 95
         },
         {
           "id": "en-duva-satt-pa-en-gren-och-funderade-pa-tillvaron-2014",
@@ -10899,7 +18205,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "웃음 상품을 파는 두 외판원의 기묘한 일화들",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 167
+          "ord": 167,
+          "score": 72.6,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 20733,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 89
         },
         {
           "id": "den-skaldede-frisr-2012",
@@ -10917,7 +18230,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "투병 후 남편의 외도를 안 미용사가 딸의 결혼식에서 사돈과 엮인다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 168
+          "ord": 168,
+          "score": 66.4,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 15528,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 75
         },
         {
           "id": "o-horten-2007",
@@ -10935,7 +18255,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "은퇴한 기관사가 마지막 운행 뒤 엉뚱한 하룻밤을 보낸다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 169
+          "ord": 169,
+          "score": 69.9,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 4062,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 91
         },
         {
           "id": "fusi-2015",
@@ -10953,7 +18280,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "엄마와 사는 마흔셋 숫기 없는 남자가 처음 사랑을 한다",
           "ratio": "웃음 5:감동 5",
           "kids": false,
-          "ord": 170
+          "ord": 170,
+          "score": 70.5,
+          "scoreEstimated": true,
+          "imdb": 7.4,
+          "imdbVotes": 10505,
+          "criticEstimated": true
         },
         {
           "id": "101-reykjavik-2000",
@@ -10971,7 +18303,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "엄마와 사는 백수 청년이 엄마의 연인과 엮인다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 171
+          "ord": 171,
+          "score": 69.5,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 10271,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 89
         },
         {
           "id": "sa-som-i-himmelen-2004",
@@ -10989,7 +18328,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "은퇴한 지휘자가 고향 마을 교회 성가대를 맡는다",
           "ratio": "웃음 4:감동 6",
           "kids": false,
-          "ord": 172
+          "ord": 172,
+          "score": 75.3,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 19426,
+          "criticEstimated": false,
+          "rt": 83
         },
         {
           "id": "italiensk-for-begyndere-2000",
@@ -11007,7 +18352,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "이탈리아어 초급반에 모인 외로운 코펜하겐 사람들",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 173
+          "ord": 173,
+          "score": 72.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 14538,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 88
         },
         {
           "id": "blinkende-lygter-2000",
@@ -11025,7 +18377,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "돈을 들고 도망친 갱 넷이 시골 식당에 눌러앉는다",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 174
+          "ord": 174,
+          "score": 69.0,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 27417,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 70
         },
         {
           "id": "den-eneste-ene-1999",
@@ -11043,7 +18402,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아기를 원하는 두 커플의 엇갈린 사랑",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 175
+          "ord": 175,
+          "score": 68.2,
+          "scoreEstimated": true,
+          "imdb": 6.9,
+          "imdbVotes": 5695,
+          "criticEstimated": true
         },
         {
           "id": "emil-i-lonneberga-1971",
@@ -11061,7 +18425,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "말썽꾸러기 에밀이 스웨덴 시골 마을에서 벌이는 장난",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 176
+          "ord": 176,
+          "score": 69.6,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 4850,
+          "criticEstimated": true
         },
         {
           "id": "kona-fer-i-stri-2018",
@@ -11079,7 +18448,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "합창단 지휘자가 몰래 송전탑을 쓰러뜨리는 환경 투사로 활약한다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 177
+          "ord": 177,
+          "score": 74.8,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 12196,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 97
         },
         {
           "id": "it-happened-one-night-1934",
@@ -11095,7 +18471,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "가출한 상속녀와 특종을 노리는 기자가 함께 버스 여행을 하며 가까워진다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 178
+          "ord": 178,
+          "score": 83.7,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 120868,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 98
         },
         {
           "id": "it-s-a-wonderful-life-1946",
@@ -11111,7 +18494,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "절망한 크리스마스이브, 천사가 한 남자에게 그가 없었을 세상을 보여 준다",
           "ratio": "웃음 3:감동 7",
           "kids": true,
-          "ord": 179
+          "ord": 179,
+          "score": 87.5,
+          "scoreEstimated": false,
+          "imdb": 8.6,
+          "imdbVotes": 561844,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 94
         },
         {
           "id": "roman-holiday-1953",
@@ -11127,7 +18517,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "궁을 몰래 빠져나온 공주가 신문기자와 로마에서 꿈같은 하루를 보낸다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 180
+          "ord": 180,
+          "score": 81.4,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 159297,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 97
         },
         {
           "id": "some-like-it-hot-1959",
@@ -11143,7 +18540,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "갱단을 피해 여장을 하고 여성 악단에 숨어든 두 악사의 소동",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 181
+          "ord": 181,
+          "score": 86.6,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 308152,
+          "criticEstimated": false,
+          "metacritic": 98,
+          "rt": 94
         },
         {
           "id": "the-apartment-1960",
@@ -11159,7 +18563,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "출세를 위해 상사들에게 아파트를 빌려주던 회사원이 엘리베이터 걸을 사랑하게 된다",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 182
+          "ord": 182,
+          "score": 86.3,
+          "scoreEstimated": false,
+          "imdb": 8.3,
+          "imdbVotes": 223798,
+          "criticEstimated": false,
+          "metacritic": 94,
+          "rt": 94
         },
         {
           "id": "breakfast-at-tiffany-s-1961",
@@ -11175,7 +18586,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "뉴욕의 자유분방한 홀리와 이웃집 작가가 서로에게 마음을 연다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 183
+          "ord": 183,
+          "score": 77.0,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 206864,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 88
         },
         {
           "id": "ghostbusters-1984",
@@ -11191,7 +18609,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "해고된 과학자 셋이 유령 퇴치 회사를 차려 뉴욕을 구한다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 184
+          "ord": 184,
+          "score": 78.8,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 492338,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 95
         },
         {
           "id": "back-to-the-future-1985",
@@ -11207,7 +18632,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "타임머신을 타고 1955년으로 간 소년이 부모님의 연애를 이어 줘야 한다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 185
+          "ord": 185,
+          "score": 86.5,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1482737,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 92
         },
         {
           "id": "ferris-bueller-s-day-off-1986",
@@ -11223,7 +18655,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "꾀병으로 학교를 빼먹은 고등학생이 친구들과 시카고에서 하루를 즐긴다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 186
+          "ord": 186,
+          "score": 75.1,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 421650,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 83
         },
         {
           "id": "the-princess-bride-1987",
@@ -11239,7 +18678,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "할아버지가 들려주는 공주와 농장 소년의 모험과 진정한 사랑 이야기",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 187
+          "ord": 187,
+          "score": 81.6,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 492411,
+          "criticEstimated": false,
+          "metacritic": 78,
+          "rt": 96
         },
         {
           "id": "big-1988",
@@ -11255,7 +18701,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "하룻밤 사이 어른이 된 열두 살 소년이 장난감 회사에 취직한다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 188
+          "ord": 188,
+          "score": 76.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 264306,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 98
         },
         {
           "id": "coming-to-america-1988",
@@ -11271,7 +18724,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아프리카 왕국의 왕자가 진짜 사랑을 찾으러 뉴욕 퀸스에 신분을 숨기고 온다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 189
+          "ord": 189,
+          "score": 66.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 243119,
+          "criticEstimated": false,
+          "metacritic": 47,
+          "rt": 71
         },
         {
           "id": "when-harry-met-sally-1989",
@@ -11287,7 +18747,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "남녀 사이에 친구가 가능한지 다투던 두 사람의 12년에 걸친 우정과 사랑",
           "ratio": "웃음 8:감동 2",
           "kids": false,
-          "ord": 190
+          "ord": 190,
+          "score": 78.2,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 276749,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 89
         },
         {
           "id": "home-alone-1990",
@@ -11303,7 +18770,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "크리스마스에 홀로 남겨진 소년이 빈집털이 2인조를 기발한 함정으로 물리친다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 191
+          "ord": 191,
+          "score": 73.3,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 757173,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 67
         },
         {
           "id": "sister-act-1992",
@@ -11319,7 +18793,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "살인을 목격한 라스베이거스 가수가 수녀원에 숨어 성가대를 바꿔 놓는다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 192
+          "ord": 192,
+          "score": 64.2,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 120200,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 73
         },
         {
           "id": "groundhog-day-1993",
@@ -11335,7 +18816,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "냉소적인 기상 캐스터가 같은 하루를 끝없이 되풀이하며 달라진다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 193
+          "ord": 193,
+          "score": 80.0,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 742340,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 93
         },
         {
           "id": "mrs-doubtfire-1993",
@@ -11351,7 +18839,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "이혼한 아빠가 아이들 곁에 있으려고 할머니 가정부로 변장한다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 194
+          "ord": 194,
+          "score": 67.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 321151,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 70
         },
         {
           "id": "sleepless-in-seattle-1993",
@@ -11367,7 +18862,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "라디오 사연으로 알게 된 시애틀의 홀아비와 볼티모어의 기자가 운명처럼 이어진다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 195
+          "ord": 195,
+          "score": 69.8,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 210927,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 75
         },
         {
           "id": "forrest-gump-1994",
@@ -11383,7 +18885,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "순박한 포레스트가 미국 현대사를 가로지르며 한 여인을 평생 사랑한다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 196
+          "ord": 196,
+          "score": 84.9,
+          "scoreEstimated": false,
+          "imdb": 8.8,
+          "imdbVotes": 2546069,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 75
         },
         {
           "id": "toy-story-1995",
@@ -11399,7 +18908,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "카우보이 인형 우디와 새 장난감 버즈가 경쟁하다 친구가 된다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 197
+          "ord": 197,
+          "score": 88.0,
+          "scoreEstimated": false,
+          "imdb": 8.3,
+          "imdbVotes": 1203744,
+          "criticEstimated": false,
+          "metacritic": 96,
+          "rt": 100
         },
         {
           "id": "liar-liar-1997",
@@ -11415,7 +18931,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아들의 생일 소원으로 하루 동안 거짓말을 못 하게 된 변호사의 소동",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 198
+          "ord": 198,
+          "score": 71.1,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 367918,
+          "criticEstimated": false,
+          "metacritic": 70,
+          "rt": 83
         },
         {
           "id": "good-will-hunting-1997",
@@ -11431,7 +18954,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "수학 천재지만 마음을 닫은 청년이 상처 입은 심리학 교수를 만난다",
           "ratio": "웃음 3:감동 7",
           "kids": false,
-          "ord": 199
+          "ord": 199,
+          "score": 83.0,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 1248813,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 97
         },
         {
           "id": "the-truman-show-1998",
@@ -11447,7 +18977,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "평생 리얼리티 쇼 속에서 살아온 남자가 자기 세상의 진실을 알아챈다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 200
+          "ord": 200,
+          "score": 85.3,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 1413699,
+          "criticEstimated": false,
+          "metacritic": 90,
+          "rt": 94
         },
         {
           "id": "patch-adams-1998",
@@ -11463,7 +19000,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "웃음으로 환자를 치료하려는 의대생이 규칙을 중시하는 의학계와 부딪힌다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 201
+          "ord": 201,
+          "score": 54.5,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 131794,
+          "criticEstimated": false,
+          "metacritic": 26,
+          "rt": 22
         },
         {
           "id": "shrek-2001",
@@ -11479,7 +19023,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "늪지대 괴물 슈렉이 당나귀와 함께 탑에 갇힌 공주를 구하러 떠난다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 202
+          "ord": 202,
+          "score": 81.3,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 824222,
+          "criticEstimated": false,
+          "metacritic": 84,
+          "rt": 89
         },
         {
           "id": "legally-blonde-2001",
@@ -11495,7 +19046,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "남자친구를 되찾으러 하버드 로스쿨에 들어간 금발 여대생이 실력으로 인정받는다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 203
+          "ord": 203,
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 294911,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 72
         },
         {
           "id": "elf-2003",
@@ -11511,7 +19069,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "북극에서 요정으로 자란 청년이 친아빠를 찾아 뉴욕에 온다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 204
+          "ord": 204,
+          "score": 72.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 350086,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 86
         },
         {
           "id": "school-of-rock-2003",
@@ -11527,7 +19092,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "가짜 대체교사가 된 무명 로커가 모범생들을 록 밴드로 키운다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 205
+          "ord": 205,
+          "score": 76.7,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 363133,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 92
         },
         {
           "id": "bruce-almighty-2003",
@@ -11543,7 +19115,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "신을 원망하던 리포터가 일주일 동안 신의 능력을 받는다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 206
+          "ord": 206,
+          "score": 60.7,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 477076,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 48
         },
         {
           "id": "big-fish-2003",
@@ -11559,7 +19138,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "허풍 같은 모험담만 늘어놓던 아버지의 진짜 삶을 아들이 찾아간다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 207
+          "ord": 207,
+          "score": 74.0,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 480937,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 75
         },
         {
           "id": "the-terminal-2004",
@@ -11575,7 +19161,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "고국이 사라져 공항에 갇힌 남자가 터미널에서 삶을 꾸려 간다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 208
+          "ord": 208,
+          "score": 68.2,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 543789,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 61
         },
         {
           "id": "little-miss-sunshine-2006",
@@ -11591,7 +19184,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "어린이 미인대회에 나가는 막내를 위해 엉망진창 가족이 고물 버스로 달린다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 209
+          "ord": 209,
+          "score": 80.1,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 567669,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 91
         },
         {
           "id": "the-devil-wears-prada-2006",
@@ -11607,7 +19207,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "패션을 모르던 사회 초년생이 악명 높은 잡지 편집장의 비서가 된다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 210
+          "ord": 210,
+          "score": 69.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 575372,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 75
         },
         {
           "id": "night-at-the-museum-2006",
@@ -11623,7 +19230,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "밤마다 전시물이 살아나는 박물관에서 야간 경비원이 소동을 수습한다",
           "ratio": "웃음 9:감동 1",
           "kids": true,
-          "ord": 211
+          "ord": 211,
+          "score": 58.4,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 417944,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 42
         },
         {
           "id": "the-pursuit-of-happyness-2006",
@@ -11639,7 +19253,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "노숙을 하면서도 아들을 지키며 무급 인턴을 버틴 아버지의 이야기",
           "ratio": "웃음 3:감동 7",
           "kids": true,
-          "ord": 212
+          "ord": 212,
+          "score": 74.8,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 633679,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 67
         },
         {
           "id": "superbad-2007",
@@ -11655,7 +19276,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "졸업을 앞둔 단짝 고등학생 둘이 파티 하나를 위해 벌이는 하룻밤 소동",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 213
+          "ord": 213,
+          "score": 77.6,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 706217,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 88
         },
         {
           "id": "yes-man-2008",
@@ -11671,7 +19299,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "무엇이든 '아니'라고 하던 남자가 모든 일에 '예스'라고 답하기로 한다",
           "ratio": "웃음 9:감동 1",
           "kids": false,
-          "ord": 214
+          "ord": 214,
+          "score": 60.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 410193,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 44
         },
         {
           "id": "up-2009",
@@ -11687,7 +19322,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "풍선을 매단 집을 타고 남미로 떠난 할아버지와 보이스카우트 소년의 모험",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 215
+          "ord": 215,
+          "score": 86.1,
+          "scoreEstimated": false,
+          "imdb": 8.3,
+          "imdbVotes": 1260311,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 98
         },
         {
           "id": "julie-julia-2009",
@@ -11703,7 +19345,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "줄리아 차일드의 요리책 레시피를 1년 동안 따라 하는 블로거와 줄리아의 이야기",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 216
+          "ord": 216,
+          "score": 70.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 137816,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 77
         },
         {
           "id": "the-blind-side-2009",
@@ -11719,7 +19368,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "갈 곳 없던 소년을 가족으로 맞은 가정과 미식축구 선수로 자라는 그의 이야기",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 217
+          "ord": 217,
+          "score": 69.8,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 393694,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 66
         },
         {
           "id": "the-secret-life-of-walter-mitty-2013",
@@ -11735,7 +19391,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "상상만 하던 잡지사 직원이 사라진 사진 한 장을 찾아 진짜 모험을 떠난다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 218
+          "ord": 218,
+          "score": 66.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 379151,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 53
         },
         {
           "id": "chef-2014",
@@ -11751,7 +19414,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "레스토랑을 그만둔 셰프가 푸드트럭을 몰고 아들과 미국을 횡단한다",
           "ratio": "웃음 7:감동 3",
           "kids": false,
-          "ord": 219
+          "ord": 219,
+          "score": 73.8,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 254710,
+          "criticEstimated": false,
+          "metacritic": 68,
+          "rt": 87
         },
         {
           "id": "inside-out-2015",
@@ -11767,7 +19437,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "이사 온 소녀의 머릿속에서 기쁨과 슬픔 등 감정들이 벌이는 모험",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 220
+          "ord": 220,
+          "score": 86.0,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 936352,
+          "criticEstimated": false,
+          "metacritic": 94,
+          "rt": 98
         },
         {
           "id": "the-intern-2015",
@@ -11783,7 +19460,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "70세 인턴이 젊은 온라인 쇼핑몰 CEO의 든든한 친구가 된다",
           "ratio": "웃음 7:감동 3",
           "kids": true,
-          "ord": 221
+          "ord": 221,
+          "score": 65.3,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 316197,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 59
         },
         {
           "id": "coco-2017",
@@ -11799,7 +19483,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "음악을 꿈꾸는 멕시코 소년이 죽은 자들의 세상에서 가족의 비밀을 찾는다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 222
+          "ord": 222,
+          "score": 85.0,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 731228,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 97
         },
         {
           "id": "wonder-2017",
@@ -11815,7 +19506,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "얼굴 기형으로 홈스쿨링하던 소년이 처음 학교에 가며 친구를 사귄다",
           "ratio": "웃음 4:감동 6",
           "kids": true,
-          "ord": 223
+          "ord": 223,
+          "score": 77.0,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 200116,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 86
         },
         {
           "id": "green-book-2018",
@@ -11831,7 +19529,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "흑인 피아니스트와 이탈리아계 운전기사가 1960년대 남부 투어에서 우정을 쌓는다",
           "ratio": "웃음 6:감동 4",
           "kids": true,
-          "ord": 224
+          "ord": 224,
+          "score": 78.5,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 708254,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 77
         },
         {
           "id": "crazy-rich-asians-2018",
@@ -11847,7 +19552,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "뉴욕의 교수가 남자친구를 따라 싱가포르에 갔다가 그 집안이 엄청난 부자임을 알게 된다",
           "ratio": "웃음 8:감동 2",
           "kids": true,
-          "ord": 225
+          "ord": 225,
+          "score": 72.9,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 212599,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 91
         },
         {
           "id": "coda-2021",
@@ -11863,7 +19575,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "청각장애인 가족 중 유일하게 듣는 소녀가 노래의 꿈과 가족 사이에서 고민한다",
           "ratio": "웃음 5:감동 5",
           "kids": true,
-          "ord": 226
+          "ord": 226,
+          "score": 80.0,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 233855,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 94
         },
         {
           "id": "the-holdovers-2023",
@@ -11879,7 +19598,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "성탄 연휴 기숙학교에 남겨진 깐깐한 교사와 문제아 학생, 주방장의 2주",
           "ratio": "웃음 6:감동 4",
           "kids": false,
-          "ord": 227
+          "ord": 227,
+          "score": 81.8,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 275248,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 97
         }
       ]
     },
@@ -11906,7 +19632,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "에디트 피아프의 일생. 마리옹 코티야르가 아카데미 여우주연상을 받았습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/piaf",
           "sourceLabel": "나두예술 에디트 피아프 글 보기",
-          "ord": 1
+          "ord": 1,
+          "score": 72.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 94800,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 74
         },
         {
           "id": "at-eternity-s-gate-2018",
@@ -11923,7 +19656,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아를과 오베르 시절. 윌렘 대포가 아카데미 남우주연상 후보에 올랐습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/van-gogh",
           "sourceLabel": "나두예술 빈센트 반 고흐 글 보기",
-          "ord": 2
+          "ord": 2,
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 45184,
+          "criticEstimated": false,
+          "metacritic": 76,
+          "rt": 79
         },
         {
           "id": "loving-vincent-2017",
@@ -11940,7 +19680,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "화가들이 유화로 한 장 한 장 그린 장편 애니메이션.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/van-gogh",
           "sourceLabel": "나두예술 빈센트 반 고흐 글 보기",
-          "ord": 3
+          "ord": 3,
+          "score": 75.0,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 69132,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 84
         },
         {
           "id": "lust-for-life-1956",
@@ -11957,7 +19704,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "커크 더글러스가 고흐, 앤서니 퀸이 고갱. 퀸이 아카데미 남우조연상을 받았습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/van-gogh",
           "sourceLabel": "나두예술 빈센트 반 고흐 글 보기",
-          "ord": 4
+          "ord": 4,
+          "score": 73.0,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 13308,
+          "criticEstimated": false,
+          "rt": 80
         },
         {
           "id": "caravaggio-1986",
@@ -11974,7 +19727,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "카라바조의 그림을 살아 있는 장면(타블로 비방)처럼 연출한 영국 영화.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/caravaggio",
           "sourceLabel": "나두예술 카라바조 글 보기",
-          "ord": 5
+          "ord": 5,
+          "score": 67.0,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 7942,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 82
         },
         {
           "id": "l-ombra-di-caravaggio-2022",
@@ -11991,7 +19751,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "교황청 조사관이 카라바조의 삶을 뒤쫓는 이탈리아 영화.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/caravaggio",
           "sourceLabel": "나두예술 카라바조 글 보기",
-          "ord": 6
+          "ord": 6,
+          "score": 67.9,
+          "scoreEstimated": true,
+          "imdb": 6.5,
+          "imdbVotes": 2175,
+          "criticEstimated": true
         },
         {
           "id": "the-agony-and-the-ecstasy-1965",
@@ -12008,7 +19773,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "시스티나 천장화를 두고 미켈란젤로(찰턴 헤스턴)와 교황 율리우스 2세(렉스 해리슨)가 부딪칩니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/michelangelo",
           "sourceLabel": "나두예술 미켈란젤로 부오나로티 글 보기",
-          "ord": 7
+          "ord": 7,
+          "score": 73.0,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 8945,
+          "criticEstimated": false,
+          "rt": 86
         },
         {
           "id": "renoir-2012",
@@ -12025,7 +19796,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "말년의 르누아르와 아들 장 르누아르, 그리고 모델 이야기.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/renoir",
           "sourceLabel": "나두예술 피에르오귀스트 르누아르 글 보기",
-          "ord": 8
+          "ord": 8,
+          "score": 67.4,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 6267,
+          "criticEstimated": false,
+          "metacritic": 64,
+          "rt": 71
         },
         {
           "id": "cezanne-et-moi-2016",
@@ -12042,7 +19820,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "세잔과 에밀 졸라의 40년 우정과 갈등.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/cezanne",
           "sourceLabel": "나두예술 폴 세잔 글 보기",
-          "ord": 9
+          "ord": 9,
+          "score": 67.3,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 1539,
+          "criticEstimated": false,
+          "metacritic": 54,
+          "rt": 53
         },
         {
           "id": "modigliani-2004",
@@ -12059,7 +19844,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "앤디 가르시아 주연. 피카소와의 경쟁을 극적으로 꾸몄습니다(사실과 다른 부분이 많음).",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/modigliani",
           "sourceLabel": "나두예술 아메데오 모딜리아니 글 보기",
-          "ord": 10
+          "ord": 10,
+          "score": 56.9,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 13244,
+          "criticEstimated": false,
+          "rt": 4
         },
         {
           "id": "the-devil-s-violinist-2013",
@@ -12076,7 +19867,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바이올리니스트 데이비드 개릿이 파가니니를 연기하고 직접 연주했습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/paganini",
           "sourceLabel": "나두예술 니콜로 파가니니 글 보기",
-          "ord": 11
+          "ord": 11,
+          "score": 63.2,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 4083,
+          "criticEstimated": false,
+          "metacritic": 38,
+          "rt": 31
         },
         {
           "id": "bolero-2024",
@@ -12093,7 +19891,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "라벨이 ‘볼레로’를 쓰기까지. 라파엘 페르소나즈가 라벨을 맡았습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/ravel",
           "sourceLabel": "나두예술 모리스 라벨 글 보기",
-          "ord": 12
+          "ord": 12,
+          "score": 68.2,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 1303,
+          "criticEstimated": true
         },
         {
           "id": "ennio-2021",
@@ -12110,7 +19913,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "모리코네의 삶과 음악을 담은 다큐멘터리. ‘시네마 천국’ 감독이 만들었습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/morricone",
           "sourceLabel": "나두예술 엔니오 모리코네 글 보기",
-          "ord": 13
+          "ord": 13,
+          "score": 73.8,
+          "scoreEstimated": true,
+          "imdb": 8.2,
+          "imdbVotes": 7774,
+          "criticEstimated": true
         },
         {
           "id": "amadeus-1984",
@@ -12127,7 +19935,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "모차르트와 궁정 작곡가 살리에리(이탈리아 레냐고 출신). 살리에리가 질투해 모차르트를 해쳤다는 이야기는 소문과 연극에서 온 허구입니다. 아카데미 작품상 등 8개 부문 수상.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/mozart",
           "sourceLabel": "나두예술 볼프강 아마데우스 모차르트 글 보기",
-          "ord": 14
+          "ord": 14,
+          "score": 85.2,
+          "scoreEstimated": false,
+          "imdb": 8.4,
+          "imdbVotes": 474775,
+          "criticEstimated": false,
+          "metacritic": 87,
+          "rt": 90
         },
         {
           "id": "immortal-beloved-1994",
@@ -12144,7 +19959,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "게리 올드먼이 베토벤. 베토벤이 남긴 ‘불멸의 연인’ 편지의 주인공을 찾는 이야기로, 영화의 결론은 학계 정설이 아닌 상상입니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/beethoven",
           "sourceLabel": "나두예술 루트비히 판 베토벤 글 보기",
-          "ord": 15
+          "ord": 15,
+          "score": 68.4,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 27853,
+          "criticEstimated": false,
+          "rt": 56
         },
         {
           "id": "copying-beethoven-2006",
@@ -12161,7 +19982,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "에드 해리스가 베토벤. 교향곡 9번 초연을 돕는 젊은 악보 필사가는 지어낸 인물입니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/beethoven",
           "sourceLabel": "나두예술 루트비히 판 베토벤 글 보기",
-          "ord": 16
+          "ord": 16,
+          "score": 63.4,
+          "scoreEstimated": false,
+          "imdb": 6.7,
+          "imdbVotes": 14529,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 28
         },
         {
           "id": "la-note-bleue-1991",
@@ -12178,7 +20006,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "쇼팽과 조르주 상드의 마지막 여름. 피아니스트 야누시 올레이니차크가 쇼팽을 맡았습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/chopin",
           "sourceLabel": "나두예술 프레데리크 쇼팽 글 보기",
-          "ord": 17
+          "ord": 17,
+          "score": 68.2,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 919,
+          "criticEstimated": true
         },
         {
           "id": "chopin-chopin-2025",
@@ -12195,7 +20028,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "파리 사교계의 스타였던 쇼팽의 마지막 몇 해를 그린 폴란드 영화.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/chopin",
           "sourceLabel": "나두예술 프레데리크 쇼팽 글 보기",
-          "ord": 18
+          "ord": 18,
+          "score": 68.3,
+          "scoreEstimated": true,
+          "imdb": 6.3,
+          "imdbVotes": 992,
+          "criticEstimated": true
         },
         {
           "id": "tchaikovskys-wife-2022",
@@ -12212,7 +20050,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "차이콥스키와 짧은 결혼 생활을 한 안토니나의 시선으로 본 이야기. 칸 영화제 경쟁 부문 상영.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/tchaikovsky",
           "sourceLabel": "나두예술 표트르 일리치 차이콥스키 글 보기",
-          "ord": 19
+          "ord": 19,
+          "score": 67.6,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 2378,
+          "criticEstimated": true
         },
         {
           "id": "mahler-auf-der-couch-2010",
@@ -12229,7 +20072,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "1910년 말러가 프로이트를 찾아간 실제 만남에서 출발한 이야기. 대화 내용은 상상입니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/mahler",
           "sourceLabel": "나두예술 구스타프 말러 글 보기",
-          "ord": 20
+          "ord": 20,
+          "score": 68.3,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 542,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "nowhere-boy-2009",
@@ -12246,7 +20095,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "10대의 존 레넌이 폴 매카트니를 만나 밴드를 시작하기까지.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/beatles",
           "sourceLabel": "나두예술 비틀스 글 보기",
-          "ord": 21
+          "ord": 21,
+          "score": 71.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 41234,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 80
         },
         {
           "id": "bohemian-rhapsody-2018",
@@ -12263,7 +20119,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "퀸과 프레디 머큐리, 1985년 라이브 에이드까지. 라미 말렉이 아카데미 남우주연상을 받았습니다. 사건 순서를 바꾼 곳이 있습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/queen",
           "sourceLabel": "나두예술 퀸 글 보기",
-          "ord": 22
+          "ord": 22,
+          "score": 70.1,
+          "scoreEstimated": false,
+          "imdb": 7.9,
+          "imdbVotes": 656284,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 60
         },
         {
           "id": "mamma-mia-2008",
@@ -12280,7 +20143,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아바의 노래로 만든 뮤지컬(1999)을 영화로. 그리스 섬이 배경입니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/music/abba",
           "sourceLabel": "나두예술 아바 글 보기",
-          "ord": 23
+          "ord": 23,
+          "score": 60.9,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 313223,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 55
         },
         {
           "id": "girl-with-a-pearl-earring-2003",
@@ -12297,7 +20167,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "스칼릿 조핸슨, 콜린 퍼스. 트레이시 슈발리에 소설이 원작이며 하녀 그리트는 지어낸 인물입니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/vermeer",
           "sourceLabel": "나두예술 요하네스 페르메이르 글 보기",
-          "ord": 24
+          "ord": 24,
+          "score": 70.1,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 85009,
+          "criticEstimated": false,
+          "metacritic": 72,
+          "rt": 73
         },
         {
           "id": "nightwatching-2007",
@@ -12314,7 +20191,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "‘야경’ 속에 살인 음모가 숨어 있다는 상상으로 만든 영화.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/rembrandt",
           "sourceLabel": "나두예술 렘브란트 판 레인 글 보기",
-          "ord": 25
+          "ord": 25,
+          "score": 68.5,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 3695,
+          "criticEstimated": false,
+          "rt": 74
         },
         {
           "id": "mr-turner-2014",
@@ -12331,7 +20214,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "말년의 터너. 티모시 스폴이 칸 영화제 남우주연상을 받았습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/turner",
           "sourceLabel": "나두예술 J. M. W. 터너 글 보기",
-          "ord": 26
+          "ord": 26,
+          "score": 75.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 28917,
+          "criticEstimated": false,
+          "metacritic": 94,
+          "rt": 96
         },
         {
           "id": "goya-s-ghosts-2006",
@@ -12348,7 +20238,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "스페인 종교 재판과 나폴레옹 전쟁 시대. 고야(스텔란 스카스가드)는 관찰자로 나오고 주인공들은 지어낸 인물입니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/goya",
           "sourceLabel": "나두예술 프란시스코 고야 글 보기",
-          "ord": 27
+          "ord": 27,
+          "score": 62.0,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 33415,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 30
         },
         {
           "id": "klimt-2006",
@@ -12365,7 +20262,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "존 말코비치가 클림트. 죽어 가는 화가의 기억을 꿈처럼 엮었습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/klimt",
           "sourceLabel": "나두예술 구스타프 클림트 글 보기",
-          "ord": 28
+          "ord": 28,
+          "score": 62.1,
+          "scoreEstimated": false,
+          "imdb": 5.1,
+          "imdbVotes": 3484,
+          "criticEstimated": false,
+          "metacritic": 44,
+          "rt": 32
         },
         {
           "id": "woman-in-gold-2015",
@@ -12382,7 +20286,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "나치에게 빼앗긴 클림트의 ‘아델레 블로흐바우어의 초상 I’을 되찾는 실화. 헬렌 미렌 주연.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/klimt",
           "sourceLabel": "나두예술 구스타프 클림트 글 보기",
-          "ord": 29
+          "ord": 29,
+          "score": 66.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 66577,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 57
         },
         {
           "id": "egon-schiele-tod-und-madchen-2016",
@@ -12399,7 +20310,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "실레의 짧은 삶과 모델들. 한국어 제목은 개봉명 기준이며 다를 수 있습니다.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/schiele",
           "sourceLabel": "나두예술 에곤 실레 글 보기",
-          "ord": 30
+          "ord": 30,
+          "score": 68.1,
+          "scoreEstimated": true,
+          "imdb": 6.5,
+          "imdbVotes": 1705,
+          "criticEstimated": true
         },
         {
           "id": "edvard-munch-1974",
@@ -12416,7 +20332,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "다큐멘터리처럼 찍은 노르웨이·스웨덴 TV 영화.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/munch",
           "sourceLabel": "나두예술 에드바르 뭉크 글 보기",
-          "ord": 31
+          "ord": 31,
+          "score": 71.6,
+          "scoreEstimated": true,
+          "imdb": 8.1,
+          "imdbVotes": 3653,
+          "criticEstimated": true
         },
         {
           "id": "effie-gray-2014",
@@ -12433,7 +20354,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "비평가 러스킨의 아내 에피와 밀레이의 사랑. 각본 에마 톰프슨.",
           "sourceUrl": "https://nadoo-arts.vercel.app/art/millais",
           "sourceLabel": "나두예술 존 에버렛 밀레이 글 보기",
-          "ord": 32
+          "ord": 32,
+          "score": 61.8,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 7466,
+          "criticEstimated": false,
+          "rt": 43
         }
       ]
     },
@@ -12461,7 +20388,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "체스 신동 소년이 이기는 법과 착한 마음 사이에서 자기 길을 찾는다",
           "kids": true,
-          "ord": 1
+          "ord": 1,
+          "score": 78.3,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 45207,
+          "criticEstimated": false,
+          "metacritic": 89,
+          "rt": 100
         },
         {
           "id": "pawn-sacrifice-2014",
@@ -12476,7 +20410,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "냉전 한복판, 바비 피셔가 소련의 스파스키와 세계 챔피언전을 벌인다",
           "kids": false,
-          "ord": 2
+          "ord": 2,
+          "score": 69.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 55075,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 71
         },
         {
           "id": "queen-of-katwe-2016",
@@ -12491,7 +20432,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "우간다 빈민가 소녀가 체스를 배워 국제 대회에 나선다",
           "kids": true,
-          "ord": 3
+          "ord": 3,
+          "score": 74.3,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 20324,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 92
         },
         {
           "id": "the-luzhin-defence-2000",
@@ -12506,7 +20454,13 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "천재 체스 기사가 세계 대회와 사랑 사이에서 무너져 간다",
           "kids": false,
-          "ord": 4
+          "ord": 4,
+          "score": 67.4,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 5080,
+          "criticEstimated": false,
+          "rt": 58
         },
         {
           "id": "magnus-2016",
@@ -12522,7 +20476,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "마그누스 칼센이 세계 챔피언이 되기까지를 따라간 다큐멘터리",
           "kids": true,
           "ord": 5,
-          "type": "다큐"
+          "type": "다큐",
+          "score": 69.0,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 3052,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 81
         },
         {
           "id": "fresh-1994",
@@ -12537,7 +20498,13 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "뉴욕 빈민가 소년이 체스에서 배운 수읽기로 마약 조직을 상대한다",
           "kids": false,
-          "ord": 6
+          "ord": 6,
+          "score": 76.1,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 16532,
+          "criticEstimated": false,
+          "rt": 88
         },
         {
           "id": "det-sjunde-inseglet-1957",
@@ -12552,7 +20519,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "십자군에서 돌아온 기사가 죽음의 사신과 목숨을 건 체스를 둔다",
           "kids": false,
-          "ord": 7
+          "ord": 7,
+          "score": 83.7,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 218499,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 93
         },
         {
           "id": "the-queen-s-gambit-2020",
@@ -12568,7 +20542,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "고아원 출신 소녀 베스가 체스 세계 정상에 도전한다",
           "kids": false,
           "ord": 8,
-          "type": "시리즈"
+          "type": "시리즈",
+          "score": 82.7,
+          "scoreEstimated": true,
+          "imdb": 8.5,
+          "imdbVotes": 682094,
+          "criticEstimated": true
         },
         {
           "id": "the-coldest-game-2019",
@@ -12583,7 +20562,13 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "쿠바 미사일 위기 때 체스 대회에 끌려간 천재 수학자가 첩보전에 휘말린다",
           "kids": false,
-          "ord": 9
+          "ord": 9,
+          "score": 52.0,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 13290,
+          "criticEstimated": false,
+          "rt": 0
         },
         {
           "id": "knight-moves-1992",
@@ -12598,7 +20583,13 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "체스 대회 중 일어나는 연쇄 살인의 용의자가 된 그랜드마스터",
           "kids": false,
-          "ord": 10
+          "ord": 10,
+          "score": 56.6,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 10027,
+          "criticEstimated": false,
+          "rt": 17
         },
         {
           "id": "harry-potter-and-the-philosopher-s-stone-2001",
@@ -12613,7 +20604,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "마법 학교에 입학한 해리가 거대한 마법사 체스를 뚫고 마법사의 돌을 지킨다",
           "kids": true,
-          "ord": 11
+          "ord": 11,
+          "score": 74.9,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 970940,
+          "criticEstimated": false,
+          "metacritic": 65,
+          "rt": 80
         },
         {
           "id": "the-thomas-crown-affair-1968",
@@ -12628,7 +20626,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "은행을 턴 백만장자와 그를 쫓는 보험 조사관이 체스판에서 맞선다",
           "kids": false,
-          "ord": 12
+          "ord": 12,
+          "score": 68.8,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 32899,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 72
         },
         {
           "id": "sherlock-holmes-a-game-of-shadows-2011",
@@ -12643,7 +20648,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "홈즈가 모리아티 교수와 유럽을 오가며 머리싸움을 벌이고 체스로 결판을 낸다",
           "kids": false,
-          "ord": 13
+          "ord": 13,
+          "score": 66.5,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 506427,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 59
         },
         {
           "id": "the-divine-move-2014",
@@ -12658,7 +20670,12 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "내기 바둑으로 형을 잃은 프로 기사가 복수에 나선다",
           "kids": false,
-          "ord": 14
+          "ord": 14,
+          "score": 67.9,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 2820,
+          "criticEstimated": true
         },
         {
           "id": "the-divine-move-2-the-wrathful-2019",
@@ -12673,7 +20690,12 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "바둑으로 모든 것을 잃은 귀수가 내기 바둑판의 고수들을 하나씩 꺾는다",
           "kids": false,
-          "ord": 15
+          "ord": 15,
+          "score": 68.6,
+          "scoreEstimated": true,
+          "imdb": 6.5,
+          "imdbVotes": 655,
+          "criticEstimated": true
         },
         {
           "id": "the-match-2025",
@@ -12688,7 +20710,12 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "바둑 스승 조훈현과 제자 이창호가 정상에서 맞붙는 실화",
           "kids": false,
-          "ord": 16
+          "ord": 16,
+          "score": 68.3,
+          "scoreEstimated": true,
+          "imdb": 6.8,
+          "imdbVotes": 2829,
+          "criticEstimated": true
         }
       ]
     },
@@ -12718,7 +20745,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "포커로 모든 것을 잃은 법대생이 친구의 빚을 갚으려 다시 판에 앉는다",
           "kids": false,
-          "ord": 1
+          "ord": 1,
+          "score": 67.7,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 174226,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 64
         },
         {
           "id": "molly-s-game-2017",
@@ -12733,7 +20767,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "전직 스키 선수가 할리우드 스타들의 비밀 포커 게임을 운영하다 FBI에 붙잡힌다",
           "kids": false,
-          "ord": 2
+          "ord": 2,
+          "score": 74.3,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 206702,
+          "criticEstimated": false,
+          "metacritic": 71,
+          "rt": 82
         },
         {
           "id": "casino-royale-2006",
@@ -12748,7 +20789,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "제임스 본드가 테러 자금을 쥔 르시프와 거액의 텍사스 홀덤을 벌인다",
           "kids": false,
-          "ord": 3
+          "ord": 3,
+          "score": 81.8,
+          "scoreEstimated": false,
+          "imdb": 8.0,
+          "imdbVotes": 756727,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 94
         },
         {
           "id": "21-2008",
@@ -12763,7 +20811,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "MIT 학생들이 카드 카운팅으로 라스베이거스 카지노를 턴다",
           "kids": false,
-          "ord": 4
+          "ord": 4,
+          "score": 59.6,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 283550,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 36
         },
         {
           "id": "the-cincinnati-kid-1965",
@@ -12778,7 +20833,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "젊은 포커 고수가 전설의 노장과 스터드 포커 대결을 벌인다",
           "kids": false,
-          "ord": 5
+          "ord": 5,
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 19998,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 86
         },
         {
           "id": "maverick-1994",
@@ -12793,7 +20855,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "말솜씨 좋은 도박꾼이 큰 포커 대회 참가비를 모으려 서부를 누빈다",
           "kids": true,
-          "ord": 6
+          "ord": 6,
+          "score": 68.1,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 126375,
+          "criticEstimated": false,
+          "metacritic": 62,
+          "rt": 68
         },
         {
           "id": "the-sting-1973",
@@ -12808,7 +20877,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "두 사기꾼이 친구를 죽인 갱 두목에게 포커와 경마로 큰 판을 꾸민다",
           "kids": true,
-          "ord": 7
+          "ord": 7,
+          "score": 83.4,
+          "scoreEstimated": false,
+          "imdb": 8.2,
+          "imdbVotes": 307351,
+          "criticEstimated": false,
+          "metacritic": 83,
+          "rt": 93
         },
         {
           "id": "lock-stock-and-two-smoking-barrels-1998",
@@ -12823,7 +20899,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "카드 게임에서 거액을 잃은 친구들이 일주일 안에 빚을 갚으려 범죄에 뛰어든다",
           "kids": false,
-          "ord": 8
+          "ord": 8,
+          "score": 77.2,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 655820,
+          "criticEstimated": false,
+          "metacritic": 67,
+          "rt": 75
         },
         {
           "id": "tazza-the-high-rollers-2006",
@@ -12838,7 +20921,12 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "화투판에서 돈을 잃은 청년이 전설의 타짜에게 기술을 배운다",
           "kids": false,
-          "ord": 9
+          "ord": 9,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 3240,
+          "criticEstimated": true
         },
         {
           "id": "tazza-the-hidden-card-2014",
@@ -12853,7 +20941,12 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "고니의 조카 대길이 도박판에 뛰어들어 목숨을 건 승부를 벌인다",
           "kids": false,
-          "ord": 10
+          "ord": 10,
+          "score": 68.3,
+          "scoreEstimated": true,
+          "imdb": 6.8,
+          "imdbVotes": 3020,
+          "criticEstimated": true
         },
         {
           "id": "tazza-one-eyed-jack-2019",
@@ -12868,7 +20961,12 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "공시생 도일출이 원 아이드 잭 팀과 함께 큰 포커판 사기를 벌인다",
           "kids": false,
-          "ord": 11
+          "ord": 11,
+          "score": 68.2,
+          "scoreEstimated": true,
+          "imdb": 6.1,
+          "imdbVotes": 849,
+          "criticEstimated": true
         },
         {
           "id": "the-card-counter-2021",
@@ -12883,7 +20981,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "전직 군인 출신 도박사가 카지노를 떠돌며 과거의 죄와 마주한다",
           "kids": false,
-          "ord": 12
+          "ord": 12,
+          "score": 68.4,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 47751,
+          "criticEstimated": false,
+          "metacritic": 77,
+          "rt": 87
         },
         {
           "id": "mississippi-grind-2015",
@@ -12898,7 +21003,13 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "빚에 쫓기는 도박꾼과 낯선 젊은이가 미시시피강을 따라 큰 판을 찾아 떠난다",
           "kids": false,
-          "ord": 13
+          "ord": 13,
+          "score": 72.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 28595,
+          "criticEstimated": false,
+          "rt": 91
         },
         {
           "id": "lucky-you-2007",
@@ -12913,7 +21024,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "라스베이거스 포커꾼이 월드 시리즈 오브 포커에서 아버지와 맞선다",
           "kids": false,
-          "ord": 14
+          "ord": 14,
+          "score": 57.1,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 21726,
+          "criticEstimated": false,
+          "metacritic": 49,
+          "rt": 29
         },
         {
           "id": "the-gambler-2014",
@@ -12928,7 +21046,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "도박 빚에 빠진 문학 교수가 블랙잭으로 인생을 걸고 끝까지 간다",
           "kids": false,
-          "ord": 15
+          "ord": 15,
+          "score": 57.8,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 78766,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 44
         },
         {
           "id": "croupier-1998",
@@ -12943,7 +21068,14 @@ window.MOVIE_CHECKLIST_DATA = {
           ],
           "plot": "작가 지망생이 카지노 딜러로 일하며 도박의 세계에 빠져든다",
           "kids": false,
-          "ord": 16
+          "ord": 16,
+          "score": 73.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 25060,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 95
         },
         {
           "id": "all-in-2003",
@@ -12959,7 +21091,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "도박사 차민수의 삶을 바탕으로 한 사랑과 승부의 드라마",
           "kids": false,
           "ord": 17,
-          "type": "시리즈"
+          "type": "시리즈",
+          "score": 69.3,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 584,
+          "criticEstimated": true
         },
         {
           "id": "big-bet-2022",
@@ -12975,7 +21112,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "필리핀 카지노의 전설이 된 남자가 살인 사건에 휘말려 모든 것을 걸게 된다",
           "kids": false,
           "ord": 18,
-          "type": "시리즈"
+          "type": "시리즈",
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 999,
+          "criticEstimated": true
         }
       ]
     },
@@ -12997,7 +21139,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "MGM의 초기 색채 영화입니다. 대사는 없고 음악과 효과음이 붙습니다. 오틸리 릴리엔크란츠의 소설을 느슨히 바탕으로, 레이프 에이릭슨의 서쪽 항해를 모험으로 그립니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-viking-1928",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 1
+          "ord": 1,
+          "score": 68.7,
+          "scoreEstimated": true,
+          "imdb": 6.6,
+          "imdbVotes": 525,
+          "criticEstimated": true
         },
         {
           "id": "the-vikings-1958",
@@ -13009,7 +21156,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "리처드 플레이셔 영화. 커크 더글러스, 토니 커티스, 어니스트 보그나인이 나옵니다. 노섬브리아 왕을 친 뒤 이복형제가 서로를 모르는 채 칼을 겨누는 복수극입니다. 국내에는 『바이킹』으로 소개된 기록이 있습니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-vikings-1958",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 2
+          "ord": 2,
+          "score": 71.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 17714,
+          "criticEstimated": false,
+          "rt": 77
         },
         {
           "id": "the-long-ships-1964",
@@ -13021,7 +21174,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "잭 카디프 영화. 리처드 위드마크와 시드니 포이티어가 황금 종을 두고 맞섭니다. 프란스 G. 벵트손의 소설 분위기를 빌린 모험이고, 이슬람권 해안과 북유럽 배가 한 이야기에 있습니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-long-ships-1964",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 3
+          "ord": 3,
+          "score": 65.5,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 3506,
+          "criticEstimated": false,
+          "rt": 54
         },
         {
           "id": "alfred-the-great-1969",
@@ -13033,7 +21192,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "클리브 도너 영화. 데이비드 헤밍스가 앨프리드, 마이클 요크가 구스룸입니다. 웨식스가 데인 군에 밀리다 왕이 전열을 다시 짜는 이야기입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#alfred-the-great-1969",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 4
+          "ord": 4,
+          "score": 68.0,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 1297,
+          "criticEstimated": true
         },
         {
           "id": "valhalla-1986",
@@ -13046,7 +21210,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "애니",
           "sourceUrl": "https://viking-stories.vercel.app/films#valhalla-1986",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 5
+          "ord": 5,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.1,
+          "imdbVotes": 2790,
+          "criticEstimated": true
         },
         {
           "id": "when-the-raven-flies-1984",
@@ -13058,7 +21227,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "아이슬란드 감독 흐라픈 군라우그손의 영화. 영어로 When the Raven Flies, 때로 Revenge of the Barbarians이라고도 불립니다. 가족을 잃은 남자가 아이슬란드로 돌아와 복수하는 이야기이고, 까마귀 삼부작의 첫 편입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#when-the-raven-flies-1984",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 6
+          "ord": 6,
+          "score": 68.1,
+          "scoreEstimated": true,
+          "imdb": 6.7,
+          "imdbVotes": 2754,
+          "criticEstimated": true
         },
         {
           "id": "in-the-shadow-of-the-raven-1988",
@@ -13070,7 +21244,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "같은 감독의 두 번째 영화입니다. 기독교가 들어온 아이슬란드에서 두 집안의 다툼과 금지된 사랑이 겹칩니다. 첫 편의 속편이라기보다 같은 세계의 다음 세대에 가깝습니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#in-the-shadow-of-the-raven-1988",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 7
+          "ord": 7,
+          "score": 68.4,
+          "scoreEstimated": true,
+          "imdb": 6.4,
+          "imdbVotes": 941,
+          "criticEstimated": true
         },
         {
           "id": "erik-the-viking-1989",
@@ -13082,7 +21261,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "테리 존스가 연출하고 팀 로빈스가 주연인 코미디입니다. 약탈에 질린 에릭이 세상의 끝을 찾아 배를 띄웁니다. 한국 위키백과의 표제는 『바이킹』이고, 다른 소개는 『에릭 더 바이킹』을 씁니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#erik-the-viking-1989",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 8
+          "ord": 8,
+          "score": 61.6,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 15396,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "the-white-viking-1991",
@@ -13094,7 +21279,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "흐라픈 군라우그손 삼부작의 마지막입니다. 왕이 기독교를 밀어붙이는 시대에, 옛 신앙과 새 신앙 사이에서 사람이 쫓깁니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-white-viking-1991",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 9
+          "ord": 9,
+          "score": 68.5,
+          "scoreEstimated": true,
+          "imdb": 6.0,
+          "imdbVotes": 502,
+          "criticEstimated": true
         },
         {
           "id": "prince-of-jutland-1994",
@@ -13106,7 +21296,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "가브리엘 악셀 영화. 미국 등지에서는 Royal Deceit으로도 알려졌습니다. 크리스천 베일이 암레드, 가브리엘 번이 삼촌 펜기입니다. 삭소 그라마티쿠스가 적은 덴마크 왕자 이야기를 그대로 뼈대로 삼습니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#prince-of-jutland-1994",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 10
+          "ord": 10,
+          "score": 65.3,
+          "scoreEstimated": true,
+          "imdb": 5.4,
+          "imdbVotes": 2721,
+          "criticEstimated": true
         },
         {
           "id": "the-13th-warrior-1999",
@@ -13118,7 +21313,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "존 맥티어넌 영화. 안토니오 반데라스가 아흐마드 이븐 파들란으로 나와, 북쪽에서 괴물과 싸우는 전사 열두 명에 열세 번째로 끼입니다. 마이클 크라이턴의 소설 『시체를 먹는 사람들』이 원작입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-13th-warrior-1999",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 11
+          "ord": 11,
+          "score": 57.1,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 140803,
+          "criticEstimated": false,
+          "metacritic": 42,
+          "rt": 33
         },
         {
           "id": "beowulf-1999",
@@ -13130,7 +21332,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "그레이엄 베이커 영화. 크리스토퍼 램버트가 베오울프를 맡습니다. 황금 홀을 괴롭히는 괴물과 그 어머니를 상대하는, 서사시를 판타지 액션으로 옮긴 작품입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#beowulf-1999",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 12
+          "ord": 12,
+          "score": 42.8,
+          "scoreEstimated": false,
+          "imdb": 4.2,
+          "imdbVotes": 13402,
+          "criticEstimated": false,
+          "rt": 0
         },
         {
           "id": "blood-of-the-vikings-2001",
@@ -13143,7 +21351,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#blood-of-the-vikings-2001",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 13
+          "ord": 13,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 93,
+          "criticEstimated": true
         },
         {
           "id": "beowulf-grendel-2005",
@@ -13155,7 +21368,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "스투를라 군나르손 영화. 아이슬란드에서 찍었고 제라드 버틀러가 베오울프, 스텔란 스카르스고르드가 흐로트가르입니다. 괴물 그렌델에게 죽인 아버지의 사연을 붙여, 서사시보다 복수극에 가깝게 갑니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#beowulf-grendel-2005",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 14
+          "ord": 14,
+          "score": 59.4,
+          "scoreEstimated": false,
+          "imdb": 5.8,
+          "imdbVotes": 19392,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 49
         },
         {
           "id": "beowulf-2007",
@@ -13167,7 +21387,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "로버트 저메키스의 모션 캡처 영화. 레이 윈스턴, 앤서니 홉킨스, 안젤리나 졸리가 목소리와 연기를 맡습니다. 용사 베오울프가 그렌델과 그 어머니, 뒤에 용을 상대합니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#beowulf-2007",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 15
+          "ord": 15,
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 181075,
+          "criticEstimated": false,
+          "metacritic": 59,
+          "rt": 71
         },
         {
           "id": "pathfinder-2007",
@@ -13179,7 +21406,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "마커스 니스펠 영화. 칼 어번이, 바이킹에게 부모를 잃고 아메리카 원주민 사이에서 자란 고스트로 나옵니다. 바이킹 군대가 마을을 덮치는 액션입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#pathfinder-2007",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 16
+          "ord": 16,
+          "score": 46.4,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 47989,
+          "criticEstimated": false,
+          "metacritic": 29,
+          "rt": 10
         },
         {
           "id": "outlander-2008",
@@ -13191,7 +21425,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "하워드 매케인 영화. 짐 커비즐이 우주에서 떨어진 군인, 존 허트가 바이킹 추장입니다. 쫓아온 외계 생물과 북유럽 전사가 함께 싸웁니다. 스타즈의 드라마 『아웃랜더』와 다른 작품입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#outlander-2008",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 17
+          "ord": 17,
+          "score": 55.4,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 82468,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 38
         },
         {
           "id": "valhalla-rising-2009",
@@ -13203,7 +21444,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "니콜라스 윈딩 레픈 영화. 매즈 미켈슨이 거의 말하지 않는 전사 원아이를 맡습니다. 스코틀랜드에서 기독교 무리를 따라 안개 속의 땅으로 갑니다. 제목은 감독이 케네스 앵거의 영화 제목을 바이킹 소재와 겹친 것이라고 말했습니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#valhalla-rising-2009",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 18
+          "ord": 18,
+          "score": 62.7,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 67241,
+          "criticEstimated": false,
+          "metacritic": 61,
+          "rt": 74
         },
         {
           "id": "how-to-train-your-dragon-2010",
@@ -13216,7 +21464,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "애니",
           "sourceUrl": "https://viking-stories.vercel.app/films#how-to-train-your-dragon-2010",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 19
+          "ord": 19,
+          "score": 82.2,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 911917,
+          "criticEstimated": false,
+          "metacritic": 75,
+          "rt": 99
         },
         {
           "id": "the-normans-2010",
@@ -13229,7 +21484,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-normans-2010",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 20
+          "ord": 20,
+          "score": 69.1,
+          "scoreEstimated": true,
+          "imdb": 7.6,
+          "imdbVotes": 301,
+          "criticEstimated": true
         },
         {
           "id": "thor-2011",
@@ -13241,7 +21501,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "마블 영화입니다. 2011년 『토르』, 2013년 『토르: 다크 월드』, 2017년 『토르: 라그나로크』, 2022년 『토르: 러브 앤 썬더』. 망치를 든 신이 현대 지구와 우주를 오갑니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#thor-2011",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 21
+          "ord": 21,
+          "score": 68.3,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 987902,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 77
         },
         {
           "id": "vikings-bbc-2012",
@@ -13254,7 +21521,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#vikings-bbc-2012",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 22
+          "ord": 22,
+          "score": 69.2,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 326,
+          "criticEstimated": true
         },
         {
           "id": "secrets-of-the-viking-sword-2012",
@@ -13267,7 +21539,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#secrets-of-the-viking-sword-2012",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 23
+          "ord": 23,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 196,
+          "criticEstimated": true
         },
         {
           "id": "hammer-of-the-gods-2013",
@@ -13279,7 +21556,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "패런 블랙번 영화. 죽어 가는 바이킹 왕이 막내아들을 보내 숨은 형을 찾게 합니다. 영국의 낮은 예산 액션이고, 피와 왕위가 줄거리의 전부입니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#hammer-of-the-gods-2013",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 24
+          "ord": 24,
+          "score": 53.4,
+          "scoreEstimated": false,
+          "imdb": 4.5,
+          "imdbVotes": 8445,
+          "criticEstimated": false,
+          "rt": 29
         },
         {
           "id": "vikings-2013",
@@ -13292,7 +21575,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "시리즈",
           "sourceUrl": "https://viking-stories.vercel.app/films#vikings-2013",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 25
+          "ord": 25,
+          "score": 82.7,
+          "scoreEstimated": true,
+          "imdb": 8.5,
+          "imdbVotes": 652073,
+          "criticEstimated": true
         },
         {
           "id": "northmen-a-viking-saga-2014",
@@ -13304,7 +21592,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "클라우디오 페 영화. 표류한 바이킹 무리가 스코틀랜드에서 왕녀와 함께 쫓깁니다. 톰 호퍼, 라이언 콴튼이 나오고, 아몬 아마르트의 요한 헤그가 전사로 잠깐 등장합니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#northmen-a-viking-saga-2014",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 26
+          "ord": 26,
+          "score": 59.0,
+          "scoreEstimated": false,
+          "imdb": 5.4,
+          "imdbVotes": 11345,
+          "criticEstimated": false,
+          "metacritic": 50
         },
         {
           "id": "the-last-kingdom-2015",
@@ -13318,7 +21612,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "netflix": true,
           "sourceUrl": "https://viking-stories.vercel.app/films#the-last-kingdom-2015",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 27
+          "ord": 27,
+          "score": 82.2,
+          "scoreEstimated": true,
+          "imdb": 8.5,
+          "imdbVotes": 193816,
+          "criticEstimated": true
         },
         {
           "id": "viking-2016",
@@ -13330,7 +21629,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "안드레이 크라브추크의 러시아 영화. 다닐라 코즐롭스키가 젊은 블라디미르입니다. 형제의 다툼, 노브고로드와 키예프, 페룬의 신전과 세례를 큰 스펙터클로 잇습니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#viking-2016",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 28
+          "ord": 28,
+          "score": 60.1,
+          "scoreEstimated": true,
+          "imdb": 4.6,
+          "imdbVotes": 5517,
+          "criticEstimated": true
         },
         {
           "id": "the-vikings-uncovered-2016",
@@ -13343,7 +21647,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-vikings-uncovered-2016",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 29
+          "ord": 29,
+          "score": 69.0,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 43,
+          "criticEstimated": true
         },
         {
           "id": "norsemen-2016",
@@ -13357,7 +21666,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "netflix": true,
           "sourceUrl": "https://viking-stories.vercel.app/films#norsemen-2016",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 30
+          "ord": 30,
+          "score": 73.2,
+          "scoreEstimated": true,
+          "imdb": 7.7,
+          "imdbVotes": 24437,
+          "criticEstimated": true
         },
         {
           "id": "a-year-to-conquer-england-2017",
@@ -13370,7 +21684,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#a-year-to-conquer-england-2017",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 31
+          "ord": 31,
+          "score": 68.9,
+          "scoreEstimated": true,
+          "imdb": 6.9,
+          "imdbVotes": 300,
+          "criticEstimated": true
         },
         {
           "id": "valhalla-2019",
@@ -13382,7 +21701,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "페나르 아마드가 연출한 덴마크 실사입니다. 1986년 애니메이션과 같이 페테르 마센의 만화에서 토르와 로키, 거인의 세계를 가져옵니다. 아이들이 신들의 싸움에 휘말립니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#valhalla-2019",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 32
+          "ord": 32,
+          "score": 63.6,
+          "scoreEstimated": true,
+          "imdb": 5.2,
+          "imdbVotes": 3976,
+          "criticEstimated": true
         },
         {
           "id": "viking-warrior-women-2019",
@@ -13395,7 +21719,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "다큐",
           "sourceUrl": "https://viking-stories.vercel.app/films#viking-warrior-women-2019",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 33
+          "ord": 33,
+          "score": 68.9,
+          "scoreEstimated": true,
+          "imdb": 6.5,
+          "imdbVotes": 110,
+          "criticEstimated": true
         },
         {
           "id": "vinland-saga-2019",
@@ -13408,7 +21737,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "type": "애니",
           "sourceUrl": "https://viking-stories.vercel.app/films#vinland-saga-2019",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 34
+          "ord": 34,
+          "score": 85.8,
+          "scoreEstimated": true,
+          "imdb": 8.9,
+          "imdbVotes": 153589,
+          "criticEstimated": true
         },
         {
           "id": "ragnarok-2020",
@@ -13422,7 +21756,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "netflix": true,
           "sourceUrl": "https://viking-stories.vercel.app/films#ragnarok-2020",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 35
+          "ord": 35,
+          "score": 70.6,
+          "scoreEstimated": true,
+          "imdb": 7.3,
+          "imdbVotes": 55343,
+          "criticEstimated": true
         },
         {
           "id": "the-northman-2022",
@@ -13434,7 +21773,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "로버트 에거스 영화. 알렉산더 스카르스고르드가 왕자 암레트입니다. 삼촌에게 아버지를 잃고 노예로 위장해 아이슬란드로 돌아가 복수합니다. 니콜 키드먼, 애니아 테일러조이, 클라에스 방, 윌렘 더포, 비요르크가 나옵니다.",
           "sourceUrl": "https://viking-stories.vercel.app/films#the-northman-2022",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 36
+          "ord": 36,
+          "score": 75.0,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 307890,
+          "criticEstimated": false,
+          "metacritic": 82,
+          "rt": 89
         },
         {
           "id": "vikings-valhalla-2022",
@@ -13448,7 +21794,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "netflix": true,
           "sourceUrl": "https://viking-stories.vercel.app/films#vikings-valhalla-2022",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 37
+          "ord": 37,
+          "score": 71.6,
+          "scoreEstimated": true,
+          "imdb": 7.4,
+          "imdbVotes": 72861,
+          "criticEstimated": true
         },
         {
           "id": "the-last-kingdom-seven-kings-must-die-2023",
@@ -13461,7 +21812,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "netflix": true,
           "sourceUrl": "https://viking-stories.vercel.app/films#the-last-kingdom-seven-kings-must-die-2023",
           "sourceLabel": "바이킹 이야기에서 보기",
-          "ord": 38
+          "ord": 38,
+          "score": 66.9,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 45125,
+          "criticEstimated": false,
+          "metacritic": 48,
+          "rt": 82
         }
       ]
     },
@@ -13484,7 +21842,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#romance-1994",
           "sourceLabel": "나두삼국지에서 보기",
           "type": "시리즈",
-          "ord": 1
+          "ord": 1,
+          "score": 70.7,
+          "scoreEstimated": true,
+          "imdb": 8.7,
+          "imdbVotes": 1222,
+          "criticEstimated": true
         },
         {
           "id": "resurrection-dragon-2008",
@@ -13496,7 +21859,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "이인항 감독, 유덕화가 조운입니다. 장판에서 노년의 북벌까지 조운의 일생을 그리고, 가공 인물이 많이 나옵니다.",
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#resurrection-dragon-2008",
           "sourceLabel": "나두삼국지에서 보기",
-          "ord": 2
+          "ord": 2,
+          "score": 64.9,
+          "scoreEstimated": true,
+          "imdb": 6.1,
+          "imdbVotes": 6968,
+          "criticEstimated": true
         },
         {
           "id": "red-cliff-2008",
@@ -13508,7 +21876,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "오우삼 감독, 양조위가 주유, 금성무가 제갈량입니다. 장판에서 적벽 전야까지. 해외 제목 «레드 클리프»가 이 작품입니다.",
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#red-cliff-1-2008",
           "sourceLabel": "나두삼국지에서 보기",
-          "ord": 3
+          "ord": 3,
+          "score": 74.6,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 50751,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 91
         },
         {
           "id": "red-cliff-ii-2009",
@@ -13520,7 +21895,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "오우삼 감독. 초선차전과 화공까지 적벽의 결전. 손상향의 첩자 활약은 영화 창작입니다.",
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#red-cliff-2-2009",
           "sourceLabel": "나두삼국지에서 보기",
-          "ord": 4
+          "ord": 4,
+          "score": 71.8,
+          "scoreEstimated": true,
+          "imdb": 7.5,
+          "imdbVotes": 26689,
+          "criticEstimated": true
         },
         {
           "id": "three-kingdoms-2010",
@@ -13533,7 +21913,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#three-kingdoms-2010",
           "sourceLabel": "나두삼국지에서 보기",
           "type": "시리즈",
-          "ord": 5
+          "ord": 5,
+          "score": 70.7,
+          "scoreEstimated": true,
+          "imdb": 8.3,
+          "imdbVotes": 1642,
+          "criticEstimated": true
         },
         {
           "id": "the-lost-bladesman-2011",
@@ -13545,7 +21930,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "견자단이 관우, 강문이 조조입니다. 소설의 오관참육장을 바탕으로 한 무협 액션입니다.",
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#lost-bladesman-2011",
           "sourceLabel": "나두삼국지에서 보기",
-          "ord": 6
+          "ord": 6,
+          "score": 65.1,
+          "scoreEstimated": false,
+          "imdb": 6.0,
+          "imdbVotes": 4741,
+          "criticEstimated": false,
+          "rt": 57
         },
         {
           "id": "the-assassins-2012",
@@ -13557,7 +21948,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "주윤발이 만년의 조조입니다. 조조를 노리는 두 자객 이야기는 창작이고, 국내 개봉은 2013년입니다.",
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#assassins-2012",
           "sourceLabel": "나두삼국지에서 보기",
-          "ord": 7
+          "ord": 7,
+          "score": 66.1,
+          "scoreEstimated": true,
+          "imdb": 5.5,
+          "imdbVotes": 2224,
+          "criticEstimated": true
         },
         {
           "id": "the-advisors-alliance-2017",
@@ -13570,7 +21966,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#advisors-alliance-2017",
           "sourceLabel": "나두삼국지에서 보기",
           "type": "시리즈",
-          "ord": 8
+          "ord": 8,
+          "score": 69.3,
+          "scoreEstimated": true,
+          "imdb": 7.8,
+          "imdbVotes": 422,
+          "criticEstimated": true
         },
         {
           "id": "secrets-of-the-three-kingdoms-2018",
@@ -13583,7 +21984,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#secrets-2018",
           "sourceLabel": "나두삼국지에서 보기",
           "type": "시리즈",
-          "ord": 9
+          "ord": 9,
+          "score": 69.1,
+          "scoreEstimated": true,
+          "imdb": 7.9,
+          "imdbVotes": 157,
+          "criticEstimated": true
         },
         {
           "id": "dynasty-warriors-2021",
@@ -13595,7 +22001,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "주현량 감독, 게임 원작의 판타지 액션. 반동탁 연합과 여포를 다루지만 역사와 소설 모두에서 크게 벗어납니다.",
           "sourceUrl": "https://nadoo-samguk.vercel.app/films#dynasty-warriors-2021",
           "sourceLabel": "나두삼국지에서 보기",
-          "ord": 10
+          "ord": 10,
+          "score": 63.8,
+          "scoreEstimated": true,
+          "imdb": 4.8,
+          "imdbVotes": 2879,
+          "criticEstimated": true
         }
       ]
     },
@@ -13617,7 +22028,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "번스타인·손드하임 뮤지컬 영화. 아카데미 10개 부문",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/west-side-story",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 1
+          "ord": 1,
+          "score": 79.7,
+          "scoreEstimated": false,
+          "imdb": 7.6,
+          "imdbVotes": 129063,
+          "criticEstimated": false,
+          "metacritic": 86,
+          "rt": 92
         },
         {
           "id": "sound-of-music-1965",
@@ -13629,7 +22047,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "로저스·해머스타인 뮤지컬 영화. 줄리 앤드루스 주연, 아카데미 작품상",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/the-sound-of-music",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 2
+          "ord": 2,
+          "score": 77.4,
+          "scoreEstimated": false,
+          "imdb": 8.1,
+          "imdbVotes": 296341,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 83
         },
         {
           "id": "cabaret-1972",
@@ -13641,7 +22066,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "밥 포시 연출. 1930년대 베를린 킷캣 클럽",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/cabaret",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 3
+          "ord": 3,
+          "score": 79.2,
+          "scoreEstimated": false,
+          "imdb": 7.8,
+          "imdbVotes": 64585,
+          "criticEstimated": false,
+          "metacritic": 80,
+          "rt": 92
         },
         {
           "id": "jesus-christ-superstar-1973",
@@ -13653,7 +22085,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "로이드 웨버·라이스 록 오페라 영화",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/jesus-christ-superstar",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 4
+          "ord": 4,
+          "score": 66.7,
+          "scoreEstimated": false,
+          "imdb": 7.4,
+          "imdbVotes": 33109,
+          "criticEstimated": false,
+          "rt": 50
         },
         {
           "id": "a-chorus-line-1985",
@@ -13665,7 +22103,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "브로드웨이 코러스 오디션 이야기",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/a-chorus-line",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 5
+          "ord": 5,
+          "score": 60.8,
+          "scoreEstimated": false,
+          "imdb": 6.2,
+          "imdbVotes": 13021,
+          "criticEstimated": false,
+          "metacritic": 46,
+          "rt": 40
         },
         {
           "id": "lion-king-1994",
@@ -13677,7 +22122,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "디즈니 애니메이션. 뮤지컬 «라이온 킹»의 원작",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/the-lion-king",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 6
+          "ord": 6,
+          "score": 86.5,
+          "scoreEstimated": false,
+          "imdb": 8.5,
+          "imdbVotes": 1282337,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 92
         },
         {
           "id": "evita-1996",
@@ -13689,7 +22141,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "에바 페론의 생애. 성스루 뮤지컬 영화",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/evita",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 7
+          "ord": 7,
+          "score": 60.8,
+          "scoreEstimated": false,
+          "imdb": 6.3,
+          "imdbVotes": 39873,
+          "criticEstimated": false,
+          "metacritic": 45,
+          "rt": 63
         },
         {
           "id": "billy-elliot-2000",
@@ -13701,7 +22160,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "뮤지컬 «빌리 엘리어트»의 원작 영화(뮤지컬 영화 아님)",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/billy-elliot",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 8
+          "ord": 8,
+          "score": 77.1,
+          "scoreEstimated": false,
+          "imdb": 7.7,
+          "imdbVotes": 154253,
+          "criticEstimated": false,
+          "metacritic": 74,
+          "rt": 85
         },
         {
           "id": "moulin-rouge-2001",
@@ -13713,7 +22179,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "바즈 루어만 연출. 뮤지컬 «물랑루즈!»의 원작",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/moulin-rouge",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 9
+          "ord": 9,
+          "score": 73.0,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 317657,
+          "criticEstimated": false,
+          "metacritic": 66,
+          "rt": 75
         },
         {
           "id": "chicago-2002",
@@ -13725,7 +22198,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "캔더·엡 뮤지컬 영화. 아카데미 작품상",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/chicago",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 10
+          "ord": 10,
+          "score": 75.6,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 259145,
+          "criticEstimated": false,
+          "metacritic": 81,
+          "rt": 86
         },
         {
           "id": "phantom-of-the-opera-2004",
@@ -13737,7 +22217,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "로이드 웨버 뮤지컬 영화. 조엘 슈마허 연출",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/phantom-of-the-opera",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 11
+          "ord": 11,
+          "score": 60.5,
+          "scoreEstimated": false,
+          "imdb": 7.2,
+          "imdbVotes": 140412,
+          "criticEstimated": false,
+          "metacritic": 40,
+          "rt": 33
         },
         {
           "id": "kinky-boots-2005",
@@ -13749,7 +22236,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "노샘프턴 구두 공장 실화 바탕. 뮤지컬의 원작 영화(뮤지컬 영화 아님)",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/kinky-boots",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 12
+          "ord": 12,
+          "score": 67.1,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 23073,
+          "criticEstimated": false,
+          "metacritic": 57,
+          "rt": 57
         },
         {
           "id": "the-producers-2005",
@@ -13761,7 +22255,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "멜 브룩스 뮤지컬의 영화판",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/the-producers",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 13
+          "ord": 13,
+          "score": 61.0,
+          "scoreEstimated": false,
+          "imdb": 6.4,
+          "imdbVotes": 47540,
+          "criticEstimated": false,
+          "metacritic": 52,
+          "rt": 51
         },
         {
           "id": "rent-2005",
@@ -13773,7 +22274,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "오리지널 브로드웨이 캐스트 다수가 다시 출연",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/rent",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 14
+          "ord": 14,
+          "score": 63.5,
+          "scoreEstimated": false,
+          "imdb": 6.9,
+          "imdbVotes": 58616,
+          "criticEstimated": false,
+          "metacritic": 53,
+          "rt": 47
         },
         {
           "id": "sweeney-todd-2007",
@@ -13785,7 +22293,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "팀 버턴 연출. 손드하임 뮤지컬",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/sweeney-todd",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 15
+          "ord": 15,
+          "score": 76.8,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 410323,
+          "criticEstimated": false,
+          "metacritic": 83,
+          "rt": 86
         },
         {
           "id": "mamma-mia-2008",
@@ -13797,7 +22312,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "ABBA 주크박스 뮤지컬 영화",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/mamma-mia",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 16
+          "ord": 16,
+          "score": 60.9,
+          "scoreEstimated": false,
+          "imdb": 6.5,
+          "imdbVotes": 313223,
+          "criticEstimated": false,
+          "metacritic": 51,
+          "rt": 55
         },
         {
           "id": "les-miserables-2012",
@@ -13809,7 +22331,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "톰 후퍼 연출. 현장 라이브 녹음",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/les-miserables",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 17
+          "ord": 17,
+          "score": 71.8,
+          "scoreEstimated": false,
+          "imdb": 7.5,
+          "imdbVotes": 365667,
+          "criticEstimated": false,
+          "metacritic": 63,
+          "rt": 70
         },
         {
           "id": "into-the-woods-2014",
@@ -13821,7 +22350,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "손드하임 뮤지컬 디즈니 영화화",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/into-the-woods",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 18
+          "ord": 18,
+          "score": 63.0,
+          "scoreEstimated": false,
+          "imdb": 5.9,
+          "imdbVotes": 155123,
+          "criticEstimated": false,
+          "metacritic": 69,
+          "rt": 71
         },
         {
           "id": "mamma-mia-2-2018",
@@ -13833,7 +22369,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "«맘마미아!» 속편",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/mamma-mia",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 19
+          "ord": 19,
+          "score": 66.8,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 123445,
+          "criticEstimated": false,
+          "metacritic": 60,
+          "rt": 80
         },
         {
           "id": "lion-king-2019",
@@ -13845,7 +22388,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "실사풍 CG 리메이크",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/the-lion-king",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 20
+          "ord": 20,
+          "score": 63.2,
+          "scoreEstimated": false,
+          "imdb": 6.8,
+          "imdbVotes": 296513,
+          "criticEstimated": false,
+          "metacritic": 55,
+          "rt": 52
         },
         {
           "id": "cats-2019",
@@ -13857,7 +22407,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "톰 후퍼 연출. 로이드 웨버 뮤지컬",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/cats",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 21
+          "ord": 21,
+          "score": 31.8,
+          "scoreEstimated": false,
+          "imdb": 2.8,
+          "imdbVotes": 59770,
+          "criticEstimated": false,
+          "metacritic": 32,
+          "rt": 19
         },
         {
           "id": "hamilton-2020",
@@ -13869,7 +22426,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "브로드웨이 공연 실황 영화(디즈니+)",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/hamilton",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 22
+          "ord": 22,
+          "score": 85.3,
+          "scoreEstimated": false,
+          "imdb": 8.3,
+          "imdbVotes": 143571,
+          "criticEstimated": false,
+          "metacritic": 88,
+          "rt": 98
         },
         {
           "id": "dear-evan-hansen-2021",
@@ -13881,7 +22445,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "파섹·폴 뮤지컬 영화",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/dear-evan-hansen",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 23
+          "ord": 23,
+          "score": 56.7,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 21386,
+          "criticEstimated": false,
+          "metacritic": 39,
+          "rt": 29
         },
         {
           "id": "west-side-story-2021",
@@ -13893,7 +22464,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "스티븐 스필버그 연출 리메이크",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/west-side-story",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 24
+          "ord": 24,
+          "score": 76.4,
+          "scoreEstimated": false,
+          "imdb": 7.1,
+          "imdbVotes": 145362,
+          "criticEstimated": false,
+          "metacritic": 85,
+          "rt": 92
         },
         {
           "id": "matilda-2022",
@@ -13905,7 +22483,13 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "팀 민친 뮤지컬 영화(넷플릭스)",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/matilda",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 25
+          "ord": 25,
+          "score": 75.8,
+          "scoreEstimated": false,
+          "imdb": 7.0,
+          "imdbVotes": 34028,
+          "criticEstimated": false,
+          "rt": 92
         },
         {
           "id": "hero-2022",
@@ -13917,7 +22501,12 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "윤제균 연출. 한국 창작 뮤지컬 «영웅» 영화화, 정성화 주연",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/hero",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 26
+          "ord": 26,
+          "score": 68.7,
+          "scoreEstimated": true,
+          "imdb": 6.2,
+          "imdbVotes": 326,
+          "criticEstimated": true
         },
         {
           "id": "wicked-2024",
@@ -13929,7 +22518,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "존 M. 추 연출. 뮤지컬 1막",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/wicked",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 27
+          "ord": 27,
+          "score": 74.9,
+          "scoreEstimated": false,
+          "imdb": 7.3,
+          "imdbVotes": 258922,
+          "criticEstimated": false,
+          "metacritic": 73,
+          "rt": 88
         },
         {
           "id": "wicked-for-good-2025",
@@ -13941,7 +22537,14 @@ window.MOVIE_CHECKLIST_DATA = {
           "plot": "«위키드» 2부. 뮤지컬 2막",
           "sourceUrl": "https://nadoo-musical.vercel.app/musicals/wicked",
           "sourceLabel": "나두뮤지컬에서 보기",
-          "ord": 28
+          "ord": 28,
+          "score": 64.9,
+          "scoreEstimated": false,
+          "imdb": 6.6,
+          "imdbVotes": 75421,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 67
         }
       ]
     }

@@ -2679,7 +2679,7 @@
     </nav>
     <header class="page-head">
       <h1>실화 영화</h1>
-      <p class="intro">외국 영화 81편입니다. 널리 알려졌고, 마음이 움직이며 교훈이 분명한 작품을 앞에 두었습니다. 실제 사건과 크게 어긋나면 실화 바탕이라고 적었고, 허구이거나 근거가 흐린 작품은 빼 두었습니다. 제목을 누르면 정보가 열리고, 체크는 시청 표시입니다.</p>
+      <p class="intro">외국 영화 81편입니다. 널리 알려졌고, 마음이 움직이며 교훈이 분명한 작품을 모았습니다. 기본은 평가가 높은 순이고, 교훈 태그는 많이 본 순입니다. 원래 순서는 교훈을 앞에 둔 순서입니다. 실제 사건과 크게 어긋나면 실화 바탕이라고 적었고, 허구이거나 근거가 흐린 작품은 빼 두었습니다. 제목을 누르면 정보가 열리고, 체크는 시청 표시입니다.</p>
     </header>
     <div class="progress-panel">
       <div class="progress-top">
@@ -2708,10 +2708,14 @@
         <button type="button" class="filter-btn active" id="show-all" aria-pressed="true">전체</button>
         <button type="button" class="filter-btn" id="unwatched-only" aria-pressed="false">안 본 영화만</button>
       </div>
+      <div class="filter-group" id="sort-filter" role="group" aria-label="정렬">
+        <button type="button" class="filter-btn sort-btn active" data-sort="best" aria-pressed="true" title="작품은 평가가 높은 순. 교훈 태그는 많이 본 순이고, 같으면 평균 점수가 높은 순">베스트</button>
+        <button type="button" class="filter-btn sort-btn" data-sort="original" aria-pressed="false" title="교훈을 앞에 둔 원래 순서">원래 순서</button>
+      </div>
     </div>
     <div id="film-list" class="list">
 
-<article class="movie" id="film-schindler" data-id="schindler" data-keys="true:schindler" data-tags="희생 용기 정의" data-search="쉰들러 리스트 schindler&#x27;s list 1993 나치 점령하 폴란드에서 사업가 오스카 쉰들러가 유대인 노동자들을 지켜 낸 이야기. 스티븐 스필버그 리암 니슨, 벤 킹슬리, 랄프 파인즈 희생 용기 정의 실화">
+<article class="movie" id="film-schindler" data-id="schindler" data-score="92.1" data-score-estimated="false" data-imdb="9.0" data-imdb-votes="1609531" data-metacritic="95" data-rt="98" data-keys="true:schindler" data-tags="희생 용기 정의" data-search="쉰들러 리스트 schindler&#x27;s list 1993 나치 점령하 폴란드에서 사업가 오스카 쉰들러가 유대인 노동자들을 지켜 낸 이야기. 스티븐 스필버그 리암 니슨, 벤 킹슬리, 랄프 파인즈 희생 용기 정의 실화">
   <input type="checkbox" aria-label="쉰들러 리스트 시청 여부" />
   <details>
     <summary>
@@ -2737,7 +2741,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-pursuit" data-id="pursuit" data-keys="true:pursuit" data-tags="가족 역경극복 희망" data-search="행복을 찾아서 the pursuit of happyness 2006 노숙을 하면서도 무급 인턴을 버틴 주식중개인 크리스 가드너의 이야기. 가브리엘레 무치노 윌 스미스, 제이든 스미스, 탠디 뉴턴 가족 역경극복 희망 실화">
+<article class="movie" id="film-pursuit" data-id="pursuit" data-score="74.8" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="633679" data-metacritic="64" data-rt="67" data-keys="true:pursuit" data-tags="가족 역경극복 희망" data-search="행복을 찾아서 the pursuit of happyness 2006 노숙을 하면서도 무급 인턴을 버틴 주식중개인 크리스 가드너의 이야기. 가브리엘레 무치노 윌 스미스, 제이든 스미스, 탠디 뉴턴 가족 역경극복 희망 실화">
   <input type="checkbox" aria-label="행복을 찾아서 시청 여부" />
   <details>
     <summary>
@@ -2763,7 +2767,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-twelve-years" data-id="twelve-years" data-keys="true:twelve-years" data-tags="역경극복 정의 희망" data-search="노예 12년 12 years a slave 2013 자유인이던 솔로몬 노섭이 납치되어 12년을 노예로 산 기록. 스티브 맥퀸 치웨텔 에지오포, 마이클 패스벤더, 루피타 뇽오 역경극복 정의 희망 실화">
+<article class="movie" id="film-twelve-years" data-id="twelve-years" data-score="85.9" data-score-estimated="false" data-imdb="8.1" data-imdb-votes="796731" data-metacritic="96" data-rt="95" data-keys="true:twelve-years" data-tags="역경극복 정의 희망" data-search="노예 12년 12 years a slave 2013 자유인이던 솔로몬 노섭이 납치되어 12년을 노예로 산 기록. 스티브 맥퀸 치웨텔 에지오포, 마이클 패스벤더, 루피타 뇽오 역경극복 정의 희망 실화">
   <input type="checkbox" aria-label="노예 12년 시청 여부" />
   <details>
     <summary>
@@ -2789,7 +2793,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-pianist" data-id="pianist" data-keys="true:pianist" data-tags="역경극복 희망" data-search="피아니스트 the pianist 2002 바르샤바의 피아니스트 브와디스와프 슈필만이 유대인 게토와 폐허에서 살아남은 이야기. 로만 폴란스키 애드리언 브로디, 토머스 크레치만 역경극복 희망 실화">
+<article class="movie" id="film-pianist" data-id="pianist" data-score="86.3" data-score-estimated="false" data-imdb="8.5" data-imdb-votes="1029038" data-metacritic="85" data-rt="95" data-keys="true:pianist" data-tags="역경극복 희망" data-search="피아니스트 the pianist 2002 바르샤바의 피아니스트 브와디스와프 슈필만이 유대인 게토와 폐허에서 살아남은 이야기. 로만 폴란스키 애드리언 브로디, 토머스 크레치만 역경극복 희망 실화">
   <input type="checkbox" aria-label="피아니스트 시청 여부" />
   <details>
     <summary>
@@ -2815,7 +2819,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-lion" data-id="lion" data-keys="true:lion" data-tags="가족 희망 역경극복" data-search="라이언 lion 2016 인도 기차역에서 가족을 잃은 소년이 수십 년 뒤 구글 어스로 친어머니를 찾은 이야기. 가스 데이비스 데브 파텔, 서니 파와르, 니콜 키드먼 가족 희망 역경극복 실화">
+<article class="movie" id="film-lion" data-id="lion" data-score="78.2" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="269784" data-metacritic="69" data-rt="85" data-keys="true:lion" data-tags="가족 희망 역경극복" data-search="라이언 lion 2016 인도 기차역에서 가족을 잃은 소년이 수십 년 뒤 구글 어스로 친어머니를 찾은 이야기. 가스 데이비스 데브 파텔, 서니 파와르, 니콜 키드먼 가족 희망 역경극복 실화">
   <input type="checkbox" aria-label="라이언 시청 여부" />
   <details>
     <summary>
@@ -2841,7 +2845,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-intouchables" data-id="intouchables" data-keys="true:intouchables" data-tags="우정 역경극복" data-search="언터처블: 1%의 우정 intouchables 2011 전신마비 귀족과 교도소 출신 간병인이 서로를 살린 파리의 실화. 올리비에 나카슈, 에리크 톨레다노 프랑수아 클뤼제, 오마르 시 우정 역경극복 실화">
+<article class="movie" id="film-intouchables" data-id="intouchables" data-score="77.8" data-score-estimated="false" data-imdb="8.5" data-imdb-votes="1046049" data-metacritic="57" data-rt="76" data-keys="true:intouchables" data-tags="우정 역경극복" data-search="언터처블: 1%의 우정 intouchables 2011 전신마비 귀족과 교도소 출신 간병인이 서로를 살린 파리의 실화. 올리비에 나카슈, 에리크 톨레다노 프랑수아 클뤼제, 오마르 시 우정 역경극복 실화">
   <input type="checkbox" aria-label="언터처블: 1%의 우정 시청 여부" />
   <details>
     <summary>
@@ -2867,7 +2871,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-hidden-figures" data-id="hidden-figures" data-keys="true:hidden-figures" data-tags="용기 정의 역경극복" data-search="히든 피겨스 hidden figures 2016 나사에서 우주 비행 궤적을 계산한 흑인 여성 수학자들의 이야기. 시어도어 멜피 타라지 p. 헨슨, 옥타비아 스펜서, 저넬 모네이 용기 정의 역경극복 실화 바탕">
+<article class="movie" id="film-hidden-figures" data-id="hidden-figures" data-score="79.0" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="295192" data-metacritic="74" data-rt="93" data-keys="true:hidden-figures" data-tags="용기 정의 역경극복" data-search="히든 피겨스 hidden figures 2016 나사에서 우주 비행 궤적을 계산한 흑인 여성 수학자들의 이야기. 시어도어 멜피 타라지 p. 헨슨, 옥타비아 스펜서, 저넬 모네이 용기 정의 역경극복 실화 바탕">
   <input type="checkbox" aria-label="히든 피겨스 시청 여부" />
   <details>
     <summary>
@@ -2894,7 +2898,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-kings-speech" data-id="kings-speech" data-keys="true:kings-speech" data-tags="용기 우정" data-search="킹스 스피치 the king&#x27;s speech 2010 말을 더듬던 영국 왕 조지 6세가 치료사 라이오넬 로그와 즉위 연설을 준비한 이야기. 톰 후퍼 콜린 퍼스, 제프리 러시, 헬레나 보넘 카터 용기 우정 실화">
+<article class="movie" id="film-kings-speech" data-id="kings-speech" data-score="83.5" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="737997" data-metacritic="88" data-rt="94" data-keys="true:kings-speech" data-tags="용기 우정" data-search="킹스 스피치 the king&#x27;s speech 2010 말을 더듬던 영국 왕 조지 6세가 치료사 라이오넬 로그와 즉위 연설을 준비한 이야기. 톰 후퍼 콜린 퍼스, 제프리 러시, 헬레나 보넘 카터 용기 우정 실화">
   <input type="checkbox" aria-label="킹스 스피치 시청 여부" />
   <details>
     <summary>
@@ -2920,7 +2924,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-theory" data-id="theory" data-keys="true:theory" data-tags="가족 역경극복 희망" data-search="사랑에 대한 모든 것 the theory of everything 2014 루게릭병 진단을 받은 스티븐 호킹과 아내 제인의 청춘과 연구. 제임스 마시 에디 레드메인, 펠리시티 존스 가족 역경극복 희망 실화">
+<article class="movie" id="film-theory" data-id="theory" data-score="76.1" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="511554" data-metacritic="71" data-rt="80" data-keys="true:theory" data-tags="가족 역경극복 희망" data-search="사랑에 대한 모든 것 the theory of everything 2014 루게릭병 진단을 받은 스티븐 호킹과 아내 제인의 청춘과 연구. 제임스 마시 에디 레드메인, 펠리시티 존스 가족 역경극복 희망 실화">
   <input type="checkbox" aria-label="사랑에 대한 모든 것 시청 여부" />
   <details>
     <summary>
@@ -2946,7 +2950,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-beautiful-mind" data-id="beautiful-mind" data-keys="russell:beautiful-mind" data-tags="가족 역경극복 희망" data-search="뷰티풀 마인드 a beautiful mind 2001 조현병을 앓으면서도 연구를 이어 간 수학자 존 내시의 이야기. 론 하워드 러셀 크로우, 제니퍼 코널리 가족 역경극복 희망 실화 바탕">
+<article class="movie" id="film-beautiful-mind" data-id="beautiful-mind" data-score="78.7" data-score-estimated="false" data-imdb="8.2" data-imdb-votes="1066425" data-metacritic="72" data-rt="74" data-keys="russell:beautiful-mind" data-tags="가족 역경극복 희망" data-search="뷰티풀 마인드 a beautiful mind 2001 조현병을 앓으면서도 연구를 이어 간 수학자 존 내시의 이야기. 론 하워드 러셀 크로우, 제니퍼 코널리 가족 역경극복 희망 실화 바탕">
   <input type="checkbox" aria-label="뷰티풀 마인드 시청 여부" />
   <details>
     <summary>
@@ -2973,7 +2977,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-blind-side" data-id="blind-side" data-keys="true:blind-side" data-tags="가족 우정" data-search="블라인드 사이드 the blind side 2009 집이 없던 미식축구 선수 마이클 오어와 투이 가족의 만남. 존 리 핸콕 산드라 불럭, 퀸튼 에런, 팀 맥그로 가족 우정 실화 바탕">
+<article class="movie" id="film-blind-side" data-id="blind-side" data-score="69.8" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="393694" data-metacritic="53" data-rt="66" data-keys="true:blind-side" data-tags="가족 우정" data-search="블라인드 사이드 the blind side 2009 집이 없던 미식축구 선수 마이클 오어와 투이 가족의 만남. 존 리 핸콕 산드라 불럭, 퀸튼 에런, 팀 맥그로 가족 우정 실화 바탕">
   <input type="checkbox" aria-label="블라인드 사이드 시청 여부" />
   <details>
     <summary>
@@ -2999,7 +3003,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-green-book" data-id="green-book" data-keys="true:green-book" data-tags="우정 용기 화해" data-search="그린 북 green book 2018 1962년 흑인 피아니스트 돈 셜리와 백인 운전사 토니 발레롱가의 남부 순회. 피터 패럴리 비고 모텐슨, 마허샬라 알리 우정 용기 화해 실화 바탕">
+<article class="movie" id="film-green-book" data-id="green-book" data-score="78.5" data-score-estimated="false" data-imdb="8.2" data-imdb-votes="708254" data-metacritic="69" data-rt="77" data-keys="true:green-book" data-tags="우정 용기 화해" data-search="그린 북 green book 2018 1962년 흑인 피아니스트 돈 셜리와 백인 운전사 토니 발레롱가의 남부 순회. 피터 패럴리 비고 모텐슨, 마허샬라 알리 우정 용기 화해 실화 바탕">
   <input type="checkbox" aria-label="그린 북 시청 여부" />
   <details>
     <summary>
@@ -3025,7 +3029,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-hacksaw" data-id="hacksaw" data-keys="true:hacksaw" data-tags="신념 희생 용기" data-search="핵소 리지 hacksaw ridge 2016 총을 들지 않은 채 오키나와에서 부상병을 구한 위생병 데스먼드 도스. 멜 깁슨 앤드루 가필드, 샘 워딩턴, 빈스 본 신념 희생 용기 실화">
+<article class="movie" id="film-hacksaw" data-id="hacksaw" data-score="79.2" data-score-estimated="false" data-imdb="8.1" data-imdb-votes="700268" data-metacritic="71" data-rt="84" data-keys="true:hacksaw" data-tags="신념 희생 용기" data-search="핵소 리지 hacksaw ridge 2016 총을 들지 않은 채 오키나와에서 부상병을 구한 위생병 데스먼드 도스. 멜 깁슨 앤드루 가필드, 샘 워딩턴, 빈스 본 신념 희생 용기 실화">
   <input type="checkbox" aria-label="핵소 리지 시청 여부" />
   <details>
     <summary>
@@ -3051,7 +3055,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-apollo-13" data-id="apollo-13" data-keys="true:apollo-13" data-tags="역경극복 우정 희망" data-search="아폴로 13 apollo 13 1995 1970년 달로 가던 아폴로 13호가 산소 탱크 폭발 뒤 지구로 돌아온 비행. 론 하워드 톰 행크스, 빌 팩스턴, 케빈 베이컨 역경극복 우정 희망 실화">
+<article class="movie" id="film-apollo-13" data-id="apollo-13" data-score="79.6" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="344155" data-metacritic="78" data-rt="96" data-keys="true:apollo-13" data-tags="역경극복 우정 희망" data-search="아폴로 13 apollo 13 1995 1970년 달로 가던 아폴로 13호가 산소 탱크 폭발 뒤 지구로 돌아온 비행. 론 하워드 톰 행크스, 빌 팩스턴, 케빈 베이컨 역경극복 우정 희망 실화">
   <input type="checkbox" aria-label="아폴로 13 시청 여부" />
   <details>
     <summary>
@@ -3077,7 +3081,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-sully" data-id="sully" data-keys="true:sully" data-tags="용기 희생" data-search="설리: 허드슨강의 기적 sully 2016 2009년 두 엔진을 잃은 여객기를 허드슨강에 내려 탑승자 전부를 살린 기장. 클린트 이스트우드 톰 행크스, 아론 에크하트, 로라 리니 용기 희생 실화 바탕">
+<article class="movie" id="film-sully" data-id="sully" data-score="75.4" data-score-estimated="false" data-imdb="7.4" data-imdb-votes="327467" data-metacritic="74" data-rt="85" data-keys="true:sully" data-tags="용기 희생" data-search="설리: 허드슨강의 기적 sully 2016 2009년 두 엔진을 잃은 여객기를 허드슨강에 내려 탑승자 전부를 살린 기장. 클린트 이스트우드 톰 행크스, 아론 에크하트, 로라 리니 용기 희생 실화 바탕">
   <input type="checkbox" aria-label="설리: 허드슨강의 기적 시청 여부" />
   <details>
     <summary>
@@ -3104,7 +3108,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-erin" data-id="erin" data-keys="true:erin" data-tags="정의 용기 가족" data-search="에린 브로코비치 erin brockovich 2000 법률사무소 직원 에린 브로코비치가 식수 오염의 책임을 전력회사에 물은 소송. 스티븐 소더버그 줄리아 로버츠, 앨버트 피니 정의 용기 가족 실화">
+<article class="movie" id="film-erin" data-id="erin" data-score="75.8" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="250628" data-metacritic="73" data-rt="85" data-keys="true:erin" data-tags="정의 용기 가족" data-search="에린 브로코비치 erin brockovich 2000 법률사무소 직원 에린 브로코비치가 식수 오염의 책임을 전력회사에 물은 소송. 스티븐 소더버그 줄리아 로버츠, 앨버트 피니 정의 용기 가족 실화">
   <input type="checkbox" aria-label="에린 브로코비치 시청 여부" />
   <details>
     <summary>
@@ -3130,7 +3134,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-spotlight" data-id="spotlight" data-keys="true:spotlight" data-tags="정의 용기" data-search="스포트라이트 spotlight 2015 보스턴 글로브 탐사팀이 가톨릭 사제 아동 성학대 은폐를 보도한 취재. 톰 매카시 마이클 키턴, 마크 러팔로, 레이철 매캐덤스 정의 용기 실화">
+<article class="movie" id="film-spotlight" data-id="spotlight" data-score="85.5" data-score-estimated="false" data-imdb="8.1" data-imdb-votes="542423" data-metacritic="93" data-rt="97" data-keys="true:spotlight" data-tags="정의 용기" data-search="스포트라이트 spotlight 2015 보스턴 글로브 탐사팀이 가톨릭 사제 아동 성학대 은폐를 보도한 취재. 톰 매카시 마이클 키턴, 마크 러팔로, 레이철 매캐덤스 정의 용기 실화">
   <input type="checkbox" aria-label="스포트라이트 시청 여부" />
   <details>
     <summary>
@@ -3156,7 +3160,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-remember-titans" data-id="remember-titans" data-keys="denzel:remember-titans" data-tags="우정 용기" data-search="리멤버 타이탄 remember the titans 2000 1971년 인종 통합된 버지니아 고등학교 미식축구팀 티 씨 윌리엄스. 보즈 야킨 덴젤 워싱턴, 윌 패튼 우정 용기 실화 바탕">
+<article class="movie" id="film-remember-titans" data-id="remember-titans" data-score="70.8" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="254629" data-metacritic="48" data-rt="71" data-keys="denzel:remember-titans" data-tags="우정 용기" data-search="리멤버 타이탄 remember the titans 2000 1971년 인종 통합된 버지니아 고등학교 미식축구팀 티 씨 윌리엄스. 보즈 야킨 덴젤 워싱턴, 윌 패튼 우정 용기 실화 바탕">
   <input type="checkbox" aria-label="리멤버 타이탄 시청 여부" />
   <details>
     <summary>
@@ -3182,7 +3186,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-rudy" data-id="rudy" data-keys="true:rudy" data-tags="집념 역경극복" data-search="루디 rudy 1993 키도 장학금도 없이 노터데임 미식축구 유니폼을 입은 대니얼 루티거. 데이비드 앤스파 숀 애스틴, 존 패브로 집념 역경극복 실화">
+<article class="movie" id="film-rudy" data-id="rudy" data-score="75.4" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="75867" data-rt="78" data-keys="true:rudy" data-tags="집념 역경극복" data-search="루디 rudy 1993 키도 장학금도 없이 노터데임 미식축구 유니폼을 입은 대니얼 루티거. 데이비드 앤스파 숀 애스틴, 존 패브로 집념 역경극복 실화">
   <input type="checkbox" aria-label="루디 시청 여부" />
   <details>
     <summary>
@@ -3208,7 +3212,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-imitation" data-id="imitation" data-keys="true:imitation" data-tags="희생 정의" data-search="이미테이션 게임 the imitation game 2014 블레츨리 파크에서 에니그마 암호를 푼 수학자 앨런 튜링. 모튼 틸덤 베네딕트 컴버배치, 키이라 나이틀리 희생 정의 실화 바탕">
+<article class="movie" id="film-imitation" data-id="imitation" data-score="79.4" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="887401" data-metacritic="71" data-rt="90" data-keys="true:imitation" data-tags="희생 정의" data-search="이미테이션 게임 the imitation game 2014 블레츨리 파크에서 에니그마 암호를 푼 수학자 앨런 튜링. 모튼 틸덤 베네딕트 컴버배치, 키이라 나이틀리 희생 정의 실화 바탕">
   <input type="checkbox" aria-label="이미테이션 게임 시청 여부" />
   <details>
     <summary>
@@ -3234,7 +3238,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-bohemian" data-id="bohemian" data-keys="true:bohemian" data-tags="역경극복 우정" data-search="보헤미안 랩소디 bohemian rhapsody 2018 프레디 머큐리와 퀸이 라이브 에이드 무대로 향하는 이야기. 브라이언 싱어 라미 말렉, 귀네스 팰트로 역경극복 우정 실화 바탕">
+<article class="movie" id="film-bohemian" data-id="bohemian" data-score="70.1" data-score-estimated="false" data-imdb="7.9" data-imdb-votes="656284" data-metacritic="49" data-rt="60" data-keys="true:bohemian" data-tags="역경극복 우정" data-search="보헤미안 랩소디 bohemian rhapsody 2018 프레디 머큐리와 퀸이 라이브 에이드 무대로 향하는 이야기. 브라이언 싱어 라미 말렉, 귀네스 팰트로 역경극복 우정 실화 바탕">
   <input type="checkbox" aria-label="보헤미안 랩소디 시청 여부" />
   <details>
     <summary>
@@ -3260,7 +3264,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-catch-me" data-id="catch-me" data-keys="leo:catch-me" data-tags="가족 집념" data-search="캐치 미 이프 유 캔 catch me if you can 2002 십 대 프랭크 애버그네일이 조종사와 의사 행세를 하며 수표를 위조했다고 주장한 회고. 스티븐 스필버그 레오나르도 디카프리오, 톰 행크스 가족 집념 실화 바탕">
+<article class="movie" id="film-catch-me" data-id="catch-me" data-score="81.8" data-score-estimated="false" data-imdb="8.1" data-imdb-votes="1270136" data-metacritic="75" data-rt="96" data-keys="leo:catch-me" data-tags="가족 집념" data-search="캐치 미 이프 유 캔 catch me if you can 2002 십 대 프랭크 애버그네일이 조종사와 의사 행세를 하며 수표를 위조했다고 주장한 회고. 스티븐 스필버그 레오나르도 디카프리오, 톰 행크스 가족 집념 실화 바탕">
   <input type="checkbox" aria-label="캐치 미 이프 유 캔 시청 여부" />
   <details>
     <summary>
@@ -3286,7 +3290,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-hours-127" data-id="hours-127" data-keys="true:hours-127" data-tags="역경극복 희망" data-search="127시간 127 hours 2010 2003년 유타 협곡에서 팔이 바위에 낀 등반가 애런 랠스턴. 대니 보일 제임스 프랭코 역경극복 희망 실화">
+<article class="movie" id="film-hours-127" data-id="hours-127" data-score="78.8" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="429012" data-metacritic="82" data-rt="93" data-keys="true:hours-127" data-tags="역경극복 희망" data-search="127시간 127 hours 2010 2003년 유타 협곡에서 팔이 바위에 낀 등반가 애런 랠스턴. 대니 보일 제임스 프랭코 역경극복 희망 실화">
   <input type="checkbox" aria-label="127시간 시청 여부" />
   <details>
     <summary>
@@ -3312,7 +3316,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-invictus" data-id="invictus" data-keys="matt:invictus" data-tags="화해 용기 우정" data-search="인빅터스 invictus 2009 1995년 넬슨 만델라가 럭비 월드컵으로 갈라진 남아프리카공화국을 묶으려 한 이야기. 클린트 이스트우드 모건 프리먼, 맷 데이먼 화해 용기 우정 실화">
+<article class="movie" id="film-invictus" data-id="invictus" data-score="73.5" data-score-estimated="false" data-imdb="7.3" data-imdb-votes="175871" data-metacritic="74" data-rt="76" data-keys="matt:invictus" data-tags="화해 용기 우정" data-search="인빅터스 invictus 2009 1995년 넬슨 만델라가 럭비 월드컵으로 갈라진 남아프리카공화국을 묶으려 한 이야기. 클린트 이스트우드 모건 프리먼, 맷 데이먼 화해 용기 우정 실화">
   <input type="checkbox" aria-label="인빅터스 시청 여부" />
   <details>
     <summary>
@@ -3338,7 +3342,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-cinderella-man" data-id="cinderella-man" data-keys="russell:cinderella-man" data-tags="가족 역경극복" data-search="신데렐라 맨 cinderella man 2005 대공황 때 부두 노동자가 된 복서 제임스 브래독이 헤비급 챔피언에 도전한 이야기. 론 하워드 러셀 크로우, 러네이 젤위거 가족 역경극복 실화">
+<article class="movie" id="film-cinderella-man" data-id="cinderella-man" data-score="77.5" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="211573" data-metacritic="69" data-rt="80" data-keys="russell:cinderella-man" data-tags="가족 역경극복" data-search="신데렐라 맨 cinderella man 2005 대공황 때 부두 노동자가 된 복서 제임스 브래독이 헤비급 챔피언에 도전한 이야기. 론 하워드 러셀 크로우, 러네이 젤위거 가족 역경극복 실화">
   <input type="checkbox" aria-label="신데렐라 맨 시청 여부" />
   <details>
     <summary>
@@ -3364,7 +3368,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-ford-v-ferrari" data-id="ford-v-ferrari" data-keys="matt:ford-v-ferrari" data-tags="우정 집념" data-search="포드 v 페라리 ford v ferrari 2019 1966년 르망에서 페라리를 꺾으려 한 캐럴 셸비와 켄 마일스. 제임스 맨골드 맷 데이먼, 크리스천 베일 우정 집념 실화">
+<article class="movie" id="film-ford-v-ferrari" data-id="ford-v-ferrari" data-score="82.4" data-score-estimated="false" data-imdb="8.1" data-imdb-votes="589970" data-metacritic="81" data-rt="92" data-keys="matt:ford-v-ferrari" data-tags="우정 집념" data-search="포드 v 페라리 ford v ferrari 2019 1966년 르망에서 페라리를 꺾으려 한 캐럴 셸비와 켄 마일스. 제임스 맨골드 맷 데이먼, 크리스천 베일 우정 집념 실화">
   <input type="checkbox" aria-label="포드 V 페라리 시청 여부" />
   <details>
     <summary>
@@ -3390,7 +3394,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-moneyball" data-id="moneyball" data-keys="true:moneyball" data-tags="신념 집념" data-search="머니볼 moneyball 2011 2002년 오클랜드 애슬레틱스가 적은 돈으로 야구 선수를 다시 평가한 시즌. 베넷 밀러 브래드 피트, 조나 힐 신념 집념 실화 바탕">
+<article class="movie" id="film-moneyball" data-id="moneyball" data-score="80.7" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="518952" data-metacritic="87" data-rt="94" data-keys="true:moneyball" data-tags="신념 집념" data-search="머니볼 moneyball 2011 2002년 오클랜드 애슬레틱스가 적은 돈으로 야구 선수를 다시 평가한 시즌. 베넷 밀러 브래드 피트, 조나 힐 신념 집념 실화 바탕">
   <input type="checkbox" aria-label="머니볼 시청 여부" />
   <details>
     <summary>
@@ -3416,7 +3420,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-dallas-buyers" data-id="dallas-buyers" data-keys="matthew:dallas-buyers" data-tags="용기 정의" data-search="달라스 바이어스 클럽 dallas buyers club 2013 1980년대 달라스에서 에이즈 환자 론 우드루프가 승인되지 않은 약을 나눈 이야기. 장마르크 발레 매튜 맥커너히, 재러드 레토, 제니퍼 가너 용기 정의 실화 바탕">
+<article class="movie" id="film-dallas-buyers" data-id="dallas-buyers" data-score="80.3" data-score-estimated="false" data-imdb="7.9" data-imdb-votes="553886" data-metacritic="77" data-rt="92" data-keys="matthew:dallas-buyers" data-tags="용기 정의" data-search="달라스 바이어스 클럽 dallas buyers club 2013 1980년대 달라스에서 에이즈 환자 론 우드루프가 승인되지 않은 약을 나눈 이야기. 장마르크 발레 매튜 맥커너히, 재러드 레토, 제니퍼 가너 용기 정의 실화 바탕">
   <input type="checkbox" aria-label="달라스 바이어스 클럽 시청 여부" />
   <details>
     <summary>
@@ -3442,7 +3446,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-hotel-rwanda" data-id="hotel-rwanda" data-keys="true:hotel-rwanda" data-tags="희생 용기 가족" data-search="호텔 르완다 hotel rwanda 2004 1994년 르완다 집단학살 때 호텔 지배인 폴 루세사바기나가 피란민을 숨긴 이야기. 테리 조지 돈 치들, 소피 오코네도 희생 용기 가족 실화 바탕">
+<article class="movie" id="film-hotel-rwanda" data-id="hotel-rwanda" data-score="81.8" data-score-estimated="false" data-imdb="8.1" data-imdb-votes="395610" data-metacritic="79" data-rt="91" data-keys="true:hotel-rwanda" data-tags="희생 용기 가족" data-search="호텔 르완다 hotel rwanda 2004 1994년 르완다 집단학살 때 호텔 지배인 폴 루세사바기나가 피란민을 숨긴 이야기. 테리 조지 돈 치들, 소피 오코네도 희생 용기 가족 실화 바탕">
   <input type="checkbox" aria-label="호텔 르완다 시청 여부" />
   <details>
     <summary>
@@ -3468,7 +3472,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-freedom-writers" data-id="freedom-writers" data-keys="true:freedom-writers" data-tags="희망 용기" data-search="프리덤 라이터스 freedom writers 2007 롱비치의 교사 에린 그루웰이 학생들의 일기로 교실을 연 이야기. 리처드 러그라버네이즈 힐러리 스웽크 희망 용기 실화">
+<article class="movie" id="film-freedom-writers" data-id="freedom-writers" data-score="72.4" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="94080" data-metacritic="64" data-rt="69" data-keys="true:freedom-writers" data-tags="희망 용기" data-search="프리덤 라이터스 freedom writers 2007 롱비치의 교사 에린 그루웰이 학생들의 일기로 교실을 연 이야기. 리처드 러그라버네이즈 힐러리 스웽크 희망 용기 실화">
   <input type="checkbox" aria-label="프리덤 라이터스 시청 여부" />
   <details>
     <summary>
@@ -3494,7 +3498,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-coach-carter" data-id="coach-carter" data-keys="true:coach-carter" data-tags="신념 역경극복" data-search="코치 카터 coach carter 2005 무패 팀을 성적이 떨어졌다는 이유로 벤치에 앉힌 농구 코치 켄 카터. 토머스 카터 새뮤얼 l. 잭슨 신념 역경극복 실화">
+<article class="movie" id="film-coach-carter" data-id="coach-carter" data-score="69.1" data-score-estimated="false" data-imdb="7.4" data-imdb-votes="196342" data-metacritic="57" data-rt="64" data-keys="true:coach-carter" data-tags="신념 역경극복" data-search="코치 카터 coach carter 2005 무패 팀을 성적이 떨어졌다는 이유로 벤치에 앉힌 농구 코치 켄 카터. 토머스 카터 새뮤얼 l. 잭슨 신념 역경극복 실화">
   <input type="checkbox" aria-label="코치 카터 시청 여부" />
   <details>
     <summary>
@@ -3520,7 +3524,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-october-sky" data-id="october-sky" data-keys="true:october-sky" data-tags="가족 집념 희망" data-search="옥토버 스카이 october sky 1999 탄광 마을의 소년 호머 히컴이 스푸트니크를 보고 로켓을 만든 이야기. 조 존스턴 제이크 질런홀, 크리스 쿠퍼, 로라 던 가족 집념 희망 실화">
+<article class="movie" id="film-october-sky" data-id="october-sky" data-score="77.7" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="113540" data-metacritic="71" data-rt="90" data-keys="true:october-sky" data-tags="가족 집념 희망" data-search="옥토버 스카이 october sky 1999 탄광 마을의 소년 호머 히컴이 스푸트니크를 보고 로켓을 만든 이야기. 조 존스턴 제이크 질런홀, 크리스 쿠퍼, 로라 던 가족 집념 희망 실화">
   <input type="checkbox" aria-label="옥토버 스카이 시청 여부" />
   <details>
     <summary>
@@ -3546,7 +3550,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-soul-surfer" data-id="soul-surfer" data-keys="true:soul-surfer" data-tags="역경극복 가족 희망" data-search="소울 서퍼 soul surfer 2011 열세 살에 상어에게 팔을 잃고도 서핑 대회에 돌아온 베서니 해밀턴. 숀 맥너마라 애나소피아 롭, 헬렌 헌트, 데니스 퀘이드 역경극복 가족 희망 실화">
+<article class="movie" id="film-soul-surfer" data-id="soul-surfer" data-score="63.9" data-score-estimated="false" data-imdb="7.0" data-imdb-votes="56406" data-metacritic="53" data-rt="45" data-keys="true:soul-surfer" data-tags="역경극복 가족 희망" data-search="소울 서퍼 soul surfer 2011 열세 살에 상어에게 팔을 잃고도 서핑 대회에 돌아온 베서니 해밀턴. 숀 맥너마라 애나소피아 롭, 헬렌 헌트, 데니스 퀘이드 역경극복 가족 희망 실화">
   <input type="checkbox" aria-label="소울 서퍼 시청 여부" />
   <details>
     <summary>
@@ -3573,7 +3577,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-seabiscuit" data-id="seabiscuit" data-keys="true:seabiscuit" data-tags="희망 역경극복" data-search="씨비스킷 seabiscuit 2003 대공황기에 작은 말 씨비스킷과 다리 다친 기수, 눈 밝은 조련사가 나라의 응원을 받은 경마. 게리 로스 토비 매과이어, 제프 브리지스, 크리스 쿠퍼 희망 역경극복 실화">
+<article class="movie" id="film-seabiscuit" data-id="seabiscuit" data-score="73.1" data-score-estimated="false" data-imdb="7.3" data-imdb-votes="79604" data-metacritic="72" data-rt="78" data-keys="true:seabiscuit" data-tags="희망 역경극복" data-search="씨비스킷 seabiscuit 2003 대공황기에 작은 말 씨비스킷과 다리 다친 기수, 눈 밝은 조련사가 나라의 응원을 받은 경마. 게리 로스 토비 매과이어, 제프 브리지스, 크리스 쿠퍼 희망 역경극복 실화">
   <input type="checkbox" aria-label="씨비스킷 시청 여부" />
   <details>
     <summary>
@@ -3599,7 +3603,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-patch-adams" data-id="patch-adams" data-keys="true:patch-adams" data-tags="희망 우정" data-search="패치 아담스 patch adams 1998 웃음을 치료라고 믿은 의대생 헌터 애덤스. 톰 섀디액 로빈 윌리엄스 희망 우정 실화 바탕">
+<article class="movie" id="film-patch-adams" data-id="patch-adams" data-score="54.5" data-score-estimated="false" data-imdb="6.9" data-imdb-votes="131794" data-metacritic="26" data-rt="22" data-keys="true:patch-adams" data-tags="희망 우정" data-search="패치 아담스 patch adams 1998 웃음을 치료라고 믿은 의대생 헌터 애덤스. 톰 섀디액 로빈 윌리엄스 희망 우정 실화 바탕">
   <input type="checkbox" aria-label="패치 아담스 시청 여부" />
   <details>
     <summary>
@@ -3625,7 +3629,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-awakenings" data-id="awakenings" data-keys="true:awakenings" data-tags="희망 희생" data-search="사랑의 기적 awakenings 1990 수십 년 잠든 뇌염 후유증 환자들에게 파킨슨 치료제를 쓴 올리버 색스의 임상. 페니 마셜 로빈 윌리엄스, 로버트 드 니로 희망 희생 실화 바탕">
+<article class="movie" id="film-awakenings" data-id="awakenings" data-score="77.3" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="179412" data-metacritic="74" data-rt="81" data-keys="true:awakenings" data-tags="희망 희생" data-search="사랑의 기적 awakenings 1990 수십 년 잠든 뇌염 후유증 환자들에게 파킨슨 치료제를 쓴 올리버 색스의 임상. 페니 마셜 로빈 윌리엄스, 로버트 드 니로 희망 희생 실화 바탕">
   <input type="checkbox" aria-label="사랑의 기적 시청 여부" />
   <details>
     <summary>
@@ -3651,7 +3655,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-miracle" data-id="miracle" data-keys="true:miracle" data-tags="우정 집념" data-search="미라클 miracle 2004 1980년 레이크플래시드 동계올림픽에서 소련을 꺾은 미국 아이스하키 대표 팀. 개빈 오코너 커트 러셀, 퍼트리샤 클라크슨 우정 집념 실화">
+<article class="movie" id="film-miracle" data-id="miracle" data-score="73.9" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="64595" data-metacritic="68" data-rt="81" data-keys="true:miracle" data-tags="우정 집념" data-search="미라클 miracle 2004 1980년 레이크플래시드 동계올림픽에서 소련을 꺾은 미국 아이스하키 대표 팀. 개빈 오코너 커트 러셀, 퍼트리샤 클라크슨 우정 집념 실화">
   <input type="checkbox" aria-label="미라클 시청 여부" />
   <details>
     <summary>
@@ -3677,7 +3681,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-cool-runnings" data-id="cool-runnings" data-keys="true:cool-runnings" data-tags="우정 집념" data-search="쿨러닝 cool runnings 1993 1988년 캘거리 동계올림픽에 나간 자메이카 남자 봅슬레이 팀. 존 터틀타웁 존 캔디, 리온 로빈슨 우정 집념 실화 바탕">
+<article class="movie" id="film-cool-runnings" data-id="cool-runnings" data-score="68.8" data-score-estimated="false" data-imdb="7.0" data-imdb-votes="125218" data-metacritic="60" data-rt="76" data-keys="true:cool-runnings" data-tags="우정 집념" data-search="쿨러닝 cool runnings 1993 1988년 캘거리 동계올림픽에 나간 자메이카 남자 봅슬레이 팀. 존 터틀타웁 존 캔디, 리온 로빈슨 우정 집념 실화 바탕">
   <input type="checkbox" aria-label="쿨러닝 시청 여부" />
   <details>
     <summary>
@@ -3703,7 +3707,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-argo" data-id="argo" data-keys="true:argo" data-tags="용기 희생" data-search="아르고 argo 2012 1979년 이란 인질 위기 때 여섯 외교관을 가짜 영화 촬영팀으로 빼낸 작전. 벤 애플렉 벤 애플렉, 앨런 아킨, 존 굿맨 용기 희생 실화 바탕">
+<article class="movie" id="film-argo" data-id="argo" data-score="81.4" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="674708" data-metacritic="86" data-rt="96" data-keys="true:argo" data-tags="용기 희생" data-search="아르고 argo 2012 1979년 이란 인질 위기 때 여섯 외교관을 가짜 영화 촬영팀으로 빼낸 작전. 벤 애플렉 벤 애플렉, 앨런 아킨, 존 굿맨 용기 희생 실화 바탕">
   <input type="checkbox" aria-label="아르고 시청 여부" />
   <details>
     <summary>
@@ -3729,7 +3733,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-captain-phillips" data-id="captain-phillips" data-keys="true:captain-phillips" data-tags="용기 역경극복" data-search="캡틴 필립스 captain phillips 2013 2009년 소말리아 해적에게 납치된 선장 리처드 필립스. 폴 그린그래스 톰 행크스, 바크하드 압디 용기 역경극복 실화 바탕">
+<article class="movie" id="film-captain-phillips" data-id="captain-phillips" data-score="80.8" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="523918" data-metacritic="82" data-rt="93" data-keys="true:captain-phillips" data-tags="용기 역경극복" data-search="캡틴 필립스 captain phillips 2013 2009년 소말리아 해적에게 납치된 선장 리처드 필립스. 폴 그린그래스 톰 행크스, 바크하드 압디 용기 역경극복 실화 바탕">
   <input type="checkbox" aria-label="캡틴 필립스 시청 여부" />
   <details>
     <summary>
@@ -3756,7 +3760,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-the-impossible" data-id="the-impossible" data-keys="true:the-impossible" data-tags="가족 희생 희망" data-search="더 임파서블 the impossible 2012 2004년 인도양 쓰나미에서 흩어진 스페인 벨론 가족. 후안 안토니오 바요나 나오미 와츠, 이완 맥그리거, 톰 홀랜드 가족 희생 희망 실화 바탕">
+<article class="movie" id="film-the-impossible" data-id="the-impossible" data-score="75.4" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="268590" data-metacritic="73" data-rt="82" data-keys="true:the-impossible" data-tags="가족 희생 희망" data-search="더 임파서블 the impossible 2012 2004년 인도양 쓰나미에서 흩어진 스페인 벨론 가족. 후안 안토니오 바요나 나오미 와츠, 이완 맥그리거, 톰 홀랜드 가족 희생 희망 실화 바탕">
   <input type="checkbox" aria-label="더 임파서블 시청 여부" />
   <details>
     <summary>
@@ -3782,7 +3786,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-into-the-wild" data-id="into-the-wild" data-keys="true:into-the-wild" data-tags="역경극복 가족" data-search="인투 더 와일드 into the wild 2007 1992년 알래스카 버스에서 숨진 크리스토퍼 매캔들리스의 여행. 숀 펜 에밀 허시, 캐서린 키너, 핼 홀브룩 역경극복 가족 실화">
+<article class="movie" id="film-into-the-wild" data-id="into-the-wild" data-score="78.9" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="700789" data-metacritic="73" data-rt="83" data-keys="true:into-the-wild" data-tags="역경극복 가족" data-search="인투 더 와일드 into the wild 2007 1992년 알래스카 버스에서 숨진 크리스토퍼 매캔들리스의 여행. 숀 펜 에밀 허시, 캐서린 키너, 핼 홀브룩 역경극복 가족 실화">
   <input type="checkbox" aria-label="인투 더 와일드 시청 여부" />
   <details>
     <summary>
@@ -3808,7 +3812,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-wild" data-id="wild" data-keys="true:wild" data-tags="역경극복 가족 희망" data-search="와일드 wild 2014 어머니를 잃은 셰릴 스트레이드가 퍼시픽 크레스트 트레일을 걸은 회고. 장마르크 발레 리스 위더스푼, 로라 던 역경극복 가족 희망 실화">
+<article class="movie" id="film-wild" data-id="wild" data-score="73.7" data-score-estimated="false" data-imdb="7.1" data-imdb-votes="147736" data-metacritic="74" data-rt="88" data-keys="true:wild" data-tags="역경극복 가족 희망" data-search="와일드 wild 2014 어머니를 잃은 셰릴 스트레이드가 퍼시픽 크레스트 트레일을 걸은 회고. 장마르크 발레 리스 위더스푼, 로라 던 역경극복 가족 희망 실화">
   <input type="checkbox" aria-label="와일드 시청 여부" />
   <details>
     <summary>
@@ -3834,7 +3838,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-my-left-foot" data-id="my-left-foot" data-keys="true:my-left-foot" data-tags="가족 역경극복 집념" data-search="나의 왼발 my left foot 1989 뇌성마비로 왼발만 움직이던 크리스티 브라운이 그림과 글로 자기 삶을 쓴 이야기. 짐 셰리던 대니얼 데이 루이스, 브렌다 프리커 가족 역경극복 집념 실화">
+<article class="movie" id="film-my-left-foot" data-id="my-left-foot" data-score="83.4" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="86212" data-metacritic="97" data-rt="98" data-keys="true:my-left-foot" data-tags="가족 역경극복 집념" data-search="나의 왼발 my left foot 1989 뇌성마비로 왼발만 움직이던 크리스티 브라운이 그림과 글로 자기 삶을 쓴 이야기. 짐 셰리던 대니얼 데이 루이스, 브렌다 프리커 가족 역경극복 집념 실화">
   <input type="checkbox" aria-label="나의 왼발 시청 여부" />
   <details>
     <summary>
@@ -3860,7 +3864,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-malcolm-x" data-id="malcolm-x" data-keys="denzel:malcolm-x" data-tags="신념 정의" data-search="말콤 x malcolm x 1992 말콤 엑스가 범죄와 수감, 이슬람, 메카를 거쳐 암살되기까지의 삶. 스파이크 리 덴젤 워싱턴, 앤절라 바셋 신념 정의 실화">
+<article class="movie" id="film-malcolm-x" data-id="malcolm-x" data-score="77.3" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="112874" data-metacritic="73" data-rt="89" data-keys="denzel:malcolm-x" data-tags="신념 정의" data-search="말콤 x malcolm x 1992 말콤 엑스가 범죄와 수감, 이슬람, 메카를 거쳐 암살되기까지의 삶. 스파이크 리 덴젤 워싱턴, 앤절라 바셋 신념 정의 실화">
   <input type="checkbox" aria-label="말콤 X 시청 여부" />
   <details>
     <summary>
@@ -3886,7 +3890,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-born-fourth" data-id="born-fourth" data-keys="tomcruise:born-fourth-july" data-tags="신념 희생" data-search="7월 4일생 born on the fourth of july 1989 베트남전에서 하반신이 마비된 론 코빅이 반전 운동가가 된 회고. 올리버 스톤 톰 크루즈, 키라 세지윅 신념 희생 실화">
+<article class="movie" id="film-born-fourth" data-id="born-fourth" data-score="74.0" data-score-estimated="false" data-imdb="7.2" data-imdb-votes="126530" data-metacritic="75" data-rt="84" data-keys="tomcruise:born-fourth-july" data-tags="신념 희생" data-search="7월 4일생 born on the fourth of july 1989 베트남전에서 하반신이 마비된 론 코빅이 반전 운동가가 된 회고. 올리버 스톤 톰 크루즈, 키라 세지윅 신념 희생 실화">
   <input type="checkbox" aria-label="7월 4일생 시청 여부" />
   <details>
     <summary>
@@ -3912,7 +3916,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-selma" data-id="selma" data-keys="true:selma" data-tags="용기 정의" data-search="셀마 selma 2014 1965년 셀마에서 몽고메리로 향한 흑인 투표권 행진. 에이바 듀버네이 데이비드 오옐러워, 카멘 에주고, 톰 윌킨슨 용기 정의 실화 바탕">
+<article class="movie" id="film-selma" data-id="selma" data-score="78.4" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="99876" data-metacritic="79" data-rt="99" data-keys="true:selma" data-tags="용기 정의" data-search="셀마 selma 2014 1965년 셀마에서 몽고메리로 향한 흑인 투표권 행진. 에이바 듀버네이 데이비드 오옐러워, 카멘 에주고, 톰 윌킨슨 용기 정의 실화 바탕">
   <input type="checkbox" aria-label="셀마 시청 여부" />
   <details>
     <summary>
@@ -3938,7 +3942,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-milk" data-id="milk" data-keys="true:milk" data-tags="용기 정의" data-search="밀크 milk 2008 샌프란시스코 감독관이 된 하비 밀크와 1978년의 암살. 거스 밴 샌트 숀 펜, 조시 브롤린 용기 정의 실화">
+<article class="movie" id="film-milk" data-id="milk" data-score="78.8" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="187213" data-metacritic="83" data-rt="93" data-keys="true:milk" data-tags="용기 정의" data-search="밀크 milk 2008 샌프란시스코 감독관이 된 하비 밀크와 1978년의 암살. 거스 밴 샌트 숀 펜, 조시 브롤린 용기 정의 실화">
   <input type="checkbox" aria-label="밀크 시청 여부" />
   <details>
     <summary>
@@ -3964,7 +3968,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-jackie-42" data-id="jackie-42" data-keys="true:jackie-42" data-tags="용기 정의" data-search="42 42 2013 1947년 메이저리그의 인종 장벽을 넘은 재키 로빈슨과 구단주 브랜치 리키. 브라이언 헬걸랜드 채드윅 보스만, 해리슨 포드 용기 정의 실화">
+<article class="movie" id="film-jackie-42" data-id="jackie-42" data-score="72.9" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="110188" data-metacritic="62" data-rt="81" data-keys="true:jackie-42" data-tags="용기 정의" data-search="42 42 2013 1947년 메이저리그의 인종 장벽을 넘은 재키 로빈슨과 구단주 브랜치 리키. 브라이언 헬걸랜드 채드윅 보스만, 해리슨 포드 용기 정의 실화">
   <input type="checkbox" aria-label="42 시청 여부" />
   <details>
     <summary>
@@ -3990,7 +3994,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-glory" data-id="glory" data-keys="denzel:glory" data-tags="용기 희생" data-search="영광의 깃발 glory 1989 남북전쟁 북군의 흑인 부대 매사추세츠 제54연대와 와그너 요새 전투. 에드워드 즈윅 매슈 브로더릭, 덴젤 워싱턴, 모건 프리먼 용기 희생 실화 바탕">
+<article class="movie" id="film-glory" data-id="glory" data-score="79.9" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="154632" data-metacritic="78" data-rt="95" data-keys="denzel:glory" data-tags="용기 희생" data-search="영광의 깃발 glory 1989 남북전쟁 북군의 흑인 부대 매사추세츠 제54연대와 와그너 요새 전투. 에드워드 즈윅 매슈 브로더릭, 덴젤 워싱턴, 모건 프리먼 용기 희생 실화 바탕">
   <input type="checkbox" aria-label="영광의 깃발 시청 여부" />
   <details>
     <summary>
@@ -4016,7 +4020,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-oppenheimer" data-id="oppenheimer" data-keys="matt:oppenheimer-md" data-tags="희생 정의" data-search="오펜하이머 oppenheimer 2023 맨해튼 계획의 과학 책임자 j. 로버트 오펜하이머와 전후의 보안 청문회. 크리스토퍼 놀런 킬리언 머피, 로버트 다우니 주니어, 맷 데이먼 희생 정의 실화">
+<article class="movie" id="film-oppenheimer" data-id="oppenheimer" data-score="85.1" data-score-estimated="false" data-imdb="8.2" data-imdb-votes="1106485" data-metacritic="90" data-rt="93" data-keys="matt:oppenheimer-md" data-tags="희생 정의" data-search="오펜하이머 oppenheimer 2023 맨해튼 계획의 과학 책임자 j. 로버트 오펜하이머와 전후의 보안 청문회. 크리스토퍼 놀런 킬리언 머피, 로버트 다우니 주니어, 맷 데이먼 희생 정의 실화">
   <input type="checkbox" aria-label="오펜하이머 시청 여부" />
   <details>
     <summary>
@@ -4042,7 +4046,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-flower-moon" data-id="flower-moon" data-keys="leo:killers-flower-moon" data-tags="정의 희생" data-search="플라워 킬링 문 killers of the flower moon 2023 1920년대 오클라호마 오세이지족 유전 권리를 노린 연쇄 살인. 마틴 스코세이지 릴리 글래드스턴, 레오나르도 디카프리오, 로버트 드 니로 정의 희생 실화">
+<article class="movie" id="film-flower-moon" data-id="flower-moon" data-score="80.2" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="315269" data-metacritic="89" data-rt="93" data-keys="leo:killers-flower-moon" data-tags="정의 희생" data-search="플라워 킬링 문 killers of the flower moon 2023 1920년대 오클라호마 오세이지족 유전 권리를 노린 연쇄 살인. 마틴 스코세이지 릴리 글래드스턴, 레오나르도 디카프리오, 로버트 드 니로 정의 희생 실화">
   <input type="checkbox" aria-label="플라워 킬링 문 시청 여부" />
   <details>
     <summary>
@@ -4068,7 +4072,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-dark-waters" data-id="dark-waters" data-keys="anne:dark-waters" data-tags="정의 집념" data-search="다크 워터스 dark waters 2019 듀폰의 화학물질 pfoa가 웨스트버지니아 마을을 오염시킨 사건을 파헤친 변호사 로버트 빌럿. 토드 헤인즈 마크 러팔로, 앤 해서웨이 정의 집념 실화">
+<article class="movie" id="film-dark-waters" data-id="dark-waters" data-score="76.7" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="123888" data-metacritic="73" data-rt="89" data-keys="anne:dark-waters" data-tags="정의 집념" data-search="다크 워터스 dark waters 2019 듀폰의 화학물질 pfoa가 웨스트버지니아 마을을 오염시킨 사건을 파헤친 변호사 로버트 빌럿. 토드 헤인즈 마크 러팔로, 앤 해서웨이 정의 집념 실화">
   <input type="checkbox" aria-label="다크 워터스 시청 여부" />
   <details>
     <summary>
@@ -4094,7 +4098,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-the-insider" data-id="the-insider" data-keys="russell:the-insider" data-tags="용기 정의" data-search="인사이더 the insider 1999 담배 회사의 내부 고발자 제프리 위건드를 60분이 방송하려다 멈춘 이야기. 마이클 만 러셀 크로우, 알 파치노 용기 정의 실화">
+<article class="movie" id="film-the-insider" data-id="the-insider" data-score="81.5" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="193889" data-metacritic="85" data-rt="96" data-keys="russell:the-insider" data-tags="용기 정의" data-search="인사이더 the insider 1999 담배 회사의 내부 고발자 제프리 위건드를 60분이 방송하려다 멈춘 이야기. 마이클 만 러셀 크로우, 알 파치노 용기 정의 실화">
   <input type="checkbox" aria-label="인사이더 시청 여부" />
   <details>
     <summary>
@@ -4120,7 +4124,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-presidents-men" data-id="presidents-men" data-keys="true:presidents-men" data-tags="정의 용기" data-search="모두가 대통령의 사람들 all the president&#x27;s men 1976 워터게이트 침입 사건을 파고든 워싱턴 포스트 기자 밥 우드워드와 칼 번스틴. 앨런 j. 퍼쿨라 로버트 레드퍼드, 더스틴 호프먼 정의 용기 실화">
+<article class="movie" id="film-presidents-men" data-id="presidents-men" data-score="81.5" data-score-estimated="false" data-imdb="7.9" data-imdb-votes="139818" data-metacritic="84" data-rt="94" data-keys="true:presidents-men" data-tags="정의 용기" data-search="모두가 대통령의 사람들 all the president&#x27;s men 1976 워터게이트 침입 사건을 파고든 워싱턴 포스트 기자 밥 우드워드와 칼 번스틴. 앨런 j. 퍼쿨라 로버트 레드퍼드, 더스틴 호프먼 정의 용기 실화">
   <input type="checkbox" aria-label="모두가 대통령의 사람들 시청 여부" />
   <details>
     <summary>
@@ -4146,7 +4150,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-bridge-of-spies" data-id="bridge-of-spies" data-keys="true:bridge-of-spies" data-tags="정의 신념" data-search="브릿지 오브 스파이스 bridge of spies 2015 1962년 변호사 제임스 도노번이 소련 스파이와 미국 조종사를 맞바꾼 협상. 스티븐 스필버그 톰 행크스, 마크 라이런스 정의 신념 실화">
+<article class="movie" id="film-bridge-of-spies" data-id="bridge-of-spies" data-score="79.1" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="347969" data-metacritic="81" data-rt="92" data-keys="true:bridge-of-spies" data-tags="정의 신념" data-search="브릿지 오브 스파이스 bridge of spies 2015 1962년 변호사 제임스 도노번이 소련 스파이와 미국 조종사를 맞바꾼 협상. 스티븐 스필버그 톰 행크스, 마크 라이런스 정의 신념 실화">
   <input type="checkbox" aria-label="브릿지 오브 스파이스 시청 여부" />
   <details>
     <summary>
@@ -4172,7 +4176,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-the-post" data-id="the-post" data-keys="true:the-post" data-tags="용기 정의" data-search="더 포스트 the post 2017 1971년 펜타곤 페이퍼를 뉴욕 타임스에 이어 보도한 워싱턴 포스트와 캐서린 그레이엄. 스티븐 스필버그 메릴 스트립, 톰 행크스 용기 정의 실화">
+<article class="movie" id="film-the-post" data-id="the-post" data-score="76.2" data-score-estimated="false" data-imdb="7.2" data-imdb-votes="174337" data-metacritic="83" data-rt="88" data-keys="true:the-post" data-tags="용기 정의" data-search="더 포스트 the post 2017 1971년 펜타곤 페이퍼를 뉴욕 타임스에 이어 보도한 워싱턴 포스트와 캐서린 그레이엄. 스티븐 스필버그 메릴 스트립, 톰 행크스 용기 정의 실화">
   <input type="checkbox" aria-label="더 포스트 시청 여부" />
   <details>
     <summary>
@@ -4198,7 +4202,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-social-network" data-id="social-network" data-keys="true:social-network" data-tags="우정 집념" data-search="소셜 네트워크 the social network 2010 페이스북 창업과 친구, 동업자, 소송이 얽힌 마크 저커버그의 초기. 데이비드 핀처 제시 아이젠버그, 앤드루 가필드, 저스틴 팀버레이크 우정 집념 실화 바탕">
+<article class="movie" id="film-social-network" data-id="social-network" data-score="83.9" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="832930" data-metacritic="95" data-rt="96" data-keys="true:social-network" data-tags="우정 집념" data-search="소셜 네트워크 the social network 2010 페이스북 창업과 친구, 동업자, 소송이 얽힌 마크 저커버그의 초기. 데이비드 핀처 제시 아이젠버그, 앤드루 가필드, 저스틴 팀버레이크 우정 집념 실화 바탕">
   <input type="checkbox" aria-label="소셜 네트워크 시청 여부" />
   <details>
     <summary>
@@ -4224,7 +4228,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-wolf-wall" data-id="wolf-wall" data-keys="leo:wolf-wall-street,matthew:wolf-wall-street-mm,margot:wolf-wall-street-mr" data-tags="집념 가족" data-search="울프 오브 월 스트리트 the wolf of wall street 2013 증권 사기 회사 스트래턴 오크몬트의 조던 벨포트. 마틴 스코세이지 레오나르도 디카프리오, 조나 힐, 마고 로비 집념 가족 실화 바탕">
+<article class="movie" id="film-wolf-wall" data-id="wolf-wall" data-score="80.2" data-score-estimated="false" data-imdb="8.2" data-imdb-votes="1833065" data-metacritic="75" data-rt="80" data-keys="leo:wolf-wall-street,matthew:wolf-wall-street-mm,margot:wolf-wall-street-mr" data-tags="집념 가족" data-search="울프 오브 월 스트리트 the wolf of wall street 2013 증권 사기 회사 스트래턴 오크몬트의 조던 벨포트. 마틴 스코세이지 레오나르도 디카프리오, 조나 힐, 마고 로비 집념 가족 실화 바탕">
   <input type="checkbox" aria-label="울프 오브 월 스트리트 시청 여부" />
   <details>
     <summary>
@@ -4250,7 +4254,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-great-debaters" data-id="great-debaters" data-keys="denzel:great-debaters" data-tags="용기 정의" data-search="그레이트 디베이터스 the great debaters 2007 1930년대 텍사스 와일리 대학 토론 팀을 이끈 시인 멜빈 톨슨. 덴젤 워싱턴 덴젤 워싱턴, 포리스트 휘터커, 네이트 파커 용기 정의 실화 바탕">
+<article class="movie" id="film-great-debaters" data-id="great-debaters" data-score="73.2" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="67000" data-metacritic="65" data-rt="80" data-keys="denzel:great-debaters" data-tags="용기 정의" data-search="그레이트 디베이터스 the great debaters 2007 1930년대 텍사스 와일리 대학 토론 팀을 이끈 시인 멜빈 톨슨. 덴젤 워싱턴 덴젤 워싱턴, 포리스트 휘터커, 네이트 파커 용기 정의 실화 바탕">
   <input type="checkbox" aria-label="그레이트 디베이터스 시청 여부" />
   <details>
     <summary>
@@ -4276,7 +4280,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-the-revenant" data-id="the-revenant" data-keys="leo:the-revenant,tomhardy:revenant-th" data-tags="역경극복" data-search="레버넌트: 죽음에서 돌아온 자 the revenant 2015 1823년 곰에게 당해 버려졌다가 기어 돌아온 모피 사냥꾼 휴 글래스. 알레한드로 곤살레스 이냐리투 레오나르도 디카프리오, 톰 하디 역경극복 실화 바탕">
+<article class="movie" id="film-the-revenant" data-id="the-revenant" data-score="78.8" data-score-estimated="false" data-imdb="8.0" data-imdb-votes="965625" data-metacritic="76" data-rt="78" data-keys="leo:the-revenant,tomhardy:revenant-th" data-tags="역경극복" data-search="레버넌트: 죽음에서 돌아온 자 the revenant 2015 1823년 곰에게 당해 버려졌다가 기어 돌아온 모피 사냥꾼 휴 글래스. 알레한드로 곤살레스 이냐리투 레오나르도 디카프리오, 톰 하디 역경극복 실화 바탕">
   <input type="checkbox" aria-label="레버넌트: 죽음에서 돌아온 자 시청 여부" />
   <details>
     <summary>
@@ -4302,7 +4306,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-the-aviator" data-id="the-aviator" data-keys="leo:the-aviator" data-tags="집념" data-search="에비에이터 the aviator 2004 비행기 설계와 영화, 강박을 함께 안고 산 하워드 휴스. 마틴 스코세이지 레오나르도 디카프리오, 케이트 블란쳇 집념 실화">
+<article class="movie" id="film-the-aviator" data-id="the-aviator" data-score="76.8" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="414204" data-metacritic="77" data-rt="86" data-keys="leo:the-aviator" data-tags="집념" data-search="에비에이터 the aviator 2004 비행기 설계와 영화, 강박을 함께 안고 산 하워드 휴스. 마틴 스코세이지 레오나르도 디카프리오, 케이트 블란쳇 집념 실화">
   <input type="checkbox" aria-label="에비에이터 시청 여부" />
   <details>
     <summary>
@@ -4328,7 +4332,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-ray" data-id="ray" data-keys="true:ray" data-tags="역경극복 가족" data-search="레이 ray 2004 시각장애를 안고 미국 대중음악을 바꾼 레이 찰스. 테일러 핵포드 제이미 폭스 역경극복 가족 실화">
+<article class="movie" id="film-ray" data-id="ray" data-score="76.2" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="167637" data-metacritic="73" data-rt="79" data-keys="true:ray" data-tags="역경극복 가족" data-search="레이 ray 2004 시각장애를 안고 미국 대중음악을 바꾼 레이 찰스. 테일러 핵포드 제이미 폭스 역경극복 가족 실화">
   <input type="checkbox" aria-label="레이 시청 여부" />
   <details>
     <summary>
@@ -4354,7 +4358,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-walk-the-line" data-id="walk-the-line" data-keys="true:walk-the-line" data-tags="가족 역경극복" data-search="워크 더 라인 walk the line 2005 조니 캐시와 준 카터, 음악과 중독과 오랜 사랑. 제임스 맨골드 호아킨 피닉스, 리즈 위더스푼 가족 역경극복 실화">
+<article class="movie" id="film-walk-the-line" data-id="walk-the-line" data-score="77.1" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="283116" data-metacritic="72" data-rt="82" data-keys="true:walk-the-line" data-tags="가족 역경극복" data-search="워크 더 라인 walk the line 2005 조니 캐시와 준 카터, 음악과 중독과 오랜 사랑. 제임스 맨골드 호아킨 피닉스, 리즈 위더스푼 가족 역경극복 실화">
   <input type="checkbox" aria-label="워크 더 라인 시청 여부" />
   <details>
     <summary>
@@ -4380,7 +4384,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-i-tonya" data-id="i-tonya" data-keys="margot:i-tonya" data-tags="가족 역경극복" data-search="아이, 토냐 i, tonya 2017 1994년 낸시 커리건 습격 사건과 피겨 선수 토냐 하딩. 크레이그 길레스피 마고 로비, 앨리슨 제니, 서배스천 스탠 가족 역경극복 실화 바탕">
+<article class="movie" id="film-i-tonya" data-id="i-tonya" data-score="77.3" data-score-estimated="false" data-imdb="7.5" data-imdb-votes="264496" data-metacritic="77" data-rt="90" data-keys="margot:i-tonya" data-tags="가족 역경극복" data-search="아이, 토냐 i, tonya 2017 1994년 낸시 커리건 습격 사건과 피겨 선수 토냐 하딩. 크레이그 길레스피 마고 로비, 앨리슨 제니, 서배스천 스탠 가족 역경극복 실화 바탕">
   <input type="checkbox" aria-label="아이, 토냐 시청 여부" />
   <details>
     <summary>
@@ -4406,7 +4410,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-monster" data-id="monster" data-keys="charlize:monster" data-tags="역경극복 정의" data-search="몬스터 monster 2003 플로리다에서 여러 남성을 죽인 에일린 우ornos의 말년. 패티 젠킨스 샤를리즈 테론, 크리스티나 리치 역경극복 정의 실화">
+<article class="movie" id="film-monster" data-id="monster" data-score="74.2" data-score-estimated="false" data-imdb="7.3" data-imdb-votes="174334" data-metacritic="74" data-rt="82" data-keys="charlize:monster" data-tags="역경극복 정의" data-search="몬스터 monster 2003 플로리다에서 여러 남성을 죽인 에일린 우ornos의 말년. 패티 젠킨스 샤를리즈 테론, 크리스티나 리치 역경극복 정의 실화">
   <input type="checkbox" aria-label="몬스터 시청 여부" />
   <details>
     <summary>
@@ -4432,7 +4436,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-antwone-fisher" data-id="antwone-fisher" data-keys="denzel:antwone-fisher" data-tags="가족 역경극복" data-search="앤트원 피셔 antwone fisher 2002 학대받던 고아 출신 해군 앤트원 피셔가 상담을 통해 친가족을 찾은 이야기. 덴젤 워싱턴 데릭 루크, 덴젤 워싱턴 가족 역경극복 실화">
+<article class="movie" id="film-antwone-fisher" data-id="antwone-fisher" data-score="71.0" data-score-estimated="false" data-imdb="7.3" data-imdb-votes="41098" data-metacritic="62" data-rt="77" data-keys="denzel:antwone-fisher" data-tags="가족 역경극복" data-search="앤트원 피셔 antwone fisher 2002 학대받던 고아 출신 해군 앤트원 피셔가 상담을 통해 친가족을 찾은 이야기. 덴젤 워싱턴 데릭 루크, 덴젤 워싱턴 가족 역경극복 실화">
   <input type="checkbox" aria-label="앤트원 피셔 시청 여부" />
   <details>
     <summary>
@@ -4458,7 +4462,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-boy-erased" data-id="boy-erased" data-keys="russell:boy-erased" data-tags="가족 용기 화해" data-search="보이 이레이즈드 boy erased 2018 목사의 아들 개러드 콘리가 전환 치료를 거부하고 나온 회고. 조엘 에드거턴 루커스 헤지스, 니콜 키드먼, 러셀 크로우 가족 용기 화해 실화">
+<article class="movie" id="film-boy-erased" data-id="boy-erased" data-score="70.3" data-score-estimated="false" data-imdb="6.9" data-imdb-votes="46684" data-metacritic="69" data-rt="80" data-keys="russell:boy-erased" data-tags="가족 용기 화해" data-search="보이 이레이즈드 boy erased 2018 목사의 아들 개러드 콘리가 전환 치료를 거부하고 나온 회고. 조엘 에드거턴 루커스 헤지스, 니콜 키드먼, 러셀 크로우 가족 용기 화해 실화">
   <input type="checkbox" aria-label="보이 이레이즈드 시청 여부" />
   <details>
     <summary>
@@ -4484,7 +4488,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-we-bought-zoo" data-id="we-bought-zoo" data-keys="matt:we-bought-a-zoo" data-tags="가족 희망" data-search="우리는 동물원을 샀다 we bought a zoo 2011 아내를 잃은 벤저민 미가 망해 가던 동물원을 인수해 가족으로 다시 세운 이야기. 캐머런 크로 맷 데이먼, 스칼릿 요한슨 가족 희망 실화 바탕">
+<article class="movie" id="film-we-bought-zoo" data-id="we-bought-zoo" data-score="66.8" data-score-estimated="false" data-imdb="7.0" data-imdb-votes="162686" data-metacritic="58" data-rt="64" data-keys="matt:we-bought-a-zoo" data-tags="가족 희망" data-search="우리는 동물원을 샀다 we bought a zoo 2011 아내를 잃은 벤저민 미가 망해 가던 동물원을 인수해 가족으로 다시 세운 이야기. 캐머런 크로 맷 데이먼, 스칼릿 요한슨 가족 희망 실화 바탕">
   <input type="checkbox" aria-label="우리는 동물원을 샀다 시청 여부" />
   <details>
     <summary>
@@ -4510,7 +4514,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-we-are-marshall" data-id="we-are-marshall" data-keys="matthew:we-are-marshall" data-tags="희망 우정" data-search="위 아 마셜 we are marshall 2006 1970년 비행기 추락으로 선수단을 잃은 마셜 대학이 풋볼 팀을 다시 만든 이야기. 맥지 매튜 맥커너히 희망 우정 실화">
+<article class="movie" id="film-we-are-marshall" data-id="we-are-marshall" data-score="64.7" data-score-estimated="false" data-imdb="7.1" data-imdb-votes="68431" data-metacritic="53" data-rt="48" data-keys="matthew:we-are-marshall" data-tags="희망 우정" data-search="위 아 마셜 we are marshall 2006 1970년 비행기 추락으로 선수단을 잃은 마셜 대학이 풋볼 팀을 다시 만든 이야기. 맥지 매튜 맥커너히 희망 우정 실화">
   <input type="checkbox" aria-label="위 아 마셜 시청 여부" />
   <details>
     <summary>
@@ -4536,7 +4540,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-valkyrie" data-id="valkyrie" data-keys="tomcruise:valkyrie" data-tags="용기 희생" data-search="발키리 valkyrie 2008 1944년 히틀러 암살을 시도한 장교 클라우스 폰 슈타우펜베르크. 브라이언 싱어 톰 크루즈, 케네스 브래너, 빌 나이 용기 희생 실화">
+<article class="movie" id="film-valkyrie" data-id="valkyrie" data-score="66.7" data-score-estimated="false" data-imdb="7.1" data-imdb-votes="277942" data-metacritic="56" data-rt="62" data-keys="tomcruise:valkyrie" data-tags="용기 희생" data-search="발키리 valkyrie 2008 1944년 히틀러 암살을 시도한 장교 클라우스 폰 슈타우펜베르크. 브라이언 싱어 톰 크루즈, 케네스 브래너, 빌 나이 용기 희생 실화">
   <input type="checkbox" aria-label="발키리 시청 여부" />
   <details>
     <summary>
@@ -4562,7 +4566,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-defiance" data-id="defiance" data-keys="daniel:defiance" data-tags="가족 희생 용기" data-search="디파이언스 defiance 2008 나치 점령하 벨라루스의 숲에서 유대인 피란민을 지킨 비엘스키 형제. 에드워드 즈윅 다니엘 크레이그, 리에브 슈라이버 가족 희생 용기 실화">
+<article class="movie" id="film-defiance" data-id="defiance" data-score="66.6" data-score-estimated="false" data-imdb="7.1" data-imdb-votes="162021" data-metacritic="58" data-rt="58" data-keys="daniel:defiance" data-tags="가족 희생 용기" data-search="디파이언스 defiance 2008 나치 점령하 벨라루스의 숲에서 유대인 피란민을 지킨 비엘스키 형제. 에드워드 즈윅 다니엘 크레이그, 리에브 슈라이버 가족 희생 용기 실화">
   <input type="checkbox" aria-label="디파이언스 시청 여부" />
   <details>
     <summary>
@@ -4588,7 +4592,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-dunkirk" data-id="dunkirk" data-keys="tomhardy:dunkirk" data-tags="희생 용기" data-search="덩케르크 dunkirk 2017 1940년 덩케르크 해안에서 수십만 명의 영국·프랑스 군을 철수시킨 작전. 크리스토퍼 놀런 피온 화이트헤드, 톰 하디, 케네스 브래너 희생 용기 실화 바탕">
+<article class="movie" id="film-dunkirk" data-id="dunkirk" data-score="83.2" data-score-estimated="false" data-imdb="7.8" data-imdb-votes="830509" data-metacritic="94" data-rt="92" data-keys="tomhardy:dunkirk" data-tags="희생 용기" data-search="덩케르크 dunkirk 2017 1940년 덩케르크 해안에서 수십만 명의 영국·프랑스 군을 철수시킨 작전. 크리스토퍼 놀런 피온 화이트헤드, 톰 하디, 케네스 브래너 희생 용기 실화 바탕">
   <input type="checkbox" aria-label="덩케르크 시청 여부" />
   <details>
     <summary>
@@ -4614,7 +4618,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-black-hawk" data-id="black-hawk" data-keys="tomhardy:black-hawk-down" data-tags="희생 우정" data-search="블랙 호크 다운 black hawk down 2001 1993년 모가디슈에서 헬기 두 대가 격추된 뒤의 구조 작전. 리들리 스콧 조시 하트넷, 이완 맥그리거, 에릭 바나 희생 우정 실화">
+<article class="movie" id="film-black-hawk" data-id="black-hawk" data-score="76.1" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="461098" data-metacritic="74" data-rt="76" data-keys="tomhardy:black-hawk-down" data-tags="희생 우정" data-search="블랙 호크 다운 black hawk down 2001 1993년 모가디슈에서 헬기 두 대가 격추된 뒤의 구조 작전. 리들리 스콧 조시 하트넷, 이완 맥그리거, 에릭 바나 희생 우정 실화">
   <input type="checkbox" aria-label="블랙 호크 다운 시청 여부" />
   <details>
     <summary>
@@ -4640,7 +4644,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-united-93" data-id="united-93" data-keys="true:united-93" data-tags="용기 희생" data-search="유나이티드 93 united 93 2006 2001년 9월 11일 납치된 유나이티드 93편 승객들이 조종실을 되찾으려 한 비행. 폴 그린그래스 체니 잭슨, 제임스 배지 데일 용기 희생 실화">
+<article class="movie" id="film-united-93" data-id="united-93" data-score="80.1" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="117526" data-metacritic="90" data-rt="90" data-keys="true:united-93" data-tags="용기 희생" data-search="유나이티드 93 united 93 2006 2001년 9월 11일 납치된 유나이티드 93편 승객들이 조종실을 되찾으려 한 비행. 폴 그린그래스 체니 잭슨, 제임스 배지 데일 용기 희생 실화">
   <input type="checkbox" aria-label="유나이티드 93 시청 여부" />
   <details>
     <summary>
@@ -4666,7 +4670,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-only-the-brave" data-id="only-the-brave" data-keys="true:only-the-brave" data-tags="희생 우정 용기" data-search="온리 더 브레이브 only the brave 2017 2013년 애리조나 야넬힐 산불과 프레즈콧의 그래닛 마운틴 핫샷 대원들. 조지프 코신스키 조시 브롤린, 마일스 텔러, 제니퍼 코널리 희생 우정 용기 실화">
+<article class="movie" id="film-only-the-brave" data-id="only-the-brave" data-score="76.2" data-score-estimated="false" data-imdb="7.6" data-imdb-votes="94366" data-metacritic="72" data-rt="87" data-keys="true:only-the-brave" data-tags="희생 우정 용기" data-search="온리 더 브레이브 only the brave 2017 2013년 애리조나 야넬힐 산불과 프레즈콧의 그래닛 마운틴 핫샷 대원들. 조지프 코신스키 조시 브롤린, 마일스 텔러, 제니퍼 코널리 희생 우정 용기 실화">
   <input type="checkbox" aria-label="온리 더 브레이브 시청 여부" />
   <details>
     <summary>
@@ -4692,7 +4696,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-queen-katwe" data-id="queen-katwe" data-keys="true:queen-katwe" data-tags="가족 희망 집념" data-search="카트웨의 여왕 queen of katwe 2016 우간다 캄팔라 빈민가에서 체스 선수가 된 피오나 무테시. 미라 네어 마디나 날왕가, 루피타 뇽오, 데이비드 오옐러워 가족 희망 집념 실화">
+<article class="movie" id="film-queen-katwe" data-id="queen-katwe" data-score="74.3" data-score-estimated="false" data-imdb="7.4" data-imdb-votes="20324" data-metacritic="73" data-rt="92" data-keys="true:queen-katwe" data-tags="가족 희망 집념" data-search="카트웨의 여왕 queen of katwe 2016 우간다 캄팔라 빈민가에서 체스 선수가 된 피오나 무테시. 미라 네어 마디나 날왕가, 루피타 뇽오, 데이비드 오옐러워 가족 희망 집념 실화">
   <input type="checkbox" aria-label="카트웨의 여왕 시청 여부" />
   <details>
     <summary>
@@ -4718,7 +4722,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-glory-road" data-id="glory-road" data-keys="true:glory-road" data-tags="용기 정의" data-search="글로리 로드 glory road 2006 1966년 ncaa 결승에서 흑인 선발 다섯 명으로 우승한 텍사스 웨스턴. 제임스 가트너 조시 루커스, 데릭 루크 용기 정의 실화 바탕">
+<article class="movie" id="film-glory-road" data-id="glory-road" data-score="67.2" data-score-estimated="false" data-imdb="7.2" data-imdb-votes="51818" data-metacritic="58" data-rt="55" data-keys="true:glory-road" data-tags="용기 정의" data-search="글로리 로드 glory road 2006 1966년 ncaa 결승에서 흑인 선발 다섯 명으로 우승한 텍사스 웨스턴. 제임스 가트너 조시 루커스, 데릭 루크 용기 정의 실화 바탕">
   <input type="checkbox" aria-label="글로리 로드 시청 여부" />
   <details>
     <summary>
@@ -4744,7 +4748,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-stand-and-deliver" data-id="stand-and-deliver" data-keys="true:stand-and-deliver" data-tags="신념 희망" data-search="스탠드 업 stand and deliver 1988 로스앤젤레스 가필드 고등학교에서 미적분을 가르친 하이메 에스칼란테. 라몬 메넨데스 에드워드 제임스 올모스 신념 희망 실화">
+<article class="movie" id="film-stand-and-deliver" data-id="stand-and-deliver" data-score="76.2" data-score-estimated="false" data-imdb="7.3" data-imdb-votes="22856" data-rt="90" data-keys="true:stand-and-deliver" data-tags="신념 희망" data-search="스탠드 업 stand and deliver 1988 로스앤젤레스 가필드 고등학교에서 미적분을 가르친 하이메 에스칼란테. 라몬 메넨데스 에드워드 제임스 올모스 신념 희망 실화">
   <input type="checkbox" aria-label="스탠드 업 시청 여부" />
   <details>
     <summary>
@@ -4770,7 +4774,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-motorcycle-diaries" data-id="motorcycle-diaries" data-keys="true:motorcycle-diaries" data-tags="우정 정의" data-search="모터사이클 다이어리 the motorcycle diaries 2004 1952년 의대생 에르네스토 게바라와 알베르토 그라나도가 남아메리카를 가로지른 여행. 월터 살레스 가엘 가르시아 베르날, 로드리고 데라세르나 우정 정의 실화">
+<article class="movie" id="film-motorcycle-diaries" data-id="motorcycle-diaries" data-score="76.9" data-score-estimated="false" data-imdb="7.7" data-imdb-votes="110149" data-metacritic="75" data-rt="83" data-keys="true:motorcycle-diaries" data-tags="우정 정의" data-search="모터사이클 다이어리 the motorcycle diaries 2004 1952년 의대생 에르네스토 게바라와 알베르토 그라나도가 남아메리카를 가로지른 여행. 월터 살레스 가엘 가르시아 베르날, 로드리고 데라세르나 우정 정의 실화">
   <input type="checkbox" aria-label="모터사이클 다이어리 시청 여부" />
   <details>
     <summary>
@@ -4796,7 +4800,7 @@
   </details>
 </article>
 
-<article class="movie" id="film-kinky-boots" data-id="kinky-boots" data-keys="musical:kinky-boots-2005" data-tags="역경극복 우정" data-search="킹키 부츠 kinky boots 2005 문 닫기 직전의 노샘프턴 구두 공장이 남자도 신는 하이힐 부츠로 살길을 찾는 이야기. 줄리언 재럴드 조엘 에저턴, 치웨텔 에지오포 역경극복 우정 실화 바탕">
+<article class="movie" id="film-kinky-boots" data-id="kinky-boots" data-score="67.1" data-score-estimated="false" data-imdb="7.1" data-imdb-votes="23073" data-metacritic="57" data-rt="57" data-keys="musical:kinky-boots-2005" data-tags="역경극복 우정" data-search="킹키 부츠 kinky boots 2005 문 닫기 직전의 노샘프턴 구두 공장이 남자도 신는 하이힐 부츠로 살길을 찾는 이야기. 줄리언 재럴드 조엘 에저턴, 치웨텔 에지오포 역경극복 우정 실화 바탕">
   <input type="checkbox" aria-label="킹키 부츠 시청 여부" />
   <details>
     <summary>
