@@ -127,6 +127,14 @@
   const themes = DATA.themes || [];
   // 나두연표 허브(/films)에 같은 id로 있는 테마 목록. 데이터·저장소는 건드리지 않습니다.
   const HUB_LISTS = ["history", "viking", "arts"];
+  // Checklist film id -> 세계대전이야기 film anchor (WWI/WWII films).
+  const WORLDWARS_FILMS = {
+    "saving-private-ryan": "saving-private-ryan-1998",
+    "oppenheimer-md": "oppenheimer-2023",
+    "valkyrie": "valkyrie-2008",
+    "dunkirk": "dunkirk-2017",
+    "schindlers-list": "schindlers-list-1993",
+  };
   const lists = actors.concat(directors, themes); // actors, then directors, then theme lists
   const isDirector = (p) => directors.indexOf(p) !== -1;
   const isTheme = (p) => themes.indexOf(p) !== -1;
@@ -622,6 +630,17 @@
         hub.setAttribute("aria-label", m.ko + " 실제 역사 보기 (이야기 속 시대와 주인공 실존 여부)");
         hub.addEventListener("click", (e) => e.stopPropagation());
         meta.appendChild(hub);
+      }
+      if (Object.prototype.hasOwnProperty.call(WORLDWARS_FILMS, m.id)) {
+        const ww = document.createElement("a");
+        ww.className = "film-source";
+        ww.href = "https://nadoo-worldwars.vercel.app/films#" + WORLDWARS_FILMS[m.id];
+        ww.target = "_blank";
+        ww.rel = "noopener noreferrer";
+        ww.textContent = "세계대전이야기에서 보기";
+        ww.setAttribute("aria-label", m.ko + " 세계대전이야기에서 보기");
+        ww.addEventListener("click", (e) => e.stopPropagation());
+        meta.appendChild(ww);
       }
       info.append(titles, meta);
       if (m.plot) {
