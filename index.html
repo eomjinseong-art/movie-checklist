@@ -27,8 +27,10 @@
 <div class="app">
   <aside class="sidebar" id="sidebar" aria-label="배우·감독·테마 목록">
     <div class="sidebar-head">
-      <p class="eyebrow">영화봇</p>
-      <h1>영화 체크리스트</h1>
+      <a href="/" class="site-title" id="site-title" aria-label="첫 화면으로">
+        <p class="eyebrow">영화봇</p>
+        <h1>영화 체크리스트</h1>
+      </a>
       <p class="sub" id="sidebar-total">—</p>
     </div>
     <nav class="actor-nav" id="actor-nav"></nav>
@@ -791,6 +793,28 @@
     state = stateFromItems(items);
     render();
   });
+
+  // Site title → first screen (overview / default tab), keep watched data intact
+  const siteTitle = document.getElementById("site-title");
+  if (siteTitle) {
+    siteTitle.addEventListener("click", (e) => {
+      e.preventDefault();
+      current = "all";
+      filter = "all";
+      groupFilter = "all";
+      searchEl.value = "";
+      document.querySelectorAll("#watch-filter .filter-btn").forEach((b) => {
+        b.classList.toggle("active", b.dataset.filter === "all");
+      });
+      const url = new URL(location.href);
+      url.searchParams.delete("list");
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+      closeDrawer();
+      render();
+      window.scrollTo(0, 0);
+      try { document.documentElement.scrollTop = 0; document.body.scrollTop = 0; } catch (err) { /* ignore */ }
+    });
+  }
 
   render();
   SYNC.start();
