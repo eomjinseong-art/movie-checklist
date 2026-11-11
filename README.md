@@ -2,7 +2,7 @@
 
 배우별 장편 출연작 · 감독별 장편 연출작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 23명** (987편) · **감독 2명** (50편) · **테마 8** (역사 영화 62편 · 나라별 웃음과 감동 227편 · 예술가 영화 32편 · 체스 영화 17편 · 카드 게임 영화 18편 · 바이킹 영화 38편 · 삼국지 영화 10편 · 뮤지컬 영화 28편) · 총 **1469편**
+**배우 24명** (1011편) · **감독 2명** (50편) · **테마 8** (역사 영화 62편 · 나라별 웃음과 감동 227편 · 예술가 영화 32편 · 체스 영화 17편 · 카드 게임 영화 18편 · 바이킹 영화 38편 · 삼국지 영화 10편 · 뮤지컬 영화 28편) · 총 **1493편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -29,6 +29,7 @@
 | 헨리 카빌 | Henry Cavill | 22 |
 | 라이언 레이놀즈 | Ryan Reynolds | 51 |
 | 크리스찬 베일 | Christian Bale | 48 |
+| 레베카 퍼거슨 | Rebecca Ferguson | 24 |
 
 | 감독 | EN | 편수 |
 |---|---|---:|
@@ -93,3 +94,4 @@
 - Henry Cavill: TV 시리즈(튜더스·위쳐·린리 미스터리·미드서머 머더), TV 영화(굿바이 미스터 칩스), DTV(헬레이저: 헬월드, 레드 라이딩 후드 2006 DVD 개봉), 카메오(블랙 아담 미크레딧·플래시 CGI·데드풀과 울버린), 미개봉(볼트론·하이랜더), 라구나/Vendetta(2001, 위키백과 영화 필모그래피 표에 없음) 제외 · I Capture the Castle은 한국 비디오 제목 성 안에 갇힌 사랑(씨네21 인물 페이지는 아이 캡쳐 더 캐슬) · The Ministry of Ungentlemanly Warfare 한국 개봉명은 언젠틀 오퍼레이션
 - Ryan Reynolds: TV 시리즈·TV 영화, 단편(No Good Deed·Deadpool and Korg React), 다큐·내레이션(더 웨일·Great Bear Rainforest), 제작만(샷건 웨딩 등), 무크레딧·카메오(해롤드와 쿠마·테드·밀리언 웨이즈·불릿 트레인·고스티드), 목소리 카메오(분노의 질주: 홉스 & 쇼), 미개봉(어벤져스: 둠스데이·애니멀 프렌즈·엘로이즈) 제외 · Ordinary Magic/Coming Soon/Boltneck/Finder's Fee/Buying the Cow 한국 개봉명 불확실(오더너리 매직·커밍 순·빅 몬스터 온 캠퍼스·파인더스 피·화려한 싱글) · Spirited는 스피리티드, 위키 표기 크리스마스 스피릿 · Chaos Theory 연도는 미국 개봉 2008
 - Christian Bale: TV 영화·시리즈, 영어 더빙(하울의 움직이는 성·그대들은 어떻게 살 것인가), 비디오 게임, 미개봉(매든) 제외 · Prince of Jutland는 프린스 오브 주틀랜드, 원제 Royal Deceit · Mio in the Land of Faraway 한국 개봉명 미오 민 미오 · Newsies 한국 표기 뉴스보이 · Swing Kids(1993)는 스윙 재즈(2018년 한국 영화 스윙 키즈와 구분) · Hostiles 한국 개봉명 몬태나 · The Bride! 한국 개봉명 브라이드!
+- Rebecca Ferguson: TV 시리즈·미니시리즈(화이트 퀸·사일로·레드 텐트 등), 단편(레나르트·펄스·이리저스티블·리틀 매치 걸), 내레이션, 미개봉(듄: 파트 3·허니문/퓨너럴) 제외 · A One-Way Trip to Antibes·Us(Vi)·Despite the Falling Snow·Cold Night·The Magic Faraway Tree 한국 개봉명 불확실 · Mercy 한국 제목은 노 머시: 90분 · 미션 임파서블: 파이널 레코닝에는 출연하지 않음
