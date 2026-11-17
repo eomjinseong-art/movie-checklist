@@ -2,7 +2,7 @@
 
 배우별 장편 출연작 · 감독별 장편 연출작 시청 체크 (모바일 우선 · 기기 간 서버 동기화)
 
-**배우 26명** (1124편) · **감독 2명** (50편) · **테마 8** (역사 영화 62편 · 나라별 웃음과 감동 227편 · 예술가 영화 32편 · 체스 영화 17편 · 카드 게임 영화 18편 · 바이킹 영화 38편 · 삼국지 영화 10편 · 뮤지컬 영화 28편) · 총 **1606편**
+**배우 26명** (1124편) · **감독 3명** (63편) · **테마 8** (역사 영화 62편 · 나라별 웃음과 감동 227편 · 예술가 영화 32편 · 체스 영화 17편 · 카드 게임 영화 18편 · 바이킹 영화 38편 · 삼국지 영화 10편 · 뮤지컬 영화 28편) · 총 **1619편**
 
 | 배우 | EN | 편수 |
 |---|---|---:|
@@ -37,6 +37,7 @@
 |---|---|---:|
 | 리들리 스콧 | Ridley Scott | 30 |
 | 올리버 스톤 | Oliver Stone | 20 |
+| 크리스토퍼 놀란 | Christopher Nolan | 13 |
 
 | 테마 | EN | 편수 |
 |---|---|---:|
@@ -93,6 +94,7 @@
 - Morgan Freeman: 1964~68 무크레딧 단역·70년대 소품(Who Says I Can't Ride a Rainbow!, Blade), TV, 다큐·내레이션, 무크레딧(Brian Banks), 본인 카메오(커밍 2 아메리카), 제작만, DTV(Guilty by Association), 미개봉작(Rode to Ruin 2027) 제외 · Harry & Son/That Was Then... This Is Now/Levity/The Minute You Wake Up Dead/My Dead Friend Zoe 한국 개봉명 불확실 · Gone Baby Gone은 국내 DVD 제목(가라, 아이야, 가라) 기준
 - Ridley Scott (감독): 단편(Boy and Bicycle 등)·옴니버스 보이지 않는 아이들의 단편·제작만·TV·미개봉작(Treasure Island 2027) 제외 · 블랙 호크 다운은 2001년(미국 첫 개봉) 기준, Wikipedia 표에는 2002년
 - Oliver Stone (감독): 장편 극영화만 수록 · 단편(Last Year in Viet Nam, Mad Man of Martinique), 다큐(코만단테·사우스 오브 더 보더·JFK 리비지티드·뉴클리어 나우·룰라 등), TV(언톨드 히스토리·푸틴 인터뷰), 각본·제작만(미드나잇 익스프레스·스카페이스·에비타·행운의 반전 등), 미개봉작(White Lies) 제외 · 강탈(Seizure)은 씨네21 제목, 일명 지옥의 여왕 · 핸드(The Hand)는 씨네21 제목, 일명 손 · 더 프레지던트(W.)는 국내 개봉명, 일명 더블유 · 연도는 미국 첫 개봉 기준
+- Christopher Nolan (감독): 장편 극영화만 수록 · 단편(두들버그, 퀘이), 제작만(맨 오브 스틸 등) 제외 · 미행(Following)은 한국 통용 제목 · 인썸니아는 씨네21 개봉명 · 오디세이는 2026.7.17 개봉 · 연도는 미국 첫 개봉 기준
 - Henry Cavill: TV 시리즈(튜더스·위쳐·린리 미스터리·미드서머 머더), TV 영화(굿바이 미스터 칩스), DTV(헬레이저: 헬월드, 레드 라이딩 후드 2006 DVD 개봉), 카메오(블랙 아담 미크레딧·플래시 CGI·데드풀과 울버린), 미개봉(볼트론·하이랜더), 라구나/Vendetta(2001, 위키백과 영화 필모그래피 표에 없음) 제외 · I Capture the Castle은 한국 비디오 제목 성 안에 갇힌 사랑(씨네21 인물 페이지는 아이 캡쳐 더 캐슬) · The Ministry of Ungentlemanly Warfare 한국 개봉명은 언젠틀 오퍼레이션
 - Ryan Reynolds: TV 시리즈·TV 영화, 단편(No Good Deed·Deadpool and Korg React), 다큐·내레이션(더 웨일·Great Bear Rainforest), 제작만(샷건 웨딩 등), 무크레딧·카메오(해롤드와 쿠마·테드·밀리언 웨이즈·불릿 트레인·고스티드), 목소리 카메오(분노의 질주: 홉스 & 쇼), 미개봉(어벤져스: 둠스데이·애니멀 프렌즈·엘로이즈) 제외 · Ordinary Magic/Coming Soon/Boltneck/Finder's Fee/Buying the Cow 한국 개봉명 불확실(오더너리 매직·커밍 순·빅 몬스터 온 캠퍼스·파인더스 피·화려한 싱글) · Spirited는 스피리티드, 위키 표기 크리스마스 스피릿 · Chaos Theory 연도는 미국 개봉 2008
 - Christian Bale: TV 영화·시리즈, 영어 더빙(하울의 움직이는 성·그대들은 어떻게 살 것인가), 비디오 게임, 미개봉(매든) 제외 · Prince of Jutland는 프린스 오브 주틀랜드, 원제 Royal Deceit · Mio in the Land of Faraway 한국 개봉명 미오 민 미오 · Newsies 한국 표기 뉴스보이 · Swing Kids(1993)는 스윙 재즈(2018년 한국 영화 스윙 키즈와 구분) · Hostiles 한국 개봉명 몬태나 · The Bride! 한국 개봉명 브라이드!
