@@ -6193,6 +6193,21 @@ window.MOVIE_CHECKLIST_DATA = {
           "criticEstimated": false,
           "metacritic": 44,
           "rt": 27
+        },
+        {
+          "id": "apex",
+          "year": 2026,
+          "en": "Apex",
+          "ko": "정점",
+          "genre": "액션/스릴러",
+          "note": "Netflix",
+          "score": 61.6,
+          "scoreEstimated": false,
+          "imdb": 6.1,
+          "imdbVotes": 114658,
+          "criticEstimated": false,
+          "metacritic": 58,
+          "rt": 67
         }
       ]
     },
