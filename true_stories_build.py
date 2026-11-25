@@ -242,6 +242,8 @@ def render():
 {films_html}
     </div>
     <p class="empty" id="empty">검색·필터 결과가 없습니다.</p>
+    <div class="nadoo-ad" data-types="linkprice"></div>
+    <div class="nadoo-ad" data-types="apple"></div>
     <aside class="cpb" aria-label="광고">
       <a class="cpb-link" href="https://link.coupang.com/a/hsdzLh1vB6" target="_blank" rel="sponsored noopener noreferrer nofollow">
         <span class="cpb-label">광고</span>
@@ -260,6 +262,7 @@ def render():
 <button type="button" class="menu-toggle" id="menu-toggle" aria-label="교훈 태그 열기">주제 선택</button>
 <script src="/sync-client.js"></script>
 <script src="/true-stories.js"></script>
+<script src="https://nadoo-ads.vercel.app/ads.js" defer></script>
 </body>
 </html>
 """
