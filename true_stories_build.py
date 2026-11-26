@@ -242,6 +242,7 @@ def render():
 {films_html}
     </div>
     <p class="empty" id="empty">검색·필터 결과가 없습니다.</p>
+    <div class="nadoo-ad" data-types="vpnpromo"></div>
     <div class="nadoo-ad" data-types="linkprice"></div>
     <div class="nadoo-ad" data-types="apple"></div>
     <aside class="cpb" aria-label="광고">
