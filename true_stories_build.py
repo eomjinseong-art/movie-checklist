@@ -255,7 +255,7 @@ def render():
     <footer>
       외국 실화 영화 · 포스터 없이 텍스트만 정리했습니다<br />
       시청 체크는 동기화 코드로 서버에 저장되어 배우별 목록과 이어집니다<br />
-      <a href="/">배우별 체크리스트로 돌아가기</a> · <a href="/?list=history">역사 영화</a>
+      <a href="/">배우별 체크리스트로 돌아가기</a> · <a href="/?list=history">역사 영화</a> · <a href="/vpn">해외 OTT·영화 볼 때 VPN 비교</a>
     </footer>
   </main>
 </div>
